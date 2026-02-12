@@ -1,0 +1,18 @@
+FROM node:20-alpine
+
+WORKDIR /app
+
+# Copier et installer les dépendances du frontend
+COPY frontend/package*.json ./
+RUN npm install --production
+
+# Copier le code source et builder
+COPY frontend ./
+RUN npm run build
+
+# Installer serve pour servir l'application
+RUN npm install -g serve
+
+EXPOSE 3000
+
+CMD ["serve", "-s", "dist", "-l", "3000"]

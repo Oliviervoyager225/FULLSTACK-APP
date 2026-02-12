@@ -1,0 +1,152 @@
+/* Main Container */
+.typing-bubble-container {
+  display: flex;
+  align-items: center;
+  /* Vertically center image and text block */
+  justify-content: center;
+  /* Center the whole component horizontally */
+  gap: 60px;
+  /* Space between image and text block */
+  padding: 60px;
+  width: 100%;
+  max-width: 1200px;
+  /* Reasonable max width */
+  margin: 0 auto;
+  /* Center on page */
+  min-height: 60vh;
+  /* Minimum height for presence */
+  box-sizing: border-box;
+  position: relative;
+  /* Context for absolute bubbles if needed */
+}
+
+/* Image with Gray Frame */
+.typing-profile-img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border: 20px solid #d1d5db;
+  /* Light gray frame color (h-300) */
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  flex-shrink: 0;
+  /* Prevent shrinking */
+  display: block;
+  /* Ensure it behaves as a block */
+}
+
+/* Text Card */
+.typing-message-card {
+  background-color: #f3e5f5;
+  /* Light Lavender (Purple 50) */
+  padding: 40px;
+  border-radius: 40px;
+  /* Rounded card */
+  /* Remove top-left corner radius for bubble effect? No, standard rounded is likely better */
+  border-top-left-radius: 0;
+  /* Visual trick: make it look like a speech bubble originating from top-left */
+  max-width: 600px;
+  position: relative;
+  z-index: 2;
+  /* Content above bubbles */
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+/* Bubbles - Position relative to the container/gap */
+.typing-bubble {
+  position: absolute;
+  background-color: #f3e5f5;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 1;
+  /* Behind or same level as needed */
+}
+
+/* 
+   Bubble Positioning Strategy:
+   We want them in the gap. 
+   Assuming standard desktop layout, we can fix them relative to the *image* or the *card*.
+   Or absolute to the container if we know the layout is fixed.
+   Let's try absolute to the container but centered logically.
+   
+   Better: Pseudo-elements on the card? 
+   Existing HTML has dedicated divs. Let's use them.
+*/
+
+.typing-bubble.small {
+  width: 20px;
+  height: 20px;
+  left: 360px;
+  /* Approx just right of image (300px + padding) */
+  top: 40%;
+  /* Approx vertically centered */
+}
+
+.typing-bubble.medium {
+  width: 40px;
+  height: 40px;
+  left: 390px;
+  top: 36%;
+}
+
+.typing-bubble.large {
+  width: 70px;
+  height: 70px;
+  left: 430px;
+  /* Merging into text card */
+  top: 30%;
+}
+
+/* Responsive adjust if needed, but keeping it simple for now */
+
+/* Text Container - holds both placeholder and animated text */
+.typing-text-container {
+  position: relative;
+  width: 100%;
+}
+
+/* Invisible placeholder - reserves space for full text */
+.typing-placeholder {
+  white-space: pre-line;
+  line-height: 1.6;
+  visibility: hidden;
+  /* Hidden but takes up space */
+  margin: 0;
+}
+
+/* Visible animated text */
+.typing {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  white-space: pre-line;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Optional: Remove cursor animation completely */
+/* 
+.typing::after {
+  content: "|";
+  animation: blink 1s infinite;
+}
+*/
+
+@keyframes blink {
+
+  0%,
+  50%,
+  100% {
+    opacity: 1;
+  }
+
+  25%,
+  75% {
+    opacity: 0;
+  }
+}
+
+.typing-signature {
+  margin-top: 20px;
+  font-family: cursive;
+}

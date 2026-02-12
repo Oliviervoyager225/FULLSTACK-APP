@@ -1,0 +1,98 @@
+.typing-bubble-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  padding: 80px 40px; /* double la hauteur du padding haut et bas */
+  min-height: 680px;   /* double la hauteur minimale */
+}
+
+.typing-profile-img {
+  width: 260px;
+  height: 260px;
+  object-fit: cover;
+  border: 12px solid #ddd;
+  border-radius: 16px;
+}
+
+.typing-message-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 600px;
+  min-height: 300px;
+  height: auto;
+  background: #cfc9db;
+  padding: 30px;
+  border-radius: 30px;
+  max-width: 600px;
+  position: relative;
+  z-index: 2;
+}
+
+.typing-bubble {
+  position: absolute;
+  background: #cfc9db;
+  border-radius: 50%;
+  border: 3px solid #ddd;
+  z-index: 1;
+}
+
+.typing-bubble.small {
+  width: 20px;
+  height: 20px;
+  left: 250px;
+  top: 160px;
+}
+
+.typing-bubble.medium {
+  width: 60px;
+  height: 60px;
+  left: 320px;
+  top: 100px;
+}
+
+.typing-bubble.large {
+  width: 100px;
+  height: 100px;
+  left: 440px;
+  top: 40px;
+}
+
+.custom-height-bubble-small {
+  height: 40px !important;
+}
+
+.custom-height-bubble-medium {
+  height: 80px !important;
+}
+
+.custom-height-bubble-large {
+  height: 120px !important;
+}
+
+.custom-height-message-card {
+  min-height: 340px;
+}
+
+.typing {
+  flex: 1;
+  overflow-y: visible;
+  white-space: pre-line;
+  line-height: 1.6;
+}
+
+.typing::after {
+  content: "|";
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%, 50%, 100% { opacity: 1; }
+  25%, 75% { opacity: 0; }
+}
+
+.typing-signature {
+  margin-top: 20px;
+  font-family: cursive;
+}

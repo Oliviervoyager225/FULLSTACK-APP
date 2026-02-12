@@ -4,7 +4,6 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import { newsService } from '../services/api';
 import '../styles/Home.css';
-import TypingBubble from '../components/TypingBubble';
 
 const fallbackNews = [
   {
@@ -36,13 +35,8 @@ export default function Home() {
   const [loadError, setLoadError] = useState(null);
   const [heroIndex, setHeroIndex] = useState(0);
 
-  // Images pour le carousel hero (4 images)
-  const heroImages = [
-    '/assets/feerima/hero.png',
-    '/assets/feerima/hero2.png?v=' + Date.now(),
-    '/assets/feerima/hero3.png?v=' + Date.now(),
-    '/assets/feerima/hero4.png?v=' + Date.now()
-  ];
+  // Images pour le carousel hero (peut être étendu à 5 images)
+  const heroImages = ['/assets/feerima/center.png'];
 
   const goToPreviousHero = () => {
     setHeroIndex((prev) => (prev === 0 ? heroImages.length - 1 : prev - 1));
@@ -51,15 +45,6 @@ export default function Home() {
   const goToNextHero = () => {
     setHeroIndex((prev) => (prev === heroImages.length - 1 ? 0 : prev + 1));
   };
-
-  // Auto-scroll hero images every 5 seconds
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setHeroIndex((prev) => (prev === heroImages.length - 1 ? 0 : prev + 1));
-    }, 5000); // Change image every 5 seconds
-
-    return () => clearInterval(interval);
-  }, [heroImages.length]);
 
   useEffect(() => {
     const loadNews = async () => {
@@ -85,9 +70,9 @@ export default function Home() {
       <Navbar />
 
       <main>
-        <section className="hero" style={{ background: `linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)), url('${heroImages[heroIndex]}')`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
-          <button
-            type="button"
+        <section className="hero" style={{ background: `linear-gradient(135deg, rgba(15, 160, 182, 0.5), rgba(173, 220, 233, 0.5)), url('${heroImages[heroIndex]}')`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
+          <button 
+            type="button" 
             className="hero-nav hero-nav-prev"
             onClick={goToPreviousHero}
             aria-label="Image précédente"
@@ -96,57 +81,59 @@ export default function Home() {
           </button>
           <div className="container hero-grid">
             <div className="hero-copy">
-              <h1 className="hero-title">
-                <span className="hero-title-brand">FeeRima</span>{' '}
-                <span className="hero-title-suffix">Care</span>
+              <p className="eyebrow">FeeRima Care</p>
+              <h1>
+                Votre partenaire de confiance pour la sante mentale des jeunes et
+                adolescents de 10 a 25 ans.
               </h1>
-              <p className="hero-subtitle">
-                Votre partenaire de confiance pour la santé mentale des jeunes et
-                adolescents de 10-25 ans.
-              </p>
               <div className="hero-actions">
-                <Link to="/preadmission" className="btn btn-primary-yellow">
+                <Link to="/preadmission" className="btn primary">
                   Prendre rendez-vous
                 </Link>
-                <button type="button" className="btn btn-video">
-                  <span className="play-icon">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                      <path d="M8 5v14l11-7z" />
-                    </svg>
-                  </span>
-                  Nos actions en vidéo
+                <button type="button" className="btn ghost">
+                  <span className="play" aria-hidden="true">&gt;</span>
+                  Nos actions en video
                 </button>
               </div>
             </div>
             <div className="hero-card">
-              <p className="hero-card-title">À la Fée Rima</p>
-              <p>Un accueil personnalisé et bienveillant</p>
+              <p className="hero-card-title">A la Fee Rima</p>
+              <p>Un accueil personnalise et bienveillant</p>
             </div>
           </div>
-          <button
-            type="button"
+          <button 
+            type="button" 
             className="hero-nav hero-nav-next"
             onClick={goToNextHero}
             aria-label="Image suivante"
           >
             ›
           </button>
-
-          {/* Pagination dots */}
-          <div className="hero-pagination">
-            {heroImages.map((_, index) => (
-              <button
-                key={index}
-                type="button"
-                className={`hero-dot ${index === heroIndex ? 'active' : ''}`}
-                onClick={() => setHeroIndex(index)}
-                aria-label={`Aller à l'image ${index + 1}`}
-              />
-            ))}
-          </div>
         </section>
 
-        <TypingBubble />
+        <section className="welcome">
+          <div className="container welcome-grid">
+            <div className="welcome-portrait">
+              <img src="/assets/feerima/news-3.png" alt="Photo de Naomi" className="portrait-image" />
+              <p className="portrait-caption">Photo de Naomi</p>
+            </div>
+            <div className="speech-bubble">
+              <h2>Chers visiteurs</h2>
+              <p>
+                C est avec une immense joie que je vous souhaite la bienvenue au centre
+                specialise La Fee Rima. Notre mission est de promouvoir le bien-etre
+                psychologique des adolescents et des jeunes, en rendant l accompagnement
+                accessible a tous.
+              </p>
+              <p>
+                A la Fee Rima, l ecoute, le respect et le bien-etre sont au coeur de notre
+                action et de notre equipe. Nous nous engageons pour l excellence et
+                l amelioration continue afin que chaque voix compte et soit entendue.
+              </p>
+              <span className="signature">Naomi Saraminta</span>
+            </div>
+          </div>
+        </section>
 
         <section className="quote-bar">
           <div className="container quote-content">
