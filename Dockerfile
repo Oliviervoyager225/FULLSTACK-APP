@@ -10,6 +10,6 @@ RUN npm install
 COPY frontend ./
 RUN npm run build
 
+# Exposer le port et servir le build
 EXPOSE 3000
-
-CMD ["npx", "-y", "serve", "-s", "dist", "-l", "3000"]
+CMD ["sh", "-c", "npx serve -s dist -l $PORT"]
