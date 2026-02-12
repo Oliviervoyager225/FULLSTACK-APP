@@ -6,10 +6,14 @@ WORKDIR /app
 COPY frontend/package*.json ./
 RUN npm install
 
-# Copier le code source et builder
+# Copier le code source et builder l'application
 COPY frontend ./
 RUN npm run build
 
-# Exposer le port et servir le build
+# Copier le script d'entrée et le rendre exécutable
+COPY entrypoint.sh .
+RUN chmod +x entrypoint.sh
+
+# Exposer le port et définir le point d'entrée
 EXPOSE 3000
-CMD ["sh", "-c", "npx serve -s dist -l $PORT"]
+ENTRYPOINT ["/app/entrypoint.sh"]
