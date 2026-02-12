@@ -4,7 +4,7 @@ WORKDIR /app
 
 # Copier et installer les dépendances du frontend
 COPY frontend/package*.json ./
-RUN npm install --production
+RUN npm install
 
 # Copier le code source et builder
 COPY frontend ./
