@@ -4,6 +4,7 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import { newsService } from '../services/api';
 import '../styles/Home.css';
+import '../styles/InfoSection.css';
 import TypingBubble from '../components/TypingBubble';
 
 const fallbackNews = [
@@ -85,7 +86,11 @@ export default function Home() {
       <Navbar />
 
       <main>
-        <section className="hero" style={{ background: `linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)), url('${heroImages[heroIndex]}')`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
+        <section
+          key={heroIndex}
+          className="hero hero-slide"
+          style={{ background: `linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)), url('${heroImages[heroIndex]}')`, backgroundSize: 'cover', backgroundPosition: 'center' }}
+        >
           <button
             type="button"
             className="hero-nav hero-nav-prev"
@@ -149,62 +154,67 @@ export default function Home() {
         <TypingBubble />
 
         <section className="quote-bar">
-          <div className="container quote-content">
-            <p>
-              "La guerison prend du temps et demander de l aide est une demarche courageuse"
-            </p>
-            <span>Mariska Hargitay</span>
+          <div className="quote-content">
+            "La guerison prend du temps et demander de l aide est une demarche courageuse"<span className="quote-author"> - Mariska Hargitay</span>
           </div>
         </section>
 
-        <section className="info-grid container">
-          <div className="contact-card">
-            <h3>Nous contacter</h3>
-            <p>Telephone : 0700000000</p>
-            <p>Email : lafeerima@lafeerima.com</p>
-            <p>Angre - Commissariat du 12eme arr. ABIDJAN</p>
-            <div className="map-icon" />
-            <div className="specificites">
-              <h4>Nos specificites</h4>
-              <ul>
-                <li>Equipe pluridisciplinaire : psychologues, educateurs specialises, therapeute.</li>
-                <li>Approche personnalisee : un plan de soins adapte a chacun.</li>
-                <li>Cadre bienveillant et securise pour la guerison et la reinsertion.</li>
-                <li>Methodes innovantes : utilisation de therapies modernes.</li>
-                <li>Implication des familles et accompagnement des proches.</li>
-                <li>Accessibilite : prise en compte des realites sociales locales.</li>
-              </ul>
-            </div>
-          </div>
 
-          <div className="news-panel">
-            <div className="news-header">
-              <h3>Nos dernieres actualites</h3>
-              {loading && <span className="news-status">Chargement...</span>}
-              {loadError && <span className="news-status error">{loadError}</span>}
+        <section className="info-section">
+          <div className="container info-grid-new">
+            {/* Left side - Contact and Specifications */}
+            <div className="contact-section">
+              <div className="contact-info">
+                <h3>Nous contacter</h3>
+                <p><strong>Téléphone :</strong> 0700000000</p>
+                <p><strong>Email :</strong> Laférima@laferima.com</p>
+                <p className="address">Angré - comissariat du 12ème arrondissement arr.ABIDJAN</p>
+              </div>
+
+              <div className="map-container">
+                <img src="/assets/feerima/map-pin.png" alt="Carte" className="map-image" />
+              </div>
+
+              <div className="specificites-section">
+                <h3>Nos spécificités</h3>
+                <div className="spec-item">
+                  <strong>Equipe pluridisciplinaire</strong> : psychologues, éducateurs spécialisés, thérapeute, coach sportif, maîtresse de maison...
+                </div>
+                <div className="spec-item">
+                  <strong>Equipe pluridisciplinaire</strong> : psychologues, éducateurs spécialisés, thérapeute, coach sportif, maîtresse de maison...
+                </div>
+                <div className="spec-item">
+                  <strong>Equipe pluridisciplinaire</strong> : psychologues, éducateurs spécialisés, thérapeute, coach sportif, maîtresse de maison...
+                </div>
+                <div className="spec-item">
+                  <strong>Equipe pluridisciplinaire</strong> : psychologues, éducateurs spécialisés, thérapeute, coach sportif, maîtresse de maison...
+                </div>
+              </div>
             </div>
-            <div className="news-list">
-              {displayedNews.map((item) => (
-                <article key={item.id} className="news-card">
-                  <div className="news-thumb">
-                    {item.imageUrl ? (
-                      <img src={item.imageUrl} alt={item.title} />
-                    ) : (
-                      <div className="news-thumb-placeholder">NEWS</div>
-                    )}
-                  </div>
-                  <div>
-                    <h4>{item.title}</h4>
-                    <p>{item.excerpt}</p>
-                    <a href={item.linkUrl} className="news-link">
-                      Voir plus
-                    </a>
-                  </div>
-                </article>
-              ))}
+
+            {/* Right side - News Panel */}
+            <div className="news-panel-new">
+              <h3 className="news-title">Nos dernières actualités</h3>
+              <div className="news-list-new">
+                {displayedNews.map((item) => (
+                  <article key={item.id} className="news-card-new">
+                    <div className="news-image">
+                      <img src={item.imageUrl || '/assets/feerima/portrait.png'} alt={item.title} />
+                    </div>
+                    <div className="news-content">
+                      <h4>{item.title}</h4>
+                      <p>{item.excerpt}</p>
+                      <a href={item.linkUrl} className="news-link-new">
+                        Voir plus →
+                      </a>
+                    </div>
+                  </article>
+                ))}
+              </div>
             </div>
           </div>
         </section>
+
 
         <section className="center-image">
           <div className="container center-grid">
