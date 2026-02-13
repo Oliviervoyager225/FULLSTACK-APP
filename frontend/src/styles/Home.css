@@ -253,9 +253,10 @@
   transform: scale(1.3);
 }
 
-/* Quote scrolling section */
+/* Quote scrolling section - Cyan/Teal like reference */
 .quote-bar {
-  background: var(--teal-600);
+  background: #00a9bc;
+  /* Cyan/teal matching reference */
   color: #ffffff;
   padding: 8px 0;
   /* Réduit de 3 fois (24px → 8px) */
