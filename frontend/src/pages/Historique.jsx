@@ -2,11 +2,24 @@ import React from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import '../styles/Historique.css';
+import '../styles/PageHero.css';
 
 export default function Historique() {
   return (
     <div className="historique-page">
       <Navbar />
+
+      {/* Hero Banner */}
+      <section
+        className="page-hero"
+        style={{ backgroundImage: "url('/assets/feerima/hero8.png')" }}
+      >
+        <div className="page-hero-content">
+          <h1>Notre histoire</h1>
+          <p>Une mission de cœur, au service de la santé mentale des jeunes depuis notre création</p>
+        </div>
+      </section>
+
       <main className="historique-main">
         {/* Section 1: Text Left, Image Right */}
         <section className="hist-section section-1">

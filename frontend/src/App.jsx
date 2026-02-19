@@ -4,6 +4,7 @@ import Home from './pages/Home';
 import Preadmission from './pages/Preadmission';
 import Historique from './pages/Historique';
 import Professionals from './pages/Professionals';
+import Actualites from './pages/Actualites';
 import './App.css';
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
           <Route path="/preadmission" element={<Preadmission />} />
           <Route path="/historique" element={<Historique />} />
           <Route path="/professionnels" element={<Professionals />} />
+          <Route path="/actualites" element={<Actualites />} />
         </Routes>
       </div>
     </BrowserRouter>

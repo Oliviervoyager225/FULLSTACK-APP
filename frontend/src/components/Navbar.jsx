@@ -8,7 +8,7 @@ const dropdownItems = [
   { label: 'Nos valeurs', to: '#' },
   { label: 'Notre engagement qualite', to: '#' },
   { label: 'RSE', to: '#' },
-  { label: 'Actualites', to: '#' },
+  { label: 'Actualites', to: '/actualites' },
   { label: 'Partenaires', to: '#' },
 ];
 
@@ -24,18 +24,6 @@ export default function Navbar() {
     }
   };
 
-  const handleScrollToActualites = () => {
-    if (location.pathname === '/') {
-      const el = document.getElementById('actualites');
-      if (el) {
-        el.scrollIntoView({ behavior: 'smooth' });
-      }
-    } else {
-      navigate('/', { state: { scrollToActualites: true } });
-    }
-    setDropdownOpen(false);
-    setNavOpen(false);
-  };
 
   return (
     <header className="site-header">
@@ -74,14 +62,14 @@ export default function Navbar() {
             <div className={`dropdown-menu ${dropdownOpen ? 'show' : ''}`}>
               {dropdownItems.map((item) => (
                 item.label === 'Actualites' ? (
-                  <button
+                  <Link
                     key={item.label}
+                    to="/actualites"
                     className="dropdown-item"
-                    onClick={handleScrollToActualites}
-                    style={{ background: 'none', border: 'none', textAlign: 'left', width: '100%', cursor: 'pointer' }}
+                    onClick={() => { setDropdownOpen(false); setNavOpen(false); }}
                   >
                     Actualités
-                  </button>
+                  </Link>
                 ) :
                   item.to && item.to !== '#' ? (
                     <Link key={item.label} to={item.to} className="dropdown-item">
@@ -95,13 +83,9 @@ export default function Navbar() {
           </div>
           <a href="#" className="nav-link">L offre de soins <svg className="dropdown-icon" viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M7 10l5 5 5-5z" /></svg></a>
           <a href="#" className="nav-link">Vos droits <svg className="dropdown-icon" viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M7 10l5 5 5-5z" /></svg></a>
-          <button
-            className="nav-link"
-            style={{ background: 'none', border: 'none', padding: 0, cursor: 'pointer' }}
-            onClick={handleScrollToActualites}
-          >
+          <Link to="/actualites" className="nav-link">
             Actualités
-          </button>
+          </Link>
           <a href="#" className="nav-link">FAQ <svg className="dropdown-icon" viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M7 10l5 5 5-5z" /></svg></a>
           <a href="#" className="nav-link">Ressources <svg className="dropdown-icon" viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M7 10l5 5 5-5z" /></svg></a>
         </nav>

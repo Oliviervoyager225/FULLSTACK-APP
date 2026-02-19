@@ -1,7 +1,12 @@
 .professionals-page {
     background-color: #f9f9f9;
     min-height: 100vh;
-    padding-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+}
+
+.professionals-content {
+    flex: 1;
 }
 
 .professionals-header {
@@ -196,6 +201,7 @@
 .professionals-footer-action {
     text-align: center;
     margin-top: 50px;
+    margin-bottom: 80px;
 }
 
 .btn-see-more {

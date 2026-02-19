@@ -1,10 +1,12 @@
-/* Historique Page Styles */
 .historique-page {
   background-color: #f8f8f8;
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .historique-main {
+  flex: 1;
   max-width: 1200px;
   margin: 0 auto;
   padding: 60px 20px;

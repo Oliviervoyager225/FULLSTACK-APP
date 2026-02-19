@@ -2,6 +2,7 @@ import React from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import '../styles/Professionals.css';
+import '../styles/PageHero.css';
 
 const doctors = [
     {
@@ -64,12 +65,19 @@ export default function Professionals() {
     return (
         <div className="professionals-page">
             <Navbar />
-            <main className="professionals-content">
-                <div className="professionals-header">
-                    <h1>Notre équipe médicale</h1>
-                    <p>Des médecins hautement qualifiés sont prêts à vous servir</p>
-                </div>
 
+            {/* Hero Banner */}
+            <section
+                className="page-hero page-hero--ltr"
+                style={{ backgroundImage: "url('/assets/feerima/hero4.png')" }}
+            >
+                <div className="page-hero-content">
+                    <h1>Notre équipe médicale</h1>
+                    <p>Des professionnels de santé dévoués pour accompagner les jeunes vers le mieux-être</p>
+                </div>
+            </section>
+
+            <main className="professionals-content">
                 <div className="professionals-grid">
                     {doctors.map((doc) => (
                         <div key={doc.id} className={`doctor-card ${doc.theme}`}>
