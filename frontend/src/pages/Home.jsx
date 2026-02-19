@@ -268,18 +268,21 @@ export default function Home() {
 
         <TypingBubble />
 
-        <section className="quote-bar">
-          <div className="quote-content">
-            "La guerison prend du temps et demander de l aide est une demarche courageuse"<span className="quote-author"> - Mariska Hargitay</span>
+        {/* Fond #F5EFE9 : de la quote bar jusqu'avant Nos spécialités */}
+        <div className="quote-map-wrapper">
+
+          <section className="quote-bar">
+            <div className="quote-content">
+              "La guerison prend du temps et demander de l aide est une demarche courageuse"<span className="quote-author"> - Mariska Hargitay</span>
+            </div>
+          </section>
+
+          {/* Map Container - Interactive Leaflet + OpenStreetMap */}
+          <div className="map-container-fullwidth">
+            <h3 className="news-title-fullwidth map-title">Localisation</h3>
+            <LeafletMap />
           </div>
-        </section>
 
-
-
-        {/* Map Container - Interactive Leaflet + OpenStreetMap */}
-        <div className="map-container-fullwidth">
-          <h3 className="news-title-fullwidth map-title">Localisation</h3>
-          <LeafletMap />
         </div>
 
         {/* Section Services - 3 blocs alternés */}
