@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 // Centre spécialisé
 import Home from './pages/Home';
 import Preadmission from './pages/Preadmission';
+import Contact from './pages/Contact';
 import Historique from './pages/Historique';
 import Professionals from './pages/Professionals';
 import Actualites from './pages/Actualites';
@@ -43,6 +44,7 @@ function App() {
           {/* Accueil */}
           <Route path="/" element={<Home />} />
           <Route path="/preadmission" element={<Preadmission />} />
+          <Route path="/contact" element={<Contact />} />
 
           {/* Centre spécialisé */}
           <Route path="/historique" element={<Historique />} />

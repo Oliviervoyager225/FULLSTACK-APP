@@ -1,4 +1,4 @@
-﻿import React, { useState } from 'react';
+import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import '../styles/Navbar.css';
 
@@ -70,7 +70,7 @@ export default function Navbar() {
     <header className="site-header">
       <div className="container nav-row">
         <Link to="/" className="brand" onClick={closeNav}>
-          <img src="/assets/feerima/news-2.png" alt="La-Fee-Rima" className="brand-logo" />
+          <img src="/assets/feerima/news-2.png" alt="La Fée Rima" className="brand-logo" />
         </Link>
 
         <button

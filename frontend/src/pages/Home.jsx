@@ -1,4 +1,4 @@
-﻿import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
@@ -114,7 +114,7 @@ const actuSlides = [
   {
     img: '/assets/feerima/hero.png',
     titre: 'Journée portes ouvertes',
-    message: 'Venez rencontrer nos équipes et découvrir La-Fee-Rima lors de notre prochaine journée portes ouvertes.',
+    message: 'Venez rencontrer nos équipes et découvrir La Fée Rima lors de notre prochaine journée portes ouvertes.',
   },
   {
     img: '/assets/feerima/hero2.png',
@@ -124,7 +124,7 @@ const actuSlides = [
   {
     img: '/assets/feerima/hero3.png',
     titre: 'Partenariat avec l\'université',
-    message: 'La-Fee-Rima s\'associe à des établissements académiques pour renforcer la recherche en santé mentale juvénile.',
+    message: 'La Fée Rima s\'associe à des établissements académiques pour renforcer la recherche en santé mentale juvénile.',
   },
   {
     img: '/assets/feerima/hero4.png',
@@ -285,14 +285,14 @@ export default function Home() {
           <div className="container hero-grid">
             <div className="hero-copy">
               <h1 className="hero-title">
-                <span className="hero-title-brand">La-Fee-Rima</span>
+                <span className="hero-title-brand">La Fée Rima</span>
               </h1>
               <p className="hero-subtitle">
                 Votre partenaire de confiance pour la santé mentale des jeunes et
                 adolescents de 10-25 ans.
               </p>
               <div className="hero-actions">
-                <Link to="/preadmission" className="btn btn-primary-yellow">
+                <Link to="/contact" className="btn btn-primary-yellow">
                   Prendre rendez-vous
                 </Link>
                 <button type="button" className="btn btn-video">
@@ -306,7 +306,7 @@ export default function Home() {
               </div>
             </div>
             <div className="hero-card">
-              <p className="hero-card-title">À La-Fee-Rima</p>
+              <p className="hero-card-title">À La Fée Rima</p>
               <p>Un accueil personnalisé et bienveillant</p>
             </div>
           </div>
@@ -346,7 +346,7 @@ export default function Home() {
 
               {/* Left Column: Text & CTA */}
               <div className="contact-text-col">
-                <span className="contact-subtitle">Bienvenue chez La-Fee-Rima</span>
+                <span className="contact-subtitle">Bienvenue chez La Fée Rima</span>
                 <h2 className="contact-main-title">
                   RAPIDE, FACILE & FIABLE
                   <span className="highlight">CONTACTEZ-NOUS !</span>
@@ -493,14 +493,14 @@ export default function Home() {
               {
                 img: '/assets/feerima/hero.png',
                 categorie: 'Vie du centre',
-                titre: 'Journée portes ouvertes à La-Fee-Rima',
+                titre: 'Journée portes ouvertes à La Fée Rima',
                 extrait: "Venez découvrir nos équipes et nos espaces de soins lors de notre prochaine journée portes ouvertes. Un moment d'échange et de rencontre pour les jeunes et leurs familles.",
               },
               {
                 img: '/assets/feerima/hero2.png',
                 categorie: 'Santé mentale',
                 titre: 'Mieux comprendre les troubles anxieux chez les adolescents',
-                extrait: "La-Fee-Rima vous propose des ressources et des ateliers pour mieux identifier et accompagner les troubles anxieux, de plus en plus fréquents chez les 10-25 ans.",
+                extrait: "La Fée Rima vous propose des ressources et des ateliers pour mieux identifier et accompagner les troubles anxieux, de plus en plus fréquents chez les 10-25 ans.",
               },
               {
                 img: '/assets/feerima/hero3.png',
@@ -511,7 +511,7 @@ export default function Home() {
               {
                 img: '/assets/feerima/hero4.png',
                 categorie: 'Partenariat',
-                titre: 'La-Fee-Rima renforce ses partenariats académiques',
+                titre: 'La Fée Rima renforce ses partenariats académiques',
                 extrait: "De nouvelles conventions signées avec des universités et instituts de recherche pour enrichir notre pôle Recherche & Innovation et améliorer la prise en charge.",
               },
             ].map((actu, i) => (

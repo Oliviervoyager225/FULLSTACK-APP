@@ -1,11 +1,11 @@
-﻿import React, { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./TypingBubble.css";
 
 const text = `
-C’est avec une immense joie que je vous souhaite la bienvenue au centre de spécialité La-Fee-Rima.
+C’est avec une immense joie que je vous souhaite la bienvenue au centre de spécialité La Fée Rima.
 Notre mission est de promouvoir le bien-être psychologique des adolescents et des jeunes, en rendant l’accompagnement accessible à tous.
 
-À La-Fee-Rima l’écoute et le respect sont au cœur de notre action et notre équipe met son expertise au service d’un accompagnement personnalisé et de qualité.
+À La Fée Rima l’écoute et le respect sont au cœur de notre action et notre équipe met son expertise au service d’un accompagnement personnalisé et de qualité.
 `;
 
 export default function TypingBubble() {
