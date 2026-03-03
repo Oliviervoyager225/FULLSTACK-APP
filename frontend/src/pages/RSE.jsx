@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import '../styles/Historique.css';
@@ -15,7 +15,7 @@ export default function RSE() {
         style={{ backgroundImage: "url('/assets/feerima/hero8.png')" }}
       >
         <div className="page-hero-content">
-          <h1>RSE</h1>
+          <h1>Notre politique RSE</h1>
           <p>Le bien-être psychologique des jeunes, placé au cœur de notre responsabilité sociétale</p>
         </div>
       </section>
@@ -24,9 +24,9 @@ export default function RSE() {
         {/* Section 1: Intro */}
         <section className="hist-section section-1">
           <div className="hist-content">
-            <h1>NOTRE ENGAGEMENT<br />RSE</h1>
+            <h1>NOTRE POLITIQUE<br />RSE</h1>
             <p>
-              Le centre spécialisé de La Fée Rima, dédié au bien-être psychologique des jeunes, place la responsabilité sociétale au cœur de ses actions. Notre engagement RSE reflète notre volonté d’avoir un impact positif sur nos bénéficiaires, nos collaborateurs, la communauté et l’environnement.
+              Le centre spécialisé de La Fée Rima, dédié au bien-être psychologique des jeunes, place la responsabilité sociétale au cœur de ses actions. Notre politique RSE reflète notre volonté d’avoir un impact positif sur nos bénéficiaires, nos collaborateurs, la communauté et l’environnement.
             </p>
             <p>
               <strong>Bien-être et accompagnement des jeunes</strong><br />

@@ -105,7 +105,7 @@ export default function Professionals() {
                 style={{ backgroundImage: "url('/assets/feerima/hero4.png')" }}
             >
                 <div className="page-hero-content">
-                    <h1>Notre équipe médicale</h1>
+                    <h1>Nos professionnels</h1>
                     <p>Des professionnels de santé dévoués pour accompagner les jeunes vers le mieux-être</p>
                 </div>
             </section>
