@@ -11,7 +11,7 @@ export default function PlaintesReclamations() {
 
             <section
                 className="page-hero"
-                style={{ backgroundImage: "url('/assets/feerima/hero2.png')" }}
+                style={{ backgroundImage: "url('https://www.iqo.eu/wp-content/uploads/2022/10/gerer-insatisfaction-client.png')" }}
             >
                 <div className="page-hero-content">
                     <h1>Plaintes et réclamations</h1>
@@ -34,7 +34,7 @@ export default function PlaintesReclamations() {
                     <div
                         className="hist-image-box gray-box-large"
                         style={{
-                            backgroundImage: "url('/assets/feerima/hero3.png')",
+                            backgroundImage: "url('https://img.freepik.com/vecteurs-premium/jeune-homme-colere-dans-geste-furieux-hurlant-colere-montrant-poing-exprimant-son-emotion-negative_535862-182.jpg?w=360')",
                             backgroundSize: 'cover',
                             backgroundPosition: 'center',
                         }}
@@ -45,7 +45,7 @@ export default function PlaintesReclamations() {
                     <div
                         className="hist-image-box gray-box-medium"
                         style={{
-                            backgroundImage: "url('/assets/feerima/hero4.png')",
+                            backgroundImage: "url('https://thumbs.dreamstime.com/b/%C3%A9motic%C3%B4ne-furieuse-24770560.jpg')",
                             backgroundSize: 'cover',
                             backgroundPosition: 'center',
                         }}
@@ -70,7 +70,7 @@ export default function PlaintesReclamations() {
                     <div
                         className="hist-image-box gray-box-medium"
                         style={{
-                            backgroundImage: "url('/assets/feerima/hero.png')",
+                            backgroundImage: "url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeHb0xy9Y8yIOXM9lGfQ2mWrINeqHqugJKqYybGocW2Q&s')",
                             backgroundSize: 'cover',
                             backgroundPosition: 'center',
                         }}

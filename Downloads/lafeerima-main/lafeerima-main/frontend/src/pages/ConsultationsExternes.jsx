@@ -64,7 +64,7 @@ export default function ConsultationsExternes() {
                     <div
                         className="hist-image-box gray-box-medium"
                         style={{
-                            backgroundImage: "url('/assets/feerima/hero4.png')",
+                            backgroundImage: "url('/assets/feerima/consultation1.jpg')",
                             backgroundSize: 'cover',
                             backgroundPosition: 'center',
                         }}
@@ -76,7 +76,7 @@ export default function ConsultationsExternes() {
                         <div
                             className="hist-image-box gray-box-small"
                             style={{
-                                backgroundImage: "url('/assets/feerima/hero5.png')",
+                                backgroundImage: "url('https://www.oecd.org/adobe/dynamicmedia/deliver/dm-aid--1fd60a53-5543-42ff-aa6d-56398c9ed878/heath-workforce-cover-image.jpg?quality=80&preferwebp=true')",
                                 backgroundSize: 'cover',
                                 backgroundPosition: 'center',
                             }}
@@ -84,7 +84,7 @@ export default function ConsultationsExternes() {
                         <div
                             className="hist-image-box gray-box-small"
                             style={{
-                                backgroundImage: "url('/assets/feerima/portrait.png')",
+                                backgroundImage: "url('/assets/feerima/professionnel.jpg')",
                                 backgroundSize: 'cover',
                                 backgroundPosition: 'center',
                             }}

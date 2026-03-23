@@ -41,7 +41,7 @@ export default function NosValeurs() {
               L’accueil du bénéficiaire et de son entourage est le premier soin que nous offrons. Toute personne est la bienvenue au centre spécialisé La Fée Rima, dans le respect de son identité et de ses opinions. Nous proposons un accueil personnalisé et bienveillant, où chaque jeune et sa famille sont accompagnés dès leur arrivée, informés de manière claire et soutenus dans leurs besoins immédiats.
             </p>
           </div>
-          <div className="hist-image-box gray-box-medium" style={{ backgroundImage: "url('/assets/feerima/hero4.png')", backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
+          <div className="hist-image-box gray-box-medium" style={{ backgroundImage: "url('/assets/feerima/centre 2.png')", backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
         </section>
 
         {/* Section 3: L'écoute et Le respect */}
