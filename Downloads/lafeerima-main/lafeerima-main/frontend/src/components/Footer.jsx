@@ -150,7 +150,7 @@ export default function Footer() {
         <div className="footer-bottom">
           <div className="footer-logos">
             <div className="footer-logo">
-              <img src="/assets/feerima/logo.png" alt="La Fée Rima Logo" />
+              {/* <img src="/assets/feerima/logo.png" alt="La Fée Rima Logo" /> */}
             </div>
             <div className="footer-social">
               <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="social-link" aria-label="Facebook">
