@@ -1,0 +1,83 @@
+.typing-bubble-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  padding: 40px 0;
+  width: 100vw;
+  max-width: 100vw;
+  min-width: 100vw;
+  height: 50vh;
+  min-height: 50vh;
+  box-sizing: border-box;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  background: none;
+}
+
+.typing-profile-img {
+  width: 260px;
+  height: 260px;
+  object-fit: cover;
+  border: 12px solid #ddd;
+  border-radius: 16px;
+}
+
+.typing-message-card {
+  background: #cfc9db;
+  padding: 30px;
+  border-radius: 30px;
+  max-width: 600px;
+  position: relative;
+  z-index: 20;
+}
+
+.typing-bubble {
+  position: absolute;
+  background: #cfc9db;
+  border-radius: 50%;
+  border: 3px solid #ddd;
+  z-index: 10;
+  pointer-events: none;
+}
+
+.typing-bubble.small {
+  width: 40px;
+  height: 40px;
+  left: 290px;
+  top: 140px;
+}
+
+.typing-bubble.medium {
+  width: 80px;
+  height: 80px;
+  left: 340px;
+  top: 80px;
+}
+
+.typing-bubble.large {
+  width: 120px;
+  height: 120px;
+  left: 420px;
+  top: 20px;
+}
+
+.typing {
+  white-space: pre-line;
+  line-height: 1.6;
+}
+
+.typing::after {
+  content: "|";
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%, 50%, 100% { opacity: 1; }
+  25%, 75% { opacity: 0; }
+}
+
+.typing-signature {
+  margin-top: 20px;
+  font-family: cursive;
+}

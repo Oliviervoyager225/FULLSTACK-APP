@@ -11,12 +11,12 @@ export default function ServiceAccueilUrgence() {
 
             <section
                 className="page-hero"
-                style={{ backgroundImage: "url('/assets/feerima/Urgences.jpg')" }}
+                style={{ backgroundImage: "url('/assets/feerima/urgent.png')" }}
             >
-                <div className="page-hero-content">
+                {/* <div className="page-hero-content">
                     <h1>Le service d'accueil d'urgence</h1>
                     <p>Une réponse rapide et bienveillante en situation de crise</p>
-                </div>
+                </div> */}
             </section>
 
             <main className="historique-main">
@@ -34,7 +34,7 @@ export default function ServiceAccueilUrgence() {
                     <div
                         className="hist-image-box gray-box-large"
                         style={{
-                            backgroundImage: "url('/assets/feerima/12780902.jpeg')",
+                            backgroundImage: "url('/assets/feerima/psycha.png')",
                             backgroundSize: 'cover',
                             backgroundPosition: 'center',
                         }}
@@ -45,7 +45,7 @@ export default function ServiceAccueilUrgence() {
                     <div
                         className="hist-image-box gray-box-medium"
                         style={{
-                            backgroundImage: "url('https://img.freepik.com/vecteurs-premium/icone-appel-urgence-medecine-soins-sante_855620-60.jpg')",
+                            backgroundImage: "url('/assets/feerima/Qui_contacter.png')",
                             backgroundSize: 'cover',
                             backgroundPosition: 'center',
                         }}
@@ -63,7 +63,7 @@ export default function ServiceAccueilUrgence() {
                     <div
                         className="hist-image-box gray-box-medium"
                         style={{
-                            backgroundImage: "url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0ruZHvTGaTeksi8XshkqulKRAo9dgsxT-eg&s')",
+                            backgroundImage: "url('/assets/feerima/contacter.png')",
                             backgroundSize: 'cover',
                             backgroundPosition: 'center',
                         }}
@@ -72,22 +72,14 @@ export default function ServiceAccueilUrgence() {
 
                 <section className="hist-section section-3">
                     <div className="hist-stacked-images">
-                        <div
-                            className="hist-image-box gray-box-small"
-                            style={{
-                                backgroundImage: "url('/assets/feerima/hero5.png')",
-                                backgroundSize: 'cover',
-                                backgroundPosition: 'center',
-                            }}
-                        />
-                        <div
-                            className="hist-image-box gray-box-small"
-                            style={{
-                                backgroundImage: "url('/assets/feerima/portrait.png')",
-                                backgroundSize: 'cover',
-                                backgroundPosition: 'center',
-                            }}
-                        />
+
+                        <div className="hist-stacked-images">
+                            <img
+                                src="/assets/feerima/apres.png"
+                                alt="Ma mission"
+                                className="hist-image"
+                            />
+                        </div>
                     </div>
                     <div className="hist-content">
                         <h2>APRÈS L'URGENCE : QUELLE SUITE ?</h2>

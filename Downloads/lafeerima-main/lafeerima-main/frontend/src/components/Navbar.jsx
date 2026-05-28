@@ -8,7 +8,7 @@ const navItems = [
     type: 'dropdown',
     items: [
       { label: 'Notre histoire', to: '/historique' },
-      { label: 'Nos professionnels', to: '/professionnels' },
+      { label: 'Nos équipes', to: '/equipes' },
       { label: 'Nos valeurs', to: '/nos-valeurs' },
       { label: 'Notre engagement qualité', to: '/engagement-qualite' },
       { label: 'Notre politique RSE', to: '/rse' },
@@ -70,7 +70,7 @@ export default function Navbar() {
     <header className="site-header">
       <div className="container nav-row">
         <Link to="/" className="brand" onClick={closeNav}>
-          <img src="/assets/feerima/logo.png" alt="La Fée Rima" className="brand-logo" />
+          <img src="/assets/feerima/log1.png" alt="La Fée Rima" className="brand-logo" />
         </Link>
 
         <button

@@ -201,10 +201,18 @@ export default function Satisfaction() {
                 <div className="sat-intro">
                     <div>
                         <h2>Votre avis nous importe</h2>
-                        <p>
+                        {/* <p>
                             La mesure de la satisfaction des patients et de leurs familles est un axe central
                             de notre démarche qualité. Les résultats sont analysés par notre équipe et transmis
                             à la Commission des Usagers pour alimenter notre plan d'amélioration continue.
+                        </p> */}
+
+                        <p>
+                            Afin d’améliorer continuellement la qualité de nos services, nous invitons chaque bénéficiaire et accompagnant à partager son expérience anonymement en répondant à notre questionnaire de satisfaction.
+                        </p>
+                        <br />
+                        <p>
+                            Toute personne qui rencontre des difficultés et souhaite exprimer un motif de mécontentement, est encouragée à en faire part à un membre de l'équipe soignante, qui est à l’écoute pour apporter des réponses. Il est également possible d’adresser une réclamation à la direction par courrier.
                         </p>
                     </div>
                     <div className="sat-intro-badge">

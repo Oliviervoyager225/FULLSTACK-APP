@@ -1,0 +1,22 @@
+/* ...existing code... */
+.typing-bubble.small {
+  width: 10px;
+  height: 10px;
+  left: 260px;
+  top: 180px;
+}
+
+.typing-bubble.medium {
+  width: 30px;
+  height: 30px;
+  left: 320px;
+  top: 130px; 
+}
+
+.typing-bubble.large {
+  width: 70px;
+  height: 70px;
+  left: 410px;
+  top: 70px; 
+}
+/* ...existing code... */

@@ -12,7 +12,7 @@ export default function RSE() {
       {/* Hero Banner */}
       <section
         className="page-hero"
-        style={{ backgroundImage: "url('/assets/feerima/politique-RSE.jpg')" }}
+        style={{ backgroundImage: "url('/assets/feerima/rse1.png')" }}
       >
         <div className="page-hero-content">
           <h1>Notre politique RSE</h1>
@@ -33,19 +33,19 @@ export default function RSE() {
               Nous offrons un accueil respectueux, bienveillant et accessible à tous les jeunes de 10 à 25 ans. Chaque projet de soins est personnalisé, dans le respect de la dignité et de la confidentialité.
             </p>
           </div>
-          <div className="hist-image-box gray-box-large" style={{ backgroundImage: "url('/assets/feerima/rse.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
+          <div className="hist-image-box gray-box-large" style={{ backgroundImage: "url('/assets/feerima/politique.png')", backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
         </section>
 
         {/* Section 2: Actions & Conditions */}
         <section className="hist-section section-2">
-          <div className="hist-image-box gray-box-medium" style={{ backgroundImage: "url('/assets/feerima/gouvernance-ethique.jpeg')", backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
+          <div className="hist-image-box gray-box-medium" style={{ backgroundImage: "url('/assets/feerima/ethique.png')", backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
           <div className="hist-content center-content">
             <h2>ÉTHIQUE ET<br />GOUVERNANCE</h2>
             <p>
-              Nos actions reposent sur la transparence, l’intégrité et l’écoute. Nous associons familles, partenaires et intervenants extérieurs pour construire un cadre de soins de qualité.
+              Nos actions reposent sur la transparence, l’intégrité et l’écoute. Nous associons bénéficiaires, familles, partenaires et intervenants extérieurs pour des prestations de qualité.
             </p>
             <p><strong>Conditions de travail</strong><br />
-              Parce que prendre soin des jeunes, c’est aussi prendre soin de ceux qui les accompagnent, nous favorisons la formation continue, l’esprit d’équipe et le bien-être au travail.
+              Parce que prendre soin des adolescents et des jeunes, c’est aussi s’occuper de ceux qui les accompagnent. Nous favorisons donc la formation continue, l’esprit d’équipe et le bien-être au travail.
             </p>
           </div>
           <div className="hist-image-box gray-box-medium" style={{ backgroundImage: "url('/assets/feerima/eth_gouv.png')", backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
@@ -54,16 +54,24 @@ export default function RSE() {
         {/* Section 3: Environnement */}
         <section className="hist-section section-3">
           <div className="hist-stacked-images">
-            <div className="hist-image-box gray-box-small" style={{ backgroundImage: "url('/assets/feerima/hero.png')", backgroundSize: 'cover', backgroundPosition: 'top' }}></div>
-            <div className="hist-image-box gray-box-small" style={{ backgroundImage: "url('/assets/feerima/durabilité.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
+            {/* <div className="hist-image-box gray-box-small" style={{ backgroundImage: "url('/assets/feerima/hero.png')", backgroundSize: 'cover', backgroundPosition: 'top' }}></div> */}
+            
+            <div className="hist-stacked-images">
+            <img
+              src="/assets/feerima/environnement.png"
+              alt="Ma mission"
+              className="hist-image"
+            />
+          </div>
+            {/* <div className="hist-image-box gray-box-small" style={{ backgroundImage: "url('/assets/feerima/environnement.png')", backgroundSize: 'cover', backgroundPosition: 'center' }}></div> */}
           </div>
           <div className="hist-content">
             <h2>ENVIRONNEMENT ET<br />DURABILITÉ</h2>
             <p>
-              Nous nous engageons à réduire notre empreinte écologique grâce à une gestion responsable des ressources, à la diminution de l’usage du papier, au tri sélectif et à la sensibilisation aux éco-gestes. Nous privilégions également des équipements durables, tels que des meubles en résine, des bancs en plastique recyclé, et assurons une prise en charge adaptée des déchets médicaux.
+              Nous nous engageons à réduire notre empreinte écologique grâce à une gestion responsable des ressources, à la diminution de l’usage du papier et à la sensibilisation aux éco-gestes. Nous privilégions également des équipements durables respectueux de l’environnement et nous assurons une prise en charge adéquate des déchets médicaux.
             </p>
             <p className="emphasis-text">
-              Notre ambition est claire : renforcer chaque année nos actions RSE afin de favoriser une société plus inclusive, respectueuse de l’environnement et solidaire, tout en restant fidèles à notre mission d’accompagnement et de soins.
+              Notre ambition est claire : renforcer chaque année nos actions RSE afin de favoriser une société plus inclusive, respectueuse de l’environnement et solidaire, tout en restant fidèles à notre mission de sensibilisation, prévention, soins et recherche.
             </p>
           </div>
         </section>

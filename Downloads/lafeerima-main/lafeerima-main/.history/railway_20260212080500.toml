@@ -1,0 +1,19 @@
+[build]
+builder = "nixpacks"
+buildCommand = "npm install && npm run build"
+startCommand = "npm run preview"
+
+[env]
+VITE_API_URL = "${{ BACKEND_URL }}/api"
+PORT = "3000"
+
+[[services]]
+name = "backend"
+buildCommand = "cd backend && mvn clean package -DskipTests"
+startCommand = "java -jar backend/target/app.jar"
+port = 8080
+
+[[services]]
+name = "postgres"
+image = "postgres:16-alpine"
+port = 5432

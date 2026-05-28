@@ -48,7 +48,7 @@ function App() {
 
           {/* Centre spécialisé */}
           <Route path="/historique" element={<Historique />} />
-          <Route path="/professionnels" element={<Professionals />} />
+          <Route path="/equipes" element={<Professionals />} />
           <Route path="/nos-valeurs" element={<NosValeurs />} />
           <Route path="/engagement-qualite" element={<Engagement />} />
           <Route path="/rse" element={<RSE />} />

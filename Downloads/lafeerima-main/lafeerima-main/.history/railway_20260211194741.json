@@ -1,0 +1,38 @@
+{
+  "services": [
+    {
+      "name": "postgres",
+      "image": "postgres:16-alpine",
+      "environment": {
+        "POSTGRES_USER": "feerima",
+        "POSTGRES_PASSWORD": "feerima123",
+        "POSTGRES_DB": "feerima_db"
+      },
+      "volumes": ["postgres_data:/var/lib/postgresql/data"],
+      "port": 5432
+    },
+    {
+      "name": "backend",
+      "source": "backend",
+      "buildCommand": "mvn clean package -DskipTests",
+      "startCommand": "java -jar target/app.jar",
+      "environment": {
+        "SPRING_DATASOURCE_URL": "jdbc:postgresql://postgres:5432/feerima_db",
+        "SPRING_DATASOURCE_USERNAME": "feerima",
+        "SPRING_DATASOURCE_PASSWORD": "feerima123",
+        "SPRING_PROFILES_ACTIVE": "prod"
+      },
+      "port": 8080
+    },
+    {
+      "name": "frontend",
+      "source": "frontend",
+      "buildCommand": "npm install && npm run build",
+      "startCommand": "npm run preview",
+      "environment": {
+        "VITE_API_URL": "${{ services.backend.url }}/api"
+      },
+      "port": 3000
+    }
+  ]
+}
