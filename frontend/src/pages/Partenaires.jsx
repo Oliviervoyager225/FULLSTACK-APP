@@ -12,7 +12,7 @@ export default function Partenaires() {
       {/* Hero Banner */}
       <section
         className="page-hero"
-        style={{ backgroundImage: "url('/assets/feerima/hero8.png')" }}
+        style={{ backgroundImage: "url('/assets/feerima/nos_partenaire.jpg')" }}
       >
         <div className="page-hero-content">
           <h1>Nos partenaires</h1>
@@ -32,7 +32,7 @@ export default function Partenaires() {
               Découvrez les acteurs engagés à nos côtés pour faire avancer la santé mentale en Côte d'Ivoire.
             </p>
           </div>
-          <div className="hist-image-box gray-box-large" style={{ backgroundImage: "url('/assets/feerima/hero4.png')", backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
+          <div className="hist-image-box gray-box-large" style={{ backgroundImage: "url('/assets/feerima/partenaire.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
         </section>
 
         {/* Section 2: Logos (Placeholder) */}
@@ -50,8 +50,8 @@ export default function Partenaires() {
         {/* Section 3: Soutiens */}
         <section className="hist-section section-3">
           <div className="hist-stacked-images">
-            <div className="hist-image-box gray-box-small" style={{ backgroundImage: "url('/assets/feerima/hero.png')", backgroundSize: 'cover', backgroundPosition: 'top' }}></div>
-            <div className="hist-image-box gray-box-small" style={{ backgroundImage: "url('/assets/feerima/portrait.png')", backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
+            <div className="hist-image-box gray-box-small" style={{ backgroundImage: "url('/assets/feerima/parler.jpg')", backgroundSize: 'cover', backgroundPosition: 'bottom' }}></div>
+            <div className="hist-image-box gray-box-small" style={{ backgroundImage: "url('/assets/feerima/message.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
           </div>
           <div className="hist-content">
             <h2>MESSAGES DE<br />SOUTIEN</h2>

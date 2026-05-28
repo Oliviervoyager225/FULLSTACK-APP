@@ -37,7 +37,7 @@ export default function Engagement() {
 
         {/* Section 2: Amélioration continue */}
         <section className="hist-section section-2">
-          <div className="hist-image-box gray-box-medium" style={{ backgroundImage: "url('/assets/feerima/hero2.png')", backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
+          <div className="hist-image-box gray-box-medium" style={{ backgroundImage: "url('/assets/feerima/amelioration_continu.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
           <div className="hist-content center-content">
             <h2>AMÉLIORATION<br />CONTINUE</h2>
             <p>

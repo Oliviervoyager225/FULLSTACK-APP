@@ -11,7 +11,7 @@ export default function ServiceAccueilUrgence() {
 
             <section
                 className="page-hero"
-                style={{ backgroundImage: "url('/assets/feerima/hero4.png')" }}
+                style={{ backgroundImage: "url('/assets/feerima/Urgences.jpg')" }}
             >
                 <div className="page-hero-content">
                     <h1>Le service d'accueil d'urgence</h1>
@@ -34,7 +34,7 @@ export default function ServiceAccueilUrgence() {
                     <div
                         className="hist-image-box gray-box-large"
                         style={{
-                            backgroundImage: "url('/assets/feerima/hero3.png')",
+                            backgroundImage: "url('/assets/feerima/12780902.jpeg')",
                             backgroundSize: 'cover',
                             backgroundPosition: 'center',
                         }}
@@ -45,7 +45,7 @@ export default function ServiceAccueilUrgence() {
                     <div
                         className="hist-image-box gray-box-medium"
                         style={{
-                            backgroundImage: "url('/assets/feerima/hero.png')",
+                            backgroundImage: "url('https://img.freepik.com/vecteurs-premium/icone-appel-urgence-medecine-soins-sante_855620-60.jpg')",
                             backgroundSize: 'cover',
                             backgroundPosition: 'center',
                         }}
@@ -63,7 +63,7 @@ export default function ServiceAccueilUrgence() {
                     <div
                         className="hist-image-box gray-box-medium"
                         style={{
-                            backgroundImage: "url('/assets/feerima/hero2.png')",
+                            backgroundImage: "url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0ruZHvTGaTeksi8XshkqulKRAo9dgsxT-eg&s')",
                             backgroundSize: 'cover',
                             backgroundPosition: 'center',
                         }}
