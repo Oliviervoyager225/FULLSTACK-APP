@@ -74,7 +74,7 @@ function App() {
           {/* Navigation principale */}
           <Route path="/faq" element={<FAQ />} />
           <Route path="/espace-ressources" element={<EspaceRessources />} />
-          <Route path="/pole-recherche-innovation" element={<PoleRechercheInnovation />} />
+          <Route path="/recherche-innovation" element={<PoleRechercheInnovation />} />
         </Routes>
       </div>
     </BrowserRouter>

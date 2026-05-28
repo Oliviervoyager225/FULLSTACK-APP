@@ -40,9 +40,9 @@ const navItems = [
       { label: 'Satisfaction', to: '/satisfaction' },
     ],
   },
-  { label: 'FAQ', type: 'link', to: '/faq' },
-  { label: 'Espace Ressources', type: 'link', to: '/espace-ressources' },
-  { label: 'Pôle Recherche & Innovation', type: 'link', to: '/pole-recherche-innovation' },
+  { label: 'S’informer', type: 'link', to: '/faq' },
+  { label: 'Ressources utils', type: 'link', to: '/espace-ressources' },
+  { label: 'Recherche & Innovation', type: 'link', to: '/recherche-innovation' },
 ];
 
 export default function Navbar() {
