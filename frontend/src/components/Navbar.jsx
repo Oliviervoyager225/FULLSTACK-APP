@@ -72,7 +72,7 @@ export default function Navbar() {
     <header className="site-header">
       <div className="container nav-row">
         <Link to="/" className="brand" onClick={closeNav}>
-          <img src="/assets/feerima/log1.png" alt="La Fée Rima" className="brand-logo" />
+          <img src="/assets/logo/logo-feerima.png" alt="La Fée Rima" className="brand-logo" />
         </Link>
 
         <button
