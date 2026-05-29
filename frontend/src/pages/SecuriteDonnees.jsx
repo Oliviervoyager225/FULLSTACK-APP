@@ -11,10 +11,10 @@ export default function SecuriteDonnees() {
 
             <section
                 className="page-hero"
-                style={{ backgroundImage: "url('/assets/feerima/hero5.png')" }}
+                style={{ backgroundImage: "url('/assets/feerima/securite.png')" }}
             >
                 <div className="page-hero-content">
-                    <h1>Sécurité des données personnelles</h1>
+                    <h2>Sécurité des données personnelles</h2>
                     <p>La protection de vos informations, une priorité absolue</p>
                 </div>
             </section>
@@ -34,11 +34,20 @@ export default function SecuriteDonnees() {
                             rectification, d'effacement et de portabilité de vos données, ainsi que
                             d'un droit d'opposition à leur traitement.
                         </p>
+
+                        <p>
+                            La confidentialité des informations médicales est une priorité à La Fée Rima. Les données ne sont accessibles qu’aux professionnels habilités, et uniquement dans le cadre strict de la prise en charge. 
+                        </p>
+
+                        <p>
+                            Toutes les informations sont regroupées dans un dossier médical informatisé, grâce à un logiciel spécialisé. Ce dossier peut être consulté tout au long du parcours de soins.
+                        </p>
+                        
                     </div>
                     <div
                         className="hist-image-box gray-box-large"
                         style={{
-                            backgroundImage: "url('/assets/feerima/hero.png')",
+                            backgroundImage: "url('/assets/feerima/RGPD.png')",
                             backgroundSize: 'cover',
                             backgroundPosition: 'center',
                         }}
@@ -49,7 +58,7 @@ export default function SecuriteDonnees() {
                     <div
                         className="hist-image-box gray-box-medium"
                         style={{
-                            backgroundImage: "url('/assets/feerima/hero2.png')",
+                            backgroundImage: "url('/assets/feerima/droit.png')",
                             backgroundSize: 'cover',
                             backgroundPosition: 'center',
                         }}
@@ -66,7 +75,7 @@ export default function SecuriteDonnees() {
                     <div
                         className="hist-image-box gray-box-medium"
                         style={{
-                            backgroundImage: "url('/assets/feerima/hero3.png')",
+                            backgroundImage: "url('/assets/feerima/droit1.png')",
                             backgroundSize: 'cover',
                             backgroundPosition: 'center',
                         }}

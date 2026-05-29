@@ -39,12 +39,12 @@ export default function Tarifications() {
 
             <section
                 className="page-hero"
-                style={{ backgroundImage: "url('/assets/feerima/hero5.png')" }}
+                style={{ backgroundImage: "url('/assets/feerima/tari.png')" }}
             >
-                <div className="page-hero-content">
+                {/* <div className="page-hero-content">
                     <h1>Tarifications</h1>
                     <p>Transparence et accessibilité pour tous les jeunes et leurs familles</p>
-                </div>
+                </div> */}
             </section>
 
             <main className="historique-main">
@@ -66,7 +66,7 @@ export default function Tarifications() {
                     <div
                         className="hist-image-box gray-box-large"
                         style={{
-                            backgroundImage: "url('/assets/feerima/hero.png')",
+                            backgroundImage: "url('/assets/feerima/PEC.png')",
                             backgroundSize: 'cover',
                             backgroundPosition: 'center',
                         }}
@@ -115,7 +115,7 @@ export default function Tarifications() {
                     <div
                         className="hist-image-box gray-box-medium"
                         style={{
-                            backgroundImage: "url('/assets/feerima/hero3.png')",
+                            backgroundImage: "url('/assets/feerima/mutul.png')",
                             backgroundSize: 'cover',
                             backgroundPosition: 'center',
                         }}
@@ -136,7 +136,7 @@ export default function Tarifications() {
                     <div
                         className="hist-image-box gray-box-medium"
                         style={{
-                            backgroundImage: "url('/assets/feerima/hero2.png')",
+                            backgroundImage: "url('/assets/feerima/complementaire.png')",
                             backgroundSize: 'cover',
                             backgroundPosition: 'center',
                         }}

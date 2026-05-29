@@ -85,15 +85,17 @@
 .btn-primary-yellow {
   background-color: #c4d82e;
   color: #333333;
-  padding: 14px 32px;
-  border-radius: 8px;
+  padding: 18px 44px;
+  border-radius: 10px;
   font-weight: 600;
-  font-size: 1rem;
+  font-size: 1.15rem;
   border: none;
   cursor: pointer;
   transition: all 0.3s ease;
   text-decoration: none;
   display: inline-block;
+  min-width: 220px;
+  text-align: center;
 }
 
 .btn-primary-yellow:hover {
@@ -104,17 +106,32 @@
 
 /* Video button with blue play icon */
 .btn-video {
-  background: transparent;
+  background: rgba(255, 255, 255, 0.12);
   color: #ffffff;
-  padding: 10px 24px;
+  padding: 16px 38px;
   border: none;
   cursor: pointer;
-  font-size: 1rem;
-  font-weight: 500;
+  font-size: 1.1rem;
+  font-weight: 600;
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 14px;
   transition: all 0.3s ease;
+  border-radius: 10px;
+  min-width: 240px;
+}
+
+.play-icon {
+  width: 56px;
+  height: 56px;
+  background: linear-gradient(135deg, #00bcd4, #0097a7);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  transition: all 0.3s ease;
+  border: 3px solid rgba(255, 255, 255, 0.9);
 }
 
 .btn-video:hover {

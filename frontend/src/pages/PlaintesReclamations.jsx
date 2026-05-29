@@ -11,7 +11,7 @@ export default function PlaintesReclamations() {
 
             <section
                 className="page-hero"
-                style={{ backgroundImage: "url('/assets/feerima/hero2.png')" }}
+                style={{ backgroundImage: "url('/assets/feerima/plainte_reclamation.png')" }}
             >
                 <div className="page-hero-content">
                     <h1>Plaintes et réclamations</h1>
@@ -34,7 +34,7 @@ export default function PlaintesReclamations() {
                     <div
                         className="hist-image-box gray-box-large"
                         style={{
-                            backgroundImage: "url('/assets/feerima/hero3.png')",
+                            backgroundImage: "url('https://img.freepik.com/vecteurs-premium/jeune-homme-colere-dans-geste-furieux-hurlant-colere-montrant-poing-exprimant-son-emotion-negative_535862-182.jpg?w=360')",
                             backgroundSize: 'cover',
                             backgroundPosition: 'center',
                         }}
@@ -45,7 +45,7 @@ export default function PlaintesReclamations() {
                     <div
                         className="hist-image-box gray-box-medium"
                         style={{
-                            backgroundImage: "url('/assets/feerima/hero4.png')",
+                            backgroundImage: "url('/assets/feerima/recours.png')",
                             backgroundSize: 'cover',
                             backgroundPosition: 'center',
                         }}
@@ -70,7 +70,7 @@ export default function PlaintesReclamations() {
                     <div
                         className="hist-image-box gray-box-medium"
                         style={{
-                            backgroundImage: "url('/assets/feerima/hero.png')",
+                            backgroundImage: "url('/assets/feerima/feedback.png')",
                             backgroundSize: 'cover',
                             backgroundPosition: 'center',
                         }}

@@ -33,6 +33,7 @@ import Satisfaction from './pages/Satisfaction';
 import FAQ from './pages/FAQ';
 import EspaceRessources from './pages/EspaceRessources';
 import PoleRechercheInnovation from './pages/PoleRechercheInnovation';
+import NousRejoindre from './pages/NousRejoindre';
 
 import './App.css';
 
@@ -48,7 +49,7 @@ function App() {
 
           {/* Centre spécialisé */}
           <Route path="/historique" element={<Historique />} />
-          <Route path="/professionnels" element={<Professionals />} />
+          <Route path="/equipes" element={<Professionals />} />
           <Route path="/nos-valeurs" element={<NosValeurs />} />
           <Route path="/engagement-qualite" element={<Engagement />} />
           <Route path="/rse" element={<RSE />} />
@@ -74,7 +75,9 @@ function App() {
           {/* Navigation principale */}
           <Route path="/faq" element={<FAQ />} />
           <Route path="/espace-ressources" element={<EspaceRessources />} />
-          <Route path="/pole-recherche-innovation" element={<PoleRechercheInnovation />} />
+          <Route path="/recherche-innovation" element={<PoleRechercheInnovation />} />
+
+          <Route path="/nous-rejoindre" element={<NousRejoindre />} />
         </Routes>
       </div>
     </BrowserRouter>

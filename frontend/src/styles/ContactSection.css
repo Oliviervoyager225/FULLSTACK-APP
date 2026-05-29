@@ -1,13 +1,16 @@
 /* ===== Contact Section (Image Reference Style) ===== */
 
 .contact-section-wrapper {
-    background-color: #ffffff;
-    /* White background like the image */
+    background-color: #f5f7fa;
     padding: 80px 5%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
+
+
+
 
 .contact-container {
     display: flex;
@@ -49,7 +52,6 @@
     font-weight: 400;
     line-height: 1.1;
     color: #c4d82e;
-    /* La Fée Rima brand color for the entire title */
     margin: 0 0 24px 0;
 }
 

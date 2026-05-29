@@ -11,13 +11,13 @@ export default function Partenaires() {
 
       {/* Hero Banner */}
       <section
-        className="page-hero"
-        style={{ backgroundImage: "url('/assets/feerima/hero8.png')" }}
-      >
-        <div className="page-hero-content">
+        className="hero-partners"
+        style={{ backgroundImage: "url('/assets/feerima/pat1.png')" }}
+      > 
+        {/* <div className="page-hero-content">
           <h1>Nos partenaires</h1>
           <p>Ensemble, construisons un avenir meilleur pour la santé mentale des jeunes</p>
-        </div>
+        </div> */}
       </section>
 
       <main className="historique-main">
@@ -32,27 +32,31 @@ export default function Partenaires() {
               Découvrez les acteurs engagés à nos côtés pour faire avancer la santé mentale en Côte d'Ivoire.
             </p>
           </div>
-          <div className="hist-image-box gray-box-large" style={{ backgroundImage: "url('/assets/feerima/hero4.png')", backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
+          <div className="hist-image-box gray-box-large" style={{ backgroundImage: "url('/assets/feerima/confiance.png')", backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
         </section>
 
         {/* Section 2: Logos (Placeholder) */}
         <section className="hist-section section-2">
-          <div className="hist-image-box gray-box-medium" style={{ backgroundImage: "url('/assets/feerima/hero2.png')", backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
+          <div className="hist-image-box gray-box-medium" style={{ backgroundImage: "url('/assets/feerima/conf.png')", backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
           <div className="hist-content center-content">
             <h2>NOS<br />COLLABORATIONS</h2>
             <p>
               [Logos cliquables renvoyant vers les sites partenaires - À intégrer]
             </p>
           </div>
-          <div className="hist-image-box gray-box-medium" style={{ backgroundImage: "url('/assets/feerima/hero3.png')", backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
+          <div className="hist-image-box gray-box-medium" style={{ backgroundImage: "url('/assets/feerima/collab.png')", backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
         </section>
 
         {/* Section 3: Soutiens */}
         <section className="hist-section section-3">
           <div className="hist-stacked-images">
-            <div className="hist-image-box gray-box-small" style={{ backgroundImage: "url('/assets/feerima/hero.png')", backgroundSize: 'cover', backgroundPosition: 'top' }}></div>
-            <div className="hist-image-box gray-box-small" style={{ backgroundImage: "url('/assets/feerima/portrait.png')", backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
-          </div>
+            <div className="hist-stacked-images">
+              <img
+                src="/assets/feerima/soutient.png"
+                alt="Ma mission"
+                className="hist-image"
+              />
+            </div>          </div>
           <div className="hist-content">
             <h2>MESSAGES DE<br />SOUTIEN</h2>
             <p className="emphasis-text">

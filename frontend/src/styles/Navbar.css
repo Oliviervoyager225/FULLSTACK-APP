@@ -7,12 +7,20 @@
   border-bottom: 1px solid rgba(15, 160, 182, 0.12);
 }
 
+/* Add some horizontal breathing room for the header */
+.site-header .container {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 0 32px;
+}
+
 .nav-row {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 20px;
-  padding: 16px 0;
+  padding: 24px 0;
 }
 
 .brand {
@@ -22,7 +30,7 @@
 }
 
 .brand-logo {
-  height: 50px;
+  height: 60px;
   width: auto;
   max-width: 150px;
   object-fit: contain;

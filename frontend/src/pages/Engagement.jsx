@@ -12,7 +12,7 @@ export default function Engagement() {
       {/* Hero Banner */}
       <section
         className="page-hero"
-        style={{ backgroundImage: "url('/assets/feerima/hero8.png')" }}
+        style={{ backgroundImage: "url('/assets/feerima/engag.png')" }}
       >
         <div className="page-hero-content">
           <h1>Notre engagement qualité</h1>
@@ -25,33 +25,42 @@ export default function Engagement() {
         <section className="hist-section section-1">
           <div className="hist-content">
             <h1>NOTRE ENGAGEMENT<br />QUALITÉ</h1>
-            <p>
+            {/* <p>
               À La Fée Rima, l’ensemble des professionnels s’engage au quotidien pour garantir la qualité et la sécurité des soins.
-            </p>
+            </p> */}
             <p>
-              Notre centre spécialisé place le bénéficiaire au cœur de toutes nos actions, avec une prise en charge personnalisée, de l’accueil aux soins, en passant par la restauration et les services techniques et administratifs. Nous mettons notre expertise au service de chaque jeune et de sa famille.
-            </p>
+              Nos centres placent le bénéficiaire au cœur de toutes nos actions, avec une prise en charge personnalisée, de l’accueil aux soins, en passant par les services techniques et administratifs. Nous mettons notre expertise au service de chaque jeune et de sa famille.            </p>
+            <p>
+              Il existe une politique d’amélioration continue, qui s’appuie sur l’évaluation de la satisfaction des bénéficiaires, de leurs familles et des partenaires ainsi que la réalisation d’audits annuels sur la qualité et la sécurité des activités et des soins.  Ces évaluations facilitent la mise en œuvre d’actions concrètes d’amélioration, comme l’ajustement des pratiques et les formations ciblées pour nos équipes.            </p>
+            <p>
+              A La Fée Rima, notre engagement qualité nous permet de faire évoluer constamment nos pratiques, afin de mener des activités toujours plus déterminantes, fondées sur l’excellence et l’expertise de nos équipes.            </p>
           </div>
-          <div className="hist-image-box gray-box-large" style={{ backgroundImage: "url('/assets/feerima/hero4.png')", backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
+          <div className="hist-image-box gray-box-large" style={{ backgroundImage: "url('/assets/feerima/enga.png')", backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
         </section>
 
         {/* Section 2: Amélioration continue */}
         <section className="hist-section section-2">
-          <div className="hist-image-box gray-box-medium" style={{ backgroundImage: "url('/assets/feerima/hero2.png')", backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
+          <div className="hist-image-box gray-box-medium" style={{ backgroundImage: "url('/assets/feerima/amelioration.png')", backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
           <div className="hist-content center-content">
             <h2>AMÉLIORATION<br />CONTINUE</h2>
             <p>
               Nous avons mis en place une politique d’amélioration continue, qui s’appuie sur l’évaluation de la satisfaction des bénéficiaires et de leurs familles, la réalisation d’audits annuels sur la qualité et la sécurité des soins, ainsi que la mise en œuvre d’actions concrètes d’amélioration, comme l’ajustement des pratiques et les formations ciblées pour nos équipes.
             </p>
           </div>
-          <div className="hist-image-box gray-box-medium" style={{ backgroundImage: "url('/assets/feerima/hero3.png')", backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
+          <div className="hist-image-box gray-box-medium" style={{ backgroundImage: "url('/assets/feerima/am.png')", backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
         </section>
 
         {/* Section 3: Conclusion */}
         <section className="hist-section section-3">
           <div className="hist-stacked-images">
-            <div className="hist-image-box gray-box-small" style={{ backgroundImage: "url('/assets/feerima/hero.png')", backgroundSize: 'cover', backgroundPosition: 'top' }}></div>
-            <div className="hist-image-box gray-box-small" style={{ backgroundImage: "url('/assets/feerima/portrait.png')", backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
+            {/* <div className="hist-image-box gray-box-small" style={{ backgroundImage: "url('/assets/feerima/evolution.png')", backgroundSize: 'cover', backgroundPosition: 'center' }}></div> */}
+            <div className="hist-stacked-images">
+              <img
+                src="/assets/feerima/evolution.png"
+                alt="Ma mission"
+                className="hist-image"
+              />
+            </div>
           </div>
           <div className="hist-content">
             <h2>ÉVOLUTION<br />CONSTANTE</h2>

@@ -11,7 +11,7 @@ export default function ChartesReglement() {
 
             <section
                 className="page-hero"
-                style={{ backgroundImage: "url('/assets/feerima/hero.png')" }}
+                style={{ backgroundImage: "url('/assets/feerima/reglement.png')" }}
             >
                 <div className="page-hero-content">
                     <h1>Chartes et règlement intérieur</h1>
@@ -23,22 +23,28 @@ export default function ChartesReglement() {
                 <section className="hist-section section-1">
                     <div className="hist-content">
                         <h2>LE RÈGLEMENT INTÉRIEUR</h2>
-                        <p>
+                        {/* <p>
                             Le règlement intérieur de La Fée Rima définit les règles de vie
                             collective applicables à tous les bénéficiaires, familles et
                             professionnels de l'établissement. Il précise les droits et obligations
                             de chacun afin de garantir un environnement de soins sûr, respectueux
                             et propice au rétablissement.
+                        </p> */}
+                        <p>
+                            Conformément aux obligations réglementaires applicables aux établissements de santé, nos centres sont dotés d’un règlement intérieur tenant compte des dispositions législatives et réglementaires en vigueur.
                         </p>
                         <p>
+                            La charte du bénéficiaire informe tous les bénéficiaires et visiteurs du centre sur les droits et devoirs concernant le fonctionnement du centre, la vie en communauté, la sécurité, l’hygiène et les soins.
+                        </p>
+                        {/* <p>
                             Ce document est remis à chaque patient et à sa famille lors de
                             l'admission et est consultable à tout moment auprès du secrétariat.
-                        </p>
+                        </p> */}
                     </div>
                     <div
                         className="hist-image-box gray-box-large"
                         style={{
-                            backgroundImage: "url('/assets/feerima/hero2.png')",
+                            backgroundImage: "url('/assets/feerima/reglement1.png')",
                             backgroundSize: 'cover',
                             backgroundPosition: 'center',
                         }}
@@ -49,7 +55,7 @@ export default function ChartesReglement() {
                     <div
                         className="hist-image-box gray-box-medium"
                         style={{
-                            backgroundImage: "url('/assets/feerima/hero3.png')",
+                            backgroundImage: "url('/assets/feerima/reglement2.png')",
                             backgroundSize: 'cover',
                             backgroundPosition: 'center',
                         }}
@@ -67,7 +73,7 @@ export default function ChartesReglement() {
                     <div
                         className="hist-image-box gray-box-medium"
                         style={{
-                            backgroundImage: "url('/assets/feerima/hero4.png')",
+                            backgroundImage: "url('/assets/feerima/reglem.png')",
                             backgroundSize: 'cover',
                             backgroundPosition: 'center',
                         }}
