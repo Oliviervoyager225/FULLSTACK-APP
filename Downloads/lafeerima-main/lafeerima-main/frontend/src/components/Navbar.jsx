@@ -43,6 +43,8 @@ const navItems = [
   { label: 'S’informer', type: 'link', to: '/faq' },
   { label: 'Ressources utils', type: 'link', to: '/espace-ressources' },
   { label: 'Recherche & Innovation', type: 'link', to: '/recherche-innovation' },
+  { label: 'Nous rejoindre', type: 'link', to: '/nous-rejoindre' },
+
 ];
 
 export default function Navbar() {
@@ -135,10 +137,10 @@ export default function Navbar() {
         </nav>
         {/* <button type="button" className="btn outline">faire un don</button> */}
 
-        {/* <Navbar donButton={<button onClick={() => setDonOpen(true)} style={{
+        {/* <button onClick={() => setDonOpen(true)} style={{
           padding: '0.45rem 1.1rem',
           // background: ACCENT,
-          color: '#fff',
+          color: '#0e0d0d',
           border: 'none',
           borderRadius: '50px',
           fontSize: '0.85rem',
@@ -146,14 +148,13 @@ export default function Navbar() {
           cursor: 'pointer',
           letterSpacing: '0.02em',
           whiteSpace: 'nowrap',
-        }}>💛 Faire un don</button>} /> */}
+        }}>Faire un don</button> */}
 
 
         <div className="nav-actions">
           <button type="button" className="btn outline">Se connecter</button>
           <Link to="/preadmission" className="btn primary small" onClick={closeNav}>S'inscrire</Link>
         </div>
-
 
       </div>
     </header>
