@@ -33,6 +33,7 @@ import Satisfaction from './pages/Satisfaction';
 import FAQ from './pages/FAQ';
 import EspaceRessources from './pages/EspaceRessources';
 import PoleRechercheInnovation from './pages/PoleRechercheInnovation';
+import NousRejoindre from './pages/NousRejoindre';
 
 import './App.css';
 
@@ -75,6 +76,8 @@ function App() {
           <Route path="/faq" element={<FAQ />} />
           <Route path="/espace-ressources" element={<EspaceRessources />} />
           <Route path="/recherche-innovation" element={<PoleRechercheInnovation />} />
+
+          <Route path="/nous-rejoindre" element={<NousRejoindre />} />
         </Routes>
       </div>
     </BrowserRouter>

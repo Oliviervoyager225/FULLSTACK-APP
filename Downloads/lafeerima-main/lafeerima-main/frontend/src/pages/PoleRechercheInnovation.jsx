@@ -790,7 +790,7 @@ export default function PoleRechercheInnovation() {
                         }}>
                             Notre équipe travaille activement à la publication de nos premiers travaux scientifiques. Restez connectés.
                         </p>
-                        <a href="/contact" style={{
+                        {/* <a href="/contact" style={{
                             display: 'inline-block',
                             padding: '0.7rem 1.75rem',
                             background: '#fff',
@@ -801,7 +801,7 @@ export default function PoleRechercheInnovation() {
                             textDecoration: 'none',
                         }}>
                             Être notifié
-                        </a>
+                        </a> */}
                     </div>
                 </section>
 
