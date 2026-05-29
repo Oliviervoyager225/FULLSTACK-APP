@@ -36,7 +36,7 @@
 .sat-hero {
     position: relative;
     height: 420px;
-    background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9f0bV9fGZD6pQK8S1J7-GMng3MpIBrlwkww&s') center / cover no-repeat;
+    background: url('/assets/feerima/satisfaction.png') center / cover no-repeat;
     display: flex;
     align-items: center;
     overflow: hidden;
@@ -48,8 +48,8 @@
     inset: 0;
     background: linear-gradient(
         120deg,
-        rgba(26, 58, 92, 0.92) 0%,
-        rgba(26, 58, 92, 0.65) 45%,
+        /* rgba(26, 58, 92, 0.92) 0%, */
+        /* rgba(26, 58, 92, 0.65) 45%, */
         rgba(124, 181, 24, 0.2) 100%
     );
 }

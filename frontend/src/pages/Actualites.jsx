@@ -143,7 +143,7 @@ export default function Actualites() {
                         </div>
                         <div className="actu-strategy-right">
                             <div className="actu-strategy-image-wrapper">
-                                <img src="/assets/feerima/hero2.png" alt="Notre approche" />
+                                <img src="/assets/feerima/approche.png" alt="Notre approche" />
                                 <div className="actu-play-btn">
                                     <svg viewBox="0 0 24 24" fill="white" width="28" height="28">
                                         <path d="M8 5v14l11-7z" />

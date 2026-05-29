@@ -11,7 +11,7 @@ export default function PlaintesReclamations() {
 
             <section
                 className="page-hero"
-                style={{ backgroundImage: "url('https://www.iqo.eu/wp-content/uploads/2022/10/gerer-insatisfaction-client.png')" }}
+                style={{ backgroundImage: "url('/assets/feerima/plainte_reclamation.png')" }}
             >
                 <div className="page-hero-content">
                     <h1>Plaintes et réclamations</h1>
@@ -45,7 +45,7 @@ export default function PlaintesReclamations() {
                     <div
                         className="hist-image-box gray-box-medium"
                         style={{
-                            backgroundImage: "url('https://thumbs.dreamstime.com/b/%C3%A9motic%C3%B4ne-furieuse-24770560.jpg')",
+                            backgroundImage: "url('/assets/feerima/recours.png')",
                             backgroundSize: 'cover',
                             backgroundPosition: 'center',
                         }}
@@ -70,7 +70,7 @@ export default function PlaintesReclamations() {
                     <div
                         className="hist-image-box gray-box-medium"
                         style={{
-                            backgroundImage: "url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeHb0xy9Y8yIOXM9lGfQ2mWrINeqHqugJKqYybGocW2Q&s')",
+                            backgroundImage: "url('/assets/feerima/feedback.png')",
                             backgroundSize: 'cover',
                             backgroundPosition: 'center',
                         }}

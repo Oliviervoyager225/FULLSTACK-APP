@@ -547,11 +547,65 @@ export default function Home() {
   const [loading, setLoading] = useState(true);
   const [loadError, setLoadError] = useState(null);
   const [heroIndex, setHeroIndex] = useState(0);
+  const [selectedService, setSelectedService] = useState(null);
 
   const heroImages = [
     '/assets/feerima/slider1.jpg?v=' + Date.now(),
     '/assets/feerima/slider2.jpg?v=' + Date.now(),
     '/assets/feerima/slider3.jpg?v=' + Date.now(),
+  ];
+
+  const servicesData = [
+    {
+      icon: <Users size={64} strokeWidth={1.5} />,
+      title: "Équipe pluridisciplinaire",
+      description: "Psychologues, éducateurs spécialisés, infirmiers-psy, pédopsychiatre, orthophoniste, art thérapeute, coach sportif, référente cadre de vie…",
+      details: `Avec un accompagnement pluridisciplinaire, chaque bénéficiaire dispose d'un accès intégral à plusieurs professionnels qualifiés selon ses besoins. Sur place, on retrouve donc : pédopsychiatre, psychologues, éducateurs spécialisés, infirmiers-psy, orthophoniste, art thérapeute, coach sportif, référente cadre de vie…
+
+Notre équipe propose un parcours de soins complet :
+
+- Diagnostic et prise en charge médicamenteuse
+- Écoute active et bienveillante, thérapie individuelle
+- Accompagnement socio-éducatif et professionnel
+- Traitement des troubles du langage et de l'apprentissage
+- Expressions artistiques
+- Éducation sportive
+- Ateliers thérapeutiques variés (pâtisserie, jardinage, éducation à la santé…)`,
+    },
+    {
+      icon: <Target size={64} strokeWidth={1.5} />,
+      title: "Approche personnalisée",
+      description: "Un accompagnement adapté aux besoins et au rythme de chaque bénéficiaire, grâce à un projet personnalisé de soins.",
+      details: `Un accompagnement adapté aux besoins et au rythme de chaque bénéficiaire, grâce à un projet personnalisé de soins (PPS) définissant les objectifs précis à atteindre au cours de la prise en charge.
+
+Dans la mesure du possible, le bénéficiaire participe à l'élaboration de son projet de soin, en connaissance des bénéfices qu'il tire de son accompagnement.
+
+Le PPS est mis en place à partir de la mise en commun des appréciations du bénéficiaire, de sa famille et des différentes évaluations de chaque professionnel (psychologique, médicale, éducative).`,
+    },
+    {
+      icon: <ShieldCheck size={64} strokeWidth={1.5} />,
+      title: "Cadre bienveillant et sécurisé",
+      description: "Un lieu structuré où l'accueil est le premier soin et un lieu sûr où les droits, la sécurité et la confidentialité sont garantis.",
+      details: `La Fondation La Fée Rima offre un cadre moderne et attrayant où l'accueil est le premier soin.
+
+Les droits, la sécurité et la confidentialité sont garantis pour les bénéficiaires et leurs familles : respect de la dignité, protection de la vie privée, accès à une information claire sur la prise en charge…`,
+    },
+    {
+      icon: <Lightbulb size={64} strokeWidth={1.5} />,
+      title: "Méthodes validées et innovantes",
+      description: "Des pratiques d'efficacité reconnues et mises à jour selon les avancées scientifiques.",
+      details: `Des pratiques d'efficacité reconnues et mises à jour selon les avancées scientifiques, comme l'art-thérapie et les thérapies cognitivo-comportementales.
+
+L'équipe de La Fée Rima actualise régulièrement ses pratiques grâce à la formation continue, à la veille scientifique et aux échanges professionnels, afin de proposer des interventions adaptées aux besoins des adolescents, des jeunes et de leurs familles.`,
+    },
+    {
+      icon: <HandHeart size={64} strokeWidth={1.5} />,
+      title: "Implication des bénéficiaires et leurs familles",
+      description: "Les bénéficiaires et leurs familles participent activement au projet thérapeutique, dans le respect de leur rythme.",
+      details: `Les bénéficiaires et leurs familles participent activement au projet thérapeutique, au parcours de soins, dans le respect de leur rythme et de leurs capacités.
+
+Collaboration étroite avec la famille tout au long de l'accompagnement.`,
+    },
   ];
 
   const goToPreviousHero = () => { setHeroIndex((prev) => (prev === 0 ? heroImages.length - 1 : prev - 1)); };
@@ -916,13 +970,218 @@ export default function Home() {
   .service-card:hover p { color: rgba(255,255,255,0.92); }
   .service-info-btn { margin-top: 14px; padding: 8px 20px; border: 2px solid #109cdd; background: transparent; color: #109cdd; border-radius: 20px; cursor: pointer; font-size: 0.82rem; font-weight: 600; transition: all 0.25s ease; }
   .service-card:hover .service-info-btn { background: #fff; border-color: #fff; color: #16a34a; }
+        .modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  z-index: 9999;
+  padding: 20px;
+}
+
+.modal-content {
+  background: #fff;
+  width: 100%;
+  max-width: 700px;
+
+  padding: 40px;
+  border-radius: 20px;
+
+  position: relative;
+
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.modal-content h2 {
+  color: #109cdd;
+  margin-bottom: 20px;
+}
+
+.modal-content p {
+  line-height: 1.8;
+  color: #444;
+}
+
+.modal-close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+
+  border: none;
+  background: none;
+
+  font-size: 1.5rem;
+  cursor: pointer;
+}
         `}</style>
+
+        <style>{`
+  .services-section {
+    padding: 60px 20px;
+    background: #f9fafb;
+  }
+  .services-main-title {
+    text-align: center;
+    text-transform: uppercase;
+    color: #109cdd;
+    letter-spacing: 2px;
+    margin-bottom: 36px;
+  }
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  .service-card {
+    background: #fff;
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    padding: 48px 32px 36px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 16px;
+    cursor: pointer;
+    transition: background 0.28s ease, color 0.28s ease, transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  .service-card:hover {
+    background: #a3b519;
+    transform: translateY(-4px);
+    box-shadow: 0 12px 32px rgba(163, 181, 25, 0.3);
+    border-color: #a3b519;
+  }
+  .service-icon {
+    color: #109cdd;
+    transition: color 0.28s ease;
+  }
+  .service-card:hover .service-icon {
+    color: #fff;
+  }
+  .service-card h3 {
+    font-size: 0.82rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: #0a0a0a;
+    margin: 0;
+    transition: color 0.28s ease;
+  }
+  .service-card:hover h3 {
+    color: #fff;
+  }
+  .service-card p {
+    font-size: 0.88rem;
+    color: #555;
+    line-height: 1.7;
+    margin: 0;
+    flex-grow: 1;
+    transition: color 0.28s ease;
+  }
+  .service-card:hover p {
+    color: rgba(255, 255, 255, 0.92);
+  }
+  .service-info-btn {
+    margin-top: 8px;
+    padding: 10px 28px;
+    border: 2px solid #109cdd;
+    border-radius: 999px;
+    background: transparent;
+    color: #109cdd;
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.25s ease, color 0.25s ease, border-color 0.25s ease;
+  }
+  .service-card:hover .service-info-btn {
+    background: #fff;
+    border-color: #fff;
+    color: #a3b519;
+  }
+  .modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    padding: 20px;
+  }
+  .modal-content {
+    background: #fff;
+    width: 100%;
+    max-width: 700px;
+    padding: 40px;
+    border-radius: 20px;
+    position: relative;
+    max-height: 90vh;
+    overflow-y: auto;
+  }
+  .modal-content h2 {
+    color: #109cdd;
+    margin-bottom: 20px;
+  }
+  .modal-content p {
+    line-height: 1.8;
+    color: #444;
+    white-space: pre-line;
+  }
+  .modal-close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    border: none;
+    background: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+`}</style>
 
         <div className="services-section">
           <h2 className="services-main-title">Nos spécificités</h2>
-          <div className="services-grid">
 
-            <div className="service-card">
+          <div className="services-grid">
+            {servicesData.map((service, index) => (
+              <div className="service-card" key={index}>
+                <div className="service-icon">
+                  {service.icon}
+                </div>
+                <h3>{service.title}</h3>
+                <p>{service.description}</p>
+                <button
+                  className="service-info-btn"
+                  onClick={() => setSelectedService(service)}
+                >
+                  Plus d'info
+                </button>
+              </div>
+            ))}
+          </div>
+
+          {selectedService && (
+            <div className="modal-overlay" onClick={() => setSelectedService(null)}>
+              <div className="modal-content" onClick={e => e.stopPropagation()}>
+                <button className="modal-close" onClick={() => setSelectedService(null)}>✕</button>
+                <h2>{selectedService.title}</h2>
+                <p>{selectedService.details}</p>
+              </div>
+            </div>
+          )}
+        </div>
+
+        {/* <div className="services-section">
+          <h2 className="services-main-title">Nos spécificités</h2>
+          <div className="services-grid"> */}
+
+        {/* <div className="service-card">
               <div className="service-icon"><Users size={64} strokeWidth={1.5} /></div>
               <h3>Équipe pluridisciplinaire</h3>
               <p>Psychologues, éducateurs spécialisés, infirmiers-psy, pédopsychiatre, orthophoniste, art thérapeute, coach sportif, maîtresse de maison…</p>
@@ -976,10 +1235,63 @@ export default function Home() {
               <h3>Dimension communautaire</h3>
               <p>Actions de prévention de terrain, partenariats et intégration dans la société.</p>
               <button className="service-info-btn">Plus d'info</button>
+            </div> */}
+
+        {/* <div className="services-grid">
+              {servicesData.map((service, index) => (
+                <div className="service-card" key={index}>
+
+                  <div className="service-icon">
+                    {service.icon}
+                  </div>
+
+                  <h3>{service.title}</h3>
+
+                  <p>{service.description}</p>
+
+                  <button
+                    className="service-info-btn"
+                    onClick={() => setSelectedService(service)}
+                  >
+                    Plus d'info
+                  </button>
+
+                </div>
+              ))}
             </div>
 
           </div>
-        </div>
+          {selectedService && (
+            <div
+              className="modal-overlay"
+              onClick={() => setSelectedService(null)}
+            >
+
+              <div
+                className="modal-content"
+                onClick={(e) => e.stopPropagation()}
+              >
+
+                <button
+                  className="modal-close"
+                  onClick={() => setSelectedService(null)}
+                >
+                  ✕
+                </button>
+
+                <h2>{selectedService.title}</h2>
+
+                <p style={{ whiteSpace: "pre-line" }}>
+                  {selectedService.details}
+                </p>
+
+              </div>
+
+            </div>
+          )}
+        </div> */}
+
+        
 
         <div className="actu-section">
           <h2 className="actu-main-title">Nos actualités</h2>

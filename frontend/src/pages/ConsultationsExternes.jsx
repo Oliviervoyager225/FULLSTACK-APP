@@ -11,12 +11,8 @@ export default function ConsultationsExternes() {
 
             <section
                 className="page-hero"
-                style={{ backgroundImage: "url('/assets/feerima/consultation.jpg')" }}
+                style={{ backgroundImage: "url('/assets/feerima/consultation.png')" }}
             >
-                <div className="page-hero-content">
-                    <h1>Les consultations externes</h1>
-                    <p>Un suivi personnalisé pour les jeunes de 10 à 25 ans</p>
-                </div>
             </section>
 
             <main className="historique-main">
@@ -35,7 +31,7 @@ export default function ConsultationsExternes() {
                     <div
                         className="hist-image-box gray-box-large"
                         style={{
-                            backgroundImage: "url('/assets/feerima/hero2.png')",
+                            backgroundImage: "url('/assets/feerima/consultation_ex.png')",
                             backgroundSize: 'cover',
                             backgroundPosition: 'center',
                         }}
@@ -46,13 +42,13 @@ export default function ConsultationsExternes() {
                     <div
                         className="hist-image-box gray-box-medium"
                         style={{
-                            backgroundImage: "url('/assets/feerima/hero3.png')",
+                            backgroundImage: "url('/assets/feerima/acc.png')",
                             backgroundSize: 'cover',
                             backgroundPosition: 'center',
                         }}
                     />
                     <div className="hist-content center-content">
-                        <h2>COMMENT ACCÉDER AUX CONSULTATIONS ?</h2>
+                        <h2>COMMENT ACCÉDER AUX CONSULTATIONS?</h2>
                         <p>
                             L'accès aux consultations externes se fait sur orientation médicale
                             (médecin traitant, pédiatre, urgences…) ou par démarche spontanée.
@@ -64,7 +60,7 @@ export default function ConsultationsExternes() {
                     <div
                         className="hist-image-box gray-box-medium"
                         style={{
-                            backgroundImage: "url('/assets/feerima/consultation1.jpg')",
+                            backgroundImage: "url('/assets/feerima/acc1.png')",
                             backgroundSize: 'cover',
                             backgroundPosition: 'center',
                         }}
@@ -73,22 +69,14 @@ export default function ConsultationsExternes() {
 
                 <section className="hist-section section-3">
                     <div className="hist-stacked-images">
-                        <div
-                            className="hist-image-box gray-box-small"
-                            style={{
-                                backgroundImage: "url('https://www.oecd.org/adobe/dynamicmedia/deliver/dm-aid--1fd60a53-5543-42ff-aa6d-56398c9ed878/heath-workforce-cover-image.jpg?quality=80&preferwebp=true')",
-                                backgroundSize: 'cover',
-                                backgroundPosition: 'center',
-                            }}
-                        />
-                        <div
-                            className="hist-image-box gray-box-small"
-                            style={{
-                                backgroundImage: "url('/assets/feerima/professionnel.jpg')",
-                                backgroundSize: 'cover',
-                                backgroundPosition: 'center',
-                            }}
-                        />
+
+                        <div className="hist-stacked-images">
+                            <img
+                                src="/assets/feerima/professionnel.png"
+                                alt="Ma mission"
+                                className="hist-image"
+                            />
+                        </div>
                     </div>
                     <div className="hist-content">
                         <h2>LES PROFESSIONNELS IMPLIQUÉS</h2>
