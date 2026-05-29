@@ -26,7 +26,7 @@ export default function RSE() {
           <div className="hist-content">
             <h1>NOTRE POLITIQUE<br />RSE</h1>
             <p>
-              Le centre spécialisé de La Fée Rima, dédié au bien-être psychologique des jeunes, place la responsabilité sociétale au cœur de ses actions. Notre politique RSE reflète notre volonté d’avoir un impact positif sur nos bénéficiaires, nos collaborateurs, la communauté et l’environnement.
+              La Fondation la Fée Rima, dédiée au bien-être psychologique des jeunes, place la responsabilité sociétale au cœur de ses actions. Notre engagement RSE reflète notre volonté d’avoir un impact positif sur nos bénéficiaires, nos collaborateurs, la communauté et l’environnement.
             </p>
             <p>
               <strong>Bien-être et accompagnement des jeunes</strong><br />

@@ -4,14 +4,15 @@ import '../styles/Navbar.css';
 
 const navItems = [
   {
-    label: 'Le centre spécialisé',
+    // label: 'Le centre spécialisé',
+    label: 'La fondation',
     type: 'dropdown',
     items: [
       { label: 'Notre histoire', to: '/historique' },
       { label: 'Nos équipes', to: '/equipes' },
       { label: 'Nos valeurs', to: '/nos-valeurs' },
       { label: 'Notre engagement qualité', to: '/engagement-qualite' },
-      { label: 'Notre politique RSE', to: '/rse' },
+      { label: 'Notre responsabilité sociétale', to: '/rse' },
       { label: 'Nos actualités', to: '/actualites' },
       { label: 'Nos partenaires', to: '/partenaires' },
     ],
@@ -20,7 +21,7 @@ const navItems = [
     label: "L'offre de soins",
     type: 'dropdown',
     items: [
-      { label: 'Les consultations externes', to: '/consultations-externes' },
+      { label: 'Les consultations', to: '/consultations' },
       { label: "L'hôpital de jour", to: '/hopital-de-jour' },
       { label: "Le service d'accueil d'urgence", to: '/service-accueil-urgence' },
       { label: 'Tarifications', to: '/tarifications' },

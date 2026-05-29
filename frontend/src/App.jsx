@@ -57,7 +57,7 @@ function App() {
           <Route path="/actualites" element={<Actualites />} />
 
           {/* Offre de soins */}
-          <Route path="/consultations-externes" element={<ConsultationsExternes />} />
+          <Route path="/consultations" element={<ConsultationsExternes />} />
           <Route path="/hopital-de-jour" element={<HopitalDeJour />} />
           <Route path="/service-accueil-urgence" element={<ServiceAccueilUrgence />} />
           <Route path="/tarifications" element={<Tarifications />} />
