@@ -9,6 +9,7 @@ const navItems = [
     type: 'dropdown',
     items: [
       { label: 'Notre histoire', to: '/historique' },
+      { label: 'Nos actions', to: '/nos-actions' },
       { label: 'Nos équipes', to: '/equipes' },
       { label: 'Nos valeurs', to: '/nos-valeurs' },
       { label: 'Notre engagement qualité', to: '/engagement-qualite' },
@@ -18,9 +19,11 @@ const navItems = [
     ],
   },
   {
-    label: "L'offre de soins",
+    label: "Nos centres",
     type: 'dropdown',
     items: [
+      { label: 'Nos spécificités', to: '/nos-specificites' },
+      { label: 'Centre spécialisé des 2 plateaux', to: '/centre-specialise' },
       { label: 'Les consultations', to: '/consultations' },
       { label: "L'hôpital de jour", to: '/hopital-de-jour' },
       { label: "Le service d'accueil d'urgence", to: '/service-accueil-urgence' },
@@ -41,6 +44,15 @@ const navItems = [
       { label: 'Satisfaction', to: '/satisfaction' },
     ],
   },
+  // {
+  //   label: 'Nos centres',
+  //   type: 'dropdown',
+  //   items: [
+  //     { label: 'Nos spécificités', to: '/nos-specificites' },
+  //     { label: 'Centre spécialisé des 2 plateaux', to: '/centre-specialise' },
+  //     // { label: 'Pe   'Satisfaction', to: '/satisfaction' },
+  //   ],
+  // },
   { label: 'S’informer', type: 'link', to: '/faq' },
   { label: 'Ressources utils', type: 'link', to: '/espace-ressources' },
   { label: 'Recherche & Innovation', type: 'link', to: '/recherche-innovation' },

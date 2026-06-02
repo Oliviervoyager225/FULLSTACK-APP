@@ -656,64 +656,64 @@ export default function Home() {
     '/assets/feerima/slider3.jpg?v=' + Date.now(),
   ];
 
-  const servicesData = [
-    {
-      icon: <Users size={64} strokeWidth={1.5} />,
-      title: "Équipe pluridisciplinaire",
-      description: "Psychologues, éducateurs spécialisés, infirmiers-psy, pédopsychiatre, orthophoniste, art thérapeute, coach sportif, référente cadre de vie…",
-      details: `Avec un accompagnement pluridisciplinaire, chaque bénéficiaire dispose d'un accès intégral à plusieurs professionnels qualifiés selon ses besoins. Sur place, on retrouve donc : pédopsychiatre, psychologues, éducateurs spécialisés, infirmiers-psy, orthophoniste, art thérapeute, coach sportif, référente cadre de vie…
-Autrement dit, notre équipe propose un parcours de soins complet au sein de la Fée Rima. Entre autres : 
+//   const servicesData = [
+//     {
+//       icon: <Users size={64} strokeWidth={1.5} />,
+//       title: "Équipe pluridisciplinaire",
+//       description: "Psychologues, éducateurs spécialisés, infirmiers-psy, pédopsychiatre, orthophoniste, art thérapeute, coach sportif, référente cadre de vie…",
+//       details: `Avec un accompagnement pluridisciplinaire, chaque bénéficiaire dispose d'un accès intégral à plusieurs professionnels qualifiés selon ses besoins. Sur place, on retrouve donc : pédopsychiatre, psychologues, éducateurs spécialisés, infirmiers-psy, orthophoniste, art thérapeute, coach sportif, référente cadre de vie…
+// Autrement dit, notre équipe propose un parcours de soins complet au sein de la Fée Rima. Entre autres : 
 
-- Diagnostic et prise en charge médicamenteuse
-- Écoute active et bienveillante, thérapie individuelle
-- Accompagnement socio-éducatif et professionnel
-- Traitement des troubles du langage et de l'apprentissage
-- Expressions artistiques
-- Éducation sportive
-- Ateliers thérapeutiques variés (pâtisserie, jardinage, éducation à la santé…)`,
-    },
-    {
-      icon: <Target size={64} strokeWidth={1.5} />,
-      title: "Approche personnalisée",
-      description: "Un accompagnement adapté aux besoins et au rythme de chaque bénéficiaire, grâce à un projet personnalisé de soins.",
-      details: `Un accompagnement adapté aux besoins et au rythme de chaque bénéficiaire, grâce à un projet personnalisé de soins (PPS) définissant les objectifs précis à atteindre au cours de la prise en charge.
+// - Diagnostic et prise en charge médicamenteuse
+// - Écoute active et bienveillante, thérapie individuelle
+// - Accompagnement socio-éducatif et professionnel
+// - Traitement des troubles du langage et de l'apprentissage
+// - Expressions artistiques
+// - Éducation sportive
+// - Ateliers thérapeutiques variés (pâtisserie, jardinage, éducation à la santé…)`,
+//     },
+//     {
+//       icon: <Target size={64} strokeWidth={1.5} />,
+//       title: "Approche personnalisée",
+//       description: "Un accompagnement adapté aux besoins et au rythme de chaque bénéficiaire, grâce à un projet personnalisé de soins.",
+//       details: `Un accompagnement adapté aux besoins et au rythme de chaque bénéficiaire, grâce à un projet personnalisé de soins (PPS) définissant les objectifs précis à atteindre au cours de la prise en charge.
 
-Dans la mesure du possible, le bénéficiaire participe à l'élaboration de son projet de soin, en connaissance des bénéfices qu'il tire de son accompagnement.
+// Dans la mesure du possible, le bénéficiaire participe à l'élaboration de son projet de soin, en connaissance des bénéfices qu'il tire de son accompagnement.
 
-Le PPS est mis en place à partir de la mise en commun des appréciations du bénéficiaire, de sa famille et des différentes évaluations de chaque professionnel (psychologique, médicale, éducative).`,
-    },
-    {
-      icon: <ShieldCheck size={64} strokeWidth={1.5} />,
-      title: "Cadre bienveillant et sécurisé",
-      description: "Un lieu structuré où l'accueil est le premier soin et un lieu sûr où les droits, la sécurité et la confidentialité sont garantis.",
-      details: `La Fondation La Fée Rima offre un cadre moderne et attrayant où l'accueil est le premier soin.
+// Le PPS est mis en place à partir de la mise en commun des appréciations du bénéficiaire, de sa famille et des différentes évaluations de chaque professionnel (psychologique, médicale, éducative).`,
+//     },
+//     {
+//       icon: <ShieldCheck size={64} strokeWidth={1.5} />,
+//       title: "Cadre bienveillant et sécurisé",
+//       description: "Un lieu structuré où l'accueil est le premier soin et un lieu sûr où les droits, la sécurité et la confidentialité sont garantis.",
+//       details: `La Fondation La Fée Rima offre un cadre moderne et attrayant où l'accueil est le premier soin.
 
-Les droits, la sécurité et la confidentialité sont garantis pour les bénéficiaires et leurs familles : respect de la dignité, protection de la vie privée, accès à une information claire sur la prise en charge…`,
-    },
-    {
-      icon: <Lightbulb size={64} strokeWidth={1.5} />,
-      title: "Méthodes validées et innovantes",
-      description: "Des pratiques d'efficacité reconnues et mises à jour selon les avancées scientifiques.",
-      details: `Des pratiques d'efficacité reconnues et mises à jour selon les avancées scientifiques, comme l'art-thérapie et les thérapies cognitivo-comportementales.
+// Les droits, la sécurité et la confidentialité sont garantis pour les bénéficiaires et leurs familles : respect de la dignité, protection de la vie privée, accès à une information claire sur la prise en charge…`,
+//     },
+//     {
+//       icon: <Lightbulb size={64} strokeWidth={1.5} />,
+//       title: "Méthodes validées et innovantes",
+//       description: "Des pratiques d'efficacité reconnues et mises à jour selon les avancées scientifiques.",
+//       details: `Des pratiques d'efficacité reconnues et mises à jour selon les avancées scientifiques, comme l'art-thérapie et les thérapies cognitivo-comportementales.
 
-L'équipe de La Fée Rima actualise régulièrement ses pratiques grâce à la formation continue, à la veille scientifique et aux échanges professionnels, afin de proposer des interventions adaptées aux besoins des adolescents, des jeunes et de leurs familles.`,
-    },
-    {
-      icon: <HandHeart size={64} strokeWidth={1.5} />,
-      title: "Implication des bénéficiaires et leurs familles",
-      description: "Les bénéficiaires et leurs familles participent activement au projet thérapeutique, dans le respect de leur rythme.",
-      details: `Les bénéficiaires et leurs familles participent activement au projet thérapeutique, au parcours de soins, dans le respect de leur rythme et de leurs capacités.
+// L'équipe de La Fée Rima actualise régulièrement ses pratiques grâce à la formation continue, à la veille scientifique et aux échanges professionnels, afin de proposer des interventions adaptées aux besoins des adolescents, des jeunes et de leurs familles.`,
+//     },
+//     {
+//       icon: <HandHeart size={64} strokeWidth={1.5} />,
+//       title: "Implication des bénéficiaires et leurs familles",
+//       description: "Les bénéficiaires et leurs familles participent activement au projet thérapeutique, dans le respect de leur rythme.",
+//       details: `Les bénéficiaires et leurs familles participent activement au projet thérapeutique, au parcours de soins, dans le respect de leur rythme et de leurs capacités.
 
-Collaboration étroite avec la famille tout au long de l'accompagnement.`,
-    },
-    {
-      icon: <HomeIcon size={64} strokeWidth={1.5} />,
-      title: "Centre spécialisé des 2 Plateaux",
-      description: "La Fée Rima est située au cœur du quartier des 2 Plateaux, un lieu stratégique pour toucher les jeunes et leurs familles dans la région d'Abidjan.",
-      // details est géré via isCustomModal
-      isCustomModal: true,
-    },
-  ];
+// Collaboration étroite avec la famille tout au long de l'accompagnement.`,
+//     },
+//     {
+//       icon: <HomeIcon size={64} strokeWidth={1.5} />,
+//       title: "Centre spécialisé des 2 Plateaux",
+//       description: "La Fée Rima est située au cœur du quartier des 2 Plateaux, un lieu stratégique pour toucher les jeunes et leurs familles dans la région d'Abidjan.",
+//       // details est géré via isCustomModal
+//       isCustomModal: true,
+//     },
+//   ];
 
   const goToPreviousHero = () => { setHeroIndex((prev) => (prev === 0 ? heroImages.length - 1 : prev - 1)); };
   const goToNextHero = () => { setHeroIndex((prev) => (prev === heroImages.length - 1 ? 0 : prev + 1)); };
@@ -973,7 +973,7 @@ Collaboration étroite avec la famille tout au long de l'accompagnement.`,
   .modal-close:hover { background: #e2e8f0; }
 `}</style>
 
-        <div className="services-section">
+        {/* <div className="services-section">
           <h2 className="services-main-title">Nos spécificités</h2>
 
           <div className="services-grid">
@@ -1005,7 +1005,7 @@ Collaboration étroite avec la famille tout au long de l'accompagnement.`,
               </div>
             </div>
           )}
-        </div>
+        </div> */}
 
         <div className="actu-section">
           <h2 className="actu-main-title">Nos actualités</h2>
