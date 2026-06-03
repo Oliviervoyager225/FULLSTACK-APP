@@ -1,0 +1,352 @@
+/* NosValeurs.css - Version modernisée */
+
+/* Variables et reset local */
+.nv-page {
+    --primary-gold: #c9a03d;
+    --primary-dark: #9b7b2c;
+    --secondary-slate: #1e293b;
+    --accent-cream: #fef7e6;
+    --text-dark: #1e293b;
+    --text-muted: #475569;
+    --bg-light: #f9fafb;
+    --card-shadow: 0 20px 25px -12px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.02);
+    --transition-default: all 0.3s cubic-bezier(0.2, 0.9, 0.4, 1.1);
+}
+
+.nv-page {
+    font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, sans-serif;
+    color: var(--text-dark);
+    background-color: var(--bg-light);
+    line-height: 1.5;
+    scroll-behavior: smooth;
+}
+
+/* --- Hero Banner modernisé --- */
+.nv-hero {
+    position: relative;
+    height: 550px;
+    background-image: url('/assets/feerima/nos_valeurs.png');
+    background-size: cover;
+    background-position: center 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    isolation: isolate;
+}
+
+.nv-hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(206, 233, 177, 0.6) rgba(0, 0, 0, 0.4) 50%, rgba(0, 0, 0, 0.7) 100%);
+    z-index: 1;
+}
+
+.nv-hero-content {
+    position: relative;
+    z-index: 2;
+    padding: 0 24px;
+    max-width: 800px;
+    animation: fadeSlideUp 0.8s ease-out;
+}
+
+@keyframes fadeSlideUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.nv-hero-content h1 {
+    font-size: 3.5rem;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    margin-bottom: 1rem;
+    background: linear-gradient(135deg, #fff, #f3e7c9);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.nv-hero-content p {
+    font-size: 1.35rem;
+    font-weight: 400;
+    color: #fef7e0;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* --- Conteneur principal --- */
+.nv-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px 24px;
+}
+
+/* --- Sections génériques --- */
+.nv-section {
+    background: white;
+    border-radius: 32px;
+    padding: 48px;
+    margin-bottom: 48px;
+    box-shadow: var(--card-shadow);
+    transition: var(--transition-default);
+    border: 1px solid rgba(201, 160, 61, 0.1);
+}
+
+.nv-section:hover {
+    box-shadow: 0 25px 35px -12px rgba(0, 0, 0, 0.15);
+}
+
+.nv-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #fef3c7;
+    color: #b45309;
+    padding: 6px 18px;
+    border-radius: 40px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    margin-bottom: 24px;
+    border: 1px solid rgba(201, 160, 61, 0.3);
+}
+
+.nv-section h2 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--secondary-slate);
+    margin-bottom: 24px;
+    border-left: 5px solid var(--primary-gold);
+    padding-left: 20px;
+}
+
+.nv-section p {
+    font-size: 1.08rem;
+    color: var(--text-muted);
+    text-align: justify;
+    line-height: 1.6;
+}
+
+/* --- Section Accueil (welcome) revisitée --- */
+.nv-welcome {
+    background: linear-gradient(125deg, #fff7ed 0%, #ffedd5 100%);
+    padding: 56px 48px;
+    border-radius: 32px;
+    text-align: center;
+    margin-bottom: 56px;
+    border: 1px solid rgba(201, 160, 61, 0.25);
+    transition: var(--transition-default);
+}
+
+.nv-welcome:hover {
+    transform: scale(1.01);
+    box-shadow: var(--card-shadow);
+}
+
+.nv-welcome h2 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #7c2d12;
+    margin-bottom: 20px;
+    border: none;
+    padding-left: 0;
+}
+
+.nv-welcome p {
+    font-size: 1.2rem;
+    color: #3b2a1f;
+    max-width: 750px;
+    margin: 0 auto;
+    font-weight: 500;
+}
+
+/* --- En-tête des piliers --- */
+.nv-pillars-header {
+    text-align: center;
+    margin-bottom: 56px;
+}
+
+.nv-pillars-header h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--secondary-slate);
+    border: none;
+    padding-left: 0;
+    margin-bottom: 16px;
+}
+
+.nv-divider {
+    width: 90px;
+    height: 4px;
+    background: linear-gradient(90deg, var(--primary-gold), #e6c27a);
+    margin: 0 auto;
+    border-radius: 4px;
+}
+
+/* --- Grille des cartes (piliers) --- */
+.nv-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: 36px;
+    margin-top: 24px;
+}
+
+.nv-card {
+    background: white;
+    padding: 36px 28px;
+    border-radius: 28px;
+    border: none;
+    box-shadow: 0 12px 24px -12px rgba(0, 0, 0, 0.08);
+    transition: all 0.35s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.nv-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 6px;
+    height: 100%;
+    background: linear-gradient(135deg, var(--primary-gold), #e6b45e);
+    border-radius: 28px 0 0 28px;
+    transition: width 0.3s ease;
+}
+
+.nv-card:hover::before {
+    width: 10px;
+}
+
+.nv-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 25px 35px -14px rgba(0, 0, 0, 0.2);
+}
+
+.nv-card-header {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-bottom: 28px;
+}
+
+.nv-icon-box {
+    width: 60px;
+    height: 60px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    transition: var(--transition-default);
+}
+
+.nv-card:hover .nv-icon-box {
+    transform: scale(1.05);
+}
+
+.nv-icon-ear {
+    background: #eff6ff;
+    color: #2563eb;
+    box-shadow: 0 6px 12px -8px rgba(37, 99, 235, 0.3);
+}
+
+.nv-icon-shield {
+    background: #ecfdf5;
+    color: #059669;
+    box-shadow: 0 6px 12px -8px rgba(5, 150, 105, 0.3);
+}
+
+.nv-card h3 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #0f172a;
+    margin: 0;
+}
+
+.nv-card p {
+    font-size: 1rem;
+    color: #334155;
+    text-align: left;
+    line-height: 1.6;
+}
+
+/* --- Animation d'apparition (fade-in) --- */
+.fade-in {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* --- Responsive fine --- */
+@media (max-width: 768px) {
+    .nv-hero {
+        height: 400px;
+    }
+
+    .nv-hero-content h1 {
+        font-size: 2.3rem;
+    }
+
+    .nv-hero-content p {
+        font-size: 1.1rem;
+    }
+
+    .nv-container {
+        padding: 48px 20px;
+    }
+
+    .nv-section,
+    .nv-welcome {
+        padding: 32px 24px;
+    }
+
+    .nv-section h2 {
+        font-size: 1.8rem;
+    }
+
+    .nv-pillars-header h2 {
+        font-size: 2rem;
+    }
+
+    .nv-card {
+        padding: 28px 20px;
+    }
+
+    .nv-card h3 {
+        font-size: 1.5rem;
+    }
+
+    .nv-icon-box {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media (max-width: 480px) {
+    .nv-hero-content h1 {
+        font-size: 1.9rem;
+    }
+
+    .nv-welcome h2 {
+        font-size: 1.8rem;
+    }
+
+    .nv-grid {
+        gap: 24px;
+    }
+}

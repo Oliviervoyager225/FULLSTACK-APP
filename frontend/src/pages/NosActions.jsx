@@ -44,7 +44,7 @@ const NosActions = () => {
                             className="hero-image"
                             loading="eager"
                         />
-                        <div className="hero-overlay"></div>
+                        {/* <div className="hero-overlay"></div> */}
                     </div>
 
                     {/* Contenu texte */}

@@ -1,0 +1,225 @@
+/* Historique.module.css */
+.page {
+    font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
+    color: #1F2937;
+    background-color: #F9FAFB;
+    line-height: 1.7;
+}
+
+/* --- Hero Section --- */
+.hero {
+    position: relative;
+    height: 60vh;
+    min-height: 400px;
+    background-image: url('/assets/feerima/notre_histoire.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.heroOverlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, rgba(44, 95, 120, 0.75), rgba(31, 41, 55, 0.85));
+}
+
+.heroContent {
+    position: relative;
+    z-index: 2;
+    padding: 0 20px;
+    max-width: 800px;
+}
+
+.heroContent h1 {
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    letter-spacing: -0.02em;
+    line-height: 1.1;
+}
+
+.heroContent p {
+    font-size: 1.25rem;
+    font-weight: 400;
+    opacity: 0.95;
+}
+
+/* --- Main Layout --- */
+.main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+}
+
+.section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+    margin-bottom: 6rem;
+}
+
+.section:last-child {
+    margin-bottom: 0;
+}
+
+/* --- Typography & Tags --- */
+.tag {
+    display: inline-block;
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #E89F57;
+    /* Orange doux / Chaleur */
+    margin-bottom: 0.75rem;
+}
+
+.content h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #2C5F78;
+    /* Bleu apaisant */
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+}
+
+.content h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #2C5F78;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+}
+
+.content p {
+    font-size: 1.1rem;
+    color: #4B5563;
+    margin-bottom: 1.5rem;
+}
+
+/* --- Images --- */
+.imageBox {
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px -10px rgba(44, 95, 120, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.imageBox:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px -10px rgba(44, 95, 120, 0.25);
+}
+
+.stackedImages img {
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px -10px rgba(44, 95, 120, 0.15);
+}
+
+/* --- Section 2: Stats Grid --- */
+.realitySection {
+    grid-template-columns: 1fr;
+    text-align: center;
+    background-color: #FFFFFF;
+    padding: 4rem 3rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px -10px rgba(44, 95, 120, 0.1);
+}
+
+.realitySection .content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.introText {
+    max-width: 600px;
+    margin: 0 auto 3rem auto !important;
+    font-size: 1.15rem !important;
+}
+
+.statsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.statCard {
+    background: #F9FAFB;
+    padding: 2rem 1.5rem;
+    border-radius: 12px;
+    border-top: 4px solid #E89F57;
+    transition: transform 0.3s ease;
+}
+
+.statCard:hover {
+    transform: translateY(-5px);
+}
+
+.statNumber {
+    display: block;
+    font-size: 3rem;
+    font-weight: 800;
+    color: #2C5F78;
+    margin-bottom: 0.5rem;
+    line-height: 1;
+}
+
+.statLabel {
+    font-size: 1rem;
+    color: #4B5563;
+    font-weight: 500;
+}
+
+/* --- Section 3: Emphasis --- */
+.emphasisBox {
+    background-color: rgba(44, 95, 120, 0.08);
+    border-left: 4px solid #2C5F78;
+    padding: 1.5rem;
+    border-radius: 0 12px 12px 0;
+    margin-top: 2rem;
+}
+
+.emphasisBox p {
+    margin-bottom: 0;
+    font-weight: 600;
+    color: #2C5F78;
+}
+
+/* --- Responsive Design --- */
+@media (max-width: 900px) {
+    .heroContent h1 {
+        font-size: 2.5rem;
+    }
+
+    .section {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+        margin-bottom: 4rem;
+    }
+
+    .imageBox,
+    .stackedImages img {
+        height: 300px;
+        order: -1;
+        /* L'image passe au-dessus du texte sur mobile */
+    }
+
+    .realitySection {
+        padding: 3rem 1.5rem;
+    }
+
+    .statsGrid {
+        grid-template-columns: 1fr;
+    }
+}
