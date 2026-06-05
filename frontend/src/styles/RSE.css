@@ -1,0 +1,620 @@
+/* RSE.css - Styles pour la page Politique RSE */
+
+.rse-page {
+  --primary: #5B3A8C;
+  --primary-light: #7B5BA8;
+  --primary-dark: #3A1F5C;
+  --secondary: #FF6B6B;
+  --secondary-light: #FF9B9B;
+  --dark: #2D2D2D;
+  --gray-light: #F5F5F5;
+  --gray-medium: #E8E8E8;
+  --text: #4A4A4A;
+  --text-light: #7A7A7A;
+  --white: #FFFFFF;
+  --success: #4CAF50;
+}
+
+/* Hero Section */
+.rse-hero {
+  position: relative;
+  height: 85vh;
+  min-height: 600px;
+  background-image: url('/assets/feerima/rse1.png');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+}
+
+.rse-hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /* background: linear-gradient(135deg, rgba(0,0,0,0.7) 0%, rgba(91,58,140,0.6) 100%); */
+}
+
+.rse-hero-content {
+  position: relative;
+  text-align: center;
+  max-width: 800px;
+  padding: 0 2rem;
+  animation: fadeInUp 1s ease;
+  z-index: 2;
+}
+
+.rse-hero-badge {
+  display: inline-block;
+  background: rgba(255,255,255,0.2);
+  backdrop-filter: blur(10px);
+  padding: 0.5rem 1.5rem;
+  border-radius: 50px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+  letter-spacing: 1px;
+}
+
+.rse-hero-content h1 {
+  font-size: 4rem;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.rse-hero-subtitle {
+  font-size: 1.3rem;
+  opacity: 0.95;
+  margin-bottom: 3rem;
+  line-height: 1.6;
+}
+
+.rse-hero-scroll {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  animation: bounce 2s infinite;
+  background: rgba(255,255,255,0.1);
+  padding: 0.75rem 1.5rem;
+  border-radius: 50px;
+  transition: background 0.3s ease;
+}
+
+.rse-hero-scroll:hover {
+  background: rgba(255,255,255,0.2);
+}
+
+/* Main container */
+.rse-main {
+  overflow-x: hidden;
+}
+
+/* Sections communes */
+.rse-section {
+  padding: 5rem 0;
+}
+
+.rse-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.rse-container.full {
+  max-width: 100%;
+  padding: 0;
+}
+
+/* Grid layouts */
+.rse-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.rse-grid.reverse {
+  direction: rtl;
+}
+
+.rse-grid.reverse > * {
+  direction: ltr;
+}
+
+/* Tags */
+.rse-tag {
+  display: inline-block;
+  background: linear-gradient(135deg, var(--primary), var(--primary-light));
+  color: var(--white);
+  padding: 0.3rem 1rem;
+  border-radius: 50px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.5px;
+}
+
+.rse-tag.light {
+  background: rgba(91,58,140,0.1);
+  color: var(--primary);
+}
+
+/* Content styles */
+.rse-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+  color: var(--dark);
+}
+
+.rse-lead {
+  font-size: 1.2rem;
+  color: var(--primary);
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+.rse-content p {
+  color: var(--text);
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+
+/* Highlight box */
+/* Remplacer le style du .rse-highlight par celui-ci */
+.rse-highlight {
+  background: transparent;
+  padding: 1rem 0 0 0;
+  border-radius: 0;
+  margin-top: 2rem;
+  border-left: none;
+  transition: none;
+}
+
+.rse-highlight:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+.rse-highlight h4 {
+  color: var(--primary);
+  margin-bottom: 0.75rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.rse-highlight p {
+  margin-bottom: 0;
+  line-height: 1.7;
+}
+
+/* Image styles */
+.rse-image-wrapper {
+  position: relative;
+}
+
+.rse-image-card {
+  position: relative;
+  width: 700px;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+
+.rse-image-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 24px;
+  transition: transform 0.3s ease;
+  display: block;
+}
+
+.rse-image-card:hover img {
+  transform: scale(1.05);
+}
+
+.rse-image-shape {
+  position: absolute;
+  bottom: -20px;
+  right: -20px;
+  width: 100px;
+  height: 100px;
+  background: linear-gradient(135deg, var(--secondary), var(--primary-light));
+  border-radius: 20px;
+  z-index: -1;
+}
+
+/* Section éthique */
+.section-ethique {
+  background: var(--gray-light);
+}
+
+.rse-section-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.rse-section-header h2 {
+  font-size: 2.5rem;
+  color: var(--dark);
+  margin-top: 0.5rem;
+}
+
+/* Cards grid */
+.rse-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.rse-card {
+  background: var(--white);
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.rse-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+}
+
+.rse-card-icon {
+  width: 70px;
+  height: 70px;
+  background: linear-gradient(135deg, var(--primary-light), var(--primary));
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  color: var(--white);
+  transition: transform 0.3s ease;
+}
+
+.rse-card:hover .rse-card-icon {
+  transform: scale(1.05) rotate(5deg);
+}
+
+.rse-card h3 {
+  margin-bottom: 1rem;
+  color: var(--dark);
+  font-size: 1.3rem;
+}
+
+.rse-card p {
+  color: var(--text);
+  line-height: 1.6;
+}
+
+/* Section environnement */
+.section-environnement {
+  background: var(--white);
+}
+
+.rse-split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+}
+
+.rse-split-image {
+  position: relative;
+  min-height: 550px;
+  overflow: hidden;
+}
+
+.rse-split-image img {
+  /* width: 100%;
+  height: 100%; */
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.rse-split-image:hover img {
+  transform: scale(1.05);
+}
+
+/* Stats overlay */
+.rse-stats {
+  position: absolute;
+  bottom: 2rem;
+  left: 2rem;
+  right: 2rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.rse-stat {
+  background: rgba(0,0,0,0.85);
+  backdrop-filter: blur(10px);
+  padding: 1rem;
+  border-radius: 12px;
+  flex: 1;
+  text-align: center;
+  color: var(--white);
+  transition: transform 0.3s ease;
+}
+
+.rse-stat:hover {
+  transform: translateY(-5px);
+}
+
+.rse-stat-number {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--secondary);
+  margin-bottom: 0.25rem;
+}
+
+.rse-stat-label {
+  font-size: 0.8rem;
+  opacity: 0.9;
+}
+
+/* Split content */
+.rse-split-content {
+  padding: 4rem;
+  background: linear-gradient(135deg, #f8f9fa 0%, var(--white) 100%);
+}
+
+.rse-split-content h2 {
+  font-size: 2.5rem;
+  margin: 1rem 0 1.5rem;
+  color: var(--dark);
+}
+
+.rse-split-content p {
+  color: var(--text);
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+
+/* List styles */
+.rse-list {
+  list-style: none;
+  padding: 0;
+  margin: 2rem 0;
+}
+
+.rse-list li {
+  padding: 0.75rem 0;
+  color: var(--text);
+  font-size: 1rem;
+  border-bottom: 1px solid var(--gray-medium);
+}
+
+.rse-list li:last-child {
+  border-bottom: none;
+}
+
+/* Quote */
+.rse-quote {
+  background: var(--white);
+  padding: 1.5rem;
+  border-radius: 16px;
+  border-left: 4px solid var(--primary);
+  font-style: italic;
+  margin-top: 2rem;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+.rse-quote p {
+  margin-bottom: 0;
+  font-size: 1rem;
+  color: var(--text);
+}
+
+/* CTA Section */
+.rse-cta {
+  background: linear-gradient(135deg, var(--primary), var(--primary-light));
+  color: var(--white);
+  text-align: center;
+  padding: 4rem 2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.rse-cta::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -50%;
+  width: 200%;
+  height: 200%;
+  /* background: radial-gradient(circle, rgba(138, 138, 138, 0.1) 0%, transparent 70%); */
+  animation: pulse 8s ease infinite;
+}
+
+.rse-cta-content {
+  position: relative;
+  z-index: 2;
+}
+
+.rse-cta-content h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.rse-cta-content p {
+  font-size: 1.1rem;
+  opacity: 0.95;
+}
+
+.rse-cta-button {
+  background: var(--white);
+  color: var(--primary);
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  border-radius: 50px;
+  cursor: pointer;
+  margin-top: 2rem;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.rse-cta-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.rse-cta-button span {
+  transition: transform 0.3s ease;
+}
+
+.rse-cta-button:hover span {
+  transform: translateX(5px);
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes bounce {
+  0%, 100% { 
+    transform: translateY(0); 
+  }
+  50% { 
+    transform: translateY(10px); 
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.5;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.8;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .rse-section {
+    padding: 4rem 0;
+  }
+  
+  .rse-grid {
+    gap: 3rem;
+  }
+  
+  .rse-split-content {
+    padding: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .rse-hero {
+    min-height: 500px;
+  }
+  
+  .rse-hero-content h1 {
+    font-size: 2.5rem;
+  }
+  
+  .rse-hero-subtitle {
+    font-size: 1.1rem;
+  }
+  
+  .rse-grid,
+  .rse-split {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .rse-grid.reverse {
+    direction: ltr;
+  }
+  
+  .rse-split-content {
+    padding: 2rem;
+  }
+  
+  .rse-section {
+    padding: 3rem 0;
+  }
+  
+  .rse-stats {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  
+  .rse-content h2,
+  .rse-section-header h2,
+  .rse-split-content h2 {
+    font-size: 1.8rem;
+  }
+  
+  .rse-cta-content h3 {
+    font-size: 1.5rem;
+  }
+  
+  .rse-container {
+    padding: 0 1.5rem;
+  }
+  
+  .rse-cards-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .rse-hero-content h1 {
+    font-size: 1.8rem;
+  }
+  
+  .rse-hero-badge {
+    font-size: 0.8rem;
+  }
+  
+  .rse-content h2 {
+    font-size: 1.5rem;
+  }
+  
+  .rse-card {
+    padding: 1.5rem;
+  }
+  
+  .rse-split-content {
+    padding: 1.5rem;
+  }
+}
+
+/* Print styles */
+@media print {
+  .rse-hero {
+    height: auto;
+    min-height: auto;
+  }
+  
+  .rse-hero-overlay {
+    background: none;
+  }
+  
+  .rse-cta,
+  .rse-hero-scroll {
+    display: none;
+  }
+}

@@ -1,0 +1,249 @@
+
+        .engagement-page {
+          font-family: "Inter", system-ui, -apple-system, sans-serif;
+          color: #1a2c3e;
+          background-color: #ffffff;
+        }
+
+        /* Hero Banner */
+        .engagement-hero {
+          position: relative;
+          height: 55vh;
+          min-height: 500px;
+          background-size: cover;
+          background-position: center;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+        }
+
+        .engagement-hero-overlay {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: linear-gradient(135deg, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.3) 100%);
+        }
+
+        .engagement-hero-content {
+          position: relative;
+          z-index: 2;
+          max-width: 800px;
+          padding: 0 24px;
+          color: white;
+        }
+
+        .engagement-hero-content h1 {
+          font-size: 3.2rem;
+          font-weight: 700;
+          margin-bottom: 20px;
+          letter-spacing: -0.01em;
+          text-shadow: 0 2px 8px rgba(0,0,0,0.2);
+        }
+
+        .engagement-hero-content p {
+          font-size: 1.3rem;
+          font-weight: 400;
+          line-height: 1.5;
+          opacity: 0.95;
+          text-shadow: 0 1px 4px rgba(0,0,0,0.2);
+        }
+
+        /* Main container */
+        .engagement-main {
+          max-width: 1280px;
+          margin: 0 auto;
+          padding: 80px 40px;
+        }
+
+        /* Sections générales */
+        .engagement-section {
+          margin-bottom: 100px;
+        }
+
+        .engagement-section:last-child {
+          margin-bottom: 0;
+        }
+
+        .engagement-grid {
+          display: flex;
+          align-items: center;
+          flex-wrap: wrap;
+        }
+
+        .engagement-text {
+          flex: 1.2;
+        }
+
+        .engagement-image-wrapper {
+          flex: 5;
+        }
+
+        .engagement-tag {
+          display: inline-block;
+          font-size: 0.85rem;
+          text-transform: uppercase;
+          letter-spacing: 1.5px;
+          font-weight: 600;
+          color: #2c7a6e;
+          background: #e0f2f0;
+          padding: 6px 14px;
+          border-radius: 30px;
+          margin-bottom: 24px;
+        }
+
+        .engagement-text h2 {
+          font-size: 2.8rem;
+          font-weight: 700;
+          line-height: 1.2;
+          margin-bottom: 28px;
+          color: #1a4d44;
+          letter-spacing: -0.01em;
+        }
+
+        .engagement-text p {
+          font-size: 1.05rem;
+          line-height: 1.6;
+          color: #2c3e44;
+          margin-bottom: 20px;
+        }
+
+        .engagement-text p:last-child {
+          margin-bottom: 0;
+        }
+
+        /* Images */
+        .engagement-image-large {
+          width: 100%;
+          height: 440px;
+          border-radius: 28px;
+          box-shadow: 0 20px 35px -12px rgba(0,0,0,0.15);
+          transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .engagement-image-large:hover {
+          transform: scale(1.02);
+          box-shadow: 0 25px 40px -14px rgba(0,0,0,0.2);
+        }
+
+        /* Section amélioration continue : 3 colonnes */
+        .continuous-grid {
+          display: grid;
+          grid-template-columns: 1fr 1.4fr 1fr;
+          gap: 40px;
+          align-items: center;
+        }
+
+        .engagement-image-small {
+          width: 100%;
+          height: 280px;
+          border-radius: 24px;
+          box-shadow: 0 15px 30px -10px rgba(0,0,0,0.1);
+          transition: transform 0.3s ease;
+        }
+
+        .engagement-image-small:hover {
+          transform: translateY(-6px);
+        }
+
+        .centered-text {
+          text-align: center;
+        }
+
+        .centered-text p {
+          text-align: center;
+        }
+
+        /* Section évolution */
+        .evolution-grid {
+          display: flex;
+          gap: 60px;
+          align-items: center;
+          flex-direction: row;
+        }
+
+        .engagement-image-stacked {
+          flex: 1;
+        }
+
+        .engagement-stacked-img {
+          width: 100%;
+          max-height: 380px;
+          object-fit: cover;
+          border-radius: 28px;
+          box-shadow: 0 20px 30px -10px rgba(0,0,0,0.1);
+          transition: transform 0.4s ease;
+        }
+
+        .engagement-stacked-img:hover {
+          transform: scale(1.01);
+        }
+
+        /* Responsive */
+        @media (max-width: 1024px) {
+          .engagement-main {
+            padding: 60px 30px;
+          }
+          .engagement-grid {
+            gap: 40px;
+          }
+          .continuous-grid {
+            grid-template-columns: 1fr;
+            gap: 40px;
+          }
+          .engagement-image-small {
+            height: 260px;
+          }
+          .evolution-grid {
+            flex-direction: column;
+          }
+          .engagement-text h2 {
+            font-size: 2.4rem;
+          }
+        }
+
+        @media (max-width: 768px) {
+          .engagement-hero {
+            height: 45vh;
+            min-height: 350px;
+          }
+          .engagement-hero-content h1 {
+            font-size: 2.2rem;
+          }
+          .engagement-hero-content p {
+            font-size: 1rem;
+          }
+          .engagement-main {
+            padding: 40px 20px;
+          }
+          .engagement-section {
+            margin-bottom: 70px;
+          }
+          .engagement-grid {
+            flex-direction: column;
+          }
+          .engagement-image-large {
+            height: 300px;
+          }
+          .engagement-text h2 {
+            font-size: 2rem;
+          }
+          .engagement-tag {
+            font-size: 0.75rem;
+          }
+        }
+
+        @media (max-width: 480px) {
+          .engagement-image-large {
+            height: 220px;
+          }
+          .engagement-image-small {
+            height: 200px;
+          }
+          .engagement-text h2 {
+            font-size: 1.8rem;
+          }
+        }
+    
