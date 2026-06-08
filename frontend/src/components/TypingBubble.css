@@ -31,6 +31,7 @@
   top: -30px;
   left: -30px;
   animation: floatBg1 7s ease-in-out infinite;
+  will-change: transform;
 }
 
 .fb-2 {
@@ -40,6 +41,7 @@
   left: 30px;
   animation: floatBg2 9s ease-in-out infinite;
   animation-delay: 2s;
+  will-change: transform;
 }
 
 .fb-3 {
@@ -49,6 +51,7 @@
   right: 60px;
   animation: floatBg3 8s ease-in-out infinite;
   animation-delay: 1s;
+  will-change: transform;
 }
 
 @keyframes floatBg1 {

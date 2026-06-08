@@ -1,0 +1,301 @@
+/* ── RSE Page ─────────────────────────────────────────── */
+
+.rse-page {
+  font-family: 'DM Sans', 'Segoe UI', sans-serif;
+  background: #fafaf8;
+  color: #1c1c1a;
+}
+
+/* ── Hero ─────────────────────────────────────────────── */
+.rse-hero {
+  position: relative;
+  height: 420px;
+  background-color: #0a3d2e;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: flex-end;
+  padding: 0 80px 56px;
+  overflow: hidden;
+}
+
+.rse-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(8, 35, 22, 0.85) 0%,
+    rgba(8, 35, 22, 0.4) 60%,
+    transparent 100%
+  );
+}
+
+.rse-hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+.rse-hero-tag {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #7ecba8;
+  margin-bottom: 12px;
+}
+
+.rse-hero h1 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 48px;
+  font-weight: 600;
+  color: #fff;
+  line-height: 1.1;
+  margin: 0 0 10px;
+}
+
+.rse-hero p {
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.6);
+  max-width: 480px;
+  line-height: 1.65;
+}
+
+/* ── Main wrapper ─────────────────────────────────────── */
+.rse-main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 40px 100px;
+}
+
+/* ── Eyebrow label ────────────────────────────────────── */
+.rse-eyebrow {
+  display: block;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #1a8c5c;
+  margin-bottom: 14px;
+}
+
+/* ── Section headings ─────────────────────────────────── */
+.rse-text-block h2 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 34px;
+  font-weight: 600;
+  color: #0f2d1f;
+  line-height: 1.2;
+  margin-bottom: 24px;
+}
+
+.rse-text-block p {
+  font-size: 15px;
+  color: #4a4a46;
+  line-height: 1.85;
+  margin-bottom: 14px;
+}
+
+.rse-text-block p strong {
+  color: #0f2d1f;
+  font-weight: 500;
+}
+
+/* ── Intro section ────────────────────────────────────── */
+.rse-intro-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 72px;
+  align-items: center;
+  margin-bottom: 96px;
+}
+
+.rse-image-block {
+  height: 380px;
+  border-radius: 18px;
+  background-color: #d4ede2;
+}
+
+/* ── Quote ────────────────────────────────────────────── */
+.rse-quote {
+  background: #0a3d2e;
+  border-radius: 22px;
+  padding: 52px 64px;
+  margin-bottom: 96px;
+  position: relative;
+  overflow: hidden;
+}
+
+.rse-quote::before {
+  content: '"';
+  position: absolute;
+  top: -30px;
+  left: 44px;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 200px;
+  color: rgba(255, 255, 255, 0.05);
+  line-height: 1;
+  pointer-events: none;
+}
+
+.rse-quote p {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 21px;
+  color: #e8f5ef;
+  line-height: 1.65;
+  font-style: italic;
+  max-width: 760px;
+  position: relative;
+  z-index: 1;
+}
+
+.rse-quote cite {
+  display: block;
+  margin-top: 22px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 11px;
+  font-style: normal;
+  color: #7ecba8;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 1;
+}
+
+/* ── Pillars grid ─────────────────────────────────────── */
+.rse-pillars {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-bottom: 96px;
+}
+
+.rse-pillar-card {
+  background: #fff;
+  border: 1px solid #e4e8e5;
+  border-radius: 18px;
+  padding: 32px;
+  position: relative;
+  overflow: hidden;
+  transition: border-color 0.2s, transform 0.2s;
+}
+
+.rse-pillar-card:hover {
+  border-color: #4ab88a;
+  transform: translateY(-2px);
+}
+
+.rse-pillar-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  border-radius: 18px 18px 0 0;
+}
+
+.rse-pillar--green::before  { background: #1a8c5c; }
+.rse-pillar--teal::before   { background: #0d7a6b; }
+.rse-pillar--olive::before  { background: #6b8c3a; }
+.rse-pillar--sage::before   { background: #4a7c6a; }
+
+.rse-pillar-number {
+  display: block;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  color: #b8c0ba;
+  margin-bottom: 14px;
+}
+
+.rse-pillar-card h3 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 21px;
+  font-weight: 600;
+  color: #0f2d1f;
+  margin-bottom: 12px;
+  line-height: 1.3;
+}
+
+.rse-pillar-card p {
+  font-size: 14px;
+  color: #5a5a56;
+  line-height: 1.8;
+  margin-bottom: 0;
+}
+
+.rse-pillar-image {
+  height: 140px;
+  border-radius: 10px;
+  margin-top: 20px;
+  background-color: #e0f0e8;
+}
+
+/* ── Environnement section ────────────────────────────── */
+.rse-env-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+  align-items: center;
+  background: #f2f6f3;
+  border-radius: 26px;
+  padding: 60px;
+}
+
+.rse-env-image {
+  height: 340px;
+  border-radius: 16px;
+  background-color: #c8e5d0;
+}
+
+/* ── Eco badges ───────────────────────────────────────── */
+.rse-eco-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 24px;
+}
+
+.rse-eco-badges span {
+  background: #dceee5;
+  color: #1a5c3c;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 5px 14px;
+  border-radius: 20px;
+  letter-spacing: 0.2px;
+}
+
+/* ── Responsive ───────────────────────────────────────── */
+@media (max-width: 768px) {
+  .rse-hero {
+    height: 320px;
+    padding: 0 28px 40px;
+  }
+
+  .rse-hero h1 {
+    font-size: 32px;
+  }
+
+  .rse-main {
+    padding: 48px 20px 64px;
+  }
+
+  .rse-intro-section,
+  .rse-pillars,
+  .rse-env-section {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .rse-quote {
+    padding: 36px 28px;
+  }
+
+  .rse-quote p {
+    font-size: 17px;
+  }
+
+  .rse-env-section {
+    padding: 36px 28px;
+  }
+}

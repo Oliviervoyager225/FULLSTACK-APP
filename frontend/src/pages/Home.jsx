@@ -485,7 +485,6 @@ import '../styles/ContactSection.css';
 import '../styles/ActuSection.css';
 import TypingBubble from '../components/TypingBubble';
 import QuotesBanner from '../components/QuotesBanner';
-// import LeafletMap from '../components/LeafletMap';
 
 import { Users, Target, ShieldCheck, Lightbulb, HandHeart, Home as HomeIcon, Accessibility, Handshake } from "lucide-react";
 
@@ -540,6 +539,108 @@ function ActuCarousel() {
   );
 }
 
+/* ── Contenu structuré pour la modale Centre des 2 Plateaux ── */
+function ModalCentreContent() {
+  const services = [
+    {
+      icon: '🏥',
+      titre: 'Les consultations',
+      desc: 'Rendez-vous dans diverses spécialités : psychiatrie, psychologie, orthophonie, éducation spécialisée, etc.',
+    },
+    {
+      icon: '☀️',
+      titre: "L'hôpital de jour",
+      desc: "Ateliers et programmes pour soutenir le bien-être, la socialisation et l'autonomie des bénéficiaires, animés par une équipe pluridisciplinaire, dans un lieu ouvert toute la journée.",
+    },
+    {
+      icon: '🛡️',
+      titre: 'La mise en observation',
+      desc: "Prise en charge ponctuelle d'une situation de crise dans un cadre sécurisé pour identifier les besoins du bénéficiaire, l'orienter et le référer.",
+    },
+  ];
+
+  const documents = [
+    "Une pièce d'identité des 2 parents (carte d'identité, passeport, carte de séjour…)",
+    "Une pièce d'identité du bénéficiaire (carte d'identité, livret de famille, passeport…)",
+    "Le carnet de santé",
+    "Les coordonnées du médecin traitant, pédiatre ou autres professionnels de santé",
+    "Les documents médicaux récents (ordonnances, bilans, résultats d'examens, comptes rendus…)",
+    "Une attestation d'assurance, si concerné",
+  ];
+
+  return (
+    <div>
+      {/* Services */}
+      <p style={{ fontSize: '0.95rem', color: '#555', lineHeight: 1.7, marginBottom: '20px' }}>
+        Le centre spécialisé La Fée Rima offre une gamme complète de services liés à la santé mentale des adolescents et des jeunes :
+      </p>
+      <div style={{ display: 'flex', flexDirection: 'column', gap: '12px', marginBottom: '28px' }}>
+        {services.map((s, i) => (
+          <div key={i} style={{
+            display: 'flex', gap: '14px', alignItems: 'flex-start',
+            background: '#f0f9ff', borderRadius: '12px',
+            border: '1px solid #bae6fd', padding: '14px 16px',
+          }}>
+            <span style={{ fontSize: '1.4rem', flexShrink: 0, marginTop: '2px' }}>{s.icon}</span>
+            <div>
+              <p style={{ margin: '0 0 4px', fontWeight: 700, fontSize: '0.9rem', color: '#0c4a6e' }}>{s.titre}</p>
+              <p style={{ margin: 0, fontSize: '0.875rem', color: '#444', lineHeight: 1.6 }}>{s.desc}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      {/* Formulaires admission */}
+      <div style={{
+        background: '#f0fdf4', border: '1px solid #bbf7d0',
+        borderRadius: '12px', padding: '16px', marginBottom: '24px',
+      }}>
+        <p style={{ margin: '0 0 6px', fontWeight: 700, fontSize: '0.9rem', color: '#14532d' }}>
+          📋 Futurs visiteurs — Préparez votre venue
+        </p>
+        <p style={{ margin: '0 0 10px', fontSize: '0.875rem', color: '#444', lineHeight: 1.6 }}>
+          Téléchargez les formulaires d'admission et envoyez-les par mail à l'adresse du secrétariat avant votre arrivée.
+        </p>
+        <a
+          href="mailto:secretariat@lafeerima.ci"
+          style={{
+            display: 'inline-flex', alignItems: 'center', gap: '6px',
+            padding: '7px 16px', background: '#16a34a', color: '#fff',
+            borderRadius: '50px', fontSize: '0.82rem', fontWeight: 700,
+            textDecoration: 'none',
+          }}
+        >
+          ✉️ Envoyer les formulaires
+        </a>
+      </div>
+
+      {/* Documents à présenter */}
+      <div>
+        <p style={{ fontWeight: 700, fontSize: '0.9rem', color: '#1a3a5c', marginBottom: '10px' }}>
+          📂 Documents à présenter au secrétariat à votre arrivée
+        </p>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
+          {documents.map((doc, i) => (
+            <div key={i} style={{
+              display: 'flex', gap: '10px', alignItems: 'flex-start',
+              padding: '8px 12px', background: '#f8fafc',
+              borderRadius: '8px', border: '1px solid #e2e8f0',
+            }}>
+              <span style={{
+                flexShrink: 0, width: '20px', height: '20px', borderRadius: '50%',
+                background: '#109cdd', display: 'flex', alignItems: 'center',
+                justifyContent: 'center', fontSize: '0.7rem', fontWeight: 800,
+                color: '#fff', marginTop: '1px',
+              }}>{i + 1}</span>
+              <span style={{ fontSize: '0.875rem', color: '#444', lineHeight: 1.6 }}>{doc}</span>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+}
+
 export default function Home() {
   const location = useLocation();
   const navigate = useNavigate();
@@ -550,63 +651,69 @@ export default function Home() {
   const [selectedService, setSelectedService] = useState(null);
 
   const heroImages = [
-    '/assets/feerima/slider1.jpg?v=' + Date.now(),
-    '/assets/feerima/slider2.jpg?v=' + Date.now(),
-    '/assets/feerima/slider3.jpg?v=' + Date.now(),
+    '/assets/feerima/slider1.jpg',
+    '/assets/feerima/slider2.jpg',
+    '/assets/feerima/slider3.jpg',
   ];
 
-  const servicesData = [
-    {
-      icon: <Users size={64} strokeWidth={1.5} />,
-      title: "Équipe pluridisciplinaire",
-      description: "Psychologues, éducateurs spécialisés, infirmiers-psy, pédopsychiatre, orthophoniste, art thérapeute, coach sportif, référente cadre de vie…",
-      details: `Avec un accompagnement pluridisciplinaire, chaque bénéficiaire dispose d'un accès intégral à plusieurs professionnels qualifiés selon ses besoins. Sur place, on retrouve donc : pédopsychiatre, psychologues, éducateurs spécialisés, infirmiers-psy, orthophoniste, art thérapeute, coach sportif, référente cadre de vie…
+//   const servicesData = [
+//     {
+//       icon: <Users size={64} strokeWidth={1.5} />,
+//       title: "Équipe pluridisciplinaire",
+//       description: "Psychologues, éducateurs spécialisés, infirmiers-psy, pédopsychiatre, orthophoniste, art thérapeute, coach sportif, référente cadre de vie…",
+//       details: `Avec un accompagnement pluridisciplinaire, chaque bénéficiaire dispose d'un accès intégral à plusieurs professionnels qualifiés selon ses besoins. Sur place, on retrouve donc : pédopsychiatre, psychologues, éducateurs spécialisés, infirmiers-psy, orthophoniste, art thérapeute, coach sportif, référente cadre de vie…
+// Autrement dit, notre équipe propose un parcours de soins complet au sein de la Fée Rima. Entre autres : 
 
-Notre équipe propose un parcours de soins complet :
+// - Diagnostic et prise en charge médicamenteuse
+// - Écoute active et bienveillante, thérapie individuelle
+// - Accompagnement socio-éducatif et professionnel
+// - Traitement des troubles du langage et de l'apprentissage
+// - Expressions artistiques
+// - Éducation sportive
+// - Ateliers thérapeutiques variés (pâtisserie, jardinage, éducation à la santé…)`,
+//     },
+//     {
+//       icon: <Target size={64} strokeWidth={1.5} />,
+//       title: "Approche personnalisée",
+//       description: "Un accompagnement adapté aux besoins et au rythme de chaque bénéficiaire, grâce à un projet personnalisé de soins.",
+//       details: `Un accompagnement adapté aux besoins et au rythme de chaque bénéficiaire, grâce à un projet personnalisé de soins (PPS) définissant les objectifs précis à atteindre au cours de la prise en charge.
 
-- Diagnostic et prise en charge médicamenteuse
-- Écoute active et bienveillante, thérapie individuelle
-- Accompagnement socio-éducatif et professionnel
-- Traitement des troubles du langage et de l'apprentissage
-- Expressions artistiques
-- Éducation sportive
-- Ateliers thérapeutiques variés (pâtisserie, jardinage, éducation à la santé…)`,
-    },
-    {
-      icon: <Target size={64} strokeWidth={1.5} />,
-      title: "Approche personnalisée",
-      description: "Un accompagnement adapté aux besoins et au rythme de chaque bénéficiaire, grâce à un projet personnalisé de soins.",
-      details: `Un accompagnement adapté aux besoins et au rythme de chaque bénéficiaire, grâce à un projet personnalisé de soins (PPS) définissant les objectifs précis à atteindre au cours de la prise en charge.
+// Dans la mesure du possible, le bénéficiaire participe à l'élaboration de son projet de soin, en connaissance des bénéfices qu'il tire de son accompagnement.
 
-Dans la mesure du possible, le bénéficiaire participe à l'élaboration de son projet de soin, en connaissance des bénéfices qu'il tire de son accompagnement.
+// Le PPS est mis en place à partir de la mise en commun des appréciations du bénéficiaire, de sa famille et des différentes évaluations de chaque professionnel (psychologique, médicale, éducative).`,
+//     },
+//     {
+//       icon: <ShieldCheck size={64} strokeWidth={1.5} />,
+//       title: "Cadre bienveillant et sécurisé",
+//       description: "Un lieu structuré où l'accueil est le premier soin et un lieu sûr où les droits, la sécurité et la confidentialité sont garantis.",
+//       details: `La Fondation La Fée Rima offre un cadre moderne et attrayant où l'accueil est le premier soin.
 
-Le PPS est mis en place à partir de la mise en commun des appréciations du bénéficiaire, de sa famille et des différentes évaluations de chaque professionnel (psychologique, médicale, éducative).`,
-    },
-    {
-      icon: <ShieldCheck size={64} strokeWidth={1.5} />,
-      title: "Cadre bienveillant et sécurisé",
-      description: "Un lieu structuré où l'accueil est le premier soin et un lieu sûr où les droits, la sécurité et la confidentialité sont garantis.",
-      details: `La Fondation La Fée Rima offre un cadre moderne et attrayant où l'accueil est le premier soin.
+// Les droits, la sécurité et la confidentialité sont garantis pour les bénéficiaires et leurs familles : respect de la dignité, protection de la vie privée, accès à une information claire sur la prise en charge…`,
+//     },
+//     {
+//       icon: <Lightbulb size={64} strokeWidth={1.5} />,
+//       title: "Méthodes validées et innovantes",
+//       description: "Des pratiques d'efficacité reconnues et mises à jour selon les avancées scientifiques.",
+//       details: `Des pratiques d'efficacité reconnues et mises à jour selon les avancées scientifiques, comme l'art-thérapie et les thérapies cognitivo-comportementales.
 
-Les droits, la sécurité et la confidentialité sont garantis pour les bénéficiaires et leurs familles : respect de la dignité, protection de la vie privée, accès à une information claire sur la prise en charge…`,
-    },
-    {
-      icon: <Lightbulb size={64} strokeWidth={1.5} />,
-      title: "Méthodes validées et innovantes",
-      description: "Des pratiques d'efficacité reconnues et mises à jour selon les avancées scientifiques.",
-      details: `Des pratiques d'efficacité reconnues et mises à jour selon les avancées scientifiques, comme l'art-thérapie et les thérapies cognitivo-comportementales.
+// L'équipe de La Fée Rima actualise régulièrement ses pratiques grâce à la formation continue, à la veille scientifique et aux échanges professionnels, afin de proposer des interventions adaptées aux besoins des adolescents, des jeunes et de leurs familles.`,
+//     },
+//     {
+//       icon: <HandHeart size={64} strokeWidth={1.5} />,
+//       title: "Implication des bénéficiaires et leurs familles",
+//       description: "Les bénéficiaires et leurs familles participent activement au projet thérapeutique, dans le respect de leur rythme.",
+//       details: `Les bénéficiaires et leurs familles participent activement au projet thérapeutique, au parcours de soins, dans le respect de leur rythme et de leurs capacités.
 
-L'équipe de La Fée Rima actualise régulièrement ses pratiques grâce à la formation continue, à la veille scientifique et aux échanges professionnels, afin de proposer des interventions adaptées aux besoins des adolescents, des jeunes et de leurs familles.`,
-    },
-    {
-      icon: <HandHeart size={64} strokeWidth={1.5} />,
-      title: "Implication des bénéficiaires et leurs familles",
-      description: "Les bénéficiaires et leurs familles participent activement au projet thérapeutique, dans le respect de leur rythme.",
-      details: `Les bénéficiaires et leurs familles participent activement au projet thérapeutique, au parcours de soins, dans le respect de leur rythme et de leurs capacités.
-
-Collaboration étroite avec la famille tout au long de l'accompagnement.`,
-    },
-  ];
+// Collaboration étroite avec la famille tout au long de l'accompagnement.`,
+//     },
+//     {
+//       icon: <HomeIcon size={64} strokeWidth={1.5} />,
+//       title: "Centre spécialisé des 2 Plateaux",
+//       description: "La Fée Rima est située au cœur du quartier des 2 Plateaux, un lieu stratégique pour toucher les jeunes et leurs familles dans la région d'Abidjan.",
+//       // details est géré via isCustomModal
+//       isCustomModal: true,
+//     },
+//   ];
 
   const goToPreviousHero = () => { setHeroIndex((prev) => (prev === 0 ? heroImages.length - 1 : prev - 1)); };
   const goToNextHero = () => { setHeroIndex((prev) => (prev === heroImages.length - 1 ? 0 : prev + 1)); };
@@ -697,13 +804,6 @@ Collaboration étroite avec la famille tout au long de l'accompagnement.`,
         >
           <button type="button" className="hero-nav hero-nav-prev" onClick={goToPreviousHero} aria-label="Image précédente">‹</button>
 
-          {/* Titre aligné à gauche */}
-          {/* <div style={{ position: 'absolute', left: '160px', top: '50%', transform: 'translateY(-50%)', maxWidth: '700px' }}>
-            <h1 className="hero-title" style={{ textAlign: 'left', color: '#fff', margin: 0 }}>
-              Votre partenaire de confiance pour la santé mentale des jeunes et adolescents de 10-25 ans.
-            </h1>
-          </div> */}
-
           <div style={{
             position: 'absolute',
             left: '160px',
@@ -717,7 +817,7 @@ Collaboration étroite avec la famille tout au long de l'accompagnement.`,
               textAlign: 'left',
               color: '#fff',
               margin: 0,
-              fontWeight: 500, // Gras maximal
+              fontWeight: 500,
               fontSize: '2.0rem',
               lineHeight: 1.2,
               letterSpacing: '-0.02em'
@@ -726,7 +826,6 @@ Collaboration étroite avec la famille tout au long de l'accompagnement.`,
             </h1>
           </div>
 
-          {/* Boutons bas gauche + Carte bas droite */}
           <div style={{
             position: 'absolute',
             bottom: '105px',
@@ -734,24 +833,13 @@ Collaboration étroite avec la famille tout au long de l'accompagnement.`,
             right: '60px',
             display: 'flex',
             justifyContent: 'space-between',
-            alignItems: 'flex-end', // ← Changé de 'center' à 'flex-end' pour aligner par le bas
+            alignItems: 'flex-end',
           }}>
-            {/* Boutons à gauche - avec padding ajouté pour alignement parfait */}
-            <div style={{
-              display: 'flex',
-              flexDirection: 'row',
-              gap: '16px',
-              alignItems: 'center',
-              paddingBottom: '0px' // Ajusté à 0 pour que le bas des boutons touche la ligne
-            }}>
+            <div style={{ display: 'flex', flexDirection: 'row', gap: '16px', alignItems: 'center', paddingBottom: '0px' }}>
               <Link to="/contact" className="btn btn-primary-yellow">
                 Prendre rendez-vous
               </Link>
-              <button type="button" className="btn btn-video" style={{
-                display: 'flex',
-                alignItems: 'center',
-                gap: '10px'
-              }}>
+              <button type="button" className="btn btn-video" style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
                 <span className="play-icon" style={{ display: 'flex', alignItems: 'center', fontWeight: 800 }}>
                   <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
                     <path d="M8 5v14l11-7z" />
@@ -761,26 +849,14 @@ Collaboration étroite avec la famille tout au long de l'accompagnement.`,
               </button>
             </div>
 
-            {/* Carte à droite */}
-            <div style={{
-              background: '#fff',
-              padding: '16px 24px',
-              borderRadius: '16px',
-              // boxShadow: '0 8px 20px rgba(0,0,0,0.15)',
-              // Le padding-bottom de 16px détermine la ligne de base
-            }}>
-              <p style={{ margin: 0, fontWeight: '700', color: '#222', fontSize: '0.95rem' }}>
-                À La Fée Rima
-              </p>
-              <p style={{ margin: '4px 0 0 0', color: '#444', fontSize: '0.88rem' }}>
-                Un accueil personnalisé et bienveillant
-              </p>
+            <div style={{ background: '#fff', padding: '16px 24px', borderRadius: '16px' }}>
+              <p style={{ margin: 0, fontWeight: '700', color: '#222', fontSize: '0.95rem' }}>À La Fée Rima</p>
+              <p style={{ margin: '4px 0 0 0', color: '#444', fontSize: '0.88rem' }}>Un accueil personnalisé et bienveillant</p>
             </div>
           </div>
 
           <button type="button" className="hero-nav hero-nav-next" onClick={goToNextHero} aria-label="Image suivante">›</button>
 
-          {/* Pagination dots */}
           <div className="hero-pagination">
             {heroImages.map((_, index) => (
               <button
@@ -800,64 +876,19 @@ Collaboration étroite avec la famille tout au long de l'accompagnement.`,
           <QuotesBanner />
           <section className="contact-section-wrapper" style={{ background: '#ffffff', padding: 0, paddingBottom: '60px' }}>
             <div className="contact-container" style={{ display: 'flex', alignItems: 'stretch', minHeight: '520px', overflow: 'hidden', background: '#ffffff', maxWidth: '100%', margin: 0, padding: 0 }}>
-              {/* <div className="contact-text-col">
-                <span className="contact-subtitle">Bienvenue chez La Fée Rima</span>
-                <h2 className="contact-main-title">
-                  RAPIDE, FACILE & FIABLE
-                  <span className="highlight">CONTACTEZ-NOUS !</span>
-                </h2>
-                <p className="contact-description">
-                  Profitez d'un accompagnement personnalisé avec nos spécialistes.
-                  Un cadre chaleureux, une écoute active et des solutions adaptées à chaque situation.
-                </p>
-                <p style={{ fontSize: '1.1rem', fontWeight: 700, color: '#333', marginBottom: '12px', letterSpacing: '0.02em' }}>
-                  +225 07 00 000 007
-                </p>
-                <a href="tel:+2250700000007" className="btn-contact">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
-                  </svg>
-                  Appeler le centre
-                </a>
-              </div> */}
-              {/* Image médecin à gauche */}
-              <div style={{
-                flex: '0 0 45%',
-                display: 'flex',
-                alignItems: 'flex-end',
-                justifyContent: 'center',
-                overflow: 'hidden',
-              }}>
+              <div style={{ flex: '0 0 45%', display: 'flex', alignItems: 'flex-end', justifyContent: 'center', overflow: 'hidden' }}>
                 <img
                   src="/assets/feerima/appointment-image.jpg"
                   alt="Spécialiste La Fée Rima"
-                  style={{
-                    width: '100%',
-                    maxWidth: '460px',
-                    objectFit: 'cover',
-                    objectPosition: 'top',
-                    display: 'block',
-                  }}
+                  style={{ width: '100%', maxWidth: '460px', objectFit: 'cover', objectPosition: 'top', display: 'block' }}
                 />
               </div>
 
-              {/* Formulaire à droite */}
-              <div style={{
-                flex: '1',
-                padding: '50px 48px 50px 40px',
-                background: '#ffffff',
-              }}>
-                <h2 style={{
-                  fontSize: '2.0rem',
-                  fontWeight: 800,
-                  color: '#222',
-                  marginBottom: '30px',
-                  lineHeight: 1.2,
-                }}>
+              <div style={{ flex: '1', padding: '50px 48px 50px 40px', background: '#ffffff' }}>
+                <h2 style={{ fontSize: '2.0rem', fontWeight: 800, color: '#222', marginBottom: '30px', lineHeight: 1.2 }}>
                   Prendre un rendez-vous
                 </h2>
 
-                {/* Ligne 1 : Nom + Email */}
                 <div style={{ display: 'flex', gap: '16px', marginBottom: '16px' }}>
                   <div style={{ flex: 1 }}>
                     <label style={labelStyle}>Nom complet</label>
@@ -869,7 +900,6 @@ Collaboration étroite avec la famille tout au long de l'accompagnement.`,
                   </div>
                 </div>
 
-                {/* Ligne 2 : Date + Département */}
                 <div style={{ display: 'flex', gap: '16px', marginBottom: '16px' }}>
                   <div style={{ flex: 1 }}>
                     <label style={labelStyle}>Date souhaitée</label>
@@ -886,33 +916,20 @@ Collaboration étroite avec la famille tout au long de l'accompagnement.`,
                   </div>
                 </div>
 
-                {/* Ligne 3 : Téléphone */}
                 <div style={{ marginBottom: '16px' }}>
                   <label style={labelStyle}>Téléphone</label>
                   <input type="tel" placeholder="Numéro de téléphone" style={inputStyle} />
                 </div>
 
-                {/* Ligne 4 : Message */}
                 <div style={{ marginBottom: '24px' }}>
                   <label style={labelStyle}>Message additionnel</label>
-                  <textarea
-                    placeholder="Message"
-                    rows={4}
-                    style={{ ...inputStyle, resize: 'vertical', height: '100px' }}
-                  />
+                  <textarea placeholder="Message" rows={4} style={{ ...inputStyle, resize: 'vertical', height: '100px' }} />
                 </div>
 
                 <button type="button" style={{
-                  width: '100%',
-                  padding: '16px',
-                  backgroundColor: '#8cc132',
-                  color: '#fff',
-                  border: 'none',
-                  fontSize: '1rem',
-                  fontWeight: 700,
-                  letterSpacing: '1px',
-                  textTransform: 'uppercase',
-                  cursor: 'pointer',
+                  width: '100%', padding: '16px', backgroundColor: '#8cc132',
+                  color: '#fff', border: 'none', fontSize: '1rem', fontWeight: 700,
+                  letterSpacing: '1px', textTransform: 'uppercase', cursor: 'pointer',
                   transition: 'background 0.3s ease',
                 }}>
                   Envoyer la demande
@@ -922,244 +939,50 @@ Collaboration étroite avec la famille tout au long de l'accompagnement.`,
           </section>
         </div>
 
-        <div id="google-map" style={{
-          width: '100vw',
-          position: 'relative',
-          left: '50%',
-          transform: 'translateX(-50%)',
-          lineHeight: 0,
-          padding: 0,
-          margin: 0,
-        }}>
+        <div id="google-map" style={{ width: '100vw', position: 'relative', left: '50%', transform: 'translateX(-50%)', lineHeight: 0, padding: 0, margin: 0 }}>
           <iframe
             src="https://maps.google.com/maps?q=5.33684,-4.01335&z=16&output=embed&hl=fr"
-            width="100%"
-            height="450"
-            frameBorder="0"
+            width="100%" height="450" frameBorder="0"
             style={{ border: 'none', display: 'block', width: '100%', margin: 0, padding: 0 }}
-            allowFullScreen
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-            title="PISAM - Polyclinique Internationale Sainte Anne-Marie"
-          ></iframe>
+            allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade"
+            title="La Fée Rima — 2 Plateaux"
+          />
         </div>
-
-        {/* <section className="google-map">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3647.3030413476204!2d100.5641230193719!3d13.757206847615207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf51ce6427b7918fc!2sG+Tower!5e0!3m2!1sen!2sth!4v1510722015945" // Assure-toi d'utiliser un lien "Embed" valide
-            width="100%"
-            height="350"
-            frameBorder="0"
-            style={{ border: 0 }}
-            allowFullScreen
-            title="Google Map"
-          ></iframe>
-        </section> */}
 
         <style>{`
   .services-section { padding: 60px 20px; background: #f9fafb; }
-  .services-main-title { text-align: center; text-transform: uppercase; color: #109cdd; letter-spacing: 2px; margin-bottom: 8px; }
-  .services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; max-width: 1100px; margin: 0 auto; }
-  .service-card { background: #fff; padding: 55px 40px; display: flex; flex-direction: column; align-items: center; text-align: center; border-radius: 12px; border: 1px solid #e2e8f0; box-shadow: 0 2px 10px rgba(0,0,0,0.06); cursor: pointer; transition: background 0.28s ease, color 0.28s ease, transform 0.18s ease, box-shadow 0.28s ease; }
-  .service-card:hover { background: #a3b519; transform: scale(1.03); z-index: 2; box-shadow: 0 8px 32px rgba(132,204,22,0.35); }
-  .service-icon { color: #109cdd; margin-bottom: 24px; transition: color 0.28s ease; }
+  .services-main-title { text-align: center; text-transform: uppercase; color: #109cdd; letter-spacing: 2px; margin-bottom: 36px; }
+  .services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; max-width: 1100px; margin: 0 auto; }
+  .service-card { background: #fff; border: 1px solid #e2e8f0; border-radius: 16px; padding: 48px 32px 36px; display: flex; flex-direction: column; align-items: center; text-align: center; gap: 16px; cursor: pointer; transition: background 0.28s ease, color 0.28s ease, transform 0.2s ease, box-shadow 0.2s ease; }
+  .service-card:hover { background: #a3b519; transform: translateY(-4px); box-shadow: 0 12px 32px rgba(163,181,25,0.3); border-color: #a3b519; }
+  .service-icon { color: #109cdd; transition: color 0.28s ease; }
   .service-card:hover .service-icon { color: #fff; }
-  .service-card h3 { font-size: 0.88rem; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: #0a0a0a; margin-bottom: 10px; transition: color 0.28s ease; }
+  .service-card h3 { font-size: 0.82rem; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: #0a0a0a; margin: 0; transition: color 0.28s ease; }
   .service-card:hover h3 { color: #fff; }
-  .service-card p { font-size: 0.88rem; color: #555; line-height: 1.6; transition: color 0.28s ease; }
+  .service-card p { font-size: 0.88rem; color: #555; line-height: 1.7; margin: 0; flex-grow: 1; transition: color 0.28s ease; }
   .service-card:hover p { color: rgba(255,255,255,0.92); }
-  .service-info-btn { margin-top: 14px; padding: 8px 20px; border: 2px solid #109cdd; background: transparent; color: #109cdd; border-radius: 20px; cursor: pointer; font-size: 0.82rem; font-weight: 600; transition: all 0.25s ease; }
-  .service-card:hover .service-info-btn { background: #fff; border-color: #fff; color: #16a34a; }
-        .modal-overlay {
-  position: fixed;
-  inset: 0;
-  background: rgba(0,0,0,0.5);
+  .service-info-btn { margin-top: 8px; padding: 10px 28px; border: 2px solid #109cdd; border-radius: 999px; background: transparent; color: #109cdd; font-size: 0.85rem; font-weight: 600; cursor: pointer; transition: background 0.25s ease, color 0.25s ease, border-color 0.25s ease; }
+  .service-card:hover .service-info-btn { background: #fff; border-color: #fff; color: #a3b519; }
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  z-index: 9999;
-  padding: 20px;
-}
-
-.modal-content {
-  background: #fff;
-  width: 100%;
-  max-width: 700px;
-
-  padding: 40px;
-  border-radius: 20px;
-
-  position: relative;
-
-  max-height: 90vh;
-  overflow-y: auto;
-}
-
-.modal-content h2 {
-  color: #109cdd;
-  margin-bottom: 20px;
-}
-
-.modal-content p {
-  line-height: 1.8;
-  color: #444;
-}
-
-.modal-close {
-  position: absolute;
-  top: 15px;
-  right: 15px;
-
-  border: none;
-  background: none;
-
-  font-size: 1.5rem;
-  cursor: pointer;
-}
-        `}</style>
-
-        <style>{`
-  .services-section {
-    padding: 60px 20px;
-    background: #f9fafb;
-  }
-  .services-main-title {
-    text-align: center;
-    text-transform: uppercase;
-    color: #109cdd;
-    letter-spacing: 2px;
-    margin-bottom: 36px;
-  }
-  .services-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 24px;
-    max-width: 1100px;
-    margin: 0 auto;
-  }
-  .service-card {
-    background: #fff;
-    border: 1px solid #e2e8f0;
-    border-radius: 16px;
-    padding: 48px 32px 36px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 16px;
-    cursor: pointer;
-    transition: background 0.28s ease, color 0.28s ease, transform 0.2s ease, box-shadow 0.2s ease;
-  }
-  .service-card:hover {
-    background: #a3b519;
-    transform: translateY(-4px);
-    box-shadow: 0 12px 32px rgba(163, 181, 25, 0.3);
-    border-color: #a3b519;
-  }
-  .service-icon {
-    color: #109cdd;
-    transition: color 0.28s ease;
-  }
-  .service-card:hover .service-icon {
-    color: #fff;
-  }
-  .service-card h3 {
-    font-size: 0.82rem;
-    font-weight: 700;
-    letter-spacing: 1.5px;
-    text-transform: uppercase;
-    color: #0a0a0a;
-    margin: 0;
-    transition: color 0.28s ease;
-  }
-  .service-card:hover h3 {
-    color: #fff;
-  }
-  .service-card p {
-    font-size: 0.88rem;
-    color: #555;
-    line-height: 1.7;
-    margin: 0;
-    flex-grow: 1;
-    transition: color 0.28s ease;
-  }
-  .service-card:hover p {
-    color: rgba(255, 255, 255, 0.92);
-  }
-  .service-info-btn {
-    margin-top: 8px;
-    padding: 10px 28px;
-    border: 2px solid #109cdd;
-    border-radius: 999px;
-    background: transparent;
-    color: #109cdd;
-    font-size: 0.85rem;
-    font-weight: 600;
-    cursor: pointer;
-    transition: background 0.25s ease, color 0.25s ease, border-color 0.25s ease;
-  }
-  .service-card:hover .service-info-btn {
-    background: #fff;
-    border-color: #fff;
-    color: #a3b519;
-  }
-  .modal-overlay {
-    position: fixed;
-    inset: 0;
-    background: rgba(0,0,0,0.5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 9999;
-    padding: 20px;
-  }
-  .modal-content {
-    background: #fff;
-    width: 100%;
-    max-width: 700px;
-    padding: 40px;
-    border-radius: 20px;
-    position: relative;
-    max-height: 90vh;
-    overflow-y: auto;
-  }
-  .modal-content h2 {
-    color: #109cdd;
-    margin-bottom: 20px;
-  }
-  .modal-content p {
-    line-height: 1.8;
-    color: #444;
-    white-space: pre-line;
-  }
-  .modal-close {
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    border: none;
-    background: none;
-    font-size: 1.5rem;
-    cursor: pointer;
-  }
+  .modal-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.5); display: flex; justify-content: center; align-items: center; z-index: 9999; padding: 20px; }
+  .modal-content { background: #fff; width: 100%; max-width: 680px; border-radius: 20px; position: relative; max-height: 90vh; overflow-y: auto; }
+  .modal-header { padding: 28px 36px 20px; border-bottom: 1px solid #e8edf2; position: sticky; top: 0; background: #fff; z-index: 1; border-radius: 20px 20px 0 0; }
+  .modal-header h2 { color: #109cdd; margin: 0; font-size: 1.25rem; font-weight: 800; }
+  .modal-body { padding: 24px 36px 32px; }
+  .modal-close { position: absolute; top: 18px; right: 20px; border: none; background: #f1f5f9; width: 32px; height: 32px; border-radius: 50%; font-size: 1rem; cursor: pointer; display: flex; align-items: center; justify-content: center; color: #64748b; transition: background 0.2s; }
+  .modal-close:hover { background: #e2e8f0; }
 `}</style>
 
-        <div className="services-section">
+        {/* <div className="services-section">
           <h2 className="services-main-title">Nos spécificités</h2>
 
           <div className="services-grid">
             {servicesData.map((service, index) => (
               <div className="service-card" key={index}>
-                <div className="service-icon">
-                  {service.icon}
-                </div>
+                <div className="service-icon">{service.icon}</div>
                 <h3>{service.title}</h3>
                 <p>{service.description}</p>
-                <button
-                  className="service-info-btn"
-                  onClick={() => setSelectedService(service)}
-                >
+                <button className="service-info-btn" onClick={() => setSelectedService(service)}>
                   Plus d'info
                 </button>
               </div>
@@ -1169,129 +992,20 @@ Collaboration étroite avec la famille tout au long de l'accompagnement.`,
           {selectedService && (
             <div className="modal-overlay" onClick={() => setSelectedService(null)}>
               <div className="modal-content" onClick={e => e.stopPropagation()}>
-                <button className="modal-close" onClick={() => setSelectedService(null)}>✕</button>
-                <h2>{selectedService.title}</h2>
-                <p>{selectedService.details}</p>
-              </div>
-            </div>
-          )}
-        </div>
-
-        {/* <div className="services-section">
-          <h2 className="services-main-title">Nos spécificités</h2>
-          <div className="services-grid"> */}
-
-        {/* <div className="service-card">
-              <div className="service-icon"><Users size={64} strokeWidth={1.5} /></div>
-              <h3>Équipe pluridisciplinaire</h3>
-              <p>Psychologues, éducateurs spécialisés, infirmiers-psy, pédopsychiatre, orthophoniste, art thérapeute, coach sportif, maîtresse de maison…</p>
-              <button className="service-info-btn">Plus d'info</button>
-            </div>
-
-            <div className="service-card">
-              <div className="service-icon"><Target size={64} strokeWidth={1.5} /></div>
-              <h3>Approche personnalisée</h3>
-              <p>Un accompagnement adapté aux besoins et au rythme de chaque bénéficiaire, grâce à un projet personnalisé de soins comprenant consultations et ateliers thérapeutiques.</p>
-              <button className="service-info-btn">Plus d'info</button>
-            </div>
-
-            <div className="service-card">
-              <div className="service-icon"><ShieldCheck size={64} strokeWidth={1.5} /></div>
-              <h3>Cadre bienveillant et sécurisé</h3>
-              <p>Un lieu structuré où l'accueil est le premier soin et un lieu sûr où les droits, la sécurité et la confidentialité sont garantis pour les bénéficiaires et leurs familles.</p>
-              <button className="service-info-btn">Plus d'info</button>
-            </div>
-
-            <div className="service-card">
-              <div className="service-icon"><Lightbulb size={64} strokeWidth={1.5} /></div>
-              <h3>Méthodes validées et innovantes</h3>
-              <p>Des pratiques d'efficacité reconnues et mises à jour selon les avancées scientifiques, comme l'art-thérapie et les thérapies cognitivo-comportementales.</p>
-              <button className="service-info-btn">Plus d'info</button>
-            </div>
-
-            <div className="service-card">
-              <div className="service-icon"><HandHeart size={64} strokeWidth={1.5} /></div>
-              <h3>Place active des bénéficiaires</h3>
-              <p>Une participation des bénéficiaires à leur parcours de soins, dans le respect de leur rythme et de leurs capacités.</p>
-              <button className="service-info-btn">Plus d'info</button>
-            </div>
-
-            <div className="service-card">
-              <div className="service-icon"><HomeIcon size={64} strokeWidth={1.5} /></div>
-              <h3>Implication de la famille</h3>
-              <p>Une collaboration étroite avec les familles tout au long de l'accompagnement.</p>
-              <button className="service-info-btn">Plus d'info</button>
-            </div>
-
-            <div className="service-card">
-              <div className="service-icon"><Accessibility size={64} strokeWidth={1.5} /></div>
-              <h3>Accessibilité</h3>
-              <p>Prise en compte des réalités sociales et économiques locales pour rendre les soins disponibles à tous.</p>
-              <button className="service-info-btn">Plus d'info</button>
-            </div>
-
-            <div className="service-card">
-              <div className="service-icon"><Handshake size={64} strokeWidth={1.5} /></div>
-              <h3>Dimension communautaire</h3>
-              <p>Actions de prévention de terrain, partenariats et intégration dans la société.</p>
-              <button className="service-info-btn">Plus d'info</button>
-            </div> */}
-
-        {/* <div className="services-grid">
-              {servicesData.map((service, index) => (
-                <div className="service-card" key={index}>
-
-                  <div className="service-icon">
-                    {service.icon}
-                  </div>
-
-                  <h3>{service.title}</h3>
-
-                  <p>{service.description}</p>
-
-                  <button
-                    className="service-info-btn"
-                    onClick={() => setSelectedService(service)}
-                  >
-                    Plus d'info
-                  </button>
-
+                <div className="modal-header">
+                  <h2>{selectedService.title}</h2>
+                  <button className="modal-close" onClick={() => setSelectedService(null)}>✕</button>
                 </div>
-              ))}
-            </div>
-
-          </div>
-          {selectedService && (
-            <div
-              className="modal-overlay"
-              onClick={() => setSelectedService(null)}
-            >
-
-              <div
-                className="modal-content"
-                onClick={(e) => e.stopPropagation()}
-              >
-
-                <button
-                  className="modal-close"
-                  onClick={() => setSelectedService(null)}
-                >
-                  ✕
-                </button>
-
-                <h2>{selectedService.title}</h2>
-
-                <p style={{ whiteSpace: "pre-line" }}>
-                  {selectedService.details}
-                </p>
-
+                <div className="modal-body">
+                  {selectedService.isCustomModal
+                    ? <ModalCentreContent />
+                    : <p style={{ whiteSpace: 'pre-line', lineHeight: 1.8, color: '#444', fontSize: '0.9rem' }}>{selectedService.details}</p>
+                  }
+                </div>
               </div>
-
             </div>
           )}
         </div> */}
-
-        
 
         <div className="actu-section">
           <h2 className="actu-main-title">Nos actualités</h2>

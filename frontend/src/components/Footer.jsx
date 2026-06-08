@@ -136,11 +136,12 @@ export default function Footer() {
               <h3>Navigation</h3>
               <ul className="footer-nav">
                 <li><Link to="/">Accueil</Link></li>
-                <li><Link to="/centre">Le centre spécialisé</Link></li>
-                <li><Link to="/offre">L'offre de soins</Link></li>
-                <li><Link to="/droits">Vos droits</Link></li>
+                {/* <li><Link to="/centre">Le centre spécialisé</Link></li> */}
+                {/* <li><Link to="/offre">L'offre de soins</Link></li> */}
+                {/* <li><Link to="/droits">Vos droits</Link></li> */}
                 <li><Link to="/faq">FAQ</Link></li>
-                <li><Link to="/ressources">Ressources</Link></li>
+                <li><Link to="/espace-ressources">Ressources</Link></li>
+                <li><a href="/contact">Contact</a></li>
               </ul>
             </div>
           </div>
