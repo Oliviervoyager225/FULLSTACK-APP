@@ -42,6 +42,7 @@ const navItems = [
       { label: 'Accès à votre dossier médical', to: '/dossier-medical' },
       { label: 'Plaintes et réclamations', to: '/plaintes-reclamations' },
       { label: 'Satisfaction', to: '/satisfaction' },
+      { label: 'Nos collaborateurs', to: '/nos-collaborateurs'}
     ],
   },
   // {

@@ -39,6 +39,7 @@ import PoleRechercheInnovation from './pages/PoleRechercheInnovation';
 import NousRejoindre from './pages/NousRejoindre';
 
 import './App.css';
+import NosCollaborateurs from './pages/NosCollaborateurs';
 
 function App() {
   return (
@@ -76,6 +77,8 @@ function App() {
           <Route path="/dossier-medical" element={<DossierMedical />} />
           <Route path="/plaintes-reclamations" element={<PlaintesReclamations />} />
           <Route path="/satisfaction" element={<Satisfaction />} />
+          <Route path="/nos-collaborateurs" element={<NosCollaborateurs />} />
+
 
           {/* Navigation principale */}
           <Route path="/faq" element={<FAQ />} />

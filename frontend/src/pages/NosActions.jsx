@@ -152,12 +152,18 @@ const NosActions = () => {
                                     Former les acteurs clés pour une prise en charge qualité de la santé mentale.
                                 </p>
                                 <p className="section-text">
+                                    En collaboration avec le <strong>Ministère en charge de la Santé</strong>, la Fondation la FEE RIMA a initié une formation continue à destination des professionnels de santé et travailleurs sociaux dont la première cohorte a concerné 50 personnes. Cette formation est assurée par le Centre de Formation, Ressources et d’Enseignement Supérieur en Psychologie (CRESP). Le thème de la formation est la psychologie de l’enfant et de l’adolescent, permettant d’aborder des sujets variés tels que : le cerveau, les troubles psychologiques, l’attachement, les addictions, la prise en charge, etc.
+                                </p>
+                                <br />
+
+                                <p className="section-text">
                                     La Fondation mène des activités de renforcement de capacités sur le dépistage
                                     et la prise en charge en santé mentale des adolescents et jeunes. Elles
                                     s'adressent à des <strong>professionnels de santé</strong>, des
                                     <strong> travailleurs sociaux</strong> et des <strong>professionnels pédagogiques</strong>.
                                     L'objectif étant de faciliter l'accès et la qualité des soins pour tous.
                                 </p>
+
 
                                 {/* <div className="partnership-card">
                                 <h3>Partenariat Stratégique</h3>

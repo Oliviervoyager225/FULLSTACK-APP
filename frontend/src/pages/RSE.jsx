@@ -55,7 +55,7 @@
 //         <section className="hist-section section-3">
 //           <div className="hist-stacked-images">
 //             {/* <div className="hist-image-box gray-box-small" style={{ backgroundImage: "url('/assets/feerima/hero.png')", backgroundSize: 'cover', backgroundPosition: 'top' }}></div> */}
-            
+
 //             <div className="hist-stacked-images">
 //             <img
 //               src="/assets/feerima/environnement.png"
@@ -110,7 +110,7 @@ export default function RSE() {
         <section className="rse-intro-section">
           <div className="rse-text-block">
             <span className="rse-eyebrow">Notre engagement</span>
-            <h2>Notre Politique<br />RSE</h2>
+            <h2>Notre Politique RSE</h2>
             <p>
               La Fondation la Fée Rima, dédiée au bien-être psychologique des jeunes, place
               la responsabilité sociétale au cœur de ses actions. Notre engagement RSE reflète
@@ -118,7 +118,9 @@ export default function RSE() {
               la communauté et l'environnement.
             </p>
             <p>
-              <strong>Bien-être et accompagnement des jeunes</strong><br />
+              <h3>              <strong>Bien-être et accompagnement des jeunes</strong><br />
+              </h3>
+              {/* <strong>Bien-être et accompagnement des jeunes</strong><br /> */}
               Nous offrons un accueil respectueux, bienveillant et accessible à tous les jeunes
               de 10 à 25 ans. Chaque projet de soins est personnalisé, dans le respect de la
               dignité et de la confidentialité.
@@ -277,18 +279,18 @@ export default function RSE() {
 //                 <div className="rse-tag">Notre engagement</div>
 //                 <h2>NOTRE POLITIQUE <br />RSE</h2>
 //                 <p className="rse-lead">
-//                   La Fondation la Fée Rima, dédiée au bien-être psychologique des jeunes, 
+//                   La Fondation la Fée Rima, dédiée au bien-être psychologique des jeunes,
 //                   place la responsabilité sociétale au cœur de ses actions.
 //                 </p>
 //                 <p>
-//                   Notre engagement RSE reflète notre volonté d'avoir un impact positif 
+//                   Notre engagement RSE reflète notre volonté d'avoir un impact positif
 //                   sur nos bénéficiaires, nos collaborateurs, la communauté et l'environnement.
 //                 </p>
 //                 <div className="rse-highlight">
 //                   <h4>Bien-être et accompagnement des jeunes</h4>
 //                   <p>
-//                     Nous offrons un accueil respectueux, bienveillant et accessible à tous 
-//                     les jeunes de 10 à 25 ans. Chaque projet de soins est personnalisé, 
+//                     Nous offrons un accueil respectueux, bienveillant et accessible à tous
+//                     les jeunes de 10 à 25 ans. Chaque projet de soins est personnalisé,
 //                     dans le respect de la dignité et de la confidentialité.
 //                   </p>
 //                 </div>
@@ -320,8 +322,8 @@ export default function RSE() {
 //                 </div>
 //                 <h3>Gouvernance éthique</h3>
 //                 <p>
-//                   Nos actions reposent sur la transparence, l'intégrité et l'écoute. 
-//                   Nous associons bénéficiaires, familles, partenaires et intervenants 
+//                   Nos actions reposent sur la transparence, l'intégrité et l'écoute.
+//                   Nous associons bénéficiaires, familles, partenaires et intervenants
 //                   extérieurs pour des prestations de qualité.
 //                 </p>
 //               </div>
@@ -333,8 +335,8 @@ export default function RSE() {
 //                 </div>
 //                 <h3>Conditions de travail</h3>
 //                 <p>
-//                   Parce que prendre soin des jeunes, c'est aussi s'occuper de ceux qui 
-//                   les accompagnent. Nous favorisons la formation continue, l'esprit 
+//                   Parce que prendre soin des jeunes, c'est aussi s'occuper de ceux qui
+//                   les accompagnent. Nous favorisons la formation continue, l'esprit
 //                   d'équipe et le bien-être au travail.
 //                 </p>
 //               </div>
@@ -363,8 +365,8 @@ export default function RSE() {
 //                 <div className="rse-tag">Planète & Durabilité</div>
 //                 <h2>ENVIRONNEMENT ET DURABILITÉ</h2>
 //                 <p>
-//                   Nous nous engageons à réduire notre empreinte écologique grâce à une 
-//                   gestion responsable des ressources, à la diminution de l'usage du 
+//                   Nous nous engageons à réduire notre empreinte écologique grâce à une
+//                   gestion responsable des ressources, à la diminution de l'usage du
 //                   papier et à la sensibilisation aux éco-gestes.
 //                 </p>
 //                 <ul className="rse-list">
@@ -375,8 +377,8 @@ export default function RSE() {
 //                 </ul>
 //                 <div className="rse-quote">
 //                   <p>
-//                     "Notre ambition est claire : renforcer chaque année nos actions RSE 
-//                     afin de favoriser une société plus inclusive, respectueuse de 
+//                     "Notre ambition est claire : renforcer chaque année nos actions RSE
+//                     afin de favoriser une société plus inclusive, respectueuse de
 //                     l'environnement et solidaire."
 //                   </p>
 //                 </div>

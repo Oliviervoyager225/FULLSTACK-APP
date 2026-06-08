@@ -31,7 +31,7 @@ body {
 .hopital-de-jour-page {
     min-height: 100vh;
     background: var(--light);
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 
 /* ===== ANIMATIONS ===== */
