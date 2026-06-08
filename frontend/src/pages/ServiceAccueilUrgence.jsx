@@ -13,10 +13,10 @@ export default function ServiceAccueilUrgence() {
                 className="page-hero"
                 style={{ backgroundImage: "url('/assets/feerima/urgent.png')" }}
             >
-                {/* <div className="page-hero-content">
+                <div className="page-hero-content">
                     <h1>Le service d'accueil d'urgence</h1>
                     <p>Une réponse rapide et bienveillante en situation de crise</p>
-                </div> */}
+                </div>
             </section>
 
             <main className="historique-main">

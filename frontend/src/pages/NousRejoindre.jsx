@@ -250,7 +250,7 @@ export default function NousRejoindre() {
 
             <section
                 className="page-hero"
-                style={{ backgroundImage: "url('/assets/feerima/rejoindre.png')" }}
+                style={{ backgroundImage: "url('/assets/feerima/impact.png')" }}
             />
 
             <main style={{ background: '#f7f8fa', minHeight: '100vh' }}>

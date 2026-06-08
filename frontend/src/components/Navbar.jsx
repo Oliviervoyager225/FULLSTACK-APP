@@ -4,23 +4,27 @@ import '../styles/Navbar.css';
 
 const navItems = [
   {
-    label: 'Le centre spécialisé',
+    // label: 'Le centre spécialisé',
+    label: 'La fondation',
     type: 'dropdown',
     items: [
       { label: 'Notre histoire', to: '/historique' },
+      { label: 'Nos actions', to: '/nos-actions' },
       { label: 'Nos équipes', to: '/equipes' },
       { label: 'Nos valeurs', to: '/nos-valeurs' },
       { label: 'Notre engagement qualité', to: '/engagement-qualite' },
-      { label: 'Notre politique RSE', to: '/rse' },
+      { label: 'Notre responsabilité sociétale', to: '/rse' },
       { label: 'Nos actualités', to: '/actualites' },
       { label: 'Nos partenaires', to: '/partenaires' },
     ],
   },
   {
-    label: "L'offre de soins",
+    label: "Nos centres",
     type: 'dropdown',
     items: [
-      { label: 'Les consultations externes', to: '/consultations-externes' },
+      { label: 'Nos spécificités', to: '/nos-specificites' },
+      { label: 'Centre spécialisé des 2 plateaux', to: '/centre-specialise' },
+      { label: 'Les consultations', to: '/consultations' },
       { label: "L'hôpital de jour", to: '/hopital-de-jour' },
       { label: "Le service d'accueil d'urgence", to: '/service-accueil-urgence' },
       { label: 'Tarifications', to: '/tarifications' },
@@ -40,6 +44,15 @@ const navItems = [
       { label: 'Satisfaction', to: '/satisfaction' },
     ],
   },
+  // {
+  //   label: 'Nos centres',
+  //   type: 'dropdown',
+  //   items: [
+  //     { label: 'Nos spécificités', to: '/nos-specificites' },
+  //     { label: 'Centre spécialisé des 2 plateaux', to: '/centre-specialise' },
+  //     // { label: 'Pe   'Satisfaction', to: '/satisfaction' },
+  //   ],
+  // },
   { label: 'S’informer', type: 'link', to: '/faq' },
   { label: 'Ressources utils', type: 'link', to: '/espace-ressources' },
   { label: 'Recherche & Innovation', type: 'link', to: '/recherche-innovation' },

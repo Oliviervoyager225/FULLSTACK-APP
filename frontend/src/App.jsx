@@ -9,11 +9,14 @@ import Historique from './pages/Historique';
 import Professionals from './pages/Professionals';
 import Actualites from './pages/Actualites';
 import NosValeurs from './pages/NosValeurs';
+import NosActions from './pages/NosActions';
 import Engagement from './pages/Engagement';
 import RSE from './pages/RSE';
 import Partenaires from './pages/Partenaires';
 
 // Offre de soins
+import NosSpecificites from './pages/NosSpecificites';
+import CentreSpecialise2Plateaux from './pages/CentreSpecialise2Plateaux';
 import ConsultationsExternes from './pages/ConsultationsExternes';
 import HopitalDeJour from './pages/HopitalDeJour';
 import ServiceAccueilUrgence from './pages/ServiceAccueilUrgence';
@@ -50,6 +53,7 @@ function App() {
           {/* Centre spécialisé */}
           <Route path="/historique" element={<Historique />} />
           <Route path="/equipes" element={<Professionals />} />
+          <Route path="/nos-actions" element={<NosActions />} />
           <Route path="/nos-valeurs" element={<NosValeurs />} />
           <Route path="/engagement-qualite" element={<Engagement />} />
           <Route path="/rse" element={<RSE />} />
@@ -57,11 +61,12 @@ function App() {
           <Route path="/actualites" element={<Actualites />} />
 
           {/* Offre de soins */}
-          <Route path="/consultations-externes" element={<ConsultationsExternes />} />
+          <Route path="/nos-specificites" element={<NosSpecificites />} />
+          <Route path="/consultations" element={<ConsultationsExternes />} />
           <Route path="/hopital-de-jour" element={<HopitalDeJour />} />
           <Route path="/service-accueil-urgence" element={<ServiceAccueilUrgence />} />
           <Route path="/tarifications" element={<Tarifications />} />
-
+          <Route path="/centre-specialise" element={<CentreSpecialise2Plateaux />} />
           {/* Vos droits */}
           <Route path="/chartes-reglement" element={<ChartesReglement />} />
           <Route path="/chartes-usager" element={<ChartesUsager />} />
