@@ -651,9 +651,9 @@ export default function Home() {
   const [selectedService, setSelectedService] = useState(null);
 
   const heroImages = [
-    '/assets/feerima/slider1.jpg?v=' + Date.now(),
-    '/assets/feerima/slider2.jpg?v=' + Date.now(),
-    '/assets/feerima/slider3.jpg?v=' + Date.now(),
+    '/assets/feerima/slider1.jpg',
+    '/assets/feerima/slider2.jpg',
+    '/assets/feerima/slider3.jpg',
   ];
 
 //   const servicesData = [

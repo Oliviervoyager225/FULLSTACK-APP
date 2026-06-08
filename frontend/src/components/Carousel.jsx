@@ -40,7 +40,7 @@ const Carousel = ({
                     className={`carousel-slide ${effect === 'fade' ? 'fade-effect' : 'slide-effect'} 
             ${index === currentIndex ? 'active' : ''}`}
                     style={{
-                        backgroundImage: slide.image ? `url(${slide.image}?v=${Date.now()})` : 'none',
+                        backgroundImage: slide.image ? `url(${slide.image})` : 'none',
                         backgroundColor: slide.backgroundColor || 'transparent',
                     }}
                 >
