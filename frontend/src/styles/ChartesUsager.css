@@ -1,0 +1,683 @@
+/* Styles généraux */
+.cu-page {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    /* overflow-x: hidden; */
+}
+
+/* Hero Section */
+.cu-hero {
+    height: 80vh;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-top: 0;
+}
+
+.cu-hero-content {
+    text-align: center;
+    color: white;
+    z-index: 2;
+    animation: cuFadeInUp 0.8s ease-out;
+}
+
+.cu-hero-badge {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    padding: 0.5rem 1.2rem;
+    border-radius: 50px;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+}
+
+.cu-hero-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.cu-hero-subtitle {
+    font-size: 1.2rem;
+    opacity: 0.95;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.cu-hero-decoration {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.cu-hero-line {
+    width: 50px;
+    height: 2px;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.cu-hero-dot {
+    font-size: 1.2rem;
+    opacity: 0.8;
+}
+
+/* Container */
+.cu-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+/* Sections principales */
+.cu-section {
+    padding: 5rem 0;
+}
+
+.cu-section-definition {
+    background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+}
+
+.cu-section-droits {
+    background: #ffffff;
+}
+
+.cu-section-visual {
+    background: #f8f9fa;
+    padding: 3rem 0;
+}
+
+.cu-section-engagement {
+    /* background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); */
+    padding: 4rem 0;
+}
+
+/* Grid */
+.cu-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.cu-grid-reverse {
+    direction: rtl;
+}
+
+.cu-grid-reverse>* {
+    direction: ltr;
+}
+
+/* Tags */
+.cu-section-tag {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #9b59b6;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.cu-section-tag-center {
+    text-align: center;
+}
+
+/* Titres */
+.cu-section-title {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.cu-section-title-center {
+    text-align: center;
+}
+
+.cu-title-underline {
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(90deg, #9b59b6, #e74c3c);
+    margin-bottom: 1.5rem;
+}
+
+.cu-title-underline-center {
+    margin: 0 auto 1.5rem auto;
+}
+
+/* Textes */
+.cu-lead {
+    font-size: 1.1rem;
+    color: #34495e;
+    line-height: 1.6;
+    margin-bottom: 1.2rem;
+    font-weight: 500;
+}
+
+.cu-text {
+    color: #555;
+    line-height: 1.7;
+    margin-bottom: 1rem;
+}
+
+.cu-section-subtitle {
+    color: #666;
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Liste des principes */
+.cu-principles-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.cu-principle-item {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    background: white;
+    padding: 0.8rem 1.2rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.cu-principle-icon {
+    color: #27ae60;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+/* Images */
+.cu-image-block {
+    position: relative;
+}
+
+.cu-image-card {
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.cu-image-card:hover {
+    transform: scale(1.02);
+}
+
+.cu-image-wrapper {
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.cu-image-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+    padding: 2rem;
+    color: white;
+}
+
+.cu-overlay-text {
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+/* Grille des droits */
+.cu-droits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.cu-droit-card {
+    background: white;
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    position: relative;
+    border: 1px solid #eee;
+}
+
+.cu-droit-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+}
+
+.cu-droit-card-highlight {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+}
+
+.cu-droit-card-highlight .cu-droit-text {
+    color: rgba(255, 255, 255, 0.95);
+}
+
+.cu-droit-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.cu-droit-title {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+.cu-droit-card-highlight .cu-droit-title {
+    color: white;
+}
+
+.cu-droit-text {
+    color: #666;
+    line-height: 1.6;
+}
+
+.cu-card-badge {
+    position: absolute;
+    top: -10px;
+    right: 20px;
+    background: #e74c3c;
+    color: white;
+    padding: 0.3rem 1rem;
+    border-radius: 20px;
+    font-size: 0.7rem;
+    font-weight: 600;
+}
+
+/* Section visuelle */
+.cu-visual-row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.cu-visual-item {
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.cu-visual-image {
+    height: 280px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.cu-visual-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s ease;
+}
+
+.cu-visual-item:hover .cu-visual-overlay {
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.cu-visual-content {
+    text-align: center;
+    color: white;
+}
+
+.cu-visual-icon {
+    font-size: 3rem;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.cu-visual-text {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+/* Carte d'engagement */
+.cu-engagement-card {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 30px;
+    padding: 3rem;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.cu-engagement-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.cu-engagement-title {
+    font-size: 1.8rem;
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+}
+
+.cu-engagement-text {
+    color: #555;
+    line-height: 1.8;
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+.cu-signature {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.cu-signature-line {
+    width: 60px;
+    height: 2px;
+    background: linear-gradient(90deg, #9b59b6, #e74c3c);
+}
+
+.cu-signature-text {
+    font-style: italic;
+    color: #9b59b6;
+    font-weight: 500;
+}
+
+/* Animations */
+@keyframes cuFadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/*
+Debut de Bulles flottantes */
+.cu-section-engagement {
+    position: relative;
+    overflow: hidden;
+}
+
+.cu-engagement-card {
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+}
+
+/* Bulles de base */
+.cu-bubble {
+    position: absolute;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.1) 100%);
+    border-radius: 50%;
+    pointer-events: none;
+    animation: cuFloatBubble linear infinite;
+    z-index: 0;
+}
+
+/* Tailles et positions des bulles */
+.cu-bubble-1 {
+    width: 80px;
+    height: 80px;
+    top: -20px;
+    left: 10%;
+    animation-duration: 8s;
+    animation-delay: 0s;
+}
+
+.cu-bubble-2 {
+    width: 120px;
+    height: 120px;
+    bottom: -30px;
+    right: 5%;
+    animation-duration: 12s;
+    animation-delay: 1s;
+}
+
+.cu-bubble-3 {
+    width: 60px;
+    height: 60px;
+    top: 20%;
+    right: 15%;
+    animation-duration: 6s;
+    animation-delay: 2s;
+}
+
+.cu-bubble-4 {
+    width: 100px;
+    height: 100px;
+    bottom: 15%;
+    left: 5%;
+    animation-duration: 10s;
+    animation-delay: 0.5s;
+}
+
+.cu-bubble-5 {
+    width: 40px;
+    height: 40px;
+    top: 60%;
+    right: 25%;
+    animation-duration: 5s;
+    animation-delay: 3s;
+}
+
+.cu-bubble-6 {
+    width: 90px;
+    height: 90px;
+    top: 10%;
+    left: 20%;
+    animation-duration: 9s;
+    animation-delay: 1.5s;
+}
+
+.cu-bubble-7 {
+    width: 50px;
+    height: 50px;
+    bottom: 30%;
+    right: 8%;
+    animation-duration: 7s;
+    animation-delay: 2.5s;
+}
+
+.cu-bubble-8 {
+    width: 70px;
+    height: 70px;
+    top: 40%;
+    left: 0%;
+    animation-duration: 11s;
+    animation-delay: 0.8s;
+}
+
+/* Animation des bulles */
+@keyframes cuFloatBubble {
+    0% {
+        transform: translateY(0) translateX(0) scale(1);
+        opacity: 0.6;
+    }
+
+    25% {
+        transform: translateY(-20px) translateX(10px) scale(1.05);
+        opacity: 0.8;
+    }
+
+    50% {
+        transform: translateY(-40px) translateX(-10px) scale(1.1);
+        opacity: 0.5;
+    }
+
+    75% {
+        transform: translateY(-20px) translateX(15px) scale(0.95);
+        opacity: 0.7;
+    }
+
+    100% {
+        transform: translateY(0) translateX(0) scale(1);
+        opacity: 0.6;
+    }
+}
+
+/* Version avec effet de brillance sur certaines bulles */
+.cu-bubble-1,
+.cu-bubble-3,
+.cu-bubble-5,
+.cu-bubble-7 {
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.15) 100%);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+.cu-bubble-2,
+.cu-bubble-4,
+.cu-bubble-6,
+.cu-bubble-8 {
+    background: radial-gradient(circle, rgba(155, 89, 182, 0.3) 0%, rgba(155, 89, 182, 0.05) 100%);
+    box-shadow: 0 0 15px rgba(155, 89, 182, 0.2);
+}
+
+/* Ajustement pour mobile */
+@media (max-width: 768px) {
+
+    .cu-bubble-1,
+    .cu-bubble-2,
+    .cu-bubble-3,
+    .cu-bubble-4,
+    .cu-bubble-5,
+    .cu-bubble-6,
+    .cu-bubble-7,
+    .cu-bubble-8 {
+        opacity: 0.4;
+    }
+
+    .cu-bubble-1 {
+        width: 50px;
+        height: 50px;
+    }
+
+    .cu-bubble-2 {
+        width: 80px;
+        height: 80px;
+    }
+
+    .cu-bubble-3 {
+        width: 40px;
+        height: 40px;
+    }
+
+    .cu-bubble-4 {
+        width: 60px;
+        height: 60px;
+    }
+
+    .cu-bubble-5 {
+        width: 30px;
+        height: 30px;
+    }
+
+    .cu-bubble-6 {
+        width: 55px;
+        height: 55px;
+    }
+
+    .cu-bubble-7 {
+        width: 35px;
+        height: 35px;
+    }
+
+    .cu-bubble-8 {
+        width: 45px;
+        height: 45px;
+    }
+}
+
+
+/* Responsive */
+@media (max-width: 968px) {
+    .cu-droits-grid {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    .cu-hero-title {
+        font-size: 2rem;
+    }
+
+    .cu-hero-subtitle {
+        font-size: 1rem;
+        padding: 0 1rem;
+    }
+
+    .cu-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .cu-grid-reverse {
+        direction: ltr;
+    }
+
+    .cu-visual-row {
+        grid-template-columns: 1fr;
+    }
+
+    .cu-section-title {
+        font-size: 1.8rem;
+    }
+
+    .cu-section {
+        padding: 3rem 0;
+    }
+
+    .cu-container {
+        padding: 0 1rem;
+    }
+
+    .cu-principles-list {
+        grid-template-columns: 1fr;
+    }
+
+    .cu-engagement-card {
+        padding: 2rem;
+        margin: 0 1rem;
+    }
+
+    .cu-engagement-title {
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .cu-hero {
+        min-height: 400px;
+    }
+
+    .cu-droits-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .cu-signature-line {
+        width: 30px;
+    }
+}
