@@ -1,0 +1,270 @@
+/* ===========================
+   SecuriteDonnees.css
+   Palette : violet #5B3A8E · vert #6BAF92 · blanc cassé #FAF8FF · perle #F0EDF7
+   Typo    : Playfair Display (titres) · DM Sans (corps)
+=========================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=DM+Sans:wght@400;500;600&display=swap');
+
+/* ── Reset de base ── */
+.sd-page {
+    font-family: 'DM Sans', sans-serif;
+    color: #2E1A4A;
+    background: #FAF8FF;
+}
+
+/* ── HERO ── */
+.sd-hero {
+    position: relative;
+    min-height: 500px;
+    display: flex;
+    align-items: flex-end;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+.sd-hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(91, 58, 142, 0.78) 0%, rgba(107, 175, 146, 0.45) 100%);
+}
+
+.sd-hero-content {
+    position: relative;
+    z-index: 1;
+    padding: 3rem 5vw 3.5rem;
+    color: #fff;
+    max-width: 700px;
+}
+
+.sd-hero-eyebrow {
+    display: inline-block;
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    background: rgba(255,255,255,0.18);
+    border: 1px solid rgba(255,255,255,0.35);
+    border-radius: 100px;
+    padding: 0.3rem 0.9rem;
+    margin-bottom: 1rem;
+    backdrop-filter: blur(6px);
+}
+
+.sd-hero-content h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2rem, 4.5vw, 3rem);
+    font-weight: 700;
+    line-height: 1.15;
+    margin: 0 0 0.85rem;
+}
+
+.sd-hero-content p {
+    font-size: 1.05rem;
+    opacity: 0.9;
+    margin: 0;
+}
+
+/* ── MAIN WRAPPER ── */
+.sd-main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 4rem 5vw 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+/* ── SECTIONS alternées ── */
+.sd-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.sd-section--reverse {
+    direction: rtl;
+}
+.sd-section--reverse > * {
+    direction: ltr;
+}
+
+/* ── Texte section ── */
+.sd-label {
+    display: inline-block;
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #6BAF92;
+    margin-bottom: 0.6rem;
+}
+
+.sd-section-text h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(1.6rem, 2.8vw, 2.1rem);
+    font-weight: 700;
+    color: #5B3A8E;
+    margin: 0 0 1.2rem;
+    line-height: 1.2;
+}
+
+.sd-section-text p {
+    font-size: 0.97rem;
+    line-height: 1.75;
+    color: #4A3460;
+    margin-bottom: 0.9rem;
+}
+
+.sd-cta {
+    display: inline-block;
+    margin-top: 0.8rem;
+    padding: 0.7rem 1.6rem;
+    background: #5B3A8E;
+    color: #fff;
+    border-radius: 100px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-decoration: none;
+    transition: background 0.2s, transform 0.15s;
+}
+.sd-cta:hover {
+    background: #4a2e78;
+    transform: translateY(-2px);
+}
+
+/* ── Images ── */
+.sd-section-image {
+    position: relative;
+}
+
+.sd-img-card {
+    width: 100%;
+    aspect-ratio: 4/3;
+    border-radius: 20px;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 8px 32px rgba(91, 58, 142, 0.12);
+}
+
+/* Badge shield */
+.sd-shield-badge {
+    position: absolute;
+    bottom: -18px;
+    left: 24px;
+    background: #fff;
+    border: 2px solid #F0EDF7;
+    border-radius: 16px;
+    padding: 0.6rem 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    box-shadow: 0 4px 20px rgba(91,58,142,0.10);
+    font-weight: 700;
+    font-size: 0.82rem;
+    color: #5B3A8E;
+    letter-spacing: 0.06em;
+}
+.sd-shield-badge svg {
+    width: 28px;
+    height: 28px;
+}
+
+/* Duo images */
+.sd-section-image--duo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    align-items: end;
+}
+.sd-img-card--sm {
+    aspect-ratio: 3/4;
+}
+.sd-img-card--offset {
+    margin-bottom: -1.5rem;
+}
+
+/* ── DROITS STRIP ── */
+.sd-droits-strip {
+    background: #F0EDF7;
+    border-radius: 28px;
+    padding: 3rem 2.5rem;
+}
+
+.sd-droits-header {
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+.sd-droits-header h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(1.4rem, 2.5vw, 1.9rem);
+    font-weight: 700;
+    color: #5B3A8E;
+    margin: 0 0 0.5rem;
+}
+.sd-droits-header p {
+    font-size: 0.95rem;
+    color: #6B5E80;
+    max-width: 520px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.sd-droits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1.2rem;
+}
+
+.sd-droit-card {
+    background: #fff;
+    border-radius: 18px;
+    padding: 1.4rem 1.2rem;
+    box-shadow: 0 2px 12px rgba(91, 58, 142, 0.07);
+    transition: transform 0.18s, box-shadow 0.18s;
+}
+.sd-droit-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(91, 58, 142, 0.13);
+}
+.sd-droit-icon {
+    font-size: 1.6rem;
+    margin-bottom: 0.6rem;
+}
+.sd-droit-card strong {
+    display: block;
+    font-size: 0.88rem;
+    font-weight: 600;
+    color: #5B3A8E;
+    margin-bottom: 0.35rem;
+}
+.sd-droit-card p {
+    font-size: 0.82rem;
+    color: #6B5E80;
+    line-height: 1.55;
+    margin: 0;
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 768px) {
+    .sd-section,
+    .sd-section--reverse {
+        grid-template-columns: 1fr;
+        direction: ltr;
+        gap: 2rem;
+    }
+    .sd-section--reverse .sd-section-image {
+        order: -1;
+    }
+    .sd-section-image--duo {
+        grid-template-columns: 1fr 1fr;
+    }
+    .sd-main {
+        gap: 3.5rem;
+    }
+    .sd-droits-strip {
+        padding: 2rem 1.2rem;
+    }
+}

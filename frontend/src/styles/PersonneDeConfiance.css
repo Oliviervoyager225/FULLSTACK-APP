@@ -1,0 +1,657 @@
+
+                /* Styles généraux */
+                .pc-page {
+                    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+                    /* overflow-x: hidden; */
+                }
+
+                /* Hero Section */
+                .pc-hero {
+                    height: 65vh;
+                    min-height: 500px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    position: relative;
+                    margin-top: 0;
+                }
+
+                .pc-hero-content {
+                    text-align: center;
+                    color: white;
+                    z-index: 2;
+                    animation: pcFadeInUp 0.8s ease-out;
+                }
+
+                .pc-hero-badge {
+                    display: inline-block;
+                    background: rgba(255,255,255,0.2);
+                    backdrop-filter: blur(10px);
+                    padding: 0.5rem 1.2rem;
+                    border-radius: 50px;
+                    font-size: 0.85rem;
+                    letter-spacing: 1px;
+                    margin-bottom: 1.5rem;
+                    font-weight: 500;
+                }
+
+                .pc-hero-title {
+                    font-size: 3.5rem;
+                    font-weight: 700;
+                    margin-bottom: 1rem;
+                    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+                }
+
+                .pc-hero-subtitle {
+                    font-size: 1.2rem;
+                    opacity: 0.95;
+                    max-width: 600px;
+                    margin: 0 auto;
+                }
+
+                .pc-hero-decoration {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 1rem;
+                    margin-top: 2rem;
+                }
+
+                .pc-hero-line {
+                    width: 50px;
+                    height: 2px;
+                    background: rgba(255,255,255,0.5);
+                }
+
+                .pc-hero-dot {
+                    font-size: 1.2rem;
+                    opacity: 0.8;
+                }
+
+                /* Container */
+                .pc-container {
+                    max-width: 1280px;
+                    margin: 0 auto;
+                    padding: 0 2rem;
+                }
+
+                /* Sections principales */
+                .pc-section {
+                    padding: 5rem 0;
+                }
+
+                .pc-section-definition {
+                    background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+                }
+
+                .pc-section-designation {
+                    background: #ffffff;
+                }
+
+                .pc-section-visual {
+                    background: #f8f9fa;
+                    padding: 3rem 0;
+                }
+
+                .pc-section-engagement {
+                    background: linear-gradient(135deg, #e2e5ed 0%, #f5f5f3 100%);
+                    padding: 4rem 0;
+                    position: relative;
+                    overflow: hidden;
+                }
+
+                /* Grid */
+                .pc-grid {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    gap: 4rem;
+                    align-items: center;
+                }
+
+                .pc-grid-reverse {
+                    direction: rtl;
+                }
+
+                .pc-grid-reverse > * {
+                    direction: ltr;
+                }
+
+                /* Tags */
+                .pc-section-tag {
+                    font-size: 0.85rem;
+                    text-transform: uppercase;
+                    letter-spacing: 2px;
+                    color: #9b59b6;
+                    font-weight: 600;
+                    margin-bottom: 1rem;
+                }
+
+                .pc-section-tag-center {
+                    text-align: center;
+                }
+
+                /* Titres */
+                .pc-section-title {
+                    font-size: 2.5rem;
+                    color: #2c3e50;
+                    margin-bottom: 1rem;
+                    font-weight: 700;
+                }
+
+                .pc-section-title-center {
+                    text-align: center;
+                }
+
+                .pc-title-underline {
+                    width: 60px;
+                    height: 3px;
+                    background: linear-gradient(90deg, #9b59b6, #e74c3c);
+                    margin-bottom: 1.5rem;
+                }
+
+                .pc-title-underline-center {
+                    margin: 0 auto 1.5rem auto;
+                }
+
+                /* Textes */
+                .pc-lead {
+                    font-size: 1.1rem;
+                    color: #34495e;
+                    line-height: 1.6;
+                    margin-bottom: 1.2rem;
+                    font-weight: 500;
+                }
+
+                .pc-text {
+                    color: #555;
+                    line-height: 1.7;
+                    margin-bottom: 1.5rem;
+                }
+
+                .pc-section-subtitle {
+                    color: #666;
+                    font-size: 1.1rem;
+                    max-width: 600px;
+                    margin: 0 auto;
+                    text-align: center;
+                }
+
+                /* Cartes d'information */
+                .pc-info-cards {
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr);
+                    gap: 1rem;
+                    margin-top: 2rem;
+                }
+
+                .pc-info-card {
+                    background: white;
+                    border-radius: 16px;
+                    padding: 1.2rem;
+                    text-align: center;
+                    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+                    transition: transform 0.3s ease;
+                }
+
+                .pc-info-card:hover {
+                    transform: translateY(-3px);
+                }
+
+                .pc-info-icon {
+                    font-size: 2rem;
+                    display: block;
+                    margin-bottom: 0.5rem;
+                }
+
+                .pc-info-label {
+                    font-weight: 600;
+                    color: #2c3e50;
+                    display: block;
+                    margin-bottom: 0.3rem;
+                    font-size: 0.9rem;
+                }
+
+                .pc-info-desc {
+                    font-size: 0.8rem;
+                    color: #666;
+                }
+
+                /* Images */
+                .pc-image-block {
+                    position: relative;
+                }
+
+                .pc-image-card {
+                    border-radius: 20px;
+                    overflow: hidden;
+                    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+                    transition: transform 0.3s ease;
+                }
+
+                .pc-image-card:hover {
+                    transform: scale(1.02);
+                }
+
+                .pc-image-wrapper {
+                    height: 400px;
+                    background-size: cover;
+                    background-position: center;
+                    position: relative;
+                }
+
+                .pc-image-overlay {
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+                    padding: 2rem;
+                    color: white;
+                }
+
+                .pc-overlay-text {
+                    font-weight: 600;
+                    font-size: 1.1rem;
+                }
+
+                /* Étapes */
+                .pc-steps-container {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: flex-start;
+                    margin: 3rem 0;
+                    flex-wrap: wrap;
+                }
+
+                .pc-step {
+                    flex: 1;
+                    text-align: center;
+                    position: relative;
+                }
+
+                .pc-step-number {
+                    width: 50px;
+                    height: 50px;
+                    background: linear-gradient(135deg, #667eea, #764ba2);
+                    color: white;
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 1.5rem;
+                    font-weight: bold;
+                    margin: 0 auto 1rem;
+                }
+
+                .pc-step-title {
+                    font-size: 1.1rem;
+                    font-weight: 600;
+                    color: #2c3e50;
+                    margin-bottom: 0.5rem;
+                }
+
+                .pc-step-text {
+                    color: #666;
+                    font-size: 0.9rem;
+                    line-height: 1.5;
+                    max-width: 200px;
+                    margin: 0 auto;
+                }
+
+                .pc-step-line {
+                    width: 50px;
+                    height: 2px;
+                    background: linear-gradient(90deg, #667eea, #764ba2);
+                    margin-top: 25px;
+                }
+
+                /* Bloc d'information */
+                .pc-info-block {
+                    background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+                    border-radius: 20px;
+                    padding: 2rem;
+                    display: flex;
+                    gap: 1.5rem;
+                    margin-top: 2rem;
+                }
+
+                .pc-info-icon-large {
+                    font-size: 3rem;
+                }
+
+                .pc-info-title {
+                    font-size: 1.2rem;
+                    font-weight: 600;
+                    color: #2c3e50;
+                    margin-bottom: 0.5rem;
+                }
+
+                .pc-info-text {
+                    color: #555;
+                    line-height: 1.6;
+                }
+
+                /* Section visuelle */
+                .pc-visual-row {
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    gap: 2rem;
+                }
+
+                .pc-visual-item {
+                    border-radius: 20px;
+                    overflow: hidden;
+                    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+                }
+
+                .pc-visual-image {
+                    height: 280px;
+                    background-size: cover;
+                    background-position: center;
+                    position: relative;
+                }
+
+                .pc-visual-overlay {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    background: rgba(0,0,0,0.4);
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    transition: background 0.3s ease;
+                }
+
+                .pc-visual-item:hover .pc-visual-overlay {
+                    background: rgba(0,0,0,0.6);
+                }
+
+                .pc-visual-content {
+                    text-align: center;
+                    color: white;
+                }
+
+                .pc-visual-icon {
+                    font-size: 3rem;
+                    display: block;
+                    margin-bottom: 1rem;
+                }
+
+                .pc-visual-text {
+                    font-size: 1.2rem;
+                    font-weight: 500;
+                }
+
+                /* Carte d'engagement */
+                .pc-engagement-card {
+                    background: rgba(255,255,255,0.95);
+                    border-radius: 30px;
+                    padding: 3rem;
+                    text-align: center;
+                    max-width: 800px;
+                    margin: 0 auto;
+                    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+                    position: relative;
+                    z-index: 2;
+                    overflow: hidden;
+                }
+
+                .pc-engagement-icon {
+                    font-size: 3rem;
+                    margin-bottom: 1rem;
+                }
+
+                .pc-engagement-title {
+                    font-size: 1.8rem;
+                    color: #2c3e50;
+                    margin-bottom: 1.5rem;
+                }
+
+                .pc-engagement-text {
+                    color: #555;
+                    line-height: 1.8;
+                    font-size: 1.1rem;
+                    margin-bottom: 2rem;
+                }
+
+                .pc-signature {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 1.5rem;
+                }
+
+                .pc-signature-line {
+                    width: 60px;
+                    height: 2px;
+                    background: linear-gradient(90deg, #9b59b6, #e74c3c);
+                }
+
+                .pc-signature-text {
+                    font-style: italic;
+                    color: #9b59b6;
+                    font-weight: 500;
+                }
+
+                /* Bulles flottantes */
+                .pc-bubble {
+                    position: absolute;
+                    background: radial-gradient(circle, rgba(255,255,255,0.4) 0%, rgba(255,255,255,0.1) 100%);
+                    border-radius: 50%;
+                    pointer-events: none;
+                    animation: pcFloatBubble linear infinite;
+                    z-index: 0;
+                }
+
+                .pc-bubble-1 {
+                    width: 80px;
+                    height: 80px;
+                    top: -20px;
+                    left: 10%;
+                    animation-duration: 8s;
+                    animation-delay: 0s;
+                }
+
+                .pc-bubble-2 {
+                    width: 120px;
+                    height: 120px;
+                    bottom: -30px;
+                    right: 5%;
+                    animation-duration: 12s;
+                    animation-delay: 1s;
+                }
+
+                .pc-bubble-3 {
+                    width: 60px;
+                    height: 60px;
+                    top: 20%;
+                    right: 15%;
+                    animation-duration: 6s;
+                    animation-delay: 2s;
+                }
+
+                .pc-bubble-4 {
+                    width: 100px;
+                    height: 100px;
+                    bottom: 15%;
+                    left: 5%;
+                    animation-duration: 10s;
+                    animation-delay: 0.5s;
+                }
+
+                .pc-bubble-5 {
+                    width: 40px;
+                    height: 40px;
+                    top: 60%;
+                    right: 25%;
+                    animation-duration: 5s;
+                    animation-delay: 3s;
+                }
+
+                .pc-bubble-6 {
+                    width: 90px;
+                    height: 90px;
+                    top: 10%;
+                    left: 20%;
+                    animation-duration: 9s;
+                    animation-delay: 1.5s;
+                }
+
+                .pc-bubble-7 {
+                    width: 50px;
+                    height: 50px;
+                    bottom: 30%;
+                    right: 8%;
+                    animation-duration: 7s;
+                    animation-delay: 2.5s;
+                }
+
+                .pc-bubble-8 {
+                    width: 70px;
+                    height: 70px;
+                    top: 40%;
+                    left: 0%;
+                    animation-duration: 11s;
+                    animation-delay: 0.8s;
+                }
+
+                .pc-bubble-1, .pc-bubble-3, .pc-bubble-5, .pc-bubble-7 {
+                    background: radial-gradient(circle, rgba(255,255,255,0.5) 0%, rgba(255,255,255,0.15) 100%);
+                    box-shadow: 0 0 10px rgba(255,255,255,0.3);
+                }
+
+                .pc-bubble-2, .pc-bubble-4, .pc-bubble-6, .pc-bubble-8 {
+                    background: radial-gradient(circle, rgba(155,89,182,0.3) 0%, rgba(155,89,182,0.05) 100%);
+                    box-shadow: 0 0 15px rgba(155,89,182,0.2);
+                }
+
+                /* Animations */
+                @keyframes pcFadeInUp {
+                    from {
+                        opacity: 0;
+                        transform: translateY(30px);
+                    }
+                    to {
+                        opacity: 1;
+                        transform: translateY(0);
+                    }
+                }
+
+                @keyframes pcFloatBubble {
+                    0% {
+                        transform: translateY(0) translateX(0) scale(1);
+                        opacity: 0.6;
+                    }
+                    25% {
+                        transform: translateY(-20px) translateX(10px) scale(1.05);
+                        opacity: 0.8;
+                    }
+                    50% {
+                        transform: translateY(-40px) translateX(-10px) scale(1.1);
+                        opacity: 0.5;
+                    }
+                    75% {
+                        transform: translateY(-20px) translateX(15px) scale(0.95);
+                        opacity: 0.7;
+                    }
+                    100% {
+                        transform: translateY(0) translateX(0) scale(1);
+                        opacity: 0.6;
+                    }
+                }
+
+                /* Responsive */
+                @media (max-width: 968px) {
+                    .pc-steps-container {
+                        flex-direction: column;
+                        align-items: center;
+                        gap: 1.5rem;
+                    }
+                    
+                    .pc-step-line {
+                        width: 2px;
+                        height: 30px;
+                        margin: 0 auto;
+                    }
+                    
+                    .pc-info-cards {
+                        grid-template-columns: 1fr;
+                    }
+                }
+
+                @media (max-width: 768px) {
+                    .pc-hero-title {
+                        font-size: 2rem;
+                    }
+
+                    .pc-hero-subtitle {
+                        font-size: 1rem;
+                        padding: 0 1rem;
+                    }
+
+                    .pc-grid {
+                        grid-template-columns: 1fr;
+                        gap: 2rem;
+                    }
+
+                    .pc-grid-reverse {
+                        direction: ltr;
+                    }
+
+                    .pc-visual-row {
+                        grid-template-columns: 1fr;
+                    }
+
+                    .pc-section-title {
+                        font-size: 1.8rem;
+                    }
+
+                    .pc-section {
+                        padding: 3rem 0;
+                    }
+
+                    .pc-container {
+                        padding: 0 1rem;
+                    }
+
+                    .pc-engagement-card {
+                        padding: 2rem;
+                        margin: 0 1rem;
+                    }
+
+                    .pc-engagement-title {
+                        font-size: 1.4rem;
+                    }
+
+                    .pc-info-block {
+                        flex-direction: column;
+                        text-align: center;
+                    }
+
+                    .pc-bubble-1, .pc-bubble-2, .pc-bubble-3,
+                    .pc-bubble-4, .pc-bubble-5, .pc-bubble-6,
+                    .pc-bubble-7, .pc-bubble-8 {
+                        opacity: 0.4;
+                    }
+                    
+                    .pc-bubble-1 { width: 50px; height: 50px; }
+                    .pc-bubble-2 { width: 80px; height: 80px; }
+                    .pc-bubble-3 { width: 40px; height: 40px; }
+                    .pc-bubble-4 { width: 60px; height: 60px; }
+                    .pc-bubble-5 { width: 30px; height: 30px; }
+                    .pc-bubble-6 { width: 55px; height: 55px; }
+                    .pc-bubble-7 { width: 35px; height: 35px; }
+                    .pc-bubble-8 { width: 45px; height: 45px; }
+                }
+
+                @media (max-width: 480px) {
+                    .pc-hero {
+                        min-height: 400px;
+                    }
+                    
+                    .pc-signature-line {
+                        width: 30px;
+                    }
+                }
