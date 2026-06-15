@@ -135,7 +135,7 @@ const Partenaires = () => {
       <div
         className="partners-banner"
         style={{
-          backgroundImage: 'url("/assets/feerima/banner-partners.jpg")',
+          backgroundImage: 'url("/assets/feerima/parte.png")',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundAttachment: 'fixed',

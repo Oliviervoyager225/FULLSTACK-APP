@@ -296,12 +296,12 @@ const NosSpecificites = () => {
                 <section className="page-hero specificites-hero">
                     <div className="hero-background">
                         <img
-                            // src="/assets/feerima/specificité.png"
+                            src="/assets/feerima/specifi.png"
                             alt="Équipe pluridisciplinaire de La Fée Rima - Santé mentale des jeunes"
                             className="hero-image"
                             loading="eager"
                         />
-                        <div className="hero-overlay"></div>
+                        {/* <div className="hero-overlay"></div> */}
                     </div>
                     <div className="hero-content">
                         <h1>Nos Spécificités</h1>

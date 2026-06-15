@@ -1,0 +1,467 @@
+/* ═══════════════════════════════════════════
+   VIDEOSURVEILLANCE.CSS — FEERIMA
+   Toutes les règles sont scoped sous .vsurv-*
+   Aucun sélecteur global (:root, *, body, h1…)
+═══════════════════════════════════════════ */
+
+/* ── Variables locales (scoped sur la page) ── */
+.vsurv-page {
+    --vsurv-violet:       #2D1B6B;
+    --vsurv-violet-mid:   #7B5EA7;
+    --vsurv-violet-light: #EDE8F8;
+    --vsurv-green:        #A8C5A0;
+    --vsurv-off-white:    #F8F6FF;
+    --vsurv-white:        #FFFFFF;
+    --vsurv-text:         #1A0F3D;
+    --vsurv-muted:        #6B6080;
+
+    font-family: 'DM Sans', sans-serif;
+    color: var(--vsurv-text);
+    background: var(--vsurv-off-white);
+}
+
+/* ── box-sizing uniquement sur les enfants directs de .vsurv-page ── */
+.vsurv-hero,
+.vsurv-main,
+.vsurv-hero-overlay,
+.vsurv-hero-content,
+.vsurv-eyebrow,
+.vsurv-hero-title,
+.vsurv-hero-subtitle,
+.vsurv-hero-divider,
+.vsurv-cam-deco,
+.vsurv-section,
+.vsurv-section-inner,
+.vsurv-text-block,
+.vsurv-text-heading,
+.vsurv-text-para,
+.vsurv-label,
+.vsurv-image-block,
+.vsurv-img,
+.vsurv-img-tag,
+.vsurv-badge-row,
+.vsurv-badge,
+.vsurv-badge-icon,
+.vsurv-divider-band,
+.vsurv-divider-wave,
+.vsurv-divider-text,
+.vsurv-steps,
+.vsurv-step,
+.vsurv-step-num,
+.vsurv-step-text,
+.vsurv-step-title,
+.vsurv-step-desc,
+.vsurv-cta {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* ══════════════════════════════
+   HERO
+══════════════════════════════ */
+.vsurv-hero {
+    position: relative;
+    min-height: 500px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+    overflow: hidden;
+}
+
+.vsurv-hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        135deg,
+        rgba(45, 27, 107, 0.88) 0%,
+        rgba(45, 27, 107, 0.65) 55%,
+        rgba(123, 94, 167, 0.40) 100%
+    );
+}
+
+.vsurv-hero-content {
+    position: relative;
+    z-index: 2;
+    padding: 60px 80px;
+    max-width: 680px;
+}
+
+.vsurv-eyebrow {
+    display: inline-block;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--vsurv-green);
+    margin-bottom: 16px;
+    border-left: 3px solid var(--vsurv-green);
+    padding-left: 12px;
+}
+
+/* Titre h1 scopé via classe dédiée */
+.vsurv-hero-title {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2.4rem, 5vw, 3.8rem);
+    font-weight: 700;
+    color: var(--vsurv-white);
+    line-height: 1.1;
+    margin-bottom: 18px;
+}
+
+.vsurv-hero-title-em {
+    font-style: italic;
+    color: var(--vsurv-green);
+}
+
+.vsurv-hero-subtitle {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.05rem;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.78);
+    margin-bottom: 24px;
+    line-height: 1.6;
+}
+
+.vsurv-hero-divider {
+    width: 56px;
+    height: 3px;
+    background: var(--vsurv-green);
+    border-radius: 2px;
+}
+
+.vsurv-cam-deco {
+    position: absolute;
+    bottom: 30px;
+    right: 60px;
+    width: 180px;
+    opacity: 0.55;
+    z-index: 2;
+    pointer-events: none;
+}
+
+/* ══════════════════════════════
+   MAIN
+══════════════════════════════ */
+.vsurv-main {
+    background: var(--vsurv-off-white);
+}
+
+/* ── Sections ── */
+.vsurv-section {
+    padding: 96px 80px;
+}
+
+.vsurv-section-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 72px;
+    align-items: center;
+}
+
+.vsurv-section-inner--reverse {
+    direction: rtl;
+}
+
+.vsurv-section-inner--reverse .vsurv-text-block,
+.vsurv-section-inner--reverse .vsurv-image-block {
+    direction: ltr;
+}
+
+/* ── Label catégorie ── */
+.vsurv-label {
+    display: inline-block;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.68rem;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--vsurv-violet-mid);
+    margin-bottom: 12px;
+}
+
+/* ── Bloc texte — titres et paragraphes en classes dédiées ── */
+.vsurv-text-block {
+    display: flex;
+    flex-direction: column;
+}
+
+.vsurv-text-heading {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(1.8rem, 3vw, 2.6rem);
+    font-weight: 700;
+    color: var(--vsurv-violet);
+    line-height: 1.2;
+    margin-bottom: 28px;
+}
+
+.vsurv-text-para {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1rem;
+    line-height: 1.75;
+    color: var(--vsurv-muted);
+    margin-bottom: 16px;
+}
+
+/* ── Image blocks ── */
+.vsurv-image-block {
+    position: relative;
+}
+
+.vsurv-img {
+    width: 100%;
+    height: 420px;
+    border-radius: 16px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(45, 27, 107, 0.18);
+}
+
+.vsurv-img::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(45, 27, 107, 0.35) 0%, transparent 60%);
+    border-radius: inherit;
+}
+
+.vsurv-img-tag {
+    position: absolute;
+    bottom: 16px;
+    left: 16px;
+    right: 16px;
+    background: rgba(45, 27, 107, 0.75);
+    backdrop-filter: blur(8px);
+    color: rgba(255, 255, 255, 0.9);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.72rem;
+    font-weight: 500;
+    letter-spacing: 0.06em;
+    padding: 8px 14px;
+    border-radius: 8px;
+}
+
+.vsurv-image-block--duo {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 16px;
+    height: 460px;
+}
+
+.vsurv-img--top {
+    height: 100%;
+    border-radius: 12px 12px 4px 12px;
+}
+
+.vsurv-img--bottom {
+    height: 100%;
+    border-radius: 12px 4px 12px 12px;
+}
+
+/* ── Badges ── */
+.vsurv-badge-row {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 32px;
+}
+
+.vsurv-badge {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: var(--vsurv-violet-light);
+    border-radius: 10px;
+    padding: 12px 16px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.88rem;
+    font-weight: 500;
+    color: var(--vsurv-violet);
+    border-left: 3px solid var(--vsurv-violet-mid);
+}
+
+.vsurv-badge-icon {
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+    color: var(--vsurv-violet-mid);
+}
+
+/* ── Bande séparatrice ── */
+.vsurv-divider-band {
+    background: var(--vsurv-violet);
+    padding: 24px 0;
+    text-align: center;
+    position: relative;
+}
+
+.vsurv-divider-wave {
+    display: block;
+    width: 100%;
+    height: 30px;
+}
+
+.vsurv-divider-text {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.5);
+    padding: 12px 0;
+}
+
+/* ── Section droits ── */
+.vsurv-section--rights {
+    background: var(--vsurv-white);
+}
+
+/* ── Steps ── */
+.vsurv-steps {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    margin: 28px 0 36px;
+    border-left: 2px solid var(--vsurv-violet-light);
+    padding-left: 24px;
+}
+
+.vsurv-step {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 16px 0;
+    position: relative;
+}
+
+.vsurv-step::before {
+    content: '';
+    position: absolute;
+    left: -29px;
+    top: 20px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--vsurv-violet-mid);
+    border: 2px solid var(--vsurv-violet-light);
+}
+
+.vsurv-step-num {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--vsurv-violet-light);
+    line-height: 1;
+    min-width: 36px;
+}
+
+.vsurv-step-text {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.vsurv-step-title {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--vsurv-violet);
+    display: block;
+}
+
+.vsurv-step-desc {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.88rem;
+    color: var(--vsurv-muted);
+    line-height: 1.5;
+    display: block;
+}
+
+/* ── CTA ── */
+.vsurv-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: var(--vsurv-violet);
+    color: var(--vsurv-white);
+    text-decoration: none;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 600;
+    padding: 14px 26px;
+    border-radius: 50px;
+    transition: background 0.25s, transform 0.2s;
+}
+
+.vsurv-cta:hover {
+    background: var(--vsurv-violet-mid);
+    transform: translateY(-2px);
+}
+
+.vsurv-cta-icon {
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+}
+
+/* ══════════════════════════════
+   RESPONSIVE
+══════════════════════════════ */
+@media (max-width: 968px) {
+    .vsurv-hero-content {
+        padding: 40px 24px;
+    }
+
+    .vsurv-cam-deco {
+        display: none;
+    }
+
+    .vsurv-section {
+        padding: 56px 24px;
+    }
+
+    .vsurv-section-inner {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .vsurv-section-inner--reverse {
+        direction: ltr;
+    }
+
+    .vsurv-img {
+        height: 280px;
+    }
+
+    .vsurv-image-block--duo {
+        height: 300px;
+    }
+
+    .vsurv-badge-row {
+        gap: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .vsurv-hero {
+        min-height: 380px;
+    }
+
+    .vsurv-hero-title {
+        font-size: 2rem;
+    }
+
+    .vsurv-text-heading {
+        font-size: 1.6rem;
+    }
+
+    .vsurv-steps {
+        padding-left: 18px;
+    }
+}

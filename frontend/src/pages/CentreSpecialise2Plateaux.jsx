@@ -40,36 +40,26 @@ const CentreSpecialise2Plateaux = () => {
             <Navbar />
             <main>
                 {/* Hero Section */}
-                <section className="page-hero centre-hero">
+                {/* <section className="page-hero centre-hero">
                     <div className="hero-content">
                         <h1>Centre Spécialisé des 2 Plateaux</h1>
                         <p className="hero-subtitle">
                             Une prise en charge globale et spécialisée pour la santé mentale des adolescents et des jeunes.
                         </p>
                     </div>
-                </section>
+                </section> */}
 
-                {/* Hero Section avec image de bannière */}
-                {/* <section className="page-hero centre-hero"> */}
-                    {/* Image de fond avec overlay */}
-                    {/* <div className="hero-background">
-                        <img
-                            src="/assets/feerima/centre2plateaux.png"
-                            alt="Centre spécialisé La Fée Rima des 2 Plateaux - Abidjan"
-                            className="hero-image"
-                            loading="eager"
-                        />
-                        <div className="hero-overlay"></div>
-                    </div> */}
-
-                    {/* Contenu texte */}
+                <section className="page-hero centre-hero">
+                    <div className="hero-background">
+                        <img src="/assets/feerima/centre2plateaux.png" alt="Centre spécialisé La Fée Rima des 2 Plateaux - Abidjan" className="hero-image" />
+                        {/* <div className="hero-overlay-gradient"></div> */}
+                    </div>
                     {/* <div className="hero-content">
                         <h1>Centre Spécialisé des 2 Plateaux</h1>
-                        <p className="hero-subtitle">
-                            Une prise en charge globale et spécialisée pour la santé mentale des adolescents et des jeunes.
-                        </p>
+                        <p className="hero-subtitle">...</p>
                     </div> */}
-                {/* </section> */}
+                </section>
+
 
                 {/* Services Section */}
                 <section className="section services-section">

@@ -102,7 +102,7 @@ const collaboratorsData = {
           id: 1,
           name: "Polyclinique Internationale de l'Indénié",
           shortName: "PII",
-          logo: "/assets/collaborateurs/indenie.png",
+          logo: "/assets/feerima/IIplateaux.png",
           description: "Établissement de référence offrant des prestations médicales de haute qualité avec une approche humanisée.",
           specialties: ["Médecine générale", "Chirurgie", "Urgences", "Imagerie médicale"],
           services: ["Consultations spécialisées", "Hospitalisation", "Urgences 24/7", "Bloc opératoire"],
@@ -118,7 +118,7 @@ const collaboratorsData = {
           id: 2,
           name: "Polyclinique des II Plateaux",
           shortName: "P2P",
-          logo: "/assets/collaborateurs/ii-plateaux.png",
+          logo: "/assets/feerima/IIplateaux.png",
           description: "Centre médical moderne situé au cœur des II Plateaux, spécialisé dans les soins de haute technologie.",
           specialties: ["Cardiologie", "Neurologie", "Pédiatrie", "Gynécologie"],
           services: ["Consultations spécialisées", "Hospitalisation", "Explorations fonctionnelles", "Rééducation"],
@@ -142,7 +142,7 @@ const collaboratorsData = {
           id: 3,
           name: "Service de Neurologie",
           shortName: "Neurologie",
-          logo: "/assets/collaborateurs/neurologie.png",
+          // logo: "/assets/feerima/neurologie.jpg",
           description: "Prise en charge complète des pathologies neurologiques.",
           specialties: ["Neurologie", "Neurochirurgie", "Épilepsie", "AVC"],
           services: ["Consultations", "EEG", "IRM cérébrale", "Rééducation neurologique"],
@@ -153,7 +153,7 @@ const collaboratorsData = {
           id: 4,
           name: "Service de Cardiologie",
           shortName: "Cardiologie",
-          logo: "/assets/collaborateurs/cardiologie.png",
+          // logo: "/assets/feerima/cardiologie.png",
           description: "Centre d'excellence pour les maladies cardiovasculaires.",
           specialties: ["Cardiologie interventionnelle", "Rythmologie", "Insuffisance cardiaque"],
           services: ["Consultations", "Échocardiographie", "Holter ECG", "Épreuve d'effort"],
@@ -230,7 +230,7 @@ const Collaborateurs = () => {
                           alt={collaborator.name} 
                           className="collaborateur-logo"
                           onError={(e) => {
-                            e.target.src = '/assets/fallback-hospital.png';
+                            e.target.src = '/assets/feerima/fallback-hospital.png';
                           }}
                         />
                       </div>

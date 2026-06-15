@@ -114,7 +114,7 @@ export default function ServiceAccueilUrgence() {
     return (
         <div className="historique-page">
             <Navbar />
-
+        
             {/* Hero Section améliorée */}
             <section
                 className="page-hero"
