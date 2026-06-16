@@ -924,9 +924,11 @@ export default function Home() {
           ))}
         </section>
 
+        <div id="bienvenue" style={{ scrollMarginTop: '90px' }} />
         <TypingBubble />
 
-        <div className="quote-map-wrapper" style={{ background: '#ffffff' }}>
+        <div id="contact" style={{ scrollMarginTop: '90px' }} />
+        <div className="quote-map-wrapper" id="geomap" style={{ background: '#ffffff' }}>
           <QuotesBanner />
           <section className="contact-section-wrapper" style={{ background: '#ffffff', padding: 0, paddingBottom: '60px' }}>
             <div className="contact-container" style={{ display: 'flex', alignItems: 'stretch', minHeight: '520px', overflow: 'hidden', background: '#ffffff', maxWidth: '100%', margin: 0, padding: 0 }}>
@@ -1061,6 +1063,7 @@ export default function Home() {
           )}
         </div> */}
 
+        <div id="actualites" style={{ scrollMarginTop: '90px' }} />
         <div className="actu-section">
           <h2 className="actu-main-title">Nos actualités</h2>
           <ActuCarousel />

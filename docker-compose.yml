@@ -22,8 +22,8 @@ services:
   # Spring Boot Backend
   backend:
     build:
-      context: ./backend
-      dockerfile: Dockerfile
+      context: .
+      dockerfile: Dockerfile.backend
     container_name: spring-boot-backend
     environment:
       SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/${DB_NAME:-lafeerima_db}
@@ -44,8 +44,8 @@ services:
   # React Frontend
   frontend:
     build:
-      context: ./frontend
-      dockerfile: Dockerfile
+      context: .
+      dockerfile: Dockerfile.frontend
     container_name: react-frontend
     environment:
       VITE_API_URL: ${VITE_API_URL:-http://localhost:8080/api}

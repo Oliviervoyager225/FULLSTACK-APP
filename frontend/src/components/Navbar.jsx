@@ -1,64 +1,60 @@
 import React, { useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useNavigate, useLocation } from 'react-router-dom';
 import '../styles/Navbar.css';
 
 const navItems = [
   {
-    // label: 'Le centre spécialisé',
+    label: 'Accueil',
+    type: 'anchor',
+    items: [
+      { label: 'Mot de bienvenue de la DG', anchor: 'bienvenue' },
+      { label: 'Contact & géolocalisation',  anchor: 'contact' },
+      { label: 'Actualités',                 anchor: 'actualites' },
+    ],
+  },
+  {
     label: 'La fondation',
     type: 'dropdown',
     items: [
-      { label: 'Notre histoire', to: '/historique' },
-      { label: 'Nos actions', to: '/nos-actions' },
+      { label: 'Notre histoire',               to: '/historique' },
+      { label: 'Nos actions',                  to: '/nos-actions' },
       { label: 'Notre responsabilité sociétale', to: '/rse' },
-      { label: 'Actualités', to: '/actualites' },
-      { label: 'Partenaires', to: '/partenaires' },
+      { label: 'Actualités',                   to: '/actualites' },
+      { label: 'Partenaires',                  to: '/partenaires' },
     ],
   },
   {
-    label: "Nos centres",
+    label: 'Nos centres',
     type: 'dropdown',
     items: [
-      { label: 'Nos spécificités', to: '/nos-specificites' },
-      { label: 'Centre spécialisé des 2 plateaux', to: '/centre-specialise' },
-      { label: 'Les consultations', to: '/consultations' },
-      { label: "L'hôpital de jour", to: '/hopital-de-jour' },
-      { label: "Le service d'accueil d'urgence", to: '/service-accueil-urgence' },
-      { label: 'Tarifications', to: '/tarifications' },
+      { label: 'Nos spécificités',                  to: '/nos-specificites' },
+      { label: 'Centre spécialisé des 2 plateaux',  to: '/centre-specialise' },
+      { label: 'Les consultations',                 to: '/consultations' },
+      { label: "L'hôpital de jour",                 to: '/hopital-de-jour' },
+      { label: "Le service d'accueil d'urgence",    to: '/service-accueil-urgence' },
+      { label: 'Tarifications',                     to: '/tarifications' },
     ],
   },
-  {
-    label: 'Vos droits',
-    type: 'dropdown',
-    items: [
-      { label: 'Chartes et règlement intérieur', to: '/chartes-reglement' },
-      { label: 'Chartes Usager', to: '/chartes-usager' },
-      { label: 'Personne de confiance', to: '/personne-de-confiance' },
-      { label: 'Sécurité des données personnelles', to: '/securite-donnees' },
-      { label: 'Système de vidéosurveillance', to: '/videosurveillance' },
-      { label: 'Accès à votre dossier médical', to: '/dossier-medical' },
-      { label: 'Plaintes et réclamations', to: '/plaintes-reclamations' },
-      { label: 'Satisfaction', to: '/satisfaction' },
-    ],
-  },
-  // {
-  //   label: 'Nos centres',
-  //   type: 'dropdown',
-  //   items: [
-  //     { label: 'Nos spécificités', to: '/nos-specificites' },
-  //     { label: 'Centre spécialisé des 2 plateaux', to: '/centre-specialise' },
-  //     // { label: 'Pe   'Satisfaction', to: '/satisfaction' },
-  //   ],
-  // },
-  { label: 'S’informer', type: 'link', to: '/faq' },
-  { label: 'Ressources utils', type: 'link', to: '/espace-ressources' },
+  // ── Sous-menus à venir (en attente de confirmation) ──
+  // { label: 'Vos droits', type: 'dropdown', items: [
+  //   { label: 'Chartes et règlement intérieur',        to: '/chartes-reglement' },
+  //   { label: 'Chartes Usager',                        to: '/chartes-usager' },
+  //   { label: 'Personne de confiance',                 to: '/personne-de-confiance' },
+  //   { label: 'Sécurité des données personnelles',     to: '/securite-donnees' },
+  //   { label: 'Système de vidéosurveillance',          to: '/videosurveillance' },
+  //   { label: 'Accès à votre dossier médical',         to: '/dossier-medical' },
+  //   { label: 'Plaintes et réclamations',              to: '/plaintes-reclamations' },
+  //   { label: 'Satisfaction',                          to: '/satisfaction' },
+  // ]},
+  // { label: 'Ressources utils', type: 'link', to: '/espace-ressources' },
+  { label: "S'informer",          type: 'link', to: '/faq' },
   { label: 'Recherche & Innovation', type: 'link', to: '/recherche-innovation' },
-  { label: 'Nous rejoindre', type: 'link', to: '/nous-rejoindre' },
-
+  { label: 'Nous rejoindre',      type: 'link', to: '/nous-rejoindre' },
 ];
 
 export default function Navbar() {
   const navigate = useNavigate();
+  const location = useLocation();
   const [activeDropdown, setActiveDropdown] = useState(null);
   const [navOpen, setNavOpen] = useState(false);
 
@@ -67,7 +63,6 @@ export default function Navbar() {
   };
 
   const handleDropdownBlur = (event) => {
-    // Si le nouveau focus est en dehors du dropdown actuel, on ferme
     if (!event.currentTarget.contains(event.relatedTarget)) {
       setActiveDropdown(null);
     }
@@ -76,6 +71,22 @@ export default function Navbar() {
   const closeNav = () => {
     setNavOpen(false);
     setActiveDropdown(null);
+  };
+
+  const scrollToAnchor = (anchor) => {
+    closeNav();
+    const doScroll = () => {
+      const el = document.getElementById(anchor);
+      if (el) {
+        el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    };
+    if (location.pathname !== '/') {
+      navigate('/');
+      setTimeout(doScroll, 400);
+    } else {
+      doScroll();
+    }
   };
 
   return (
@@ -97,14 +108,10 @@ export default function Navbar() {
 
         <nav id="primary-nav" className={`nav-links ${navOpen ? 'open' : ''}`}>
           {navItems.map((item, index) => {
-            if (item.type === 'dropdown') {
+            if (item.type === 'dropdown' || item.type === 'anchor') {
               const isOpen = activeDropdown === item.label;
               return (
-                <div
-                  key={index}
-                  className="dropdown"
-                  onBlur={handleDropdownBlur}
-                >
+                <div key={index} className="dropdown" onBlur={handleDropdownBlur}>
                   <button
                     type="button"
                     className={`nav-link ${isOpen ? 'active' : ''}`}
@@ -118,52 +125,44 @@ export default function Navbar() {
                     </svg>
                   </button>
                   <div className={`dropdown-menu ${isOpen ? 'show' : ''}`}>
-                    {item.items.map((subItem, subIndex) => (
-                      <Link
-                        key={subIndex}
-                        to={subItem.to}
-                        className="dropdown-item"
-                        onClick={closeNav}
-                      >
-                        {subItem.label}
-                      </Link>
-                    ))}
+                    {item.items.map((subItem, subIndex) =>
+                      item.type === 'anchor' ? (
+                        <button
+                          key={subIndex}
+                          type="button"
+                          className="dropdown-item"
+                          onClick={() => scrollToAnchor(subItem.anchor)}
+                        >
+                          {subItem.label}
+                        </button>
+                      ) : (
+                        <Link
+                          key={subIndex}
+                          to={subItem.to}
+                          className="dropdown-item"
+                          onClick={closeNav}
+                        >
+                          {subItem.label}
+                        </Link>
+                      )
+                    )}
                   </div>
                 </div>
               );
             } else {
               return (
-                <Link
-                  key={index}
-                  to={item.to}
-                  className="nav-link"
-                  onClick={closeNav}
-                >
+                <Link key={index} to={item.to} className="nav-link" onClick={closeNav}>
                   {item.label}
                 </Link>
               );
             }
           })}
         </nav>
-        {/* <button type="button" className="btn outline">faire un don</button> */}
-
-        {/* <button onClick={() => setDonOpen(true)} style={{
-          padding: '0.45rem 1.1rem',
-          // background: ACCENT,
-          color: '#0e0d0d',
-          border: 'none',
-          borderRadius: '50px',
-          fontSize: '0.85rem',
-          fontWeight: 800,
-          cursor: 'pointer',
-          letterSpacing: '0.02em',
-          whiteSpace: 'nowrap',
-        }}>Faire un don</button> */}
-
 
         <div className="nav-actions">
           <button type="button" className="btn outline">Se connecter</button>
           <Link to="/preadmission" className="btn primary small" onClick={closeNav}>S'inscrire</Link>
+          <button type="button" className="btn-don">&#10084; Faire un don</button>
         </div>
 
       </div>
