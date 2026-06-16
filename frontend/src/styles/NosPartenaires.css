@@ -8,6 +8,7 @@
   flex-direction: column;
 }
 
+
 .nos-partners-page main {
   flex: 1;
 }
@@ -103,7 +104,7 @@ a.partner-logo-link:hover .partner-logo-img {
 
 /* Bannière */
 .partners-banner {
-  height: 300px;
+  height: 500px;
   background-color: #2c5f8a; /* Couleur de fond par défaut */
   display: flex;
   align-items: center;
@@ -120,7 +121,7 @@ a.partner-logo-link:hover .partner-logo-img {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.5);
+  /* background: rgba(0, 0, 0, 0.5); */
   display: flex;
   align-items: center;
   justify-content: center;

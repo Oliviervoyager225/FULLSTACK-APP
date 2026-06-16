@@ -10,12 +10,9 @@ const navItems = [
     items: [
       { label: 'Notre histoire', to: '/historique' },
       { label: 'Nos actions', to: '/nos-actions' },
-      { label: 'Nos équipes', to: '/equipes' },
-      { label: 'Nos valeurs', to: '/nos-valeurs' },
-      { label: 'Notre engagement qualité', to: '/engagement-qualite' },
       { label: 'Notre responsabilité sociétale', to: '/rse' },
-      { label: 'Nos actualités', to: '/actualites' },
-      { label: 'Nos partenaires', to: '/partenaires' },
+      { label: 'Actualités', to: '/actualites' },
+      { label: 'Partenaires', to: '/partenaires' },
     ],
   },
   {

@@ -870,6 +870,60 @@ export default function Home() {
           </div>
         </section>
 
+        {/* ── Section 3 blocs services ── */}
+        <section className="services-blocks">
+          {[
+            {
+              color: '#0fa0b6',
+              colorDark: '#0b7a8a',
+              icon: (
+                <svg width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/>
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                </svg>
+              ),
+              title: 'ACCOMPAGNEMENT PERSONNALISÉ',
+              description: "Chaque jeune bénéficie d'un suivi individualisé par une équipe pluridisciplinaire : psychologues, éducateurs, infirmiers-psy et pédopsychiatre.",
+              link: '/equipes',
+            },
+            {
+              color: '#7cb518',
+              colorDark: '#5e8c12',
+              icon: (
+                <svg width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+                </svg>
+              ),
+              title: 'SOINS INTENSIFS & HÔPITAL DE JOUR',
+              description: "Un dispositif de soins à temps partiel de 8h30 à 17h, adapté aux adolescents de 10 à 25 ans sans hospitalisation complète.",
+              link: '/hopital-de-jour',
+            },
+            {
+              color: '#1a3a5c',
+              colorDark: '#102540',
+              icon: (
+                <svg width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                </svg>
+              ),
+              title: 'PRISE EN CHARGE GLOBALE',
+              description: "Consultations externes, urgences psychiatriques et programme de soins structuré pour maintenir les liens familiaux, scolaires et sociaux.",
+              link: '/nos-specificites',
+            },
+          ].map((bloc, i) => (
+            <Link key={i} to={bloc.link} className="service-bloc" style={{ background: bloc.color, '--color-dark': bloc.colorDark }}>
+              <div className="service-bloc-icon">{bloc.icon}</div>
+              <h3 className="service-bloc-title">{bloc.title}</h3>
+              <p className="service-bloc-desc">{bloc.description}</p>
+              <div className="service-bloc-btn">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+              </div>
+            </Link>
+          ))}
+        </section>
+
         <TypingBubble />
 
         <div className="quote-map-wrapper" style={{ background: '#ffffff' }}>
