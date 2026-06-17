@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Link, useNavigate, useLocation } from 'react-router-dom';
 import '../styles/Navbar.css';
 
@@ -27,12 +27,31 @@ const navItems = [
     label: 'Nos centres',
     type: 'dropdown',
     items: [
-      { label: 'Nos spécificités',                  to: '/nos-specificites' },
-      { label: 'Centre spécialisé des 2 plateaux',  to: '/centre-specialise' },
-      { label: 'Les consultations',                 to: '/consultations' },
-      { label: "L'hôpital de jour",                 to: '/hopital-de-jour' },
-      { label: "Le service d'accueil d'urgence",    to: '/service-accueil-urgence' },
-      { label: 'Tarifications',                     to: '/tarifications' },
+      {
+        label: 'Nos spécificités',
+        to: '/nos-specificites',
+        items: [
+          { label: 'Centre spécialisé des 2 Plateaux', to: '/centre-specialise' },
+          { label: 'Les consultations',                to: '/consultations' },
+          { label: "L'hôpital de jour",                to: '/hopital-de-jour' },
+          { label: 'La mise en observation',           to: '/mise-en-observation' },
+          { label: 'Nos équipes',                      to: '/equipes' },
+        ],
+      },
+      { label: 'Nos valeurs',               to: '/nos-valeurs' },
+      { label: 'Notre engagement qualité',  to: '/engagement-qualite' },
+      {
+        label: 'Vos droits',
+        items: [
+          { label: 'Chartes et règlement intérieur',     to: '/chartes-reglement' },
+          { label: 'Personne de confiance',              to: '/personne-de-confiance' },
+          { label: 'Sécurité des données personnelles',  to: '/securite-donnees' },
+          { label: 'Système de vidéosurveillance',       to: '/videosurveillance' },
+          { label: 'Accès au dossier médical',           to: '/dossier-medical' },
+          { label: 'Satisfaction',                       to: '/satisfaction' },
+        ],
+      },
+      { label: 'Nos Collaborateurs', to: '/nos-collaborateurs' },
     ],
   },
   // ── Sous-menus à venir (en attente de confirmation) ──
@@ -57,15 +76,20 @@ export default function Navbar() {
   const location = useLocation();
   const [activeDropdown, setActiveDropdown] = useState(null);
   const [navOpen, setNavOpen] = useState(false);
+  const navRef = useRef(null);
+
+  useEffect(() => {
+    const handleClickOutside = (e) => {
+      if (navRef.current && !navRef.current.contains(e.target)) {
+        setActiveDropdown(null);
+      }
+    };
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, []);
 
   const handleDropdownToggle = (label) => {
     setActiveDropdown((prev) => (prev === label ? null : label));
-  };
-
-  const handleDropdownBlur = (event) => {
-    if (!event.currentTarget.contains(event.relatedTarget)) {
-      setActiveDropdown(null);
-    }
   };
 
   const closeNav = () => {
@@ -91,7 +115,7 @@ export default function Navbar() {
 
   return (
     <header className="site-header">
-      <div className="container nav-row">
+      <div className="container nav-row" ref={navRef}>
         <Link to="/" className="brand" onClick={closeNav}>
           <img src="/assets/logo/logo-feerima.png" alt="La Fée Rima" className="brand-logo" />
         </Link>
@@ -111,7 +135,7 @@ export default function Navbar() {
             if (item.type === 'dropdown' || item.type === 'anchor') {
               const isOpen = activeDropdown === item.label;
               return (
-                <div key={index} className="dropdown" onBlur={handleDropdownBlur}>
+                <div key={index} className="dropdown">
                   <button
                     type="button"
                     className={`nav-link ${isOpen ? 'active' : ''}`}
@@ -125,17 +149,48 @@ export default function Navbar() {
                     </svg>
                   </button>
                   <div className={`dropdown-menu ${isOpen ? 'show' : ''}`}>
-                    {item.items.map((subItem, subIndex) =>
-                      item.type === 'anchor' ? (
-                        <button
-                          key={subIndex}
-                          type="button"
-                          className="dropdown-item"
-                          onClick={() => scrollToAnchor(subItem.anchor)}
-                        >
-                          {subItem.label}
-                        </button>
-                      ) : (
+                    {item.items.map((subItem, subIndex) => {
+                      if (item.type === 'anchor') {
+                        return (
+                          <button
+                            key={subIndex}
+                            type="button"
+                            className="dropdown-item"
+                            onClick={() => scrollToAnchor(subItem.anchor)}
+                          >
+                            {subItem.label}
+                          </button>
+                        );
+                      }
+                      if (subItem.items) {
+                        return (
+                          <div key={subIndex} className="flyout-wrapper">
+                            <Link
+                              to={subItem.to || '#'}
+                              className="dropdown-item has-flyout"
+                              onClick={closeNav}
+                            >
+                              {subItem.label}
+                              <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" className="flyout-icon">
+                                <path d="M10 17l5-5-5-5v10z" />
+                              </svg>
+                            </Link>
+                            <div className="flyout-menu">
+                              {subItem.items.map((fly, flyIndex) => (
+                                <Link
+                                  key={flyIndex}
+                                  to={fly.to}
+                                  className="dropdown-item"
+                                  onClick={closeNav}
+                                >
+                                  {fly.label}
+                                </Link>
+                              ))}
+                            </div>
+                          </div>
+                        );
+                      }
+                      return (
                         <Link
                           key={subIndex}
                           to={subItem.to}
@@ -144,8 +199,8 @@ export default function Navbar() {
                         >
                           {subItem.label}
                         </Link>
-                      )
-                    )}
+                      );
+                    })}
                   </div>
                 </div>
               );
@@ -162,7 +217,7 @@ export default function Navbar() {
         <div className="nav-actions">
           <button type="button" className="btn outline">Se connecter</button>
           <Link to="/preadmission" className="btn primary small" onClick={closeNav}>S'inscrire</Link>
-          <button type="button" className="btn-don">&#10084; Faire un don</button>
+          <Link to="/faire-un-don" className="btn-don" onClick={closeNav}>&#10084; Faire un don</Link>
         </div>
 
       </div>

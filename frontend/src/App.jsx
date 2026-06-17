@@ -21,6 +21,8 @@ const ConsultationsExternes = lazy(() => import('./pages/ConsultationsExternes')
 const HopitalDeJour = lazy(() => import('./pages/HopitalDeJour'));
 const ServiceAccueilUrgence = lazy(() => import('./pages/ServiceAccueilUrgence'));
 const Tarifications = lazy(() => import('./pages/Tarifications'));
+const MiseEnObservation = lazy(() => import('./pages/MiseEnObservation'));
+const NosCollaborateurs = lazy(() => import('./pages/NosCollaborateurs'));
 
 // Vos droits
 const ChartesReglement = lazy(() => import('./pages/ChartesReglement'));
@@ -34,6 +36,7 @@ const Satisfaction = lazy(() => import('./pages/Satisfaction'));
 
 // Navigation principale
 const FAQ = lazy(() => import('./pages/FAQ'));
+const FaireUnDon = lazy(() => import('./pages/FaireUnDon'));
 const EspaceRessources = lazy(() => import('./pages/EspaceRessources'));
 const PoleRechercheInnovation = lazy(() => import('./pages/PoleRechercheInnovation'));
 const NousRejoindre = lazy(() => import('./pages/NousRejoindre'));
@@ -84,6 +87,8 @@ function App() {
             <Route path="/service-accueil-urgence" element={<ServiceAccueilUrgence />} />
             <Route path="/tarifications" element={<Tarifications />} />
             <Route path="/centre-specialise" element={<CentreSpecialise2Plateaux />} />
+            <Route path="/mise-en-observation" element={<MiseEnObservation />} />
+            <Route path="/nos-collaborateurs" element={<NosCollaborateurs />} />
 
             {/* Vos droits */}
             <Route path="/chartes-reglement" element={<ChartesReglement />} />
@@ -100,6 +105,7 @@ function App() {
             <Route path="/espace-ressources" element={<EspaceRessources />} />
             <Route path="/recherche-innovation" element={<PoleRechercheInnovation />} />
             <Route path="/nous-rejoindre" element={<NousRejoindre />} />
+            <Route path="/faire-un-don" element={<FaireUnDon />} />
           </Routes>
         </Suspense>
       </div>

@@ -14,14 +14,15 @@ export default defineConfig({
     outDir: 'dist',
     target: 'es2015',
     minify: 'esbuild',
+    assetsDir: '_assets',
     rollupOptions: {
       output: {
         manualChunks: {
           'vendor-react': ['react', 'react-dom', 'react-router-dom'],
         },
-        chunkFileNames: 'assets/[name]-[hash].js',
-        entryFileNames: 'assets/[name]-[hash].js',
-        assetFileNames: 'assets/[name]-[hash].[ext]',
+        chunkFileNames: '_assets/[name]-[hash].js',
+        entryFileNames: '_assets/[name]-[hash].js',
+        assetFileNames: '_assets/[name]-[hash].[ext]',
       },
     },
     chunkSizeWarningLimit: 600,

@@ -1,0 +1,284 @@
+/* ── Hero icon ── */
+.don-hero-icon {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+  filter: drop-shadow(0 2px 8px rgba(0,0,0,0.2));
+}
+
+/* ── Intro ── */
+.don-intro {
+  max-width: 820px;
+  width: 100%;
+  text-align: center;
+}
+
+.don-intro p {
+  font-size: 1.05rem;
+  color: #444;
+  line-height: 1.85;
+  margin-bottom: 1rem;
+}
+
+.don-intro-accent {
+  font-size: 1.1rem !important;
+  color: #1a3a5c !important;
+  margin-top: 0.5rem;
+}
+
+/* ── Wrapper section ── */
+.don-section-outer {
+  background: #f7fcfd;
+  padding: 50px 0 70px;
+}
+
+.don-section-inner {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+/* ── Onglets ── */
+.don-tabs {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 36px;
+  flex-wrap: wrap;
+}
+
+.don-tab {
+  flex: 1;
+  min-width: 240px;
+  padding: 14px 20px;
+  border-radius: 12px;
+  border: 2px solid #ddd;
+  background: #fff;
+  color: #666;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: 'Lato', sans-serif;
+  transition: all 0.2s ease;
+  text-align: center;
+}
+
+.don-tab:hover {
+  border-color: #c0392b;
+  color: #c0392b;
+}
+
+.don-tab.active {
+  background: #c0392b;
+  border-color: #c0392b;
+  color: #fff;
+  box-shadow: 0 4px 16px rgba(192, 57, 43, 0.25);
+}
+
+/* ── Carte ── */
+.don-card {
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.09);
+  animation: fadeSlide 0.3s ease;
+}
+
+@keyframes fadeSlide {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.don-card-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 28px 32px;
+  color: #fff;
+}
+
+.don-card-header--red  { background: linear-gradient(135deg, #c0392b, #e74c3c); }
+.don-card-header--teal { background: linear-gradient(135deg, #0d7a8a, #0fa0b6); }
+
+.don-card-icon {
+  font-size: 2rem;
+  flex-shrink: 0;
+}
+
+.don-card-header h2 {
+  font-size: 1.35rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.don-card-body {
+  padding: 32px;
+}
+
+.don-card-desc {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 28px;
+}
+
+/* ── Moyens de paiement ── */
+.don-payment-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #1a3a5c;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.don-payment-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-bottom: 32px;
+}
+
+.don-payment-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 14px 18px;
+  background: #f8fafc;
+  border-radius: 10px;
+  border-left: 3px solid #e74c3c;
+}
+
+.don-payment-icon {
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.don-payment-item strong {
+  display: block;
+  font-size: 0.95rem;
+  color: #1a3a5c;
+  margin-bottom: 2px;
+}
+
+.don-payment-item p {
+  font-size: 0.85rem;
+  color: #777;
+  margin: 0;
+}
+
+/* ── Montant parrainage ── */
+.don-montant-badge {
+  background: linear-gradient(135deg, #e8f8fb, #d0f0f5);
+  border: 2px dashed #0fa0b6;
+  border-radius: 12px;
+  padding: 20px 24px;
+  margin-bottom: 28px;
+  text-align: center;
+}
+
+.don-montant-label {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #0d7a8a;
+  margin-bottom: 6px;
+}
+
+.don-montant-value {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: #0fa0b6;
+  margin-bottom: 10px;
+}
+
+.don-montant-note {
+  font-size: 0.88rem;
+  color: #555;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* ── Bouton CTA ── */
+.don-cta-btn {
+  display: inline-block;
+  padding: 14px 36px;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  font-family: 'Lato', sans-serif;
+}
+
+.don-cta-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+.don-cta-btn--red {
+  background: linear-gradient(135deg, #c0392b, #e74c3c);
+  color: #fff;
+}
+
+.don-cta-btn--teal {
+  background: linear-gradient(135deg, #0d7a8a, #0fa0b6);
+  color: #fff;
+}
+
+/* ── Section impact ── */
+.don-impact-section {
+  background: #1a3a5c;
+  padding: 60px 0;
+}
+
+.don-impact-title {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 40px;
+}
+
+.don-impact-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.don-impact-card {
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 14px;
+  padding: 32px 20px;
+  text-align: center;
+  transition: background 0.2s ease;
+}
+
+.don-impact-card:hover {
+  background: rgba(255,255,255,0.13);
+}
+
+.don-impact-num {
+  display: block;
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: #0fa0b6;
+  margin-bottom: 10px;
+}
+
+.don-impact-label {
+  font-size: 0.9rem;
+  color: rgba(255,255,255,0.8);
+  line-height: 1.5;
+}
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+  .don-tabs { flex-direction: column; }
+  .don-tab  { min-width: unset; }
+  .don-impact-grid { grid-template-columns: 1fr; gap: 16px; }
+  .don-card-body { padding: 20px; }
+  .don-card-header { padding: 20px; }
+}

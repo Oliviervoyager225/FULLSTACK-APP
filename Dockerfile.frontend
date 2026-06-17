@@ -2,15 +2,24 @@ FROM node:20-alpine as builder
 
 WORKDIR /app
 
-COPY frontend .
+# Layer 1 — dépendances (cached tant que package.json ne change pas)
+COPY frontend/package*.json ./
 RUN npm install
+
+# Layer 2 — assets publics (cached tant que les images ne changent pas)
+COPY frontend/public ./public
+
+# Layer 3 — code source uniquement (re-build uniquement si le code change)
+COPY frontend/src ./src
+COPY frontend/index.html ./
+COPY frontend/vite.config.js ./
+
 RUN npm run build
 
 FROM node:20-alpine
 
 WORKDIR /app
 
-# Installer serve localement
 COPY frontend/package*.json ./
 RUN npm install serve
 
