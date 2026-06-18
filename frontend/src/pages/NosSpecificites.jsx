@@ -214,20 +214,20 @@ const NosSpecificites = () => {
     ];
 
     const activities = [
-        { icon: '🩺', text: 'Diagnostic et prise en charge médicamenteuse' },
-        { icon: '🧠', text: 'Écoute active et bienveillante, thérapie individuelle' },
-        { icon: '🎓', text: 'Accompagnement socio-éducatif et professionnel' },
-        { icon: '🗣️', text: 'Traitement des troubles du langage et de l’apprentissage' },
-        { icon: '🎨', text: 'Expressions artistiques (art-thérapie)' },
-        { icon: '🏃', text: 'Éducation sportive adaptée' },
-        { icon: '🌿', text: 'Ateliers thérapeutiques (pâtisserie, jardinage...)' },
+        { /*icon: '🩺',*/ text: 'Diagnostic et prise en charge médicamenteuse' },
+        { /*icon: '🧠',*/ text: 'Écoute active et bienveillante, thérapie individuelle' },
+        { /*icon: '🎓',*/ text: 'Accompagnement socio-éducatif et professionnel' },
+        { /*icon: '🗣️',*/ text: 'Traitement des troubles du langage et de l’apprentissage' },
+        { /*icon: '🎨',*/ text: 'Expressions artistiques (art-thérapie)' },
+        { /*icon: '🏃',*/ text: 'Éducation sportive adaptée' },
+        { /*icon: '🌿',*/ text: 'Ateliers thérapeutiques (pâtisserie, jardinage...)' },
     ];
 
     const pillars = [
         {
             id: 2,
             title: 'Approche Personnalisée',
-            icon: '📋',
+            // icon: '📋',
             text: (
                 <>
                     Un accompagnement adapté aux besoins et au rythme de chaque bénéficiaire, grâce à un
@@ -244,7 +244,7 @@ const NosSpecificites = () => {
         {
             id: 3,
             title: 'Cadre Bienveillant et Sécurisé',
-            icon: '🛡️',
+            // icon: '🛡️',
             text: (
                 <>
                     La Fondation La Fée Rima offre un cadre moderne et attrayant où{' '}
@@ -259,7 +259,7 @@ const NosSpecificites = () => {
         {
             id: 4,
             title: 'Méthodes Validées et Innovantes',
-            icon: '💡',
+            // icon: '💡',
             text: (
                 <>
                     Des pratiques d’efficacité reconnue, actualisées selon les avancées scientifiques (comme
@@ -274,7 +274,7 @@ const NosSpecificites = () => {
         {
             id: 5,
             title: 'Implication des Familles',
-            icon: '🤝',
+            // icon: '🤝',
             text: (
                 <>
                     Les bénéficiaires et leurs familles participent activement au projet thérapeutique, dans
@@ -328,7 +328,7 @@ const NosSpecificites = () => {
                         <div className="team-grid">
                             <div className="team-roles-card card-hover">
                                 <h3>
-                                    <span className="card-icon">👥</span> Professionnels sur place
+                                    {/* <span className="card-icon">👥</span> */} Professionnels sur place
                                 </h3>
                                 <ul className="roles-list">
                                     {teamRoles.map((role, index) => (
@@ -340,7 +340,7 @@ const NosSpecificites = () => {
                             </div>
                             <div className="team-activities-card card-hover">
                                 <h3>
-                                    <span className="card-icon">⚙️</span> Nos interventions
+                                    {/* <span className="card-icon">⚙️</span> */} Nos interventions
                                 </h3>
                                 <ul className="activities-list">
                                     {activities.map((activity, index) => (

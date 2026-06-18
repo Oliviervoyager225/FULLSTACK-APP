@@ -25,7 +25,7 @@
     position: absolute;
     inset: 0;
     background: linear-gradient(to bottom,
-     rgba(44, 95, 120, 0.75),
+     rgba(26, 58, 92, 0.75),
      /* rgba(31, 41, 55, 0.85) */
      );
 }
@@ -77,7 +77,7 @@
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.1em;
-    color: #E89F57;
+    color: var(--brand-green, #7cb518);
     /* Orange doux / Chaleur */
     margin-bottom: 0.75rem;
 }
@@ -85,7 +85,7 @@
 .content h2 {
     font-size: 2.5rem;
     font-weight: 700;
-    color: #2C5F78;
+    color: var(--brand-navy, #1a3a5c);
     /* Bleu apaisant */
     margin-bottom: 1.5rem;
     line-height: 1.2;
@@ -94,7 +94,7 @@
 .content h3 {
     font-size: 2rem;
     font-weight: 700;
-    color: #2C5F78;
+    color: var(--brand-navy, #1a3a5c);
     margin-bottom: 1.5rem;
     line-height: 1.2;
 }
@@ -112,13 +112,13 @@
     background-size: cover;
     background-position: center;
     border-radius: 20px;
-    box-shadow: 0 10px 30px -10px rgba(44, 95, 120, 0.15);
+    box-shadow: 0 10px 30px -10px rgba(26, 58, 92, 0.15);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .imageBox:hover {
     transform: translateY(-5px);
-    box-shadow: 0 20px 40px -10px rgba(44, 95, 120, 0.25);
+    box-shadow: 0 20px 40px -10px rgba(26, 58, 92, 0.25);
 }
 
 .stackedImages img {
@@ -126,7 +126,7 @@
     max-height: 500px;
     object-fit: cover;
     border-radius: 20px;
-    box-shadow: 0 10px 30px -10px rgba(44, 95, 120, 0.15);
+    box-shadow: 0 10px 30px -10px rgba(26, 58, 92, 0.15);
 }
 
 /* --- Section 2: Stats Grid --- */
@@ -136,7 +136,7 @@
     background-color: #FFFFFF;
     padding: 4rem 3rem;
     border-radius: 20px;
-    box-shadow: 0 10px 30px -10px rgba(44, 95, 120, 0.1);
+    box-shadow: 0 10px 30px -10px rgba(26, 58, 92, 0.1);
 }
 
 .realitySection .content {
@@ -161,7 +161,7 @@
     background: #F9FAFB;
     padding: 2rem 1.5rem;
     border-radius: 12px;
-    border-top: 4px solid #E89F57;
+    border-top: 4px solid var(--brand-green, #7cb518);
     transition: transform 0.3s ease;
 }
 
@@ -173,7 +173,7 @@
     display: block;
     font-size: 3rem;
     font-weight: 800;
-    color: #2C5F78;
+    color: var(--brand-navy, #1a3a5c);
     margin-bottom: 0.5rem;
     line-height: 1;
 }
@@ -186,8 +186,8 @@
 
 /* --- Section 3: Emphasis --- */
 .emphasisBox {
-    background-color: rgba(44, 95, 120, 0.08);
-    border-left: 4px solid #2C5F78;
+    background-color: rgba(26, 58, 92, 0.08);
+    border-left: 4px solid var(--brand-navy, #1a3a5c);
     padding: 1.5rem;
     border-radius: 0 12px 12px 0;
     margin-top: 2rem;
@@ -196,7 +196,7 @@
 .emphasisBox p {
     margin-bottom: 0;
     font-weight: 600;
-    color: #2C5F78;
+    color: var(--brand-navy, #1a3a5c);
 }
 
 /* --- Responsive Design --- */

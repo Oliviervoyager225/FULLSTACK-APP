@@ -270,7 +270,7 @@ export default function PlaintesReclamations() {
                                 <h4>Email</h4>
                                 <p>reclamations@feerima.fr</p>
                             </div>
-                            <div className="contact-card" onClick={() => handleNavigation('/faq')}>
+                            <div className="contact-card" onClick={() => handleNavigation('/s-informer#faq')}>
                                 <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor">
                                     <circle cx="12" cy="12" r="10" />
                                     <line x1="12" y1="8" x2="12" y2="12" />

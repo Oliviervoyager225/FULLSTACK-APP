@@ -89,14 +89,14 @@ const collaboratorsData = {
   introduction: {
     title: "Nos collaborateurs médicaux",
     description: "Nos collaborateurs pour l'orientation des bénéficiaires nécessitant des consultations ou des prises en charge somatiques spécialisées (neurologie, cardiologie, etc.), ainsi que pour d'éventuelles hospitalisations.",
-    icon: "🏥"
+    // icon: "🏥"
   },
   categories: [
     {
       id: "hopitaux",
       title: "Établissements hospitaliers partenaires",
       subtitle: "Des structures médicales d'excellence pour vos soins spécialisés",
-      icon: "🏨",
+      // icon: "🏨",
       collaborators: [
         {
           id: 1,
@@ -136,7 +136,7 @@ const collaboratorsData = {
       id: "specialistes",
       title: "Spécialistes partenaires",
       subtitle: "Des experts médicaux à votre service",
-      icon: "👨‍⚕️",
+      // icon: "👨‍⚕️",
       collaborators: [
         {
           id: 3,
@@ -189,12 +189,12 @@ const Collaborateurs = () => {
               <p className="hero-description">{collaboratorsData.introduction.description}</p>
               <div className="hero-cta">
                 {/* <button className="cta-button emergency" onClick={handleEmergency}>
-                  <span className="cta-icon">🚨</span>
+                  <span className="cta-icon"></span>
                   Urgence médicale
                 </button> */}
 
                 <button className="cta-button emergency">
-                  <span className="cta-icon">🚨</span>
+                  <span className="cta-icon"></span>
                   Urgence médicale
                 </button>
               </div>

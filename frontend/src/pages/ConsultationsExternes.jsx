@@ -110,11 +110,11 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import '../styles/PageHero.css';
 
-const ACCENT = '#109cdd';
-const ACCENT_LIGHT = '#e0f2fe';
 const GREEN = '#7cb518';
 const GREEN_LIGHT = '#eaf3de';
 const NAVY = '#1a3a5c';
+const ACCENT = GREEN;
+const ACCENT_LIGHT = GREEN_LIGHT;
 
 const consultations = [
     {
@@ -295,7 +295,7 @@ export default function ConsultationsExternes() {
 
                     {/* Bannière téléconsultation */}
                     <div style={{
-                        background: `linear-gradient(135deg, ${NAVY} 0%, #1e6fa8 100%)`,
+                        background: `linear-gradient(135deg, ${NAVY} 0%, ${GREEN} 100%)`,
                         borderRadius: '16px',
                         padding: '1.5rem 2rem',
                         display: 'flex',

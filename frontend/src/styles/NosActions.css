@@ -80,27 +80,27 @@
 }
 
 /* Sections communes */
-.section {
+.nos-actions-page .section {
     padding: 4rem 2rem;
 }
 
-.container {
+.nos-actions-page .container {
     max-width: 1200px;
     margin: 0 auto;
 }
 
-.section-header {
+.nos-actions-page .section-header {
     margin-bottom: 2rem;
     text-align: center;
 }
 
-.section-header h2 {
+.nos-actions-page .section-header h2 {
     font-size: 2rem;
     color: var(--primary-color, #2563eb);
     margin-bottom: 0.75rem;
 }
 
-.divider {
+.nos-actions-page .divider {
     width: 60px;
     height: 4px;
     background: var(--accent-color, #f59e0b);
@@ -157,18 +157,18 @@
 }
 
 /* Grid Layout */
-.section-grid {
+.nos-actions-page .section-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 3rem;
     align-items: center;
 }
 
-.section-grid.reverse {
+.nos-actions-page .section-grid.reverse {
     direction: rtl;
 }
 
-.section-grid.reverse>* {
+.nos-actions-page .section-grid.reverse>* {
     direction: ltr;
 }
 
@@ -177,7 +177,7 @@
     background: var(--background-light, #f9fafb);
 }
 
-.section-description {
+.nos-actions-page .section-description {
     font-size: 1.1rem;
     color: var(--text-secondary, #4b5563);
     margin-bottom: 1.5rem;
@@ -247,9 +247,9 @@
 }
 
 /* Image Placeholder */
-.section-image .image-placeholder {
+.nos-actions-page .section-image .image-placeholder {
     aspect-ratio: 4/3;
-    background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%);
+    background: linear-gradient(135deg, #eaf3de 0%, #d2e6b8 100%);
     border-radius: 12px;
     display: flex;
     align-items: center;
@@ -270,7 +270,7 @@
 }
 
 .partnership-card {
-    background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
+    background: linear-gradient(135deg, #f3f8ec 0%, #eaf3de 100%);
     padding: 1.5rem;
     border-radius: 12px;
     margin: 2rem 0;
@@ -421,14 +421,14 @@
         font-size: 2rem;
     }
 
-    .section-grid,
-    .section-grid.reverse {
+    .nos-actions-page .section-grid,
+    .nos-actions-page .section-grid.reverse {
         grid-template-columns: 1fr;
         gap: 2rem;
         direction: ltr;
     }
 
-    .section-grid.reverse>* {
+    .nos-actions-page .section-grid.reverse>* {
         direction: ltr;
     }
 }
@@ -445,7 +445,7 @@
         font-size: 1.1rem;
     }
 
-    .section {
+    .nos-actions-page .section {
         padding: 3rem 1.5rem;
     }
 

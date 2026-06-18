@@ -311,7 +311,7 @@ const missions = [
     {
         numero: '01',
         titre: 'Révolutionner le Diagnostic et la Prise en Charge',
-        icone: '🔬',
+        // icone: '🔬',
         color: '#185FA5',
         colorLight: '#E6F1FB',
         points: [
@@ -328,7 +328,7 @@ const missions = [
     {
         numero: '02',
         titre: 'Innover dans la Prévention et la Promotion',
-        icone: '🌱',
+        // icone: '🌱',
         color: '#3B6D11',
         colorLight: '#EAF3DE',
         points: [
@@ -345,7 +345,7 @@ const missions = [
     {
         numero: '03',
         titre: 'Valoriser l\'Impact et la Coordination de la Recherche',
-        icone: '🤝',
+        // icone: '🤝',
         color: '#534AB7',
         colorLight: '#EEEDFE',
         points: [
@@ -366,7 +366,7 @@ const missions = [
     {
         numero: '04',
         titre: 'Réduire l\'Impact Socio-Économique',
-        icone: '📈',
+        // icone: '📈',
         color: '#854F0B',
         colorLight: '#FAEEDA',
         points: [
@@ -450,6 +450,7 @@ function MissionCard({ mission, index }) {
                         color: '#94a3b8',
                         margin: 0,
                         fontWeight: 500,
+                        
                     }}>
                         {mission.points.length} axe{mission.points.length > 1 ? 's' : ''} d'action
                     </p>
@@ -771,7 +772,7 @@ export default function PoleRechercheInnovation() {
                             textTransform: 'uppercase',
                             marginBottom: '1rem',
                         }}>
-                            🔭 À venir
+                            À venir
                         </span>
                         <h2 style={{
                             fontSize: 'clamp(1.25rem, 3vw, 1.75rem)',

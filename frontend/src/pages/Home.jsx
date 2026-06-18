@@ -485,6 +485,7 @@ import '../styles/ContactSection.css';
 import '../styles/ActuSection.css';
 import TypingBubble from '../components/TypingBubble';
 import QuotesBanner from '../components/QuotesBanner';
+import LeafletMap from '../components/LeafletMap';
 
 import { Users, Target, ShieldCheck, Lightbulb, HandHeart, Home as HomeIcon, Accessibility, Handshake } from "lucide-react";
 
@@ -1025,7 +1026,7 @@ export default function Home() {
                 <div className="actu-card-body">
                   <h3>{actu.titre}</h3>
                   <p>{actu.extrait}</p>
-                  <a href="/actualites" className="actu-card-link">Lire la suite →</a>
+                  <a href="/la-fondation#actualites" className="actu-card-link">Lire la suite →</a>
                 </div>
               </div>
             ))}

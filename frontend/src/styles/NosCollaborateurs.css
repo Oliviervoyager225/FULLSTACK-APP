@@ -26,7 +26,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+  background: linear-gradient(135deg, var(--brand-navy, #1a3a5c) 0%, var(--brand-green, #7cb518) 100%);
 }
 
 .hero-pattern {
@@ -73,7 +73,7 @@
   font-size: 2.5rem;
   font-weight: 800;
   margin-bottom: 1rem;
-  background: linear-gradient(135deg, #fff 0%, #e0e7ff 100%);
+  background: linear-gradient(135deg, #fff 0%, #d2e6b8 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -106,7 +106,7 @@
 }
 
 .cta-button.emergency {
-  background: linear-gradient(135deg, #dc3545 0%, #c82333 100%);
+  background: linear-gradient(135deg, #dc3545 0%, #d35a66 100%);
   color: white;
   box-shadow: 0 4px 15px rgba(220, 53, 69, 0.3);
 }
@@ -156,7 +156,7 @@
 
 .section-icon {
   font-size: 2.5rem;
-  background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+  background: linear-gradient(135deg, var(--brand-navy, #1a3a5c) 0%, var(--brand-green, #7cb518) 100%);
   width: 60px;
   height: 60px;
   display: flex;
@@ -274,7 +274,7 @@
 .section-label {
   font-size: 0.9rem;
   font-weight: 700;
-  color: #1e3c72;
+  color: var(--brand-navy, #1a3a5c);
   margin-bottom: 0.8rem;
   display: flex;
   align-items: center;
@@ -293,8 +293,8 @@
 }
 
 .specialty-tag {
-  background: linear-gradient(135deg, #e3f2fd 0%, #bbdef5 100%);
-  color: #1e3c72;
+  background: linear-gradient(135deg, #f3f8ec 0%, #eaf3de 100%);
+  color: var(--brand-navy, #1a3a5c);
   padding: 0.3rem 0.8rem;
   border-radius: 20px;
   font-size: 0.8rem;
@@ -343,13 +343,13 @@
 }
 
 .contact-link {
-  color: #1e3c72;
+  color: var(--brand-navy, #1a3a5c);
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 .contact-link:hover {
-  color: #2a5298;
+  color: var(--brand-green, #7cb518);
   text-decoration: underline;
 }
 
@@ -389,7 +389,7 @@
 }
 
 .btn-primary {
-  background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+  background: linear-gradient(135deg, var(--brand-navy, #1a3a5c) 0%, var(--brand-green, #7cb518) 100%);
   color: white;
 }
 
@@ -400,7 +400,7 @@
 
 .btn-secondary {
   background: white;
-  color: #1e3c72;
+  color: var(--brand-navy, #1a3a5c);
   border: 1px solid #dee2e6;
 }
 
@@ -415,7 +415,7 @@
 }
 
 .info-card {
-  background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+  background: linear-gradient(135deg, var(--brand-navy, #1a3a5c) 0%, var(--brand-green, #7cb518) 100%);
   border-radius: 20px;
   padding: 2.5rem;
   color: white;

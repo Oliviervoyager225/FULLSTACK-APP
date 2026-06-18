@@ -109,7 +109,7 @@
                     font-size: 0.85rem;
                     text-transform: uppercase;
                     letter-spacing: 2px;
-                    color: #9b59b6;
+                    color: var(--brand-navy, #1a3a5c);
                     font-weight: 600;
                     margin-bottom: 1rem;
                 }
@@ -133,7 +133,7 @@
                 .cr-title-underline {
                     width: 60px;
                     height: 3px;
-                    background: linear-gradient(90deg, #9b59b6, #e74c3c);
+                    background: linear-gradient(90deg, var(--brand-navy, #1a3a5c), var(--brand-green, #7cb518));
                     margin-bottom: 1.5rem;
                 }
 
@@ -252,7 +252,7 @@
                 }
 
                 .cr-charte-card-highlight {
-                    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                    background: linear-gradient(135deg, var(--brand-navy, #1a3a5c) 0%, var(--brand-green, #7cb518) 100%);
                     color: white;
                 }
 
@@ -279,7 +279,7 @@
                     position: absolute;
                     top: -10px;
                     right: 20px;
-                    background: #e74c3c;
+                    background: var(--brand-green, #7cb518);
                     color: white;
                     padding: 0.3rem 1rem;
                     border-radius: 20px;
@@ -340,7 +340,7 @@
 
                 .cr-quote-icon {
                     font-size: 5rem;
-                    color: #9b59b6;
+                    color: var(--brand-navy, #1a3a5c);
                     opacity: 0.3;
                     position: absolute;
                     top: 20px;
@@ -362,7 +362,7 @@
                 .cr-quote-author {
                     margin-top: 1.5rem;
                     font-weight: 600;
-                    color: #9b59b6;
+                    color: var(--brand-navy, #1a3a5c);
                 }
 
                 /* Animations */

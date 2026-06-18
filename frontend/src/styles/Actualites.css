@@ -64,7 +64,7 @@
     position: absolute;
     top: 12px;
     left: 12px;
-    background: #b0c428;
+    background: var(--brand-green, #7cb518);
     color: #fff;
     font-size: 0.72rem;
     font-weight: 700;
@@ -102,13 +102,13 @@
 .actu-read-more {
     font-size: 0.88rem;
     font-weight: 700;
-    color: #b0c428;
+    color: var(--brand-green, #7cb518);
     text-decoration: none;
     transition: color 0.2s;
 }
 
 .actu-read-more:hover {
-    color: #8fa01e;
+    color: #3B6D11;
 }
 
 /* ── Section 2 : Stratégie ── */
@@ -151,7 +151,7 @@
 }
 
 .actu-strategy-list li:hover {
-    color: #b0c428;
+    color: var(--brand-green, #7cb518);
     padding-left: 6px;
 }
 
@@ -197,7 +197,7 @@
 
 .actu-play-btn:hover {
     transform: translate(-50%, -50%) scale(1.1);
-    background: #b0c428;
+    background: var(--brand-green, #7cb518);
 }
 
 /* ── Section 3 : Mentors ── */
@@ -243,7 +243,7 @@
     object-fit: cover;
     object-position: top;
     flex-shrink: 0;
-    border: 3px solid #b0c428;
+    border: 3px solid var(--brand-green, #7cb518);
 }
 
 .actu-mentor-info h3 {
@@ -256,7 +256,7 @@
 .actu-mentor-role {
     display: block;
     font-size: 0.82rem;
-    color: #b0c428;
+    color: var(--brand-green, #7cb518);
     font-weight: 600;
     margin-bottom: 10px;
 }
@@ -332,7 +332,7 @@
 }
 
 .actu-form-group input:focus {
-    border-bottom-color: #b0c428;
+    border-bottom-color: var(--brand-green, #7cb518);
 }
 
 .actu-submit-btn {
@@ -350,7 +350,7 @@
 }
 
 .actu-submit-btn:hover {
-    background: #b0c428;
+    background: var(--brand-green, #7cb518);
 }
 
 .actu-contact-info-col {
@@ -387,7 +387,7 @@
 }
 
 .actu-info-block ul a:hover {
-    color: #b0c428;
+    color: var(--brand-green, #7cb518);
 }
 
 /* Bande contact bas de section */

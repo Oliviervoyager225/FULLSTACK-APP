@@ -254,7 +254,7 @@ export default function Engagement() {
         .engagement-header h2 {
           font-size: 2.2rem;
           font-weight: 600;
-          color: #1e3a5f;
+          color: #1a3a5c;
           letter-spacing: -0.01em;
           margin-bottom: 16px;
         }
@@ -262,7 +262,7 @@ export default function Engagement() {
         .engagement-underline {
           width: 60px;
           height: 3px;
-          background: #2c7a6e;
+          background: #7cb518;
           margin: 0 auto;
           border-radius: 2px;
         }

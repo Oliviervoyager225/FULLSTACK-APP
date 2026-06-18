@@ -1,6 +1,6 @@
 /* ===========================
    SecuriteDonnees.css
-   Palette : violet #5B3A8E · vert #6BAF92 · blanc cassé #FAF8FF · perle #F0EDF7
+   Palette : marine #1a3a5c · vert #7cb518 · blanc cassé #FAF8FF
    Typo    : Playfair Display (titres) · DM Sans (corps)
 =========================== */
 
@@ -9,7 +9,7 @@
 /* ── Reset de base ── */
 .sd-page {
     font-family: 'DM Sans', sans-serif;
-    color: #2E1A4A;
+    color: #1a3a5c;
     background: #FAF8FF;
 }
 
@@ -98,7 +98,7 @@
     font-weight: 600;
     letter-spacing: 0.15em;
     text-transform: uppercase;
-    color: #6BAF92;
+    color: var(--brand-green, #7cb518);
     margin-bottom: 0.6rem;
 }
 
@@ -106,7 +106,7 @@
     font-family: 'Playfair Display', serif;
     font-size: clamp(1.6rem, 2.8vw, 2.1rem);
     font-weight: 700;
-    color: #5B3A8E;
+    color: var(--brand-navy, #1a3a5c);
     margin: 0 0 1.2rem;
     line-height: 1.2;
 }
@@ -114,7 +114,7 @@
 .sd-section-text p {
     font-size: 0.97rem;
     line-height: 1.75;
-    color: #4A3460;
+    color: #142c44;
     margin-bottom: 0.9rem;
 }
 
@@ -122,7 +122,7 @@
     display: inline-block;
     margin-top: 0.8rem;
     padding: 0.7rem 1.6rem;
-    background: #5B3A8E;
+    background: var(--brand-navy, #1a3a5c);
     color: #fff;
     border-radius: 100px;
     font-weight: 600;
@@ -131,7 +131,7 @@
     transition: background 0.2s, transform 0.15s;
 }
 .sd-cta:hover {
-    background: #4a2e78;
+    background: #142c44;
     transform: translateY(-2px);
 }
 
@@ -155,7 +155,7 @@
     bottom: -18px;
     left: 24px;
     background: #fff;
-    border: 2px solid #F0EDF7;
+    border: 2px solid var(--brand-green-light, #eaf3de);
     border-radius: 16px;
     padding: 0.6rem 1rem;
     display: flex;
@@ -164,7 +164,7 @@
     box-shadow: 0 4px 20px rgba(91,58,142,0.10);
     font-weight: 700;
     font-size: 0.82rem;
-    color: #5B3A8E;
+    color: var(--brand-navy, #1a3a5c);
     letter-spacing: 0.06em;
 }
 .sd-shield-badge svg {
@@ -188,7 +188,7 @@
 
 /* ── DROITS STRIP ── */
 .sd-droits-strip {
-    background: #F0EDF7;
+    background: var(--brand-green-light, #eaf3de);
     border-radius: 28px;
     padding: 3rem 2.5rem;
 }
@@ -201,7 +201,7 @@
     font-family: 'Playfair Display', serif;
     font-size: clamp(1.4rem, 2.5vw, 1.9rem);
     font-weight: 700;
-    color: #5B3A8E;
+    color: var(--brand-navy, #1a3a5c);
     margin: 0 0 0.5rem;
 }
 .sd-droits-header p {
@@ -237,7 +237,7 @@
     display: block;
     font-size: 0.88rem;
     font-weight: 600;
-    color: #5B3A8E;
+    color: var(--brand-navy, #1a3a5c);
     margin-bottom: 0.35rem;
 }
 .sd-droit-card p {

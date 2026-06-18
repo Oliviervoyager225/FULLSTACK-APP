@@ -6,10 +6,10 @@
 
 /* ── Variables locales (scoped sur la page) ── */
 .vsurv-page {
-    --vsurv-violet:       #2D1B6B;
-    --vsurv-violet-mid:   #7B5EA7;
-    --vsurv-violet-light: #EDE8F8;
-    --vsurv-green:        #A8C5A0;
+    --vsurv-violet:       var(--brand-navy, #1a3a5c);
+    --vsurv-violet-mid:   var(--brand-green, #7cb518);
+    --vsurv-violet-light: var(--brand-green-light, #eaf3de);
+    --vsurv-green:        var(--brand-green, #7cb518);
     --vsurv-off-white:    #F8F6FF;
     --vsurv-white:        #FFFFFF;
     --vsurv-text:         #1A0F3D;

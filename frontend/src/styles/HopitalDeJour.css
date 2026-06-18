@@ -2,10 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
 /* ===== VARIABLES ===== */
 :root {
-    --primary: #2c6e9e;
-    --primary-dark: #1f4d6e;
-    --secondary: #5aa9c5;
-    --accent: #f4a261;
     --light: #f8f9fa;
     --dark: #2d3e50;
     --gray: #6c757d;
@@ -14,6 +10,14 @@
     --shadow-md: 0 20px 30px -10px rgba(0,0,0,0.1);
     --shadow-lg: 0 30px 40px -15px rgba(0,0,0,0.15);
     --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+/* Couleurs de marque scopées à la page (évite toute collision globale) */
+.hopital-de-jour-page {
+    --primary: var(--brand-navy, #1a3a5c);
+    --primary-dark: #142c44;
+    --secondary: var(--brand-green, #7cb518);
+    --accent: var(--brand-green, #7cb518);
 }
 
 * {

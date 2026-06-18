@@ -5,14 +5,10 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import Preadmission from './pages/Preadmission';
 import Contact from './pages/Contact';
-import Historique from './pages/Historique';
 import Professionals from './pages/Professionals';
-import Actualites from './pages/Actualites';
 import NosValeurs from './pages/NosValeurs';
-import NosActions from './pages/NosActions';
 import Engagement from './pages/Engagement';
-import RSE from './pages/RSE';
-import Partenaires from './pages/Partenaires';
+import LaFondation from './pages/LaFondation';
 
 // Offre de soins
 import NosSpecificites from './pages/NosSpecificites';
@@ -33,13 +29,14 @@ import PlaintesReclamations from './pages/PlaintesReclamations';
 import Satisfaction from './pages/Satisfaction';
 
 // Navigation principale
-import FAQ from './pages/FAQ';
-import EspaceRessources from './pages/EspaceRessources';
+import SInformer from './pages/SInformer';
 import PoleRechercheInnovation from './pages/PoleRechercheInnovation';
 import NousRejoindre from './pages/NousRejoindre';
 
 import './App.css';
 import NosCollaborateurs from './pages/NosCollaborateurs';
+
+import FaireDon from './pages/FaireDon';
 
 function App() {
   return (
@@ -52,14 +49,10 @@ function App() {
           <Route path="/contact" element={<Contact />} />
 
           {/* Centre spécialisé */}
-          <Route path="/historique" element={<Historique />} />
+          <Route path="/la-fondation" element={<LaFondation />} />
           <Route path="/equipes" element={<Professionals />} />
-          <Route path="/nos-actions" element={<NosActions />} />
           <Route path="/nos-valeurs" element={<NosValeurs />} />
           <Route path="/engagement-qualite" element={<Engagement />} />
-          <Route path="/rse" element={<RSE />} />
-          <Route path="/partenaires" element={<Partenaires />} />
-          <Route path="/actualites" element={<Actualites />} />
 
           {/* Offre de soins */}
           <Route path="/nos-specificites" element={<NosSpecificites />} />
@@ -81,11 +74,11 @@ function App() {
 
 
           {/* Navigation principale */}
-          <Route path="/faq" element={<FAQ />} />
-          <Route path="/espace-ressources" element={<EspaceRessources />} />
+          <Route path="/s-informer" element={<SInformer />} />
           <Route path="/recherche-innovation" element={<PoleRechercheInnovation />} />
 
           <Route path="/nous-rejoindre" element={<NousRejoindre />} />
+          <Route path="/faire-un-don" element={<FaireDon />} />
         </Routes>
       </div>
     </BrowserRouter>

@@ -1,9 +1,9 @@
-/* ===== VARIABLES MODERNES ===== */
-:root {
-    --primary: #2b7a4b;
-    --primary-dark: #1e5a3a;
-    --secondary: #f3b33d;
-    --accent: #e67e22;
+/* ===== VARIABLES (scopées à la page) ===== */
+.centre-2plateaux-page {
+    --primary: var(--brand-navy, #1a3a5c);
+    --primary-dark: #142c44;
+    --secondary: var(--brand-green, #7cb518);
+    --accent: var(--brand-green, #7cb518);
     --text-dark: #1e2a3e;
     --text-light: #4a5568;
     --bg-light: #f9fafb;
