@@ -257,6 +257,8 @@ function useScrollToSection() {
 }
 
 const navItems = [
+  { label: 'Accueil', type: 'link', to: '/' },
+
   {
     label: 'La fondation',
     type: 'dropdown',
@@ -335,9 +337,9 @@ const navItems = [
     // ↓ "anchor" = id de la section cible dans NousRejoindre.jsx
     items: [
       { label: 'Pourquoi nous rejoindre ?', anchor: 'pourquoi-nous-rejoindre' },
-      { label: "Offres d'emploi",          anchor: 'offres-emploi' },
-      { label: 'Devenir partenaire',        anchor: 'devenir-partenaire' },
-      { label: 'Devenir bénévole',          anchor: 'devenir-benevole' },
+      { label: "Offres d'emploi", anchor: 'offres-emploi' },
+      { label: 'Devenir partenaire', anchor: 'devenir-partenaire' },
+      { label: 'Devenir bénévole', anchor: 'devenir-benevole' },
     ],
   },
 ];

@@ -15,6 +15,7 @@ import NosSpecificites from './pages/NosSpecificites';
 import CentreSpecialise2Plateaux from './pages/CentreSpecialise2Plateaux';
 import ConsultationsExternes from './pages/ConsultationsExternes';
 import HopitalDeJour from './pages/HopitalDeJour';
+import MiseObservation from './pages/MiseObservation';
 import ServiceAccueilUrgence from './pages/ServiceAccueilUrgence';
 import Tarifications from './pages/Tarifications';
 
@@ -58,6 +59,7 @@ function App() {
           <Route path="/nos-specificites" element={<NosSpecificites />} />
           <Route path="/consultations" element={<ConsultationsExternes />} />
           <Route path="/hopital-de-jour" element={<HopitalDeJour />} />
+          <Route path="/mise-observation" element={<MiseObservation />} />
           <Route path="/service-accueil-urgence" element={<ServiceAccueilUrgence />} />
           <Route path="/tarifications" element={<Tarifications />} />
           <Route path="/centre-specialise" element={<CentreSpecialise2Plateaux />} />

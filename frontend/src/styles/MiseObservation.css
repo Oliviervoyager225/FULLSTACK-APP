@@ -1,0 +1,354 @@
+/* ===== GOOGLE FONTS ===== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/* ===== VARIABLES ===== */
+:root {
+    --light: #f8f9fa;
+    --dark: #2d3e50;
+    --gray: #6c757d;
+    --white: #ffffff;
+    --shadow-sm: 0 10px 20px rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 20px 30px -10px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 30px 40px -15px rgba(0, 0, 0, 0.15);
+    --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+/* Couleurs de marque scopées à la page (évite toute collision globale) */
+.mise-observation-page {
+    --primary: #1a3a5c;
+    --primary-dark: #142c44;
+    --accent: #7cb518;
+}
+
+.mise-observation-page * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.mise-observation-page {
+    min-height: 100vh;
+    background: var(--light);
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: var(--dark);
+}
+
+/* ===== ANIMATIONS ===== */
+.mise-observation-page .mo-fade-up {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.mise-observation-page .mo-fade-up.mo-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ===== HERO ===== */
+.mise-observation-page .mo-hero {
+    position: relative;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+    color: white;
+}
+
+.mise-observation-page .mo-hero-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.mise-observation-page .mo-hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(1.05);
+    transition: transform 8s ease;
+}
+
+.mise-observation-page .mo-hero:hover .mo-hero-image {
+    transform: scale(1);
+}
+
+.mise-observation-page .mo-hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(26, 58, 92, 0.88) 0%, rgba(20, 44, 68, 0.92) 100%);
+    z-index: 1;
+}
+
+.mise-observation-page .mo-hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    padding: 2rem;
+}
+
+.mise-observation-page .mo-hero-content h1 {
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    text-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
+    letter-spacing: -0.02em;
+}
+
+.mise-observation-page .mo-hero-subtitle {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+    opacity: 0.95;
+}
+
+.mise-observation-page .mo-btn-hero {
+    background: var(--accent);
+    color: white;
+    padding: 0.9rem 2.2rem;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: var(--transition);
+    display: inline-block;
+    text-decoration: none;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.mise-observation-page .mo-btn-hero:hover {
+    background: #fff;
+    color: var(--accent);
+    transform: translateY(-3px);
+    box-shadow: 0 15px 25px -8px rgba(0, 0, 0, 0.3);
+}
+
+/* ===== SECTIONS ===== */
+.mise-observation-page .mo-section {
+    padding: 5rem 2rem;
+}
+
+.mise-observation-page .mo-container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.mise-observation-page .mo-section-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.mise-observation-page .mo-section-header h2 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 0.75rem;
+}
+
+.mise-observation-page .mo-divider {
+    width: 70px;
+    height: 4px;
+    background: var(--accent);
+    margin: 0 auto 1.5rem;
+    border-radius: 2px;
+}
+
+/* ===== INTRO ===== */
+.mise-observation-page .mo-intro-section {
+    background: var(--white);
+}
+
+.mise-observation-page .mo-intro-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+}
+
+.mise-observation-page .mo-intro-text p {
+    margin-bottom: 1.2rem;
+    color: var(--gray);
+}
+
+.mise-observation-page .mo-highlight-note {
+    background: #f3f8ec;
+    padding: 1.2rem;
+    border-left: 5px solid var(--accent);
+    border-radius: 12px;
+    margin-top: 1.5rem;
+    color: var(--dark);
+}
+
+.mise-observation-page .mo-intro-features {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.mise-observation-page .mo-feature-card {
+    background: var(--light);
+    padding: 1.8rem;
+    border-radius: 20px;
+    text-align: center;
+    transition: var(--transition);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.mise-observation-page .mo-feature-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-md);
+}
+
+.mise-observation-page .mo-feature-card svg {
+    color: var(--primary);
+    margin-bottom: 0.75rem;
+}
+
+.mise-observation-page .mo-feature-card h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+/* ===== EVALUATION / ORIENTATION ===== */
+.mise-observation-page .mo-evaluation-section {
+    background: #eef4fc;
+}
+
+.mise-observation-page .mo-evaluation-intro {
+    text-align: center;
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: 0 auto 2.5rem;
+}
+
+.mise-observation-page .mo-orientation-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 2rem;
+}
+
+.mise-observation-page .mo-orientation-step {
+    background: var(--white);
+    padding: 2rem 1.5rem;
+    border-radius: 24px;
+    position: relative;
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition);
+    text-align: center;
+}
+
+.mise-observation-page .mo-orientation-step:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-md);
+}
+
+.mise-observation-page .mo-step-number {
+    position: absolute;
+    top: -18px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--accent);
+    color: white;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    font-size: 1.1rem;
+    box-shadow: var(--shadow-sm);
+}
+
+.mise-observation-page .mo-orientation-step h3 {
+    margin: 0.8rem 0 1rem;
+    font-weight: 600;
+    color: var(--primary);
+}
+
+.mise-observation-page .mo-orientation-step p {
+    color: var(--gray);
+}
+
+/* ===== CTA ===== */
+.mise-observation-page .mo-cta-section {
+    background: var(--primary);
+    color: white;
+    text-align: center;
+}
+
+.mise-observation-page .mo-cta-content h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.mise-observation-page .mo-cta-content p {
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+.mise-observation-page .mo-btn-primary {
+    background: var(--accent);
+    color: white;
+    padding: 0.8rem 2rem;
+    border-radius: 40px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: var(--transition);
+    display: inline-block;
+}
+
+.mise-observation-page .mo-btn-primary:hover {
+    background: #fff;
+    color: var(--accent);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 992px) {
+    .mise-observation-page .mo-intro-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .mise-observation-page .mo-hero-content h1 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .mise-observation-page .mo-section {
+        padding: 3rem 1.5rem;
+    }
+
+    .mise-observation-page .mo-hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .mise-observation-page .mo-hero-subtitle {
+        font-size: 1rem;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+    .mise-observation-page .mo-fade-up,
+    .mise-observation-page .mo-feature-card,
+    .mise-observation-page .mo-orientation-step {
+        transition: none;
+    }
+
+    .mise-observation-page .mo-fade-up {
+        opacity: 1;
+        transform: none;
+    }
+}
