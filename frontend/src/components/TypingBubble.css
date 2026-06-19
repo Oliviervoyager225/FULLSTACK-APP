@@ -1,4 +1,19 @@
-/* ===== Main Container ===== */
+/* ===== Wrapper pleine largeur — clip les billes ===== */
+.typing-section-wrapper {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* ===== Ballpit — fond pleine largeur, clippé par le wrapper ===== */
+.ballpit-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* ===== Contenu centré par-dessus le ballpit ===== */
 .typing-bubble-container {
   display: flex;
   align-items: center;
@@ -11,62 +26,7 @@
   min-height: 60vh;
   box-sizing: border-box;
   position: relative;
-  overflow: hidden;
-  isolation: isolate; /* ← contexte z-index isolé */
-}
-
-/* ===== Bulles — DERRIÈRE tout ===== */
-.fb {
-  position: absolute;
-  border-radius: 50%;
-  background: #a78bfa;
-  opacity: 0.2;
-  pointer-events: none;
-  z-index: 0; /* en dessous de tout */
-}
-
-.fb-1 {
-  width: 220px;
-  height: 220px;
-  top: -30px;
-  left: -30px;
-  animation: floatBg1 7s ease-in-out infinite;
-  will-change: transform;
-}
-
-.fb-2 {
-  width: 170px;
-  height: 170px;
-  bottom: -55px;
-  left: 30px;
-  animation: floatBg2 9s ease-in-out infinite;
-  animation-delay: 2s;
-  will-change: transform;
-}
-
-.fb-3 {
-  width: 130px;
-  height: 130px;
-  bottom: -45px;
-  right: 60px;
-  animation: floatBg3 8s ease-in-out infinite;
-  animation-delay: 1s;
-  will-change: transform;
-}
-
-@keyframes floatBg1 {
-  0%, 100% { transform: translateY(0px) scale(1); }
-  50%       { transform: translateY(-25px) scale(1.04); }
-}
-
-@keyframes floatBg2 {
-  0%, 100% { transform: translateY(0px); }
-  50%       { transform: translateY(-20px); }
-}
-
-@keyframes floatBg3 {
-  0%, 100% { transform: translateY(0px); }
-  50%       { transform: translateY(-18px); }
+  z-index: 1;
 }
 
 /* ===== Image — PAR-DESSUS les bulles ===== */
@@ -173,10 +133,6 @@
   .typing-bubble.small { width: 16px; height: 16px; left: 54%; top: 18%; }
   .typing-bubble.medium { width: 32px; height: 32px; left: 60%; top: 12%; }
   .typing-bubble.large { width: 52px; height: 52px; left: 68%; top: 4%; }
-
-  .fb-1 { width: 160px; height: 160px; top: -20px; left: -20px; }
-  .fb-2 { width: 120px; height: 120px; bottom: -40px; left: 20px; }
-  .fb-3 { width: 90px; height: 90px; bottom: -30px; right: 20px; }
 }
 
 /* ===== Mobile (≤ 600px) ===== */
@@ -199,7 +155,4 @@
   .typing-bubble.large { width: 28px; height: 28px; left: 70%; top: 0%; }
   .typing-text-container { font-size: 0.98rem; }
 
-  .fb-1 { width: 100px; height: 100px; top: -15px; left: -15px; }
-  .fb-2 { width: 80px; height: 80px; bottom: -25px; left: 10px; }
-  .fb-3 { width: 60px; height: 60px; bottom: -20px; right: 10px; }
 }

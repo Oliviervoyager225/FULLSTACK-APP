@@ -72,6 +72,7 @@
 
 import React, { useEffect, useState } from "react";
 import "./TypingBubble.css";
+import Ballpit from "./Ballpit";
 
 const text = `
 C'est avec une immense joie que je vous souhaite la bienvenue au centre de spécialité La Fée Rima.
@@ -105,37 +106,46 @@ export default function TypingBubble() {
   };
 
   return (
-    <div className="typing-bubble-container" onMouseEnter={handleMouseEnter}>
+    <div className="typing-section-wrapper">
 
-      {/* Bulle haut gauche */}
-      <div className="fb fb-1"></div>
-      {/* Bulle bas gauche */}
-      <div className="fb fb-2"></div>
-      {/* Bulle bas droite */}
-      <div className="fb fb-3"></div>
-
-      {/* Image */}
-      <img
-        src="/assets/feerima/news-3.png"
-        alt="profil"
-        className="typing-profile-img"
-      />
-
-      {/* Bulles décoratives image → carte */}
-      <div className="typing-bubble small"></div>
-      <div className="typing-bubble medium"></div>
-      <div className="typing-bubble large"></div>
-
-      {/* Carte texte */}
-      <div className="typing-message-card">
-        <h2>Chers visiteurs</h2>
-        <div className="typing-text-container">
-          <p className="typing-placeholder">{text}</p>
-          <p className="typing">{displayedText}</p>
-        </div>
-        <div className="typing-signature">Noura Saramanta</div>
+      {/* Ballpit pleine largeur en fond, clippé par le wrapper */}
+      <div className="ballpit-bg">
+        <Ballpit
+          count={60}
+          gravity={0.01}
+          friction={0.9975}
+          wallBounce={0.95}
+          followCursor={false}
+          colors={[0x0fa0b6, 0x0d7a8a, 0x1a3a5c, 0x4db3c4, 0x7ab648, 0x0fa0b6]}
+        />
       </div>
 
+      {/* Contenu centré par-dessus */}
+      <div className="typing-bubble-container" onMouseEnter={handleMouseEnter}>
+
+        {/* Image */}
+        <img
+          src="/assets/feerima/news-3.png"
+          alt="profil"
+          className="typing-profile-img"
+        />
+
+        {/* Bulles décoratives image → carte */}
+        <div className="typing-bubble small"></div>
+        <div className="typing-bubble medium"></div>
+        <div className="typing-bubble large"></div>
+
+        {/* Carte texte */}
+        <div className="typing-message-card">
+          <h2>Chers visiteurs</h2>
+          <div className="typing-text-container">
+            <p className="typing-placeholder">{text}</p>
+            <p className="typing">{displayedText}</p>
+          </div>
+          <div className="typing-signature">Noura Saramanta</div>
+        </div>
+
+      </div>
     </div>
   );
 }

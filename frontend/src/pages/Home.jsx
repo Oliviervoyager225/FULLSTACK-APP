@@ -796,7 +796,7 @@ export default function Home() {
             backgroundSize: 'cover',
             backgroundPosition: 'center',
             position: 'relative',
-            minHeight: '80vh',
+            minHeight: '72.5vh',
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'flex-start',
@@ -807,7 +807,7 @@ export default function Home() {
           <div style={{
             position: 'absolute',
             left: '160px',
-            top: '50%',
+            top: '24%',
             transform: 'translateY(-50%)',
             maxWidth: '800px',
             zIndex: 5,
@@ -828,14 +828,14 @@ export default function Home() {
 
           <div style={{
             position: 'absolute',
-            bottom: '105px',
+            bottom: '180px',
             left: '160px',
             right: '60px',
             display: 'flex',
             justifyContent: 'space-between',
             alignItems: 'flex-end',
           }}>
-            <div style={{ display: 'flex', flexDirection: 'row', gap: '16px', alignItems: 'center', paddingBottom: '0px' }}>
+            <div style={{ display: 'flex', flexDirection: 'row', gap: '16px', alignItems: 'center', marginBottom: '70px' }}>
               <Link to="/contact" className="btn btn-primary-yellow">
                 Prendre rendez-vous
               </Link>
@@ -871,6 +871,7 @@ export default function Home() {
         </section>
 
         {/* ── Section 3 blocs services ── */}
+        <div className="services-blocks-outer">
         <section className="services-blocks">
           {[
             {
@@ -883,7 +884,7 @@ export default function Home() {
                 </svg>
               ),
               title: 'ACCOMPAGNEMENT PERSONNALISÉ',
-              description: "Chaque jeune bénéficie d'un suivi individualisé par une équipe pluridisciplinaire : psychologues, éducateurs, infirmiers-psy et pédopsychiatre.",
+              description: "Suivi personnalisé par une équipe pluridisciplinaire dédiée.",
               link: '/equipes',
             },
             {
@@ -895,7 +896,7 @@ export default function Home() {
                 </svg>
               ),
               title: 'SOINS INTENSIFS & HÔPITAL DE JOUR',
-              description: "Un dispositif de soins à temps partiel de 8h30 à 17h, adapté aux adolescents de 10 à 25 ans sans hospitalisation complète.",
+              description: "Soins à temps partiel de 8h30 à 17h, sans hospitalisation.",
               link: '/hopital-de-jour',
             },
             {
@@ -907,7 +908,7 @@ export default function Home() {
                 </svg>
               ),
               title: 'PRISE EN CHARGE GLOBALE',
-              description: "Consultations externes, urgences psychiatriques et programme de soins structuré pour maintenir les liens familiaux, scolaires et sociaux.",
+              description: "Consultations, urgences psy et programme de soins intégré.",
               link: '/nos-specificites',
             },
           ].map((bloc, i) => (
@@ -923,6 +924,7 @@ export default function Home() {
             </Link>
           ))}
         </section>
+        </div>
 
         <div id="bienvenue" style={{ scrollMarginTop: '90px' }} />
         <TypingBubble />
