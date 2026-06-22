@@ -13,13 +13,41 @@
   pointer-events: none;
 }
 
+/* ===== Titre de section — style bannière ===== */
+.welcome-heading {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding: 70px 20px 0;
+}
+
+.welcome-heading-line1 {
+  margin: 0;
+  font-family: 'Lato', 'Source Sans 3', sans-serif;
+  font-weight: 900;
+  font-size: clamp(1.8rem, 1.2rem + 2.4vw, 3.2rem);
+  letter-spacing: 0.02em;
+  line-height: 1.05;
+  color: #7cb518;
+}
+
+.welcome-heading-line2 {
+  margin: 4px 0 0;
+  font-family: 'Lato', 'Source Sans 3', sans-serif;
+  font-weight: 400;
+  font-size: clamp(1.4rem, 0.9rem + 2vw, 2.6rem);
+  letter-spacing: 0.02em;
+  line-height: 1.05;
+  color: #0fa0b6;
+}
+
 /* ===== Contenu centré par-dessus le ballpit ===== */
 .typing-bubble-container {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 60px;
-  padding: 80px 60px;
+  padding: 40px 60px 80px;
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
@@ -34,7 +62,7 @@
   width: 300px;
   height: 300px;
   object-fit: cover;
-  border: 20px solid #d1d5db;
+  border: 20px solid #0fa0b6;
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
   flex-shrink: 0;
   display: block;
@@ -52,6 +80,18 @@
   position: relative; /* ← requis */
   z-index: 2;         /* ← par-dessus les bulles */
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+/* ===== Titre + signature de la carte — couleurs du site ===== */
+.typing-message-card h2 {
+  color: #0b6a78;
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 16px;
+}
+
+.typing-message-card .typing-signature {
+  color: #0fa0b6;
+  font-weight: 700;
 }
 
 /* ===== Bubbles image → card ===== */

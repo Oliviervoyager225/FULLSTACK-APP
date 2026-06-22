@@ -120,6 +120,12 @@ export default function TypingBubble() {
         />
       </div>
 
+      {/* Titre de section — style bannière */}
+      <div className="welcome-heading">
+        <h2 className="welcome-heading-line1">MOT DE BIENVENUE</h2>
+        <h3 className="welcome-heading-line2">DE LA DIRECTRICE GÉNÉRALE</h3>
+      </div>
+
       {/* Contenu centré par-dessus */}
       <div className="typing-bubble-container" onMouseEnter={handleMouseEnter}>
 

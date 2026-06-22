@@ -796,20 +796,19 @@ export default function Home() {
             backgroundSize: 'cover',
             backgroundPosition: 'center',
             position: 'relative',
-            minHeight: '72.5vh',
+            minHeight: 'max(600px, 72.5vh)',
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'flex-start',
           }}
         >
-          <button type="button" className="hero-nav hero-nav-prev" onClick={goToPreviousHero} aria-label="Image précédente">‹</button>
-
           <div style={{
             position: 'absolute',
-            left: '160px',
+            left: 'clamp(24px, 8.4vw, 160px)',
+            right: 'clamp(24px, 8.4vw, 160px)',
             top: '24%',
             transform: 'translateY(-50%)',
-            maxWidth: '800px',
+            maxWidth: 'min(800px, 90vw)',
             zIndex: 5,
             textShadow: '2px 2px 4px rgba(0,0,0,0.3)'
           }}>
@@ -818,7 +817,7 @@ export default function Home() {
               color: '#fff',
               margin: 0,
               fontWeight: 500,
-              fontSize: '2.0rem',
+              fontSize: 'clamp(1.4rem, 1.05rem + 1.45vw, 2.0rem)',
               lineHeight: 1.2,
               letterSpacing: '-0.02em'
             }}>
@@ -829,11 +828,13 @@ export default function Home() {
           <div style={{
             position: 'absolute',
             bottom: '180px',
-            left: '160px',
-            right: '60px',
+            left: 'clamp(24px, 8.4vw, 160px)',
+            right: 'clamp(16px, 3.2vw, 60px)',
             display: 'flex',
             justifyContent: 'space-between',
             alignItems: 'flex-end',
+            gap: '24px',
+            flexWrap: 'wrap',
           }}>
             <div style={{ display: 'flex', flexDirection: 'row', gap: '16px', alignItems: 'center', marginBottom: '70px' }}>
               <Link to="/contact" className="btn btn-primary-yellow">
@@ -854,8 +855,6 @@ export default function Home() {
               <p style={{ margin: '4px 0 0 0', color: '#444', fontSize: '0.88rem' }}>Un accueil personnalisé et bienveillant</p>
             </div>
           </div>
-
-          <button type="button" className="hero-nav hero-nav-next" onClick={goToNextHero} aria-label="Image suivante">›</button>
 
           <div className="hero-pagination">
             {heroImages.map((_, index) => (
