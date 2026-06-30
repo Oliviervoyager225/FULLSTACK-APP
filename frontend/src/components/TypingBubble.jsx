@@ -148,7 +148,7 @@ export default function TypingBubble() {
             <p className="typing-placeholder">{text}</p>
             <p className="typing">{displayedText}</p>
           </div>
-          <div className="typing-signature">Noura Saramanta</div>
+          <div className="typing-signature">Noura Férima Sarassoro</div>
         </div>
 
       </div>

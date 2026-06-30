@@ -931,82 +931,130 @@ export default function Home() {
         <div id="contact" style={{ scrollMarginTop: '90px' }} />
         <div className="quote-map-wrapper" id="geomap" style={{ background: '#ffffff' }}>
           <QuotesBanner />
-          <section className="contact-section-wrapper" style={{ background: '#ffffff', padding: 0, paddingBottom: '60px' }}>
-            <div className="contact-container" style={{ display: 'flex', alignItems: 'stretch', minHeight: '520px', overflow: 'hidden', background: '#ffffff', maxWidth: '100%', margin: 0, padding: 0 }}>
-              <div style={{ flex: '0 0 45%', display: 'flex', alignItems: 'flex-end', justifyContent: 'center', overflow: 'hidden' }}>
-                <img
-                  src="/assets/feerima/appointment-image.jpg"
-                  alt="Spécialiste La Fée Rima"
-                  style={{ width: '100%', maxWidth: '460px', objectFit: 'cover', objectPosition: 'top', display: 'block' }}
-                />
-              </div>
-
-              <div style={{ flex: '1', padding: '50px 48px 50px 40px', background: '#ffffff' }}>
-                <h2 style={{ fontSize: '2.0rem', fontWeight: 800, color: '#222', marginBottom: '30px', lineHeight: 1.2 }}>
-                  Prendre un rendez-vous
-                </h2>
-
-                <div style={{ display: 'flex', gap: '16px', marginBottom: '16px' }}>
-                  <div style={{ flex: 1 }}>
-                    <label style={labelStyle}>Nom complet</label>
-                    <input type="text" placeholder="Nom complet" style={inputStyle} />
-                  </div>
-                  <div style={{ flex: 1 }}>
-                    <label style={labelStyle}>Email</label>
-                    <input type="email" placeholder="Votre email" style={inputStyle} />
-                  </div>
-                </div>
-
-                <div style={{ display: 'flex', gap: '16px', marginBottom: '16px' }}>
-                  <div style={{ flex: 1 }}>
-                    <label style={labelStyle}>Date souhaitée</label>
-                    <input type="date" style={inputStyle} />
-                  </div>
-                  <div style={{ flex: 1 }}>
-                    <label style={labelStyle}>Service</label>
-                    <select style={inputStyle}>
-                      <option>Santé mentale</option>
-                      <option>Art-thérapie</option>
-                      <option>Suivi psychologique</option>
-                      <option>Thérapie familiale</option>
-                    </select>
-                  </div>
-                </div>
-
-                <div style={{ marginBottom: '16px' }}>
-                  <label style={labelStyle}>Téléphone</label>
-                  <input type="tel" placeholder="Numéro de téléphone" style={inputStyle} />
-                </div>
-
-                <div style={{ marginBottom: '24px' }}>
-                  <label style={labelStyle}>Message additionnel</label>
-                  <textarea placeholder="Message" rows={4} style={{ ...inputStyle, resize: 'vertical', height: '100px' }} />
-                </div>
-
-                <button type="button" style={{
-                  width: '100%', padding: '16px', backgroundColor: '#8cc132',
-                  color: '#fff', border: 'none', fontSize: '1rem', fontWeight: 700,
-                  letterSpacing: '1px', textTransform: 'uppercase', cursor: 'pointer',
-                  transition: 'background 0.3s ease',
-                }}>
-                  Envoyer la demande
-                </button>
-              </div>
-            </div>
-          </section>
         </div>
 
-        <div id="google-map" style={{ width: '100vw', position: 'relative', left: '50%', transform: 'translateX(-50%)', lineHeight: 0, padding: 0, margin: 0 }}>
-          <iframe
-            src="https://maps.google.com/maps?q=5.33684,-4.01335&z=16&output=embed&hl=fr"
-            width="100%" height="450" frameBorder="0"
-            style={{ border: 'none', display: 'block', width: '100%', margin: 0, padding: 0 }}
-            allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade"
-            title="La Fée Rima — 2 Plateaux"
-          />
+        {/* Titre de section — style bannière (fond blanc) */}
+        <div className="welcome-heading" style={{ paddingBottom: '40px', background: '#ffffff' }}>
+          <h2 className="welcome-heading-line1">CONTACT</h2>
+          <h3 className="welcome-heading-line2">ET GÉOLOCALISATION</h3>
+        </div>
+
+        <div className="contact-details-bg">
+        <div id="google-map" className="contact-details-section">
+          {/* Colonne gauche : coordonnées */}
+          <div className="contact-details-info">
+            <h2 className="contact-details-title">Nos coordonnées</h2>
+
+            <p className="contact-details-line">
+              <span className="contact-details-label">Téléphone :</span>{' '}
+              <a href="tel:+2250700000007">+225 07 00 000 007</a>
+            </p>
+            <p className="contact-details-line">
+              <span className="contact-details-label">E-mail :</span>{' '}
+              <a href="mailto:lafeerima@gmail.com">lafeerima@gmail.com</a>
+            </p>
+            <p className="contact-details-line">
+              <span className="contact-details-label">Adresse :</span>{' '}
+              <span>Cocody, 2 Plateaux, Abidjan, Côte d'Ivoire</span>
+            </p>
+            <p className="contact-details-line">
+              <span className="contact-details-label">Site web :</span>{' '}
+              <a href="https://www.lafeerima.com" target="_blank" rel="noreferrer">www.lafeerima.com</a>
+            </p>
+
+            <h3 className="contact-details-subtitle">Horaires d'ouverture</h3>
+            <p className="contact-details-hours">Lundi – Vendredi : 08h00 – 17h00</p>
+            <p className="contact-details-hours">Samedi : 09h00 – 13h00</p>
+            <p className="contact-details-hours">Dimanche : Fermé</p>
+          </div>
+
+          {/* Colonne droite : carte */}
+          <div className="contact-details-map">
+            <iframe
+              src="https://maps.google.com/maps?q=5.33684,-4.01335&z=16&output=embed&hl=fr"
+              width="100%" height="100%" frameBorder="0"
+              style={{ border: 'none', display: 'block', width: '100%', height: '100%', minHeight: '460px' }}
+              allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade"
+              title="La Fée Rima — 2 Plateaux"
+            />
+          </div>
+        </div>
         </div>
 
         <style>{`
+  /* ── Section Contact details ── */
+  .contact-details-bg {
+    background: #ffffff;
+    padding: 50px 24px 70px;
+  }
+  .contact-details-section {
+    display: flex;
+    align-items: stretch;
+    max-width: 1180px;
+    margin: 0 auto;
+    border: 1px solid #e6ebef;
+    border-radius: 6px;
+    overflow: hidden;
+    background: #ffffff;
+    box-shadow: 0 10px 30px rgba(15, 34, 48, 0.06);
+    flex-wrap: wrap;
+  }
+  .contact-details-info {
+    flex: 1 1 420px;
+    background: #eaf6f7;
+    padding: clamp(40px, 5vw, 70px) clamp(24px, 5vw, 64px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .contact-details-title {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(1.8rem, 1.2rem + 1.6vw, 2.6rem);
+    font-weight: 800;
+    color: #1a3a5c;
+    margin: 0 0 28px;
+  }
+  .contact-details-line {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: #405560;
+    margin: 0 0 10px;
+  }
+  .contact-details-label {
+    font-weight: 700;
+    color: #0b6a78;
+  }
+  .contact-details-line a {
+    color: #0fa0b6;
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+  .contact-details-line a:hover {
+    color: #0b6a78;
+    text-decoration: underline;
+  }
+  .contact-details-subtitle {
+    font-size: 1.05rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #7cb518;
+    margin: 32px 0 14px;
+  }
+  .contact-details-hours {
+    font-size: 1rem;
+    color: #405560;
+    margin: 0 0 6px;
+  }
+  .contact-details-map {
+    flex: 1 1 420px;
+    min-height: 460px;
+    line-height: 0;
+  }
+  @media (max-width: 768px) {
+    .contact-details-info, .contact-details-map { flex: 1 1 100%; }
+  }
+
   .services-section { padding: 60px 20px; background: #f9fafb; }
   .services-main-title { text-align: center; text-transform: uppercase; color: #109cdd; letter-spacing: 2px; margin-bottom: 36px; }
   .services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; max-width: 1100px; margin: 0 auto; }
