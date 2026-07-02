@@ -20,7 +20,7 @@
       
 //       {/* Hero Section */}
 //       <section className="relative h-[45vh] min-h-[350px] flex items-center justify-center bg-gradient-to-br from-teal-700 to-emerald-800 overflow-hidden">
-//         <div className="absolute inset-0 bg-[url('/assets/feerima/partners-pattern.png')] opacity-10 bg-repeat" />
+//         <div className="absolute inset-0 bg-[url('/assets/feerima/images/partners-pattern.png')] opacity-10 bg-repeat" />
 //         <div className="absolute inset-0 bg-black/20" />
 //         <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
 //           <h1 className="text-4xl md:text-5xl font-bold mb-4 tracking-tight drop-shadow-md">
@@ -102,7 +102,7 @@ const collaboratorsData = {
           id: 1,
           name: "Polyclinique Internationale de l'Indénié",
           shortName: "PII",
-          logo: "/assets/feerima/Policlinique%20Internationale%20de%20L'Ind%C3%A9ni%C3%A9.png",
+          logo: "/assets/feerima/images/Policlinique%20Internationale%20de%20L'Ind%C3%A9ni%C3%A9.png",
           description: "Établissement de référence offrant des prestations médicales de haute qualité avec une approche humanisée.",
           specialties: ["Médecine générale", "Chirurgie", "Urgences", "Imagerie médicale"],
           services: ["Consultations spécialisées", "Hospitalisation", "Urgences 24/7", "Bloc opératoire"],
@@ -118,7 +118,7 @@ const collaboratorsData = {
           id: 2,
           name: "Polyclinique des II Plateaux",
           shortName: "P2P",
-          logo: "/assets/feerima/Polyclinique%20des%20II%20Plateaux.png",
+          logo: "/assets/feerima/images/Polyclinique%20des%20II%20Plateaux.png",
           description: "Centre médical moderne situé au cœur des II Plateaux, spécialisé dans les soins de haute technologie.",
           specialties: ["Cardiologie", "Neurologie", "Pédiatrie", "Gynécologie"],
           services: ["Consultations spécialisées", "Hospitalisation", "Explorations fonctionnelles", "Rééducation"],
@@ -200,7 +200,7 @@ const Collaborateurs = () => {
                           alt={collaborator.name} 
                           className="collaborateur-logo"
                           onError={(e) => {
-                            e.target.src = '/assets/feerima/fallback-hospital.png';
+                            e.target.src = '/assets/feerima/images/fallback-hospital.png';
                           }}
                         />
                       </div>

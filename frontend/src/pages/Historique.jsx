@@ -12,7 +12,7 @@
 //       {/* Hero Banner */}
 //       <section
 //         className="page-hero"
-//         style={{ backgroundImage: "url('/assets/feerima/notre_histoire.png')" }}
+//         style={{ backgroundImage: "url('/assets/feerima/images/notre_histoire.png')" }}
 //       >
 //         {/* <div className="page-hero-content">
 //           <h1>Notre histoire</h1>
@@ -32,12 +32,12 @@
 //               En observant la situation en Côte d’Ivoire, j’ai réalisé que de nombreux jeunes vivent eux aussi des difficultés émotionnelles ou psychologiques, souvent dans le silence, faute de sensibilisation et de structures de prise en charge.
 //             </p>
 //           </div>
-//           <div className="hist-image-box gray-box-large" style={{ backgroundImage: "url('/assets/feerima/histoire.png')", backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
+//           <div className="hist-image-box gray-box-large" style={{ backgroundImage: "url('/assets/feerima/images/histoire.png')", backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
 //         </section>
 
 //         {/* Section 2: La réalité */}
 //         <section className="hist-section section-2">
-//           <div className="hist-image-box gray-box-medium" style={{ backgroundImage: "url('/assets/feerima/hero3.png')", backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
+//           <div className="hist-image-box gray-box-medium" style={{ backgroundImage: "url('/assets/feerima/images/hero3.png')", backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
 //           <div className="hist-content center-content">
 //             <h2>La réalité des jeunes en Afrique Subsaharienne</h2>
 //             <ul style={{ textAlign: 'left', margin: '20px auto', maxWidth: '400px', lineHeight: '1.6', color: '#333' }}>
@@ -49,18 +49,18 @@
 //               De cette double expérience — personnelle et collective — est née une conviction forte : chaque adolescent et chaque jeune adulte mérite la chance de mener une vie épanouie grâce à une meilleure santé mentale.
 //             </p> */}
 //           </div>
-//           <div className="hist-image-box gray-box-medium" style={{ backgroundImage: "url('/assets/feerima/IMG.JPG')", backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
+//           <div className="hist-image-box gray-box-medium" style={{ backgroundImage: "url('/assets/feerima/images/IMG.JPG')", backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
 //         </section>
 
 //         {/* Section 3: Vision et mission */}
 //         <section className="hist-section section-3">
 //           {/* <div className="hist-stacked-images">
-//             <div className="hist-image-box gray-box-small" style={{ backgroundImage: "url('/assets/feerima/hero.png')", backgroundSize: 'cover', backgroundPosition: 'top' }}></div>
-//             <div className="hist-image-box gray-box-small" style={{ backgroundImage: "url('/assets/feerima/ma_mission.png')", backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
+//             <div className="hist-image-box gray-box-small" style={{ backgroundImage: "url('/assets/feerima/images/hero.png')", backgroundSize: 'cover', backgroundPosition: 'top' }}></div>
+//             <div className="hist-image-box gray-box-small" style={{ backgroundImage: "url('/assets/feerima/images/ma_mission.png')", backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
 //           </div> */}
 //           <div className="hist-stacked-images">
 //             <img
-//               src="/assets/feerima/ma_mission.png"
+//               src="/assets/feerima/images/ma_mission.png"
 //               alt="Ma mission"
 //               className="hist-image"
 //             />
@@ -118,7 +118,7 @@ export default function Historique() {
           </div>
           <div 
             className={styles.imageBox} 
-            style={{ backgroundImage: "url('/assets/feerima/histoire.png')" }}
+            style={{ backgroundImage: "url('/assets/feerima/images/histoire.png')" }}
           ></div>
         </section>
 
@@ -152,7 +152,7 @@ export default function Historique() {
         <section className={styles.section}>
           <div className={styles.stackedImages}>
             <img
-              src="/assets/feerima/ma_mission.png"
+              src="/assets/feerima/images/ma_mission.png"
               alt="Illustration de notre mission"
             />
           </div>

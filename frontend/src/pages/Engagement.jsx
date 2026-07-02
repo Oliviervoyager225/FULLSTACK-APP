@@ -12,7 +12,7 @@
 //       {/* Hero Banner */}
 //       <section
 //         className="page-hero"
-//         style={{ backgroundImage: "url('/assets/feerima/engag.png')" }}
+//         style={{ backgroundImage: "url('/assets/feerima/images/engag.png')" }}
 //       >
 //         <div className="page-hero-content">
 //           <h1>Notre engagement qualité</h1>
@@ -35,28 +35,28 @@
 //             <p>
 //               A La Fée Rima, notre engagement qualité nous permet de faire évoluer constamment nos pratiques, afin de mener des activités toujours plus déterminantes, fondées sur l’excellence et l’expertise de nos équipes.            </p>
 //           </div>
-//           <div className="hist-image-box gray-box-large" style={{ backgroundImage: "url('/assets/feerima/enga.png')", backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
+//           <div className="hist-image-box gray-box-large" style={{ backgroundImage: "url('/assets/feerima/images/enga.png')", backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
 //         </section>
 
 //         {/* Section 2: Amélioration continue */}
 //         <section className="hist-section section-2">
-//           <div className="hist-image-box gray-box-medium" style={{ backgroundImage: "url('/assets/feerima/amelioration.png')", backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
+//           <div className="hist-image-box gray-box-medium" style={{ backgroundImage: "url('/assets/feerima/images/amelioration.png')", backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
 //           <div className="hist-content center-content">
 //             <h2>AMÉLIORATION<br />CONTINUE</h2>
 //             <p>
 //               Nous avons mis en place une politique d’amélioration continue, qui s’appuie sur l’évaluation de la satisfaction des bénéficiaires et de leurs familles, la réalisation d’audits annuels sur la qualité et la sécurité des soins, ainsi que la mise en œuvre d’actions concrètes d’amélioration, comme l’ajustement des pratiques et les formations ciblées pour nos équipes.
 //             </p>
 //           </div>
-//           <div className="hist-image-box gray-box-medium" style={{ backgroundImage: "url('/assets/feerima/am.png')", backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
+//           <div className="hist-image-box gray-box-medium" style={{ backgroundImage: "url('/assets/feerima/images/am.png')", backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
 //         </section>
 
 //         {/* Section 3: Conclusion */}
 //         <section className="hist-section section-3">
 //           <div className="hist-stacked-images">
-//             {/* <div className="hist-image-box gray-box-small" style={{ backgroundImage: "url('/assets/feerima/evolution.png')", backgroundSize: 'cover', backgroundPosition: 'center' }}></div> */}
+//             {/* <div className="hist-image-box gray-box-small" style={{ backgroundImage: "url('/assets/feerima/images/evolution.png')", backgroundSize: 'cover', backgroundPosition: 'center' }}></div> */}
 //             <div className="hist-stacked-images">
 //               <img
-//                 src="/assets/feerima/evolution.png"
+//                 src="/assets/feerima/images/evolution.png"
 //                 alt="Ma mission"
 //                 className="hist-image"
 //               />
@@ -87,7 +87,7 @@ export default function Engagement() {
       {/* Hero Banner simplifié et élégant */}
       <section
         className="engagement-hero"
-        style={{ backgroundImage: "url('/assets/feerima/engag.png')" }}
+        style={{ backgroundImage: "url('/assets/feerima/images/engag.png')" }}
       >
         <div className="engagement-hero-overlay"></div>
         <div className="engagement-hero-content">
@@ -136,7 +136,7 @@ export default function Engagement() {
               </div>
               <div className="engagement-image-center">
                 <img
-                  src="/assets/feerima/amelioration.png"
+                  src="/assets/feerima/images/amelioration.png"
                   alt="Amélioration continue"
                 />
               </div>
@@ -159,7 +159,7 @@ export default function Engagement() {
             <div className="engagement-evolution">
               <div className="evolution-image">
                 <img
-                  src="/assets/feerima/evolution.png"
+                  src="/assets/feerima/images/evolution.png"
                   alt="Évolution constante"
                 />
               </div>

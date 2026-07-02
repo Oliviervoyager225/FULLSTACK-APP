@@ -12,7 +12,7 @@
 //       {/* Hero Banner */}
 //       <section
 //         className="hero-partners"
-//         style={{ backgroundImage: "url('/assets/feerima/pat1.png')" }}
+//         style={{ backgroundImage: "url('/assets/feerima/images/pat1.png')" }}
 //       > 
 //         {/* <div className="page-hero-content">
 //           <h1>Nos partenaires</h1>
@@ -32,19 +32,19 @@
 //               Découvrez les acteurs engagés à nos côtés pour faire avancer la santé mentale en Côte d'Ivoire.
 //             </p>
 //           </div>
-//           <div className="hist-image-box gray-box-large" style={{ backgroundImage: "url('/assets/feerima/confiance.png')", backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
+//           <div className="hist-image-box gray-box-large" style={{ backgroundImage: "url('/assets/feerima/images/confiance.png')", backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
 //         </section>
 
 //         {/* Section 2: Logos (Placeholder) */}
 //         <section className="hist-section section-2">
-//           <div className="hist-image-box gray-box-medium" style={{ backgroundImage: "url('/assets/feerima/conf.png')", backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
+//           <div className="hist-image-box gray-box-medium" style={{ backgroundImage: "url('/assets/feerima/images/conf.png')", backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
 //           <div className="hist-content center-content">
 //             <h2>NOS<br />COLLABORATIONS</h2>
 //             <p>
 //               [Logos cliquables renvoyant vers les sites partenaires - À intégrer]
 //             </p>
 //           </div>
-//           <div className="hist-image-box gray-box-medium" style={{ backgroundImage: "url('/assets/feerima/collab.png')", backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
+//           <div className="hist-image-box gray-box-medium" style={{ backgroundImage: "url('/assets/feerima/images/collab.png')", backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
 //         </section>
 
 //         {/* Section 3: Soutiens */}
@@ -52,7 +52,7 @@
 //           <div className="hist-stacked-images">
 //             <div className="hist-stacked-images">
 //               <img
-//                 src="/assets/feerima/soutient.png"
+//                 src="/assets/feerima/images/soutient.png"
 //                 alt="Ma mission"
 //                 className="hist-image"
 //               />
@@ -81,48 +81,48 @@ const partnersSections = [
     id: 'institutionnel',
     title: 'Partenariat institutionnel',
     partners: [
-      { id: 1,  name: "Programme National de Santé Mentale (PNSM)",                        logo: "/assets/feerima/pnsm.jpg",   url: null },
-      { id: 2,  name: "Programme National de Santé Mentale (PNSM)",                        logo: "/assets/feerima/sante.png",   url: null },
-      { id: 3,  name: "Programme National de Santé Mentale (PNSM)",                        logo: "/assets/feerima/health.png",   url: null },
-      { id: 4,  name: "Programme National de Santé Mentale (PNSM)",                        logo: "/assets/feerima/ministere.png",   url: "https://www.sante.gouv.ci/accueil" },
-      { id: 5,  name: "Programme National de Santé Mentale (PNSM)",                        logo: "/assets/feerima/sant.png",   url: null },
-      { id: 6,  name: "Programme National de Santé Mentale (PNSM)",                        logo: "/assets/feerima/pnsm.jpg",   url: null },
-      { id: 7,  name: "Programme National de Santé Mentale (PNSM)",                        logo: "/assets/feerima/unicef.png",   url: "https://help.unicef.org/wcaro/fr/wcar" },
-      { id: 8,  name: "Programme National de Santé Mentale (PNSM)",                        logo: "/assets/feerima/sante.png",   url: null },
-      { id: 9,  name: "Programme National de Santé Mentale (PNSM)",                        logo: "/assets/feerima/pnsm.jpg",   url: null },
-      { id: 10, name: "Programme National de Santé Mentale (PNSM)",                        logo: "/assets/feerima/OIP.png",   url: null },
+      { id: 1,  name: "Programme National de Santé Mentale (PNSM)",                        logo: "/assets/feerima/images/pnsm.jpg",   url: null },
+      { id: 2,  name: "Programme National de Santé Mentale (PNSM)",                        logo: "/assets/feerima/images/sante.png",   url: null },
+      { id: 3,  name: "Programme National de Santé Mentale (PNSM)",                        logo: "/assets/feerima/images/health.png",   url: null },
+      { id: 4,  name: "Programme National de Santé Mentale (PNSM)",                        logo: "/assets/feerima/images/ministere.png",   url: "https://www.sante.gouv.ci/accueil" },
+      { id: 5,  name: "Programme National de Santé Mentale (PNSM)",                        logo: "/assets/feerima/images/sant.png",   url: null },
+      { id: 6,  name: "Programme National de Santé Mentale (PNSM)",                        logo: "/assets/feerima/images/pnsm.jpg",   url: null },
+      { id: 7,  name: "Programme National de Santé Mentale (PNSM)",                        logo: "/assets/feerima/images/unicef.png",   url: "https://help.unicef.org/wcaro/fr/wcar" },
+      { id: 8,  name: "Programme National de Santé Mentale (PNSM)",                        logo: "/assets/feerima/images/sante.png",   url: null },
+      { id: 9,  name: "Programme National de Santé Mentale (PNSM)",                        logo: "/assets/feerima/images/pnsm.jpg",   url: null },
+      { id: 10, name: "Programme National de Santé Mentale (PNSM)",                        logo: "/assets/feerima/images/OIP.png",   url: null },
     ],
   },
   {
     id: 'academique',
     title: 'Partenariat académique et technique',
     partners: [
-      { id: 11, name: "Centre de Ressources et d'Enseignement Supérieur en Psychologie (Cresp)", logo: "/assets/feerima/cresp.png", url: "https://cresp-formations.fr/" },
-      { id: 12, name: "Centre de Ressources et d'Enseignement Supérieur en Psychologie (Cresp)", logo: "/assets/feerima/cresp.png", url: null },
-      { id: 13, name: "Centre de Ressources et d'Enseignement Supérieur en Psychologie (Cresp)", logo: "/assets/feerima/cresp.png", url: null },
-      { id: 14, name: "Centre de Ressources et d'Enseignement Supérieur en Psychologie (Cresp)", logo: "/assets/feerima/cresp.png", url: null },
-      { id: 15, name: "Centre de Ressources et d'Enseignement Supérieur en Psychologie (Cresp)", logo: "/assets/feerima/cresp.png", url: null },
-      { id: 16, name: "Centre de Ressources et d'Enseignement Supérieur en Psychologie (Cresp)", logo: "/assets/feerima/cresp.png", url: null },
-      { id: 17, name: "Centre de Ressources et d'Enseignement Supérieur en Psychologie (Cresp)", logo: "/assets/feerima/cresp.png", url: null },
-      { id: 18, name: "Centre de Ressources et d'Enseignement Supérieur en Psychologie (Cresp)", logo: "/assets/feerima/cresp.png", url: null },
-      { id: 19, name: "Centre de Ressources et d'Enseignement Supérieur en Psychologie (Cresp)", logo: "/assets/feerima/cresp.png", url: null },
-      { id: 20, name: "Centre de Ressources et d'Enseignement Supérieur en Psychologie (Cresp)", logo: "/assets/feerima/cresp.png", url: null },
+      { id: 11, name: "Centre de Ressources et d'Enseignement Supérieur en Psychologie (Cresp)", logo: "/assets/feerima/images/cresp.png", url: "https://cresp-formations.fr/" },
+      { id: 12, name: "Centre de Ressources et d'Enseignement Supérieur en Psychologie (Cresp)", logo: "/assets/feerima/images/cresp.png", url: null },
+      { id: 13, name: "Centre de Ressources et d'Enseignement Supérieur en Psychologie (Cresp)", logo: "/assets/feerima/images/cresp.png", url: null },
+      { id: 14, name: "Centre de Ressources et d'Enseignement Supérieur en Psychologie (Cresp)", logo: "/assets/feerima/images/cresp.png", url: null },
+      { id: 15, name: "Centre de Ressources et d'Enseignement Supérieur en Psychologie (Cresp)", logo: "/assets/feerima/images/cresp.png", url: null },
+      { id: 16, name: "Centre de Ressources et d'Enseignement Supérieur en Psychologie (Cresp)", logo: "/assets/feerima/images/cresp.png", url: null },
+      { id: 17, name: "Centre de Ressources et d'Enseignement Supérieur en Psychologie (Cresp)", logo: "/assets/feerima/images/cresp.png", url: null },
+      { id: 18, name: "Centre de Ressources et d'Enseignement Supérieur en Psychologie (Cresp)", logo: "/assets/feerima/images/cresp.png", url: null },
+      { id: 19, name: "Centre de Ressources et d'Enseignement Supérieur en Psychologie (Cresp)", logo: "/assets/feerima/images/cresp.png", url: null },
+      { id: 20, name: "Centre de Ressources et d'Enseignement Supérieur en Psychologie (Cresp)", logo: "/assets/feerima/images/cresp.png", url: null },
     ],
   },
   {
     id: 'solidaire',
     title: 'Partenariat solidaire',
     partners: [
-      { id: 21, name: "Fondation Eman", logo: "/assets/feerima/emane.png", url: null },
-      { id: 22, name: "Fondation Eman", logo: "/assets/feerima/emane.png", url: null },
-      { id: 23, name: "Fondation Eman", logo: "/assets/feerima/emane.png", url: null },
-      { id: 24, name: "Fondation Eman", logo: "/assets/feerima/emane.png", url: null },
-      { id: 25, name: "Fondation Eman", logo: "/assets/feerima/emane.png", url: null },
-      { id: 26, name: "Fondation Eman", logo: "/assets/feerima/emane.png", url: null },
-      { id: 27, name: "Fondation Eman", logo: "/assets/feerima/emane.png", url: null },
-      { id: 28, name: "Fondation Eman", logo: "/assets/feerima/emane.png", url: null },
-      { id: 29, name: "Fondation Eman", logo: "/assets/feerima/emane.png", url: null },
-      { id: 30, name: "Fondation Eman", logo: "/assets/feerima/emane.png", url: null },
+      { id: 21, name: "Fondation Eman", logo: "/assets/feerima/images/emane.png", url: null },
+      { id: 22, name: "Fondation Eman", logo: "/assets/feerima/images/emane.png", url: null },
+      { id: 23, name: "Fondation Eman", logo: "/assets/feerima/images/emane.png", url: null },
+      { id: 24, name: "Fondation Eman", logo: "/assets/feerima/images/emane.png", url: null },
+      { id: 25, name: "Fondation Eman", logo: "/assets/feerima/images/emane.png", url: null },
+      { id: 26, name: "Fondation Eman", logo: "/assets/feerima/images/emane.png", url: null },
+      { id: 27, name: "Fondation Eman", logo: "/assets/feerima/images/emane.png", url: null },
+      { id: 28, name: "Fondation Eman", logo: "/assets/feerima/images/emane.png", url: null },
+      { id: 29, name: "Fondation Eman", logo: "/assets/feerima/images/emane.png", url: null },
+      { id: 30, name: "Fondation Eman", logo: "/assets/feerima/images/emane.png", url: null },
     ],
   },
 ];
@@ -135,7 +135,7 @@ const Partenaires = () => {
       <div
         className="partners-banner"
         style={{
-          backgroundImage: 'url("/assets/feerima/parte.png")',
+          backgroundImage: 'url("/assets/feerima/images/parte.png")',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundAttachment: 'fixed',
@@ -209,62 +209,62 @@ export default Partenaires;
 //       {
 //         id: 1,
 //         name: "Programme National de Santé Mentale (PNSM)",
-//         logo: "/assets/feerima/pnsm.jpg",
+//         logo: "/assets/feerima/images/pnsm.jpg",
 //         url: null,
 //       },
       
 //       {
 //         id: 2,
 //         name: "Centre de Ressources et d'Enseignement Supérieur en Psychologie (Cresp)",
-//         logo: "/assets/feerima/cresp.png",
+//         logo: "/assets/feerima/images/cresp.png",
 //         url: null,
 //       },
 //       {
 //         id: 3,
 //         name: "Fondation Eman",
-//         logo: "/assets/feerima/emane.png",
+//         logo: "/assets/feerima/images/emane.png",
 //         url: null,
 //       },
 //       {
 //         id: 4,
 //         name: "Fondation Eman",
-//         logo: "/assets/feerima/emane.png",
+//         logo: "/assets/feerima/images/emane.png",
 //         url: null,
 //       },
 //       {
 //         id: 5,
 //         name: "Fondation Eman",
-//         logo: "/assets/feerima/emane.png",
+//         logo: "/assets/feerima/images/emane.png",
 //         url: null,
 //       },
 //       {
 //         id: 6,
 //         name: "Programme National de Santé Mentale (PNSM)",
-//         logo: "/assets/feerima/pnsm.jpg",
+//         logo: "/assets/feerima/images/pnsm.jpg",
 //         url: null,
 //       },
 //       {
 //         id: 7,
 //         name: "Programme National de Santé Mentale (PNSM)",
-//         logo: "/assets/feerima/pnsm.jpg",
+//         logo: "/assets/feerima/images/pnsm.jpg",
 //         url: null,
 //       },
 //       {
 //         id: 8,
 //         name: "Programme National de Santé Mentale (PNSM)",
-//         logo: "/assets/feerima/pnsm.jpg",
+//         logo: "/assets/feerima/images/pnsm.jpg",
 //         url: null,
 //       },
 //       {
 //         id: 9,
 //         name: "Programme National de Santé Mentale (PNSM)",
-//         logo: "/assets/feerima/pnsm.jpg",
+//         logo: "/assets/feerima/images/pnsm.jpg",
 //         url: null,
 //       },
 //       {
 //         id: 10,
 //         name: "Programme National de Santé Mentale (PNSM)",
-//         logo: "/assets/feerima/pnsm.jpg",
+//         logo: "/assets/feerima/images/pnsm.jpg",
 //         url: null,
 //       },
 //     ],
@@ -278,7 +278,7 @@ export default Partenaires;
 
 //  {/* Bannière avec image */}
 //       <div className="partners-banner" style={{
-//         backgroundImage: 'url("/assets/feerima/banner-partners.jpg")',
+//         backgroundImage: 'url("/assets/feerima/images/banner-partners.jpg")',
 //         backgroundSize: 'cover',
 //         backgroundPosition: 'center',
 //         backgroundAttachment: 'fixed'
@@ -360,7 +360,7 @@ export default Partenaires;
 //   {
 //     id: 1,
 //     name: "Programme National de Santé Mentale (PNSM)",
-//     logo: "/assets/feerima/pnsm.jpg", // Remplacez par le chemin réel de votre image
+//     logo: "/assets/feerima/images/pnsm.jpg", // Remplacez par le chemin réel de votre image
 //     description: "Le Programme National de Santé Mentale est l'organe du Ministère de la Santé en charge de l'élaboration, de la coordination et du suivi des politiques publiques en santé mentale en Côte d'Ivoire.",
 //     nature: "Partenariat institutionnel",
 //     badgeClass: "badge-institutionnel"
@@ -368,7 +368,7 @@ export default Partenaires;
 //   {
 //     id: 2,
 //     name: "Centre de Ressources et d'Enseignement Supérieur en Psychologie (Cresp)",
-//     logo: "/assets/feerima/cresp.png", // Remplacez par le chemin réel de votre image
+//     logo: "/assets/feerima/images/cresp.png", // Remplacez par le chemin réel de votre image
 //     description: "Le Centre de Ressources et d'Enseignement Supérieur en Psychologie, situé en France, est une structure dédiée à la formation, à la recherche et au développement des compétences en psychologie et disciplines associées.",
 //     nature: "Partenariat académique et technique",
 //     badgeClass: "badge-academique"
@@ -376,7 +376,7 @@ export default Partenaires;
 //   {
 //     id: 3,
 //     name: "Fondation Eman",
-//     logo: "/assets/feerima/eman.png", // Remplacez par le chemin réel de votre image
+//     logo: "/assets/feerima/images/eman.png", // Remplacez par le chemin réel de votre image
 //     description: "Fondation engagée dans des actions sociales et solidaires, intervenant notamment dans le soutien aux populations vulnérables.",
 //     nature: "Partenariat solidaire",
 //     badgeClass: "badge-solidaire"
@@ -400,7 +400,7 @@ export default Partenaires;
 
 //         {/* <section
 //         className="hero-partners"
-//         style={{ backgroundImage: "url('/assets/feerima/pate.png')" }} */}
+//         style={{ backgroundImage: "url('/assets/feerima/images/pate.png')" }} */}
 //       {/* >  */}
 //         {/* <div className="page-hero-content">
 //           <h1>Nos partenaires</h1>

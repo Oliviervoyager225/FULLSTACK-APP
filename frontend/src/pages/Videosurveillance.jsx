@@ -11,7 +11,7 @@ export default function Videosurveillance() {
 
             <section
                 className="page-hero"
-                style={{ backgroundImage: "url('/assets/feerima/camera.jpg')" }}
+                style={{ backgroundImage: "url('/assets/feerima/images/camera.jpg')" }}
             >
                 <div className="page-hero-content">
                     <h1>Système de vidéosurveillance</h1>
@@ -34,7 +34,7 @@ export default function Videosurveillance() {
                     <div
                         className="hist-image-box gray-box-large"
                         style={{
-                            backgroundImage: "url('/assets/feerima/camera1.jpg')",
+                            backgroundImage: "url('/assets/feerima/images/camera1.jpg')",
                             backgroundSize: 'cover',
                             backgroundPosition: 'center',
                         }}

@@ -94,7 +94,7 @@
 //                     {/* Image de fond avec overlay */}
 //                     <div className="hero-background">
 //                         <img
-//                             src="/assets/feerima/specificité.png"
+//                             src="/assets/feerima/images/specificité.png"
 //                             alt="Équipe pluridisciplinaire de La Fée Rima - Santé mentale des jeunes"
 //                             className="hero-image"
 //                             loading="eager"
@@ -296,7 +296,7 @@ const NosSpecificites = () => {
                 <section className="page-hero specificites-hero">
                     <div className="hero-background">
                         <img
-                            // src="/assets/feerima/specificité.png"
+                            // src="/assets/feerima/images/specificité.png"
                             alt="Équipe pluridisciplinaire de La Fée Rima - Santé mentale des jeunes"
                             className="hero-image"
                             loading="eager"

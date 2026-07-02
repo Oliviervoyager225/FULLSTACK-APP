@@ -39,7 +39,7 @@
 //       <div className="typing-bubble-container" onMouseEnter={handleMouseEnter}>
 
 //         <img
-//           src="/assets/feerima/news-3.png"
+//           src="/assets/feerima/images/news-3.png"
 //           alt="profil"
 //           className="typing-profile-img"
 //         />
@@ -131,7 +131,7 @@ export default function TypingBubble() {
 
         {/* Image */}
         <img
-          src="/assets/feerima/news-3.png"
+          src="/assets/feerima/images/news-3.png"
           alt="profil"
           className="typing-profile-img"
         />

@@ -11,7 +11,7 @@
 
 //             <section
 //                 className="page-hero"
-//                 // style={{ backgroundImage: "url('/assets/feerima/hopital.png')" }}
+//                 // style={{ backgroundImage: "url('/assets/feerima/images/hopital.png')" }}
 //             >
 //                 <div className="page-hero-content">
 //                     <h1>L'hôpital de jour</h1>
@@ -38,7 +38,7 @@
 //                     <div
 //                         className="hist-image-box gray-box-large"
 //                         style={{
-//                             backgroundImage: "url('/assets/feerima/hh.png')",
+//                             backgroundImage: "url('/assets/feerima/images/hh.png')",
 //                             backgroundSize: 'cover',
 //                             backgroundPosition: 'center',
 //                         }}
@@ -49,7 +49,7 @@
 //                     <div
 //                         className="hist-image-box gray-box-medium"
 //                         style={{
-//                             backgroundImage: "url('/assets/feerima/dest.png')",
+//                             backgroundImage: "url('/assets/feerima/images/dest.png')",
 //                             backgroundSize: 'cover',
 //                             backgroundPosition: 'center',
 //                         }}
@@ -68,7 +68,7 @@
 //                     <div
 //                         className="hist-image-box gray-box-medium"
 //                         style={{
-//                             backgroundImage: "url('/assets/feerima/destiné.png')",
+//                             backgroundImage: "url('/assets/feerima/images/destiné.png')",
 //                             backgroundSize: 'cover',
 //                             backgroundPosition: 'center',
 //                         }}
@@ -79,7 +79,7 @@
 //                     <div className="hist-stacked-images">
 //                         <div className="hist-stacked-images">
 //                             <img
-//                                 src="/assets/feerima/jeu.png"
+//                                 src="/assets/feerima/images/jeu.png"
 //                                 alt="Ma mission"
 //                                 className="hist-image"
 //                             />
@@ -174,7 +174,7 @@ export default function HopitalDeJour() {
                 <section className="page-hero hopital-hero">
                     <div className="hero-background">
                         <img
-                            src="/assets/feerima/hopital-de-jour.png"
+                            src="/assets/feerima/images/hopital-de-jour.png"
                             alt="Hôpital de jour La Fée Rima - Abidjan"
                             className="hero-image"
                             loading="eager"
@@ -395,7 +395,7 @@ export default function HopitalDeJour() {
 //                 <section className="page-hero hopital-hero">
 //                     <div className="hero-background">
 //                         <img
-//                             src="/assets/feerima/hopital-de-jour.png"
+//                             src="/assets/feerima/images/hopital-de-jour.png"
 //                             alt="Hôpital de jour La Fée Rima - Abidjan"
 //                             className="hero-image"
 //                             loading="eager"

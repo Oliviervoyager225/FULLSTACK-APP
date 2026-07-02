@@ -39,7 +39,7 @@ export default function Tarifications() {
 
             <section
                 className="page-hero"
-                style={{ backgroundImage: "url('/assets/feerima/tari.png')" }}
+                style={{ backgroundImage: "url('/assets/feerima/images/tari.png')" }}
             >
                 {/* <div className="page-hero-content">
                     <h1>Tarifications</h1>
@@ -66,7 +66,7 @@ export default function Tarifications() {
                     <div
                         className="hist-image-box gray-box-large"
                         style={{
-                            backgroundImage: "url('/assets/feerima/PEC.png')",
+                            backgroundImage: "url('/assets/feerima/images/PEC.png')",
                             backgroundSize: 'cover',
                             backgroundPosition: 'center',
                         }}
@@ -115,7 +115,7 @@ export default function Tarifications() {
                     <div
                         className="hist-image-box gray-box-medium"
                         style={{
-                            backgroundImage: "url('/assets/feerima/mutul.png')",
+                            backgroundImage: "url('/assets/feerima/images/mutul.png')",
                             backgroundSize: 'cover',
                             backgroundPosition: 'center',
                         }}
@@ -136,7 +136,7 @@ export default function Tarifications() {
                     <div
                         className="hist-image-box gray-box-medium"
                         style={{
-                            backgroundImage: "url('/assets/feerima/complementaire.png')",
+                            backgroundImage: "url('/assets/feerima/images/complementaire.png')",
                             backgroundSize: 'cover',
                             backgroundPosition: 'center',
                         }}

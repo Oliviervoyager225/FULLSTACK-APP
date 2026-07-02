@@ -11,7 +11,7 @@ export default function SecuriteDonnees() {
 
             <section
                 className="page-hero"
-                style={{ backgroundImage: "url('/assets/feerima/securite.png')" }}
+                style={{ backgroundImage: "url('/assets/feerima/images/securite.png')" }}
             >
                 <div className="page-hero-content">
                     <h2>Sécurité des données personnelles</h2>
@@ -47,7 +47,7 @@ export default function SecuriteDonnees() {
                     <div
                         className="hist-image-box gray-box-large"
                         style={{
-                            backgroundImage: "url('/assets/feerima/RGPD.png')",
+                            backgroundImage: "url('/assets/feerima/images/RGPD.png')",
                             backgroundSize: 'cover',
                             backgroundPosition: 'center',
                         }}
@@ -58,7 +58,7 @@ export default function SecuriteDonnees() {
                     <div
                         className="hist-image-box gray-box-medium"
                         style={{
-                            backgroundImage: "url('/assets/feerima/droit.png')",
+                            backgroundImage: "url('/assets/feerima/images/droit.png')",
                             backgroundSize: 'cover',
                             backgroundPosition: 'center',
                         }}
@@ -75,7 +75,7 @@ export default function SecuriteDonnees() {
                     <div
                         className="hist-image-box gray-box-medium"
                         style={{
-                            backgroundImage: "url('/assets/feerima/droit1.png')",
+                            backgroundImage: "url('/assets/feerima/images/droit1.png')",
                             backgroundSize: 'cover',
                             backgroundPosition: 'center',
                         }}

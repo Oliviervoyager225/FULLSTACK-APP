@@ -9,73 +9,73 @@
 // //         id: 1,
 // //         name: 'ALLO Valérie',
 // //         specialty: 'Infirmière spécialisée',
-// //         image: '/assets/feerima/hero.png', // Placholder image
+// //         image: '/assets/feerima/images/hero.png', // Placholder image
 // //     },
 // //     {
 // //         id: 2,
 // //         name: 'ALLOU Adeline Amena',
 // //         specialty: 'Infirmière',
-// //         image: '/assets/feerima/hero2.png',
+// //         image: '/assets/feerima/images/hero2.png',
 // //     },
 // //     {
 // //         id: 3,
 // //         name: 'BAUDHUIN Elise',
 // //         specialty: 'Psychologue CS',
-// //         image: '/assets/feerima/hero3.png',
+// //         image: '/assets/feerima/images/hero3.png',
 // //     },
 // //     {
 // //         id: 4,
 // //         name: 'DONGO Angèle',
 // //         specialty: 'Maîtresse de maison',
-// //         image: '/assets/feerima/hero4.png',
+// //         image: '/assets/feerima/images/hero4.png',
 // //     },
 // //     {
 // //         id: 5,
 // //         name: 'GARDIMAN Alexandra',
 // //         specialty: 'Orthophoniste',
-// //         image: '/assets/feerima/hero.png',
+// //         image: '/assets/feerima/images/hero.png',
 // //     },
 // //     {
 // //         id: 6,
 // //         name: 'HOUNDJI Fulgence',
 // //         specialty: 'Éducateur spécialisé',
-// //         image: '/assets/feerima/hero2.png',
+// //         image: '/assets/feerima/images/hero2.png',
 // //     },
 // //     {
 // //         id: 7,
 // //         name: 'KOUADIO Yao Etienne',
 // //         specialty: 'Art-thérapeute',
-// //         image: '/assets/feerima/hero3.png',
+// //         image: '/assets/feerima/images/hero3.png',
 // //     },
 // //     {
 // //         id: 8,
 // //         name: 'MANOUAN ép GRAH Ange Charlotte',
 // //         specialty: 'Éducatrice spécialisée',
-// //         image: '/assets/feerima/hero4.png',
+// //         image: '/assets/feerima/images/hero4.png',
 // //     },
 // //     {
 // //         id: 9,
 // //         name: 'MANOUAN Ludovic',
 // //         specialty: 'Psychologue',
-// //         image: '/assets/feerima/hero.png',
+// //         image: '/assets/feerima/images/hero.png',
 // //     },
 // //     {
 // //         id: 10,
 // //         name: 'MESSAN Bhipeu Emmanuel',
 // //         specialty: 'Coach sportif',
-// //         image: '/assets/feerima/hero2.png',
+// //         image: '/assets/feerima/images/hero2.png',
 // //     },
 // //     {
 // //         id: 11,
 // //         name: 'N’GUESSAN Olivia',
 // //         specialty: 'Pédopsychiatre',
-// //         image: '/assets/feerima/hero3.png',
+// //         image: '/assets/feerima/images/hero3.png',
 // //     },
 // //     {
 // //         id: 12,
 // //         name: 'YAO ép KONAN Olga',
 // //         specialty: 'Secrétaire médicale',
-// //         image: '/assets/feerima/hero4.png',
+// //         image: '/assets/feerima/images/hero4.png',
 // //     }
 // // ];
 
@@ -84,40 +84,40 @@
 //         id: 'soins',
 //         label: "L'équipe de soins",
 //         members: [
-//             { id: 1, name: 'Dr Danmaukan', specialty: 'Pédopsychiatre / Psychiatre', image: '/assets/feerima/hero.png' },
-//             { id: 2, name: "Dr N'Guessan Olivia", specialty: 'Pédopsychiatre / Psychiatre', image: '/assets/feerima/hero3.png' },
-//             { id: 3, name: 'ALLOU Adeline Amena', specialty: 'Infirmière Spécialisée', image: '/assets/feerima/hero2.png' },
-//             { id: 4, name: 'ALLO Valérie', specialty: 'Infirmier Spécialisé', image: '/assets/feerima/hero.png' },
-//             { id: 5, name: 'KONAN Aya Clarisse', specialty: 'Aide-soignante', image: '/assets/feerima/hero4.png' },
-//             { id: 6, name: 'BAUDHUIN Elise', specialty: 'Psychologue clinicienne', image: '/assets/feerima/hero3.png' },
-//             { id: 7, name: 'MANOUAN Ludovic', specialty: 'Psychologue clinicien', image: '/assets/feerima/hero.png' },
-//             { id: 8, name: 'KOUADIO Yao Etienne', specialty: 'Art-thérapeute', image: '/assets/feerima/hero3.png' },
+//             { id: 1, name: 'Dr Danmaukan', specialty: 'Pédopsychiatre / Psychiatre', image: '/assets/feerima/images/hero.png' },
+//             { id: 2, name: "Dr N'Guessan Olivia", specialty: 'Pédopsychiatre / Psychiatre', image: '/assets/feerima/images/hero3.png' },
+//             { id: 3, name: 'ALLOU Adeline Amena', specialty: 'Infirmière Spécialisée', image: '/assets/feerima/images/hero2.png' },
+//             { id: 4, name: 'ALLO Valérie', specialty: 'Infirmier Spécialisé', image: '/assets/feerima/images/hero.png' },
+//             { id: 5, name: 'KONAN Aya Clarisse', specialty: 'Aide-soignante', image: '/assets/feerima/images/hero4.png' },
+//             { id: 6, name: 'BAUDHUIN Elise', specialty: 'Psychologue clinicienne', image: '/assets/feerima/images/hero3.png' },
+//             { id: 7, name: 'MANOUAN Ludovic', specialty: 'Psychologue clinicien', image: '/assets/feerima/images/hero.png' },
+//             { id: 8, name: 'KOUADIO Yao Etienne', specialty: 'Art-thérapeute', image: '/assets/feerima/images/hero3.png' },
 //         ],
 //     },
 //     {
 //         id: 'educative',
 //         label: "L'équipe éducative",
 //         members: [
-//             { id: 9, name: 'HOUNDJI Fulgence', specialty: 'Éducateur spécialisé', image: '/assets/feerima/hero2.png' },
-//             { id: 10, name: 'MANOUAN ép GRAH Ange Charlotte', specialty: 'Éducatrice spécialisée', image: '/assets/feerima/hero4.png' },
-//             { id: 11, name: 'DONGO Angèle', specialty: 'Référente Cadre de Vie', image: '/assets/feerima/hero4.png' },
-//             { id: 12, name: 'MESSAN Bhipeu Emmanuel', specialty: 'Coach sportif', image: '/assets/feerima/hero2.png' },
+//             { id: 9, name: 'HOUNDJI Fulgence', specialty: 'Éducateur spécialisé', image: '/assets/feerima/images/hero2.png' },
+//             { id: 10, name: 'MANOUAN ép GRAH Ange Charlotte', specialty: 'Éducatrice spécialisée', image: '/assets/feerima/images/hero4.png' },
+//             { id: 11, name: 'DONGO Angèle', specialty: 'Référente Cadre de Vie', image: '/assets/feerima/images/hero4.png' },
+//             { id: 12, name: 'MESSAN Bhipeu Emmanuel', specialty: 'Coach sportif', image: '/assets/feerima/images/hero2.png' },
 //         ],
 //     },
 //     {
 //         id: 'administrative',
 //         label: "L'équipe administrative et de gestion",
 //         members: [
-//             { id: 13, name: 'Malick Lago', specialty: 'Comptable / Responsable administratif', image: '/assets/feerima/hero.png' },
-//             { id: 14, name: 'YAO ép KONAN Olga', specialty: 'Agente Médico-administratif', image: '/assets/feerima/hero4.png' },
+//             { id: 13, name: 'Malick Lago', specialty: 'Comptable / Responsable administratif', image: '/assets/feerima/images/hero.png' },
+//             { id: 14, name: 'YAO ép KONAN Olga', specialty: 'Agente Médico-administratif', image: '/assets/feerima/images/hero4.png' },
 //         ],
 //     },
 //     {
 //         id: 'direction',
 //         label: "L'équipe de direction",
 //         members: [
-//             { id: 15, name: 'Noura Férima Sarassoro', specialty: 'Directrice Générale', image: '/assets/feerima/hero.png' },
-//             { id: 16, name: 'Salfou ZERBO', specialty: "Directeur d'exploitation", image: '/assets/feerima/hero2.png' },
+//             { id: 15, name: 'Noura Férima Sarassoro', specialty: 'Directrice Générale', image: '/assets/feerima/images/hero.png' },
+//             { id: 16, name: 'Salfou ZERBO', specialty: "Directeur d'exploitation", image: '/assets/feerima/images/hero2.png' },
 //         ],
 //     },
 // ];
@@ -145,7 +145,7 @@
 //             {/* Hero Banner */}
 //             <section
 //                 className="page-hero page-hero--ltr"
-//                 style={{ backgroundImage: "url('/assets/feerima/profession.png')" }}
+//                 style={{ backgroundImage: "url('/assets/feerima/images/profession.png')" }}
 //             >
 //                 <div className="page-hero-content">
 //                     <h1>Nos professionnels</h1>
@@ -211,40 +211,40 @@ const teams = [
         id: 'soins',
         label: "L'équipe de soins",
         members: [
-            { id: 1, name: 'Dr Danmaukan', specialty: 'Pédopsychiatre / Psychiatre', image: '/assets/feerima/hero.png' },
-            { id: 2, name: "Dr N'Guessan Olivia", specialty: 'Pédopsychiatre / Psychiatre', image: '/assets/feerima/hero3.png' },
-            { id: 3, name: 'ALLOU Adeline Amena', specialty: 'Infirmière Spécialisée', image: '/assets/feerima/hero2.png' },
-            { id: 4, name: 'ALLO Valérie', specialty: 'Infirmier Spécialisé', image: '/assets/feerima/hero.png' },
-            { id: 5, name: 'KONAN Aya Clarisse', specialty: 'Aide-soignante', image: '/assets/feerima/hero4.png' },
-            { id: 6, name: 'BAUDHUIN Elise', specialty: 'Psychologue clinicienne', image: '/assets/feerima/hero3.png' },
-            { id: 7, name: 'MANOUAN Ludovic', specialty: 'Psychologue clinicien', image: '/assets/feerima/hero.png' },
-            { id: 8, name: 'KOUADIO Yao Etienne', specialty: 'Art-thérapeute', image: '/assets/feerima/hero3.png' },
+            { id: 1, name: 'Dr Danmaukan', specialty: 'Pédopsychiatre / Psychiatre', image: '/assets/feerima/images/hero.png' },
+            { id: 2, name: "Dr N'Guessan Olivia", specialty: 'Pédopsychiatre / Psychiatre', image: '/assets/feerima/images/hero3.png' },
+            { id: 3, name: 'ALLOU Adeline Amena', specialty: 'Infirmière Spécialisée', image: '/assets/feerima/images/hero2.png' },
+            { id: 4, name: 'ALLO Valérie', specialty: 'Infirmier Spécialisé', image: '/assets/feerima/images/hero.png' },
+            { id: 5, name: 'KONAN Aya Clarisse', specialty: 'Aide-soignante', image: '/assets/feerima/images/hero4.png' },
+            { id: 6, name: 'BAUDHUIN Elise', specialty: 'Psychologue clinicienne', image: '/assets/feerima/images/hero3.png' },
+            { id: 7, name: 'MANOUAN Ludovic', specialty: 'Psychologue clinicien', image: '/assets/feerima/images/hero.png' },
+            { id: 8, name: 'KOUADIO Yao Etienne', specialty: 'Art-thérapeute', image: '/assets/feerima/images/hero3.png' },
         ],
     },
     {
         id: 'educative',
         label: "L'équipe éducative",
         members: [
-            { id: 9, name: 'HOUNDJI Fulgence', specialty: 'Éducateur spécialisé', image: '/assets/feerima/hero2.png' },
-            { id: 10, name: 'MANOUAN ép GRAH Ange Charlotte', specialty: 'Éducatrice spécialisée', image: '/assets/feerima/hero4.png' },
-            { id: 11, name: 'DONGO Angèle', specialty: 'Référente Cadre de Vie', image: '/assets/feerima/hero4.png' },
-            { id: 12, name: 'MESSAN Bhipeu Emmanuel', specialty: 'Coach sportif', image: '/assets/feerima/hero2.png' },
+            { id: 9, name: 'HOUNDJI Fulgence', specialty: 'Éducateur spécialisé', image: '/assets/feerima/images/hero2.png' },
+            { id: 10, name: 'MANOUAN ép GRAH Ange Charlotte', specialty: 'Éducatrice spécialisée', image: '/assets/feerima/images/hero4.png' },
+            { id: 11, name: 'DONGO Angèle', specialty: 'Référente Cadre de Vie', image: '/assets/feerima/images/hero4.png' },
+            { id: 12, name: 'MESSAN Bhipeu Emmanuel', specialty: 'Coach sportif', image: '/assets/feerima/images/hero2.png' },
         ],
     },
     {
         id: 'administrative',
         label: "L'équipe administrative et de gestion",
         members: [
-            { id: 13, name: 'Malick Lago', specialty: 'Comptable / Responsable administratif', image: '/assets/feerima/hero.png' },
-            { id: 14, name: 'YAO ép KONAN Olga', specialty: 'Agente Médico-administratif', image: '/assets/feerima/hero4.png' },
+            { id: 13, name: 'Malick Lago', specialty: 'Comptable / Responsable administratif', image: '/assets/feerima/images/hero.png' },
+            { id: 14, name: 'YAO ép KONAN Olga', specialty: 'Agente Médico-administratif', image: '/assets/feerima/images/hero4.png' },
         ],
     },
     {
         id: 'direction',
         label: "L'équipe de direction",
         members: [
-            { id: 15, name: 'Noura Férima Sarassoro', specialty: 'Directrice Générale', image: '/assets/feerima/hero.png' },
-            { id: 16, name: 'Salfou ZERBO', specialty: "Directeur d'exploitation", image: '/assets/feerima/hero2.png' },
+            { id: 15, name: 'Noura Férima Sarassoro', specialty: 'Directrice Générale', image: '/assets/feerima/images/hero.png' },
+            { id: 16, name: 'Salfou ZERBO', specialty: "Directeur d'exploitation", image: '/assets/feerima/images/hero2.png' },
         ],
     },
 ];
@@ -373,7 +373,7 @@ export default function Professionals() {
             {/* Hero */}
             <section
                 className="page-hero page-hero--ltr"
-                style={{ backgroundImage: "url('/assets/feerima/profession.png')" }}
+                style={{ backgroundImage: "url('/assets/feerima/images/profession.png')" }}
             >
                 <div className="page-hero-content">
                     <h1>Nos professionnels</h1>

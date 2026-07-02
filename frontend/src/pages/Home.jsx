@@ -33,10 +33,10 @@
 // ];
 
 // const actuSlides = [
-//   { img: '/assets/feerima/hero.png', titre: 'Journée portes ouvertes', message: 'Venez rencontrer nos équipes et découvrir La Fée Rima lors de notre prochaine journée portes ouvertes.' },
-//   { img: '/assets/feerima/hero2.png', titre: 'Atelier bien-être adolescents', message: 'Nos psychologues animent des ateliers hebdomadaires dédiés à la gestion du stress et à la confiance en soi.' },
-//   { img: '/assets/feerima/hero3.png', titre: "Partenariat avec l'université", message: "La Fée Rima s'associe à des établissements académiques pour renforcer la recherche en santé mentale juvénile." },
-//   { img: '/assets/feerima/hero4.png', titre: 'Nouveau protocole art-thérapie', message: 'Un nouveau programme créatif rejoint nos outils thérapeutiques pour accompagner les jeunes de façon innovante.' },
+//   { img: '/assets/feerima/images/hero.png', titre: 'Journée portes ouvertes', message: 'Venez rencontrer nos équipes et découvrir La Fée Rima lors de notre prochaine journée portes ouvertes.' },
+//   { img: '/assets/feerima/images/hero2.png', titre: 'Atelier bien-être adolescents', message: 'Nos psychologues animent des ateliers hebdomadaires dédiés à la gestion du stress et à la confiance en soi.' },
+//   { img: '/assets/feerima/images/hero3.png', titre: "Partenariat avec l'université", message: "La Fée Rima s'associe à des établissements académiques pour renforcer la recherche en santé mentale juvénile." },
+//   { img: '/assets/feerima/images/hero4.png', titre: 'Nouveau protocole art-thérapie', message: 'Un nouveau programme créatif rejoint nos outils thérapeutiques pour accompagner les jeunes de façon innovante.' },
 // ];
 
 // function ActuCarousel() {
@@ -76,9 +76,9 @@
 //   const [heroIndex, setHeroIndex] = useState(0);
 
 //   const heroImages = [
-//     '/assets/feerima/slider1.jpg?v=' + Date.now(),
-//     '/assets/feerima/slider2.jpg?v=' + Date.now(),
-//     '/assets/feerima/slider3.jpg?v=' + Date.now(),
+//     '/assets/feerima/images/slider1.jpg?v=' + Date.now(),
+//     '/assets/feerima/images/slider2.jpg?v=' + Date.now(),
+//     '/assets/feerima/images/slider3.jpg?v=' + Date.now(),
 //   ];
 
 //   const goToPreviousHero = () => { setHeroIndex((prev) => (prev === 0 ? heroImages.length - 1 : prev - 1)); };
@@ -444,10 +444,10 @@
 //           <ActuCarousel />
 //           <div className="actu-cards-grid">
 //             {[
-//               { img: '/assets/feerima/hero.png', categorie: 'Vie du centre', titre: 'Journée portes ouvertes à La Fée Rima', extrait: "Venez découvrir nos équipes et nos espaces de soins lors de notre prochaine journée portes ouvertes. Un moment d'échange et de rencontre pour les jeunes et leurs familles." },
-//               { img: '/assets/feerima/hero2.png', categorie: 'Santé mentale', titre: 'Mieux comprendre les troubles anxieux chez les adolescents', extrait: "La Fée Rima vous propose des ressources et des ateliers pour mieux identifier et accompagner les troubles anxieux, de plus en plus fréquents chez les 10-25 ans." },
-//               { img: '/assets/feerima/hero3.png', categorie: 'Innovation', titre: "Nouveau protocole d'art-thérapie au programme", extrait: "Notre équipe pluridisciplinaire intègre de nouvelles approches créatives dans les parcours de soins individualisés, avec des résultats encourageants." },
-//               { img: '/assets/feerima/hero4.png', categorie: 'Partenariat', titre: 'La Fée Rima renforce ses partenariats académiques', extrait: "De nouvelles conventions signées avec des universités et instituts de recherche pour enrichir notre pôle Recherche & Innovation et améliorer la prise en charge." },
+//               { img: '/assets/feerima/images/hero.png', categorie: 'Vie du centre', titre: 'Journée portes ouvertes à La Fée Rima', extrait: "Venez découvrir nos équipes et nos espaces de soins lors de notre prochaine journée portes ouvertes. Un moment d'échange et de rencontre pour les jeunes et leurs familles." },
+//               { img: '/assets/feerima/images/hero2.png', categorie: 'Santé mentale', titre: 'Mieux comprendre les troubles anxieux chez les adolescents', extrait: "La Fée Rima vous propose des ressources et des ateliers pour mieux identifier et accompagner les troubles anxieux, de plus en plus fréquents chez les 10-25 ans." },
+//               { img: '/assets/feerima/images/hero3.png', categorie: 'Innovation', titre: "Nouveau protocole d'art-thérapie au programme", extrait: "Notre équipe pluridisciplinaire intègre de nouvelles approches créatives dans les parcours de soins individualisés, avec des résultats encourageants." },
+//               { img: '/assets/feerima/images/hero4.png', categorie: 'Partenariat', titre: 'La Fée Rima renforce ses partenariats académiques', extrait: "De nouvelles conventions signées avec des universités et instituts de recherche pour enrichir notre pôle Recherche & Innovation et améliorer la prise en charge." },
 //             ].map((actu, i) => (
 //               <div key={i} className="actu-card">
 //                 <div className="actu-card-img">
@@ -485,6 +485,7 @@ import '../styles/ContactSection.css';
 import '../styles/ActuSection.css';
 import TypingBubble from '../components/TypingBubble';
 import QuotesBanner from '../components/QuotesBanner';
+import ActuServices from '../components/ActuServices';
 
 import { Users, Target, ShieldCheck, Lightbulb, HandHeart, Home as HomeIcon, Accessibility, Handshake } from "lucide-react";
 
@@ -505,10 +506,10 @@ const fallbackNews = [
 ];
 
 const actuSlides = [
-  { img: '/assets/feerima/hero.png', titre: 'Journée portes ouvertes', message: 'Venez rencontrer nos équipes et découvrir La Fée Rima lors de notre prochaine journée portes ouvertes.' },
-  { img: '/assets/feerima/hero2.png', titre: 'Atelier bien-être adolescents', message: 'Nos psychologues animent des ateliers hebdomadaires dédiés à la gestion du stress et à la confiance en soi.' },
-  { img: '/assets/feerima/hero3.png', titre: "Partenariat avec l'université", message: "La Fée Rima s'associe à des établissements académiques pour renforcer la recherche en santé mentale juvénile." },
-  { img: '/assets/feerima/hero4.png', titre: 'Nouveau protocole art-thérapie', message: 'Un nouveau programme créatif rejoint nos outils thérapeutiques pour accompagner les jeunes de façon innovante.' },
+  { img: '/assets/feerima/images/hero.png', titre: 'Journée portes ouvertes', message: 'Venez rencontrer nos équipes et découvrir La Fée Rima lors de notre prochaine journée portes ouvertes.' },
+  { img: '/assets/feerima/images/hero2.png', titre: 'Atelier bien-être adolescents', message: 'Nos psychologues animent des ateliers hebdomadaires dédiés à la gestion du stress et à la confiance en soi.' },
+  { img: '/assets/feerima/images/hero3.png', titre: "Partenariat avec l'université", message: "La Fée Rima s'associe à des établissements académiques pour renforcer la recherche en santé mentale juvénile." },
+  { img: '/assets/feerima/images/hero4.png', titre: 'Nouveau protocole art-thérapie', message: 'Un nouveau programme créatif rejoint nos outils thérapeutiques pour accompagner les jeunes de façon innovante.' },
 ];
 
 function ActuCarousel() {
@@ -651,9 +652,9 @@ export default function Home() {
   const [selectedService, setSelectedService] = useState(null);
 
   const heroImages = [
-    '/assets/feerima/slider1.jpg',
-    '/assets/feerima/slider2.jpg',
-    '/assets/feerima/slider3.jpg',
+    '/assets/feerima/images/slider1.jpg',
+    '/assets/feerima/images/slider2.jpg',
+    '/assets/feerima/images/slider3.jpg',
   ];
 
 //   const servicesData = [
@@ -1113,30 +1114,7 @@ export default function Home() {
         </div> */}
 
         <div id="actualites" style={{ scrollMarginTop: '90px' }} />
-        <div className="actu-section">
-          <h2 className="actu-main-title">Nos actualités</h2>
-          <ActuCarousel />
-          <div className="actu-cards-grid">
-            {[
-              { img: '/assets/feerima/hero.png', categorie: 'Vie du centre', titre: 'Journée portes ouvertes à La Fée Rima', extrait: "Venez découvrir nos équipes et nos espaces de soins lors de notre prochaine journée portes ouvertes. Un moment d'échange et de rencontre pour les jeunes et leurs familles." },
-              { img: '/assets/feerima/hero2.png', categorie: 'Santé mentale', titre: 'Mieux comprendre les troubles anxieux chez les adolescents', extrait: "La Fée Rima vous propose des ressources et des ateliers pour mieux identifier et accompagner les troubles anxieux, de plus en plus fréquents chez les 10-25 ans." },
-              { img: '/assets/feerima/hero3.png', categorie: 'Innovation', titre: "Nouveau protocole d'art-thérapie au programme", extrait: "Notre équipe pluridisciplinaire intègre de nouvelles approches créatives dans les parcours de soins individualisés, avec des résultats encourageants." },
-              { img: '/assets/feerima/hero4.png', categorie: 'Partenariat', titre: 'La Fée Rima renforce ses partenariats académiques', extrait: "De nouvelles conventions signées avec des universités et instituts de recherche pour enrichir notre pôle Recherche & Innovation et améliorer la prise en charge." },
-            ].map((actu, i) => (
-              <div key={i} className="actu-card">
-                <div className="actu-card-img">
-                  <img src={actu.img} alt={actu.titre} />
-                  <span className="actu-card-badge">{actu.categorie}</span>
-                </div>
-                <div className="actu-card-body">
-                  <h3>{actu.titre}</h3>
-                  <p>{actu.extrait}</p>
-                  <a href="/actualites" className="actu-card-link">Lire la suite →</a>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
+        <ActuServices />
 
       </main>
 

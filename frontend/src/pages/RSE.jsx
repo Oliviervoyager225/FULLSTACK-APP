@@ -12,7 +12,7 @@
 //       {/* Hero Banner */}
 //       <section
 //         className="page-hero"
-//         style={{ backgroundImage: "url('/assets/feerima/rse1.png')" }}
+//         style={{ backgroundImage: "url('/assets/feerima/images/rse1.png')" }}
 //       >
 //         <div className="page-hero-content">
 //           <h1>Notre politique RSE</h1>
@@ -33,12 +33,12 @@
 //               Nous offrons un accueil respectueux, bienveillant et accessible à tous les jeunes de 10 à 25 ans. Chaque projet de soins est personnalisé, dans le respect de la dignité et de la confidentialité.
 //             </p>
 //           </div>
-//           <div className="hist-image-box gray-box-large" style={{ backgroundImage: "url('/assets/feerima/politique.png')", backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
+//           <div className="hist-image-box gray-box-large" style={{ backgroundImage: "url('/assets/feerima/images/politique.png')", backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
 //         </section>
 
 //         {/* Section 2: Actions & Conditions */}
 //         <section className="hist-section section-2">
-//           <div className="hist-image-box gray-box-medium" style={{ backgroundImage: "url('/assets/feerima/ethique.png')", backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
+//           <div className="hist-image-box gray-box-medium" style={{ backgroundImage: "url('/assets/feerima/images/ethique.png')", backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
 //           <div className="hist-content center-content">
 //             <h2>ÉTHIQUE ET<br />GOUVERNANCE</h2>
 //             <p>
@@ -48,22 +48,22 @@
 //               Parce que prendre soin des adolescents et des jeunes, c’est aussi s’occuper de ceux qui les accompagnent. Nous favorisons donc la formation continue, l’esprit d’équipe et le bien-être au travail.
 //             </p>
 //           </div>
-//           <div className="hist-image-box gray-box-medium" style={{ backgroundImage: "url('/assets/feerima/eth_gouv.png')", backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
+//           <div className="hist-image-box gray-box-medium" style={{ backgroundImage: "url('/assets/feerima/images/eth_gouv.png')", backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
 //         </section>
 
 //         {/* Section 3: Environnement */}
 //         <section className="hist-section section-3">
 //           <div className="hist-stacked-images">
-//             {/* <div className="hist-image-box gray-box-small" style={{ backgroundImage: "url('/assets/feerima/hero.png')", backgroundSize: 'cover', backgroundPosition: 'top' }}></div> */}
+//             {/* <div className="hist-image-box gray-box-small" style={{ backgroundImage: "url('/assets/feerima/images/hero.png')", backgroundSize: 'cover', backgroundPosition: 'top' }}></div> */}
             
 //             <div className="hist-stacked-images">
 //             <img
-//               src="/assets/feerima/environnement.png"
+//               src="/assets/feerima/images/environnement.png"
 //               alt="Ma mission"
 //               className="hist-image"
 //             />
 //           </div>
-//             {/* <div className="hist-image-box gray-box-small" style={{ backgroundImage: "url('/assets/feerima/environnement.png')", backgroundSize: 'cover', backgroundPosition: 'center' }}></div> */}
+//             {/* <div className="hist-image-box gray-box-small" style={{ backgroundImage: "url('/assets/feerima/images/environnement.png')", backgroundSize: 'cover', backgroundPosition: 'center' }}></div> */}
 //           </div>
 //           <div className="hist-content">
 //             <h2>ENVIRONNEMENT ET<br />DURABILITÉ</h2>
@@ -94,7 +94,7 @@ export default function RSE() {
       {/* Hero Banner */}
       <section
         className="rse-hero"
-        style={{ backgroundImage: "url('/assets/feerima/rse1.png')" }}
+        style={{ backgroundImage: "url('/assets/feerima/images/rse1.png')" }}
       >
         <div className="rse-hero-overlay" />
         <div className="rse-hero-content">
@@ -127,7 +127,7 @@ export default function RSE() {
           <div
             className="rse-image-block"
             style={{
-              backgroundImage: "url('/assets/feerima/politique.png')",
+              backgroundImage: "url('/assets/feerima/images/politique.png')",
               backgroundSize: 'cover',
               backgroundPosition: 'center',
             }}
@@ -157,7 +157,7 @@ export default function RSE() {
             <div
               className="rse-pillar-image"
               style={{
-                backgroundImage: "url('/assets/feerima/ethique.png')",
+                backgroundImage: "url('/assets/feerima/images/ethique.png')",
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
               }}
@@ -175,7 +175,7 @@ export default function RSE() {
             <div
               className="rse-pillar-image"
               style={{
-                backgroundImage: "url('/assets/feerima/eth_gouv.png')",
+                backgroundImage: "url('/assets/feerima/images/eth_gouv.png')",
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
               }}
@@ -206,7 +206,7 @@ export default function RSE() {
           <div
             className="rse-env-image"
             style={{
-              backgroundImage: "url('/assets/feerima/environnement.png')",
+              backgroundImage: "url('/assets/feerima/images/environnement.png')",
               backgroundSize: 'cover',
               backgroundPosition: 'center',
             }}
@@ -295,7 +295,7 @@ export default function RSE() {
 //               </div>
 //               <div className="rse-image-wrapper">
 //                 <div className="rse-image-card">
-//                   <img src="/assets/feerima/politique.png" alt="Politique RSE" />
+//                   <img src="/assets/feerima/images/politique.png" alt="Politique RSE" />
 //                   <div className="rse-image-shape"></div>
 //                 </div>
 //               </div>
@@ -347,7 +347,7 @@ export default function RSE() {
 //           <div className="rse-container full">
 //             <div className="rse-split">
 //               <div className="rse-split-image">
-//                 <img src="/assets/feerima/environnement.png" alt="Environnement" />
+//                 <img src="/assets/feerima/images/environnement.png" alt="Environnement" />
 //                 {/* <div className="rse-stats">
 //                   <div className="rse-stat">
 //                     <span className="rse-stat-number">-30%</span>

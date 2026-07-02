@@ -38,7 +38,7 @@
 
 //             <section
 //                 className="page-hero"
-//                 style={{ backgroundImage: "url('/assets/feerima/hero8.png')" }}
+//                 style={{ backgroundImage: "url('/assets/feerima/images/hero8.png')" }}
 //             >
 //                 <div className="page-hero-content">
 //                     <h1>Pôle Recherche &amp; Innovation</h1>
@@ -61,7 +61,7 @@
 //                     <div
 //                         className="hist-image-box gray-box-large"
 //                         style={{
-//                             backgroundImage: "url('/assets/feerima/hero2.png')",
+//                             backgroundImage: "url('/assets/feerima/images/hero2.png')",
 //                             backgroundSize: 'cover',
 //                             backgroundPosition: 'center',
 //                         }}
@@ -108,7 +108,7 @@
 //                     <div
 //                         className="hist-image-box gray-box-medium"
 //                         style={{
-//                             backgroundImage: "url('/assets/feerima/hero4.png')",
+//                             backgroundImage: "url('/assets/feerima/images/hero4.png')",
 //                             backgroundSize: 'cover',
 //                             backgroundPosition: 'center',
 //                         }}
@@ -125,7 +125,7 @@
 //                     <div
 //                         className="hist-image-box gray-box-medium"
 //                         style={{
-//                             backgroundImage: "url('/assets/feerima/images.jpg')",
+//                             backgroundImage: "url('/assets/feerima/images/images.jpg')",
 //                             backgroundSize: 'cover',
 //                             backgroundPosition: 'center',
 //                         }}
@@ -179,7 +179,7 @@
 
 //             <section
 //                 className="page-hero"
-//                 style={{ backgroundImage: "url('/assets/feerima/recherche.png')" }}
+//                 style={{ backgroundImage: "url('/assets/feerima/images/recherche.png')" }}
 //             >
 //             </section>
 
@@ -198,7 +198,7 @@
 //                     <div
 //                         className="hist-image-box gray-box-large"
 //                         style={{
-//                             backgroundImage: "url('/assets/feerima/mission.png')",
+//                             backgroundImage: "url('/assets/feerima/images/mission.png')",
 //                             backgroundSize: 'cover',
 //                             backgroundPosition: 'center',
 //                         }}
@@ -272,7 +272,7 @@
 //                     <div
 //                         className="hist-image-box gray-box-medium"
 //                         style={{
-//                             backgroundImage: "url('/assets/feerima/travaux.png')",
+//                             backgroundImage: "url('/assets/feerima/images/travaux.png')",
 //                             backgroundSize: 'cover',
 //                             backgroundPosition: 'center',
 //                         }}
@@ -289,7 +289,7 @@
 //                     <div
 //                         className="hist-image-box gray-box-medium"
 //                         style={{
-//                             backgroundImage: "url('/assets/feerima/travaux1.png')",
+//                             backgroundImage: "url('/assets/feerima/images/travaux1.png')",
 //                             backgroundSize: 'cover',
 //                             backgroundPosition: 'center',
 //                         }}
@@ -541,7 +541,7 @@ export default function PoleRechercheInnovation() {
 
             <section
                 className="page-hero"
-                style={{ backgroundImage: "url('/assets/feerima/recherche.png')" }}
+                style={{ backgroundImage: "url('/assets/feerima/images/recherche.png')" }}
             />
 
             <main style={{ background: '#f7f8fa', minHeight: '100vh' }}>
@@ -591,7 +591,7 @@ export default function PoleRechercheInnovation() {
                         background: '#e2e8f0',
                     }}>
                         <img
-                            src="/assets/feerima/mission.png"
+                            src="/assets/feerima/images/mission.png"
                             alt="Mission recherche"
                             style={{ width: '100%', height: '100%', objectFit: 'cover' }}
                         />
@@ -681,7 +681,7 @@ export default function PoleRechercheInnovation() {
                         background: '#e2e8f0',
                     }}>
                         <img
-                            src="/assets/feerima/travaux.png"
+                            src="/assets/feerima/images/travaux.png"
                             alt="Rejoindre les travaux"
                             style={{ width: '100%', height: '100%', objectFit: 'cover' }}
                         />

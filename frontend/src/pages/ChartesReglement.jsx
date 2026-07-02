@@ -11,7 +11,7 @@ export default function ChartesReglement() {
 
             <section
                 className="page-hero"
-                style={{ backgroundImage: "url('/assets/feerima/reglement.png')" }}
+                style={{ backgroundImage: "url('/assets/feerima/images/reglement.png')" }}
             >
                 <div className="page-hero-content">
                     <h1>Chartes et règlement intérieur</h1>
@@ -44,7 +44,7 @@ export default function ChartesReglement() {
                     <div
                         className="hist-image-box gray-box-large"
                         style={{
-                            backgroundImage: "url('/assets/feerima/reglement1.png')",
+                            backgroundImage: "url('/assets/feerima/images/reglement1.png')",
                             backgroundSize: 'cover',
                             backgroundPosition: 'center',
                         }}
@@ -55,7 +55,7 @@ export default function ChartesReglement() {
                     <div
                         className="hist-image-box gray-box-medium"
                         style={{
-                            backgroundImage: "url('/assets/feerima/reglement2.png')",
+                            backgroundImage: "url('/assets/feerima/images/reglement2.png')",
                             backgroundSize: 'cover',
                             backgroundPosition: 'center',
                         }}
@@ -73,7 +73,7 @@ export default function ChartesReglement() {
                     <div
                         className="hist-image-box gray-box-medium"
                         style={{
-                            backgroundImage: "url('/assets/feerima/reglem.png')",
+                            backgroundImage: "url('/assets/feerima/images/reglem.png')",
                             backgroundSize: 'cover',
                             backgroundPosition: 'center',
                         }}

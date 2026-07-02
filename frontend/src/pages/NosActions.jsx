@@ -39,7 +39,7 @@ const NosActions = () => {
                     {/* Image de fond avec overlay */}
                     <div className="hero-background">
                         <img
-                            src="/assets/feerima/action.png"
+                            src="/assets/feerima/images/action.png"
                             alt="Jeunes ivoiriens participant à une activité de sensibilisation en santé mentale"
                             className="hero-image"
                             loading="eager"

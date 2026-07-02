@@ -11,7 +11,7 @@
     position: relative;
     height: 60vh;
     min-height: 400px;
-    background-image: url('/assets/feerima/notre_histoire.png');
+    background-image: url('/assets/feerima/images/notre_histoire.png');
     background-size: cover;
     background-position: center;
     display: flex;

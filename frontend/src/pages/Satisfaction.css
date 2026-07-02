@@ -36,7 +36,7 @@
 .sat-hero {
     position: relative;
     height: 420px;
-    background: url('/assets/feerima/satisfaction.png') center / cover no-repeat;
+    background: url('/assets/feerima/images/satisfaction.png') center / cover no-repeat;
     display: flex;
     align-items: center;
     overflow: hidden;

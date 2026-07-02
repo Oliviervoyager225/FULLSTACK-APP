@@ -11,7 +11,7 @@
 
 //             <section
 //                 className="page-hero"
-//                 style={{ backgroundImage: "url('/assets/feerima/consultation.png')" }}
+//                 style={{ backgroundImage: "url('/assets/feerima/images/consultation.png')" }}
 //             >
 //             </section>
 
@@ -31,7 +31,7 @@
 //                     <div
 //                         className="hist-image-box gray-box-large"
 //                         style={{
-//                             backgroundImage: "url('/assets/feerima/consultation_ex.png')",
+//                             backgroundImage: "url('/assets/feerima/images/consultation_ex.png')",
 //                             backgroundSize: 'cover',
 //                             backgroundPosition: 'center',
 //                         }}
@@ -42,7 +42,7 @@
 //                     <div
 //                         className="hist-image-box gray-box-medium"
 //                         style={{
-//                             backgroundImage: "url('/assets/feerima/acc.png')",
+//                             backgroundImage: "url('/assets/feerima/images/acc.png')",
 //                             backgroundSize: 'cover',
 //                             backgroundPosition: 'center',
 //                         }}
@@ -60,7 +60,7 @@
 //                     <div
 //                         className="hist-image-box gray-box-medium"
 //                         style={{
-//                             backgroundImage: "url('/assets/feerima/acc1.png')",
+//                             backgroundImage: "url('/assets/feerima/images/acc1.png')",
 //                             backgroundSize: 'cover',
 //                             backgroundPosition: 'center',
 //                         }}
@@ -72,7 +72,7 @@
 
 //                         <div className="hist-stacked-images">
 //                             <img
-//                                 src="/assets/feerima/professionnel.png"
+//                                 src="/assets/feerima/images/professionnel.png"
 //                                 alt="Ma mission"
 //                                 className="hist-image"
 //                             />
@@ -158,7 +158,7 @@ export default function ConsultationsExternes() {
 
             <section
                 className="page-hero"
-                style={{ backgroundImage: "url('/assets/feerima/consultation.png')" }}
+                style={{ backgroundImage: "url('/assets/feerima/images/consultation.png')" }}
             />
 
             <main style={{ background: '#f7f8fa', minHeight: '100vh' }}>
@@ -187,7 +187,7 @@ export default function ConsultationsExternes() {
                         </p>
                     </div>
                     <div style={{ borderRadius: '16px', overflow: 'hidden', aspectRatio: '4/3', background: '#dde6f0' }}>
-                        <img src="/assets/feerima/consultation_ex.png" alt="Consultation externe" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                        <img src="/assets/feerima/images/consultation_ex.png" alt="Consultation externe" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                     </div>
                 </section>
 
@@ -330,7 +330,7 @@ export default function ConsultationsExternes() {
                     alignItems: 'center',
                 }}>
                     <div style={{ borderRadius: '16px', overflow: 'hidden', aspectRatio: '4/3', background: '#dde6f0' }}>
-                        <img src="/assets/feerima/professionnel.png" alt="Professionnels" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                        <img src="/assets/feerima/images/professionnel.png" alt="Professionnels" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                     </div>
                     <div>
                         <p style={{ fontSize: '0.75rem', fontWeight: 700, letterSpacing: '0.12em', textTransform: 'uppercase', color: GREEN, marginBottom: '0.5rem' }}>

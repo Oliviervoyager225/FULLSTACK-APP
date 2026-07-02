@@ -11,7 +11,7 @@ export default function ChartesUsager() {
 
             <section
                 className="page-hero"
-                style={{ backgroundImage: "url('/assets/feerima/hero2.png')" }}
+                style={{ backgroundImage: "url('/assets/feerima/images/hero2.png')" }}
             >
                 <div className="page-hero-content">
                     <h1>Charte Usager</h1>

@@ -112,10 +112,10 @@ function useReveal() {
 /* Photos du template (comme Foody) : attribuées en rotation aux auteurs
  * nommés. Les « Inconnu » gardent l'avatar silhouette. */
 const PHOTOS = [
-    '/assets/feerima/testimonial-1.jpg',
-    '/assets/feerima/testimonial-2.jpg',
-    '/assets/feerima/testimonial-3.jpg',
-    '/assets/feerima/testimonial-4.jpg',
+    '/assets/feerima/images/testimonial-1.jpg',
+    '/assets/feerima/images/testimonial-2.jpg',
+    '/assets/feerima/images/testimonial-3.jpg',
+    '/assets/feerima/images/testimonial-4.jpg',
 ];
 
 let _photoCursor = 0;
@@ -133,8 +133,12 @@ export default function QuotesBanner() {
     const [vw, setVw] = useState(0);
     const [visible, setVisible] = useState(3);
     const [animate, setAnimate] = useState(true);
-    const [paused, setPaused] = useState(false);
+    const [hovering, setHovering] = useState(false);
+    const [dragging, setDragging] = useState(false);
     const [dragDelta, setDragDelta] = useState(0);
+
+    // Autoplay en pause au survol (autoplayHoverPause) ou pendant le drag
+    const paused = hovering || dragging;
 
     const middleOffset = Math.floor(visible / 2);
 
@@ -208,7 +212,7 @@ export default function QuotesBanner() {
     const onPointerDown = useCallback((e) => {
         if (step <= 0) return;
         drag.current = { active: true, startX: e.clientX, delta: 0 };
-        setPaused(true);
+        setDragging(true);
         setAnimate(false);
         if (e.currentTarget.setPointerCapture) {
             try { e.currentTarget.setPointerCapture(e.pointerId); } catch { /* noop */ }
@@ -237,7 +241,7 @@ export default function QuotesBanner() {
         else if (moved < -maxMove) moved = -maxMove;
         setAnimate(true);
         setPos((p) => p + moved);
-        setPaused(false);
+        setDragging(false);
     }, [step]);
 
     const centerIndex = pos + middleOffset;
@@ -270,6 +274,8 @@ export default function QuotesBanner() {
                 <div
                     className="testimonial-viewport"
                     ref={viewportRef}
+                    onMouseEnter={() => setHovering(true)}
+                    onMouseLeave={() => setHovering(false)}
                     onPointerDown={onPointerDown}
                     onPointerMove={onPointerMove}
                     onPointerUp={endDrag}

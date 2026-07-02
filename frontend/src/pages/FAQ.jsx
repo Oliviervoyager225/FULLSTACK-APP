@@ -120,33 +120,33 @@ const faqData = [
 
 const ressourcesData = {
   lire: [
-    { titre: 'Liens du Dr Zerbo', description: 'Ressources sélectionnées par notre médecin référent sur la santé mentale des jeunes.', image: '/assets/feerima/sante-mentale.jpg', tag: 'À lire' },
-    { titre: 'Technique de relaxation', description: 'Apprenez des techniques simples pour gérer le stress au quotidien.', image: '/assets/feerima/ecoute.jpg', tag: 'À lire' },
-    { titre: '5 conseils pour améliorer son sommeil', description: 'Un sommeil de qualité est essentiel pour votre santé mentale.', image: '/assets/feerima/prog_soins.jpg', tag: 'À lire' },
-    { titre: 'Dépression', description: "Comprendre la dépression pour mieux l'identifier et agir.", image: '/assets/feerima/ecoute1.png', tag: 'À lire' },
-    { titre: "Qu'est-ce que l'anxiété ?", description: 'Tout savoir sur les troubles anxieux et les solutions disponibles.', image: '/assets/feerima/parler.jpg', tag: 'À lire' },
-    { titre: "Qu'est-ce que la schizophrénie ?", description: 'Une explication claire et bienveillante sur cette maladie souvent mal comprise.', image: '/assets/feerima/psycha.png', tag: 'À lire' },
+    { titre: 'Liens du Dr Zerbo', description: 'Ressources sélectionnées par notre médecin référent sur la santé mentale des jeunes.', image: '/assets/feerima/images/sante-mentale.jpg', tag: 'À lire' },
+    { titre: 'Technique de relaxation', description: 'Apprenez des techniques simples pour gérer le stress au quotidien.', image: '/assets/feerima/images/ecoute.jpg', tag: 'À lire' },
+    { titre: '5 conseils pour améliorer son sommeil', description: 'Un sommeil de qualité est essentiel pour votre santé mentale.', image: '/assets/feerima/images/prog_soins.jpg', tag: 'À lire' },
+    { titre: 'Dépression', description: "Comprendre la dépression pour mieux l'identifier et agir.", image: '/assets/feerima/images/ecoute1.png', tag: 'À lire' },
+    { titre: "Qu'est-ce que l'anxiété ?", description: 'Tout savoir sur les troubles anxieux et les solutions disponibles.', image: '/assets/feerima/images/parler.jpg', tag: 'À lire' },
+    { titre: "Qu'est-ce que la schizophrénie ?", description: 'Une explication claire et bienveillante sur cette maladie souvent mal comprise.', image: '/assets/feerima/images/psycha.png', tag: 'À lire' },
   ],
   regarder: [
-    { titre: 'Film sur le harcèlement', description: 'Un film poignant sur les impacts du harcèlement scolaire sur la santé mentale des adolescents.', image: '/assets/feerima/jeune.jpg', tag: 'À regarder' },
+    { titre: 'Film sur le harcèlement', description: 'Un film poignant sur les impacts du harcèlement scolaire sur la santé mentale des adolescents.', image: '/assets/feerima/images/jeune.jpg', tag: 'À regarder' },
   ],
 };
 
 const ecouterCategories = {
   films: [
-    { titre: 'Film sur le harcèlement', description: 'Un film poignant sur les impacts du harcèlement scolaire sur la santé mentale des adolescents.', image: '/assets/feerima/jeune.jpg', tag: 'Film' },
-    { titre: 'La dépression au quotidien', description: 'Un documentaire émouvant sur la vie avec la dépression et les chemins vers la guérison.', image: '/assets/feerima/ecoute.jpg', tag: 'Film' },
-    { titre: 'Anxiété : briser le silence', description: 'Un film sur les troubles anxieux chez les jeunes en Afrique.', image: '/assets/feerima/ecoute1.png', tag: 'Film' },
+    { titre: 'Film sur le harcèlement', description: 'Un film poignant sur les impacts du harcèlement scolaire sur la santé mentale des adolescents.', image: '/assets/feerima/images/jeune.jpg', tag: 'Film' },
+    { titre: 'La dépression au quotidien', description: 'Un documentaire émouvant sur la vie avec la dépression et les chemins vers la guérison.', image: '/assets/feerima/images/ecoute.jpg', tag: 'Film' },
+    { titre: 'Anxiété : briser le silence', description: 'Un film sur les troubles anxieux chez les jeunes en Afrique.', image: '/assets/feerima/images/ecoute1.png', tag: 'Film' },
   ],
   series: [
-    { titre: 'Grandir ensemble', description: "Une série sur les défis émotionnels et relationnels de l'adolescence.", image: '/assets/feerima/parler.jpg', tag: 'Série' },
-    { titre: 'Ma tête, mon monde', description: "Série documentaire sur la santé mentale des 10-25 ans en Afrique de l'Ouest.", image: '/assets/feerima/psycha.png', tag: 'Série' },
-    { titre: 'Jeunes et résilients', description: 'Portraits de jeunes qui ont surmonté des épreuves psychologiques difficiles.', image: '/assets/feerima/prog_soins.jpg', tag: 'Série' },
+    { titre: 'Grandir ensemble', description: "Une série sur les défis émotionnels et relationnels de l'adolescence.", image: '/assets/feerima/images/parler.jpg', tag: 'Série' },
+    { titre: 'Ma tête, mon monde', description: "Série documentaire sur la santé mentale des 10-25 ans en Afrique de l'Ouest.", image: '/assets/feerima/images/psycha.png', tag: 'Série' },
+    { titre: 'Jeunes et résilients', description: 'Portraits de jeunes qui ont surmonté des épreuves psychologiques difficiles.', image: '/assets/feerima/images/prog_soins.jpg', tag: 'Série' },
   ],
   musique: [
-    { titre: 'Playlist bien-être', description: 'Une sélection musicale apaisante pour prendre soin de son esprit au quotidien.', image: '/assets/feerima/soutien.png', tag: 'Musique' },
-    { titre: 'Sons de relaxation', description: 'Des sons naturels et mélodies douces pour la méditation et la détente.', image: '/assets/feerima/sante-mentale.jpg', tag: 'Musique' },
-    { titre: 'Rythmes africains thérapeutiques', description: 'La musique traditionnelle africaine comme outil de bien-être mental.', image: '/assets/feerima/jeune.jpg', tag: 'Musique' },
+    { titre: 'Playlist bien-être', description: 'Une sélection musicale apaisante pour prendre soin de son esprit au quotidien.', image: '/assets/feerima/images/soutien.png', tag: 'Musique' },
+    { titre: 'Sons de relaxation', description: 'Des sons naturels et mélodies douces pour la méditation et la détente.', image: '/assets/feerima/images/sante-mentale.jpg', tag: 'Musique' },
+    { titre: 'Rythmes africains thérapeutiques', description: 'La musique traditionnelle africaine comme outil de bien-être mental.', image: '/assets/feerima/images/jeune.jpg', tag: 'Musique' },
   ],
 };
 
@@ -155,7 +155,7 @@ function BlogGrid({ items }) {
   return (
     <div className="faq-blog-grid">
       <div className="faq-blog-featured">
-        <img src={main.image} alt={main.titre} className="faq-blog-img" onError={e => { e.target.src = '/assets/feerima/sante.png'; }} />
+        <img src={main.image} alt={main.titre} className="faq-blog-img" onError={e => { e.target.src = '/assets/feerima/images/sante.png'; }} />
         <div className="faq-blog-featured-body">
           <span className="faq-blog-tag">{main.tag}</span>
           <h4 className="faq-blog-title">{main.titre}</h4>
@@ -166,7 +166,7 @@ function BlogGrid({ items }) {
         <div className="faq-blog-list">
           {rest.map((item, i) => (
             <div key={i} className="faq-blog-item">
-              <img src={item.image} alt={item.titre} className="faq-blog-thumb" onError={e => { e.target.src = '/assets/feerima/sante.png'; }} />
+              <img src={item.image} alt={item.titre} className="faq-blog-thumb" onError={e => { e.target.src = '/assets/feerima/images/sante.png'; }} />
               <div className="faq-blog-item-content">
                 <span className="faq-blog-tag small">{item.tag}</span>
                 <h4 className="faq-blog-item-title">{item.titre}</h4>
@@ -230,7 +230,7 @@ function TemoignagesSection() {
       </div>
       <div className="faq-blog-grid">
         <div className="faq-blog-featured">
-          <img src="/assets/feerima/soutien.png" alt="Témoignages" className="faq-blog-img" onError={e => { e.target.src = '/assets/feerima/sante.png'; }} />
+          <img src="/assets/feerima/images/soutien.png" alt="Témoignages" className="faq-blog-img" onError={e => { e.target.src = '/assets/feerima/images/sante.png'; }} />
           <div className="faq-blog-featured-body">
             <span className="faq-blog-tag">À ÉCOUTER</span>
             <h4 className="faq-blog-title">Témoignages de jeunes</h4>
@@ -239,7 +239,7 @@ function TemoignagesSection() {
         </div>
         <div className="faq-blog-list">
           <div className="faq-blog-item">
-            <img src="/assets/feerima/parler.jpg" alt="Témoignage 1" className="faq-blog-thumb" onError={e => { e.target.src = '/assets/feerima/sante.png'; }} />
+            <img src="/assets/feerima/images/parler.jpg" alt="Témoignage 1" className="faq-blog-thumb" onError={e => { e.target.src = '/assets/feerima/images/sante.png'; }} />
             <div className="faq-blog-item-content">
               <span className="faq-blog-tag small">Témoignage</span>
               <h4 className="faq-blog-item-title">"J'ai appris à demander de l'aide"</h4>
@@ -247,7 +247,7 @@ function TemoignagesSection() {
             </div>
           </div>
           <div className="faq-blog-item">
-            <img src="/assets/feerima/ecoute.jpg" alt="Témoignage 2" className="faq-blog-thumb" onError={e => { e.target.src = '/assets/feerima/sante.png'; }} />
+            <img src="/assets/feerima/images/ecoute.jpg" alt="Témoignage 2" className="faq-blog-thumb" onError={e => { e.target.src = '/assets/feerima/images/sante.png'; }} />
             <div className="faq-blog-item-content">
               <span className="faq-blog-tag small">Témoignage</span>
               <h4 className="faq-blog-item-title">"Je ne me sentais plus seul"</h4>
@@ -255,7 +255,7 @@ function TemoignagesSection() {
             </div>
           </div>
           <div className="faq-blog-item">
-            <img src="/assets/feerima/jeune.jpg" alt="Témoignage 3" className="faq-blog-thumb" onError={e => { e.target.src = '/assets/feerima/sante.png'; }} />
+            <img src="/assets/feerima/images/jeune.jpg" alt="Témoignage 3" className="faq-blog-thumb" onError={e => { e.target.src = '/assets/feerima/images/sante.png'; }} />
             <div className="faq-blog-item-content">
               <span className="faq-blog-tag small">Témoignage</span>
               <h4 className="faq-blog-item-title">"La thérapie a changé ma vie"</h4>

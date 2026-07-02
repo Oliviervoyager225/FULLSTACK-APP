@@ -30,7 +30,7 @@
 
 //             <section
 //                 className="page-hero"
-//                 style={{ backgroundImage: "url('/assets/feerima/hero5.png')" }}
+//                 style={{ backgroundImage: "url('/assets/feerima/images/hero5.png')" }}
 //             >
 //                 <div className="page-hero-content">
 //                     <h1>Espace Ressources</h1>
@@ -131,7 +131,7 @@
 
 //             <section
 //                 className="page-hero"
-//                 style={{ backgroundImage: "url('/assets/feerima/ressources.png')" }}
+//                 style={{ backgroundImage: "url('/assets/feerima/images/ressources.png')" }}
 //             >
 //             </section>
 
@@ -528,7 +528,7 @@ export default function EspaceRessources() {
         <div style={{ fontFamily: "'Nunito', 'Segoe UI', sans-serif" }}>
             <Navbar />
 
-            <section className="page-hero" style={{ backgroundImage: "url('/assets/feerima/ressources.png')" }} />
+            <section className="page-hero" style={{ backgroundImage: "url('/assets/feerima/images/ressources.png')" }} />
 
             <main style={{ background: '#f7f8fa', minHeight: '100vh', padding: '3rem 1rem' }}>
                 <div style={{ maxWidth: '960px', margin: '0 auto' }}>
@@ -818,7 +818,7 @@ export default function EspaceRessources() {
 
 //             <section
 //                 className="page-hero"
-//                 style={{ backgroundImage: "url('/assets/feerima/ressources.png')" }}
+//                 style={{ backgroundImage: "url('/assets/feerima/images/ressources.png')" }}
 //             />
 
 //             <main style={{ background: '#f7f8fa', minHeight: '100vh', padding: '3rem 1rem' }}>

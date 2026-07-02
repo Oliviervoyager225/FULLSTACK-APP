@@ -11,7 +11,7 @@ const articles = [
         category: 'Santé mentale',
         title: 'Comprendre l\'anxiété chez les adolescents',
         excerpt: 'Découvrez comment identifier les signes d\'anxiété chez les jeunes et les meilleures approches pour les accompagner au quotidien.',
-        image: '/assets/feerima/portrait.png',
+        image: '/assets/feerima/images/portrait.png',
         date: '12 Février 2026',
         author: 'Dr. Glao Louis',
     },
@@ -20,7 +20,7 @@ const articles = [
         category: 'Thérapie',
         title: 'L\'art-thérapie au service du bien-être',
         excerpt: 'L\'expression créative comme outil thérapeutique permet aux jeunes de libérer leurs émotions et de renforcer leur confiance en soi.',
-        image: '/assets/feerima/artistique.png',
+        image: '/assets/feerima/images/artistique.png',
         date: '5 Février 2026',
         author: 'Dr. Emma Wilson',
     },
@@ -29,7 +29,7 @@ const articles = [
         category: 'Prévention',
         title: 'Sport et santé mentale : un duo gagnant',
         excerpt: 'La pratique régulière d\'une activité physique a un impact direct et positif sur l\'équilibre émotionnel et mental des adolescents.',
-        image: '/assets/feerima/sport.png',
+        image: '/assets/feerima/images/sport.png',
         date: '28 Janvier 2026',
         author: 'Dr. Ravi Bec',
     },
@@ -38,7 +38,7 @@ const articles = [
         category: 'Famille',
         title: 'Renforcer les liens familiaux',
         excerpt: 'Des stratégies concrètes pour améliorer la communication entre parents et adolescents dans les moments de tension.',
-        image: '/assets/feerima/soutien familial.png',
+        image: '/assets/feerima/images/soutien familial.png',
         date: '20 Janvier 2026',
         author: 'Dr. Molamine Hive',
     },
@@ -47,7 +47,7 @@ const articles = [
         category: 'Éducation',
         title: 'Soutien scolaire et santé psychologique',
         excerpt: 'Comment les établissements scolaires peuvent devenir des espaces bienveillants favorisant la réussite et le bien-être des élèves.',
-        image: '/assets/feerima/educatif.png',
+        image: '/assets/feerima/images/educatif.png',
         date: '14 Janvier 2026',
         author: 'Dr. Glao Louis',
     },
@@ -56,7 +56,7 @@ const articles = [
         category: 'Innovation',
         title: 'Nouvelles thérapies pour les jeunes',
         excerpt: 'La Fée Rima explore des méthodes innovantes en santé mentale pour répondre aux besoins spécifiques des jeunes d\'aujourd\'hui.',
-        image: '/assets/feerima/Thérapies innovantes.png',
+        image: '/assets/feerima/images/Thérapies innovantes.png',
         date: '7 Janvier 2026',
         author: 'Dr. Emma Wilson',
     },
@@ -76,14 +76,14 @@ const mentors = [
         id: 1,
         name: 'Dr. Glao Louis',
         role: 'Psychiatre Pédiatrique',
-        image: '/assets/feerima/Image medecin 1.png',
+        image: '/assets/feerima/images/Image medecin 1.png',
         bio: 'Spécialiste en psychiatrie de l\'enfant et de l\'adolescent avec plus de 15 ans d\'expérience dans l\'accompagnement des jeunes en difficulté.',
     },
     {
         id: 2,
         name: 'Dr. Emma Wilson',
         role: 'Psychologue Clinicienne',
-        image: '/assets/feerima/Image medecin 2.png',
+        image: '/assets/feerima/images/Image medecin 2.png',
         bio: 'Experte en thérapies cognitivo-comportementales, elle accompagne les adolescents vers une meilleure gestion de leurs émotions.',
     },
 ];
@@ -96,7 +96,7 @@ export default function Actualites() {
             {/* Hero Banner - même effet que Historique (droite → gauche) */}
             <section
                 className="page-hero"
-                style={{ backgroundImage: "url('/assets/feerima/hero9.png')" }}
+                style={{ backgroundImage: "url('/assets/feerima/images/hero9.png')" }}
             >
                 <div className="page-hero-content">
                     <h1>Nos actualités</h1>
@@ -143,7 +143,7 @@ export default function Actualites() {
                         </div>
                         <div className="actu-strategy-right">
                             <div className="actu-strategy-image-wrapper">
-                                <img src="/assets/feerima/approche.png" alt="Notre approche" />
+                                <img src="/assets/feerima/images/approche.png" alt="Notre approche" />
                                 <div className="actu-play-btn">
                                     <svg viewBox="0 0 24 24" fill="white" width="28" height="28">
                                         <path d="M8 5v14l11-7z" />

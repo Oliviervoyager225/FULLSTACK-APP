@@ -27,7 +27,7 @@ export default function Contact() {
 
             {/* ── Hero ── */}
             <div className="contact-hero">
-                <img src="/assets/feerima/hero.png" alt="Contactez-nous" className="contact-hero-img" />
+                <img src="/assets/feerima/images/hero.png" alt="Contactez-nous" className="contact-hero-img" />
                 <div className="contact-hero-overlay" />
                 <div className="contact-hero-text">
                     <h1>Nous Contacter</h1>

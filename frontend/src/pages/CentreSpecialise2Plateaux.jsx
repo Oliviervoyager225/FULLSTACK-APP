@@ -54,7 +54,7 @@ const CentreSpecialise2Plateaux = () => {
                     {/* Image de fond avec overlay */}
                     {/* <div className="hero-background">
                         <img
-                            src="/assets/feerima/centre2plateaux.png"
+                            src="/assets/feerima/images/centre2plateaux.png"
                             alt="Centre spécialisé La Fée Rima des 2 Plateaux - Abidjan"
                             className="hero-image"
                             loading="eager"

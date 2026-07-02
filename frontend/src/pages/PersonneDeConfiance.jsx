@@ -67,7 +67,7 @@ export default function PersonneDeConfiance() {
                     <div
                         className="hist-image-box gray-box-medium"
                         style={{
-                            backgroundImage: "url('/assets/feerima/personne_confiance.png')",
+                            backgroundImage: "url('/assets/feerima/images/personne_confiance.png')",
                             backgroundSize: 'cover',
                             backgroundPosition: 'center',
                         }}

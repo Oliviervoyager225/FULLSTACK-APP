@@ -54,9 +54,9 @@ export default function Footer() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   
   const carouselImages = [
-    '/assets/feerima/centre1.png',
-    '/assets/feerima/centre 2.png',
-    '/assets/feerima/centre 3.png',
+    '/assets/feerima/images/centre1.png',
+    '/assets/feerima/images/centre 2.png',
+    '/assets/feerima/images/centre 3.png',
   ];
 
   useEffect(() => {

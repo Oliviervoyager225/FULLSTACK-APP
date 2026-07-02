@@ -11,7 +11,7 @@ export default function ServiceAccueilUrgence() {
 
             <section
                 className="page-hero"
-                style={{ backgroundImage: "url('/assets/feerima/urgent.png')" }}
+                style={{ backgroundImage: "url('/assets/feerima/images/urgent.png')" }}
             >
                 <div className="page-hero-content">
                     <h1>Le service d'accueil d'urgence</h1>
@@ -34,7 +34,7 @@ export default function ServiceAccueilUrgence() {
                     <div
                         className="hist-image-box gray-box-large"
                         style={{
-                            backgroundImage: "url('/assets/feerima/psycha.png')",
+                            backgroundImage: "url('/assets/feerima/images/psycha.png')",
                             backgroundSize: 'cover',
                             backgroundPosition: 'center',
                         }}
@@ -45,7 +45,7 @@ export default function ServiceAccueilUrgence() {
                     <div
                         className="hist-image-box gray-box-medium"
                         style={{
-                            backgroundImage: "url('/assets/feerima/Qui_contacter.png')",
+                            backgroundImage: "url('/assets/feerima/images/Qui_contacter.png')",
                             backgroundSize: 'cover',
                             backgroundPosition: 'center',
                         }}
@@ -63,7 +63,7 @@ export default function ServiceAccueilUrgence() {
                     <div
                         className="hist-image-box gray-box-medium"
                         style={{
-                            backgroundImage: "url('/assets/feerima/contacter.png')",
+                            backgroundImage: "url('/assets/feerima/images/contacter.png')",
                             backgroundSize: 'cover',
                             backgroundPosition: 'center',
                         }}
@@ -75,7 +75,7 @@ export default function ServiceAccueilUrgence() {
 
                         <div className="hist-stacked-images">
                             <img
-                                src="/assets/feerima/apres.png"
+                                src="/assets/feerima/images/apres.png"
                                 alt="Ma mission"
                                 className="hist-image"
                             />
